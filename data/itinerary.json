@@ -1179,32 +1179,85 @@
           "time": "09:30",
           "title": "Check-out — co.sleep Airbnb",
           "detail": "Check-out até 10:30",
-          "notes": "Deixar as chaves conforme combinado com o anfitrião. Guardar bagagens na recepção de algum hotel próximo à estação se necessário."
+          "notes": "Deixar as chaves conforme combinado com o anfitrião. Guardar bagagens na recepção de algum hotel próximo à estação se necessário. Guarde as malas e aproveite a manhã — o trem só parte às 12h55."
         },
         {
-          "id": "evt-502-transfer",
+          "id": "day5-roma-manha",
+          "time": "10:30",
+          "type": "free-time",
+          "title": "Última manhã em Roma",
+          "detail": "Tempo livre até seguir para a estação — Prati ou Castel Sant'Angelo",
+          "notes": "Aproveite para um café no bairro de Prati, uma última caminhada pela Piazza del Popolo ou visita rápida ao Castel Sant'Angelo (exterior). Não se afaste muito — o trem parte às 12h55."
+        },
+        {
+          "id": "day5-termini",
+          "time": "12:10",
+          "type": "metro",
+          "title": "Deslocamento ao Roma Termini",
+          "detail": "Airbnb (Lepanto) → Termini · Metrô Linha A · ~25 min",
+          "steps": [
+            {
+              "desc": "Metrô Linha A: Lepanto → Termini (dir. Anagnina)",
+              "duration": "~20 min",
+              "price": "€1,50/pp"
+            },
+            {
+              "desc": "Chegar ao Termini e encontrar a plataforma do trem Italo (verificar painéis)",
+              "duration": "10 min antes da partida"
+            }
+          ],
+          "tips": "O embarque é permitido até 2 min antes da partida. Procure os painéis 'Italo' na estação — plataforma indicada ~15 min antes. Malas: máx 75×53×30cm na classe SMART."
+        },
+        {
+          "id": "day5-train",
+          "time": "12:55",
           "type": "train",
-          "time": "11:00",
-          "title": "Roma → Florença (Trem ou Avião)",
-          "detail": "Frecciarossa ~1h30 ou avião",
-          "notes": "Opção 1 (recomendada): Trem de alta velocidade Frecciarossa, Roma Termini → Firenze Santa Maria Novella, ~1h30. Comprar na Trenitalia ou Italo. Opção 2: Voo Roma Fiumicino → Florença (FCO→FLR), ~1h, mas com transferências mais demoradas.",
-          "romantic": "O trem de alta velocidade pela Toscana — as colinas verdes, os ciprestes e os vinhedos passando pela janela — é um cenário para dois."
+          "title": "Italo 8916 · Roma Termini → Firenze S.M.N.",
+          "detail": "Alta velocidade · Chegada 14:31 · Vagão 4 · Assentos 79 e 80",
+          "notes": "Código: T9VLTL · Rec. 111099067. Pedro: vagão 4, assento 79 · Clarice: vagão 4, assento 80. Classe SMART. Apresentar ticket digital ou impresso. Duração: 1h36.",
+          "booking": {
+            "operator": "Italo – Nuovo Trasporto Viaggiatori",
+            "ticket_code": "T9VLTL",
+            "record": "111099067",
+            "train": "8916",
+            "class": "SMART",
+            "departure": "Roma Termini · 12:55",
+            "arrival": "Firenze S.M.N. · 14:31",
+            "seats": "Vagão 4 — Pedro: 79 · Clarice: 80",
+            "price": "€40,80 total",
+            "luggage": "Bagagens máx. 75×53×30cm"
+          },
+          "tips": "O trem Italo é confortável e pontual. A classe SMART tem tomadas em cada assento. O percurso passa pela Toscana — aproveite a paisagem.",
+          "romantic": "Sentar lado a lado enquanto a Toscana desfila pela janela — Roma ficando para trás, Florença esperando.",
+          "coordinates": {
+            "lat": 41.9009,
+            "lng": 12.5022
+          }
         },
         {
-          "id": "evt-503-hotel",
+          "id": "day5-checkin-flo",
+          "time": "14:45",
           "type": "hotel",
-          "time": "15:00",
-          "title": "Check-in — Hotel em Florença",
-          "detail": "A confirmar",
-          "hotel_ref": "htl-florence",
-          "notes": "Hotel a confirmar. Reservar na região do Centro Histórico (perto do Duomo ou Ponte Vecchio) para facilitar os passeios."
+          "title": "Chegada a Florença + Check-in",
+          "detail": "Firenze S.M.N. → hotel · Check-in a partir das 15h",
+          "notes": "Hotel a confirmar. Reservar na região do Centro Histórico (perto do Duomo ou Ponte Vecchio) para facilitar os passeios.",
+          "steps": [
+            {
+              "desc": "Saída pela entrada principal da Firenze S.M.N. (Piazza della Stazione)",
+              "duration": "2 min"
+            },
+            {
+              "desc": "Hotel próximo: a pé ou táxi (~€8–12 se mais distante)",
+              "duration": "5–15 min"
+            }
+          ]
         },
         {
           "id": "evt-504-walk",
           "type": "walk",
           "time": "16:00",
           "title": "Primeira caminhada: Duomo e Ponte Vecchio",
-          "detail": "A pé — Florença é uma cidade para andar",
+          "detail": "A pé pelo centro histórico — Florença é uma cidade para se perder",
           "notes": "Duomo (exterior) → Piazza della Repubblica → Uffizi (fachada) → Lungarno (margem do Arno) → Ponte Vecchio.",
           "romantic": "Caminhem pela Ponte Vecchio — a ponte mais antiga de Florença (1345), com suas joalherias no meio do rio. A vista do Arno ao entardecer é extraordinária.",
           "coordinates": {
