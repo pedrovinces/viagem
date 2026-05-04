@@ -2235,9 +2235,34 @@
           "type": "transfer",
           "time": "08:00",
           "title": "Paris → Disneyland (RER A)",
-          "detail": "RER A dir. Marne-la-Vallée–Chessy",
+          "detail": "Rue Riquet → Marne-la-Vallée–Chessy · ~55 min",
           "duration": "~40 min do centro",
-          "notes": "RER A: partida de Châtelet-Les Halles, Gare de Lyon ou Nation. Destino: Marne-la-Vallée–Chessy (terminal de linha). Bilhete de metrô/RER dentro da zona tarifária de Paris. Comprar na máquina ou no app RATP."
+          "notes": "Comprar 2 bilhetes separados na máquina da estação Riquet: 1 bilhete t+ (€2,15) para o Metrô 7 até Châtelet + 1 bilhete zona 1–5 RER A (≈€7,80/pp) para a Disneyland. Outra opção: se tiverem Navigo Day Pass, cobre tudo.",
+          "steps": [
+            {
+              "desc": "🚶 Caminhar 2 min da Rue Riquet até a estação Riquet (Metrô Linha 7) — na esquina do hotel",
+              "duration": "~2 min"
+            },
+            {
+              "desc": "🚇 Metrô Linha 7 (dir. Villejuif-Louis Aragon) → Châtelet (10 paradas)",
+              "duration": "~18 min",
+              "price": "€2,15/pp (bilhete t+)"
+            },
+            {
+              "desc": "🔄 Baldeação em Châtelet-Les Halles: seguir sinalizações 'RER A' → plataforma dir. Marne-la-Vallée–Chessy",
+              "duration": "~5 min"
+            },
+            {
+              "desc": "🚆 RER A (dir. Marne-la-Vallée–Chessy, terminal) → estação 'Marne-la-Vallée / Chessy Parcs Disney' (terminal da linha)",
+              "duration": "~35 min",
+              "price": "≈€7,80/pp (bilhete zona 1–5)"
+            },
+            {
+              "desc": "🎠 Saída da estação: entrada da Disneyland à 200m, seguindo a passarela coberta diretamente para os parques",
+              "duration": "~3 min"
+            }
+          ],
+          "tips": "Comprar os bilhetes com antecedência no app RATP ou nas máquinas da estação Riquet para não perder tempo. A estação RER fica literalmente embaixo do parque — não há como se perder."
         },
         {
           "id": "evt-1102-visit",
@@ -2262,8 +2287,33 @@
           "type": "transfer",
           "time": "22:30",
           "title": "Disneyland → Paris (RER A)",
-          "detail": "Mesmo percurso de volta",
-          "notes": "RER A até o destino no centro de Paris. Trem funciona até meia-noite."
+          "detail": "Marne-la-Vallée–Chessy → Rue Riquet · ~55 min",
+          "notes": "Último RER A saindo de Marne-la-Vallée em direção a Paris: por volta de 00:30. Saindo às 22:30, vocês têm conforto. Após Châtelet, pegar Metrô 7 dir. La Courneuve até Riquet.",
+          "steps": [
+            {
+              "desc": "🚆 RER A (dir. Paris — qualquer destino) na estação Marne-la-Vallée / Chessy Parcs Disney → Châtelet-Les Halles",
+              "duration": "~35 min",
+              "price": "≈€7,80/pp (mesmo bilhete zona 1–5 da ida, se não usou)"
+            },
+            {
+              "desc": "🔄 Baldeação em Châtelet: seguir sinalizações 'Métro' → Linha 7 (dir. La Courneuve-8 Mai 1945)",
+              "duration": "~5 min"
+            },
+            {
+              "desc": "🚇 Metrô Linha 7 (dir. La Courneuve) → estação Riquet (10 paradas: Rambuteau, Arts et Métiers, Temple, République, Goncourt, Belleville, Colonel Fabien, Jaurès, Stalingrad, Riquet)",
+              "duration": "~18 min",
+              "price": "€2,15/pp (bilhete t+)"
+            },
+            {
+              "desc": "🚶 Saída da estação Riquet: 2 min a pé até 69 Rue Riquet — o hotel",
+              "duration": "~2 min"
+            }
+          ],
+          "tips": "Após um dia inteiro de parque, o RER A costuma estar cheio. Evite o último trem. Saindo às 22:30 vocês chegam ao hotel por volta de 23:30 — descansando bem antes de Bruxelas amanhã.",
+          "coordinates": {
+            "lat": 48.8841,
+            "lng": 2.3599
+          }
         }
       ]
     },
