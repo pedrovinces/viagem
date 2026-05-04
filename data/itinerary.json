@@ -539,19 +539,17 @@
           "notes": "Sair do Airbnb às 07:15 para chegar no ponto de encontro às 08:00 (15 min antes do tour das 08:15). Metrô Linha A (dir. Anagnina) até Termini (4 paradas). Trocar para Linha B (dir. Laurentina) até Colosseo (1 parada). €1,50/pp.",
           "steps": [
             {
-              "label": "Lepanto (Linha A)",
-              "icon": "🚇",
-              "detail": "Dir. Anagnina · 4 paradas até Termini"
+              "desc": "🚇 Metrô Linha A em Lepanto (dir. Anagnina) → Termini",
+              "duration": "~8 min",
+              "price": "€1,50/pp"
             },
             {
-              "label": "Termini",
-              "icon": "🔄",
-              "detail": "Trocar para Linha B · dir. Laurentina"
+              "desc": "🔄 Trocar para Linha B em Termini (dir. Laurentina) → Colosseo",
+              "duration": "~3 min"
             },
             {
-              "label": "Colosseo",
-              "icon": "🏛️",
-              "detail": "1 parada · saída já com vista do Coliseu"
+              "desc": "🏛️ Saída Colosseo — o Coliseu já aparece ao sair do metrô",
+              "duration": "2 min a pé até o ponto de encontro"
             }
           ],
           "photo": "./assets/images/events/evt_colosseum.jpg"
@@ -1732,20 +1730,18 @@
           "detail": "Salone Biglietti — Sightseeing Experience Visitor Center dentro da estação SMN",
           "steps": [
             {
-              "icon": "⏰",
-              "text": "Acordar às 06:00 — dia longo pela frente"
+              "desc": "⏰ Acordar às 06:00 — dia longo pela frente"
             },
             {
-              "icon": "🚶",
-              "text": "5 min a pé do hotel até a Estação Santa Maria Novella"
+              "desc": "🚶 Caminhar até a Estação Santa Maria Novella",
+              "duration": "5 min a pé"
             },
             {
-              "icon": "📍",
-              "text": "Procurar 'Sightseeing Experience Visitor Center' no Salone Biglietti"
+              "desc": "📍 Procurar 'Sightseeing Experience Visitor Center' no Salone Biglietti (hall de bilhetes)",
+              "duration": "5 min"
             },
             {
-              "icon": "✅",
-              "text": "Chegar às 06:30 (20 min antes da partida às 06:50)"
+              "desc": "✅ Chegar às 06:30 — 20 min antes da partida às 06:50"
             }
           ]
         },
