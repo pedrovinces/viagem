@@ -490,9 +490,35 @@
           "type": "restaurant",
           "time": "21:30",
           "title": "Jantar — Piazza Navona",
-          "detail": "Um dos lugares mais românticos de Roma",
+          "detail": "Região de Piazza Navona — o coração do Centro Histórico de Roma",
           "notes": "Explore os restaurantes ao redor da Piazza Navona. Prato obrigatório: Cacio e Pepe ou Carbonara autêntica.",
-          "romantic": "A Piazza Navona à noite, com a Fontana dei Quattro Fiumi iluminada, é cenário de filme de amor."
+          "romantic": "A Piazza Navona à noite, com a Fontana dei Quattro Fiumi iluminada, é cenário de filme de amor.",
+          "restaurants": [
+            {
+              "label": "💰 Econômico",
+              "name": "Pizzeria Il Sorpasso",
+              "address": "Via Properzio 31 (Prati, 10 min a pé do Airbnb)",
+              "specialty": "Pizza romana al taglio, supplì, fritti romani — ambiente jovem e descontraído",
+              "price": "€10–15 pp",
+              "tip": "Ótimo para a primeira noite cansativa. Perto do Airbnb na Via Boezio. Sem fila, sem reserva."
+            },
+            {
+              "label": "🍽️ Tradicional",
+              "name": "Ristorante La Campana",
+              "address": "Vicolo della Campana 18 (junto a Piazza Navona)",
+              "specialty": "Cacio e pepe, amatriciana, coda alla vaccinara — a cozinha romana mais pura",
+              "price": "€30–45 pp",
+              "tip": "O restaurante mais antigo de Roma em funcionamento contínuo (desde 1518). Reservar."
+            },
+            {
+              "label": "⭐ Gourmet",
+              "name": "Il Convivio Troiani",
+              "address": "Vicolo dei Soldati 31 (Navona)",
+              "specialty": "Alta cozinha romana contemporânea — 1 estrela Michelin. Carbonara desconstruída, coda all'amatriciana elevada",
+              "price": "€80–120 pp",
+              "tip": "O melhor restaurante de alta cozinha romana do Centro Histórico. Primeira noite em Roma — uma ocasião para celebrar. Reservar com antecedência."
+            }
+          ]
         }
       ]
     },
@@ -706,7 +732,7 @@
           "type": "restaurant",
           "time": "19:00",
           "title": "Jantar em Trastevere",
-          "detail": "Escolha entre os melhores restaurantes do bairro",
+          "detail": "O bairro mais autêntico e romântico de Roma à noite",
           "notes": "Chegar antes das 19h para evitar filas. Trastevere fica lotado após 20h nos fins de semana.",
           "restaurant_options": [
             {
@@ -742,7 +768,33 @@
               "tip": "Aberto até 1h — ótimo para quem quer jantar tarde"
             }
           ],
-          "romantic": "Jantar em Trastevere é uma experiência que vocês vão lembrar para sempre. Peçam uma mesa ao ar livre."
+          "romantic": "Jantar em Trastevere é uma experiência que vocês vão lembrar para sempre. Peçam uma mesa ao ar livre.",
+          "restaurants": [
+            {
+              "label": "💰 Econômico",
+              "name": "Tonnarello",
+              "address": "Via della Paglia 1 (Trastevere)",
+              "specialty": "Pasta romana clássica — cacio e pepe, gricia, carbonara. Ambiente festivo com mesas na rua",
+              "price": "€15–22 pp",
+              "tip": "Sempre cheio, sempre barulhento, sempre honesto. Chegar cedo (antes das 19h) ou esperar fila."
+            },
+            {
+              "label": "🍽️ Tradicional",
+              "name": "Trattoria Da Enzo al 29",
+              "address": "Via dei Vascellari 29 (Trastevere)",
+              "specialty": "Coda alla vaccinara, pajata, abbacchio alla scottadito — o quintessencial do Trastevere",
+              "price": "€28–38 pp",
+              "tip": "Um dos melhores do bairro. Só aceita reservas pelo WhatsApp (+39 06 581 2260). Pequeno — vale reservar."
+            },
+            {
+              "label": "⭐ Gourmet",
+              "name": "Glass Hostaria",
+              "address": "Vicolo del Cinque 58 (Trastevere)",
+              "specialty": "Cozinha italiana contemporânea · 1 estrela Michelin — rigatoni all'amatriciana em versão moderna, branzino, tartufata",
+              "price": "€70–100 pp",
+              "tip": "O único Michelin de Trastevere. Ambiente moderno no coração do bairro medieval. Reservar com semanas de antecedência."
+            }
+          ]
         },
         {
           "id": "evt-207-transfer",
@@ -868,10 +920,36 @@
           "id": "evt-306-meal",
           "type": "restaurant",
           "time": "20:00",
-          "title": "Jantar — Piazza Navona",
-          "detail": "A praça mais bela de Roma à noite",
+          "title": "Jantar — Centro Histórico / Piazza Navona",
+          "detail": "Após o dia no Vaticano — área entre Prati e Navona",
           "notes": "Piazza Navona foi construída sobre o Estádio de Domiciano (séc. I d.C.). A Fontana dei Quattro Fiumi de Bernini é a peça central. À noite, com as luzes do barroco, é inesquecível.",
-          "romantic": "Jantar na Piazza Navona após um dia tão espiritual é o equilíbrio perfeito entre o sagrado e o belo."
+          "romantic": "Jantar na Piazza Navona após um dia tão espiritual é o equilíbrio perfeito entre o sagrado e o belo.",
+          "restaurants": [
+            {
+              "label": "💰 Econômico",
+              "name": "Osteria dell'Angelo",
+              "address": "Via G. Bettolo 24 (Prati — perto do Airbnb)",
+              "specialty": "Menu fixo romano — cacio e pepe, rigatoni alla gricia, abbacchio al forno",
+              "price": "€15–20 pp (menu fixo)",
+              "tip": "Menu fixo tradicional com vinho incluído por preço imbatível. O favorito dos moradores de Prati. Reservar."
+            },
+            {
+              "label": "🍽️ Tradicional",
+              "name": "Ristorante La Campana",
+              "address": "Vicolo della Campana 18 (Navona)",
+              "specialty": "Cozinha romana clássica desde 1518 — saltimbocca, pajata, trippa alla romana",
+              "price": "€32–45 pp",
+              "tip": "Sentar na calçada com a Piazza Navona ao fundo. Pedir o carciofo alla giudia como entrada."
+            },
+            {
+              "label": "⭐ Gourmet",
+              "name": "Il Convivio Troiani",
+              "address": "Vicolo dei Soldati 31 (Navona)",
+              "specialty": "Alta cozinha romana · 1 Michelin · Menu degustação com harmonização de vinhos italianos",
+              "price": "€90–130 pp",
+              "tip": "Após um dia no Vaticano e na Necrópole — o jantar mais especial de Roma. Reservar com antecedência."
+            }
+          ]
         }
       ]
     },
@@ -975,10 +1053,36 @@
           "id": "evt-405-meal",
           "type": "restaurant",
           "time": "20:00",
-          "title": "Jantar de despedida de Roma",
-          "detail": "Trastevere ou Centro Histórico",
+          "title": "Jantar de Despedida de Roma",
+          "detail": "Última noite romana — Trastevere ou Campo de' Fiori",
           "notes": "Última noite em Roma. Escolham o lugar que mais gostaram para encerrar com chave de ouro. Trastevere ou a região do Panteão são as melhores escolhas.",
-          "romantic": "A última taça de vinho romano. Brindem: 12 anos, uma vida, e uma viagem que nunca vão esquecer."
+          "romantic": "A última taça de vinho romano. Brindem: 12 anos, uma vida, e uma viagem que nunca vão esquecer.",
+          "restaurants": [
+            {
+              "label": "💰 Econômico",
+              "name": "Pizzeria Da Remo",
+              "address": "Piazza Santa Maria Liberatrice 44 (Testaccio)",
+              "specialty": "A melhor pizza fina romana da cidade — margherita, capricciosa. Forno a lenha",
+              "price": "€12–18 pp",
+              "tip": "Lenda de Roma desde 1953. Testaccio é o bairro mais autêntico — sem turistas, só romanos. 20 min a pé do Trastevere."
+            },
+            {
+              "label": "🍽️ Tradicional",
+              "name": "Trattoria Da Enzo al 29",
+              "address": "Via dei Vascellari 29 (Trastevere)",
+              "specialty": "Cozinha romana profunda — coda alla vaccinara, abbacchio, supplì. Ambiente de taverna",
+              "price": "€28–38 pp",
+              "tip": "Para encerrar Roma como ela merece. Pedir o tiramisù caseiro no final. Reservar."
+            },
+            {
+              "label": "⭐ Gourmet",
+              "name": "Glass Hostaria",
+              "address": "Vicolo del Cinque 58 (Trastevere)",
+              "specialty": "Jantar de despedida com 1 estrela Michelin no coração de Trastevere — menu degustação com vinhos do Lácio",
+              "price": "€80–110 pp",
+              "tip": "A ultima noite em Roma merece algo inesquecível. Menu degustação com harmonização. Reservar."
+            }
+          ]
         }
       ]
     },
@@ -1052,10 +1156,36 @@
           "id": "evt-506-meal",
           "type": "restaurant",
           "time": "20:30",
-          "title": "Jantar tranquilo",
-          "detail": "Primeiro jantar florentino",
+          "title": "Primeiro Jantar em Florença",
+          "detail": "Após Piazzale Michelangelo — região Oltrarno ou centro",
           "notes": "Restaurante próximo ao hotel para descanso após a viagem. Prato típico: Ribollita (sopa de vegetais), Pappardelle al Cinghiale (macarrão com javali), Bistecca alla Fiorentina.",
-          "romantic": "O chianti ao jantar depois de um pôr do sol sobre o Arno. Florença começa a revelar sua magia."
+          "romantic": "O chianti ao jantar depois de um pôr do sol sobre o Arno. Florença começa a revelar sua magia.",
+          "restaurants": [
+            {
+              "label": "💰 Econômico",
+              "name": "Trattoria da Ruggero",
+              "address": "Via Senese 89 (Oltrarno — perto do Piazzale)",
+              "specialty": "Peposo alla fornacina, ribollita, pappa al pomodoro — cozinha caseira florentina sem frescura",
+              "price": "€18–25 pp",
+              "tip": "O favorito dos florentinos no Oltrarno. Sem cardápio em inglês — um charme. Fecham às 22h."
+            },
+            {
+              "label": "🍽️ Tradicional",
+              "name": "Il Latini",
+              "address": "Via dei Palchetti 6 (Santa Maria Novella)",
+              "specialty": "Bistecca fiorentina compartilhada, ribollita, fagioli all'uccelletto, fiasco de Chianti",
+              "price": "€30–45 pp",
+              "tip": "Mesas compartilhadas, barulhento, festivo — a experiência florentina mais autêntica. Fila na porta mas vale. Sem reserva."
+            },
+            {
+              "label": "⭐ Gourmet",
+              "name": "Enoteca Pinchiorri",
+              "address": "Via Ghibellina 87 (Santa Croce)",
+              "specialty": "3 estrelas Michelin · O melhor restaurante de Florença. Cozinha toscana elevada com a maior adega de vinhos da Itália",
+              "price": "€180–250 pp",
+              "tip": "Reservar com meses de antecedência. Para uma noite verdadeiramente especial — talvez no jantar de despedida de Florença, não aqui. Mas existe para isso."
+            }
+          ]
         }
       ]
     },
@@ -1700,9 +1830,35 @@
           "type": "restaurant",
           "time": "20:00",
           "title": "Jantar — Quartier Latin",
-          "detail": "Bairro histórico da margem esquerda",
+          "detail": "Primeiro jantar parisiense — margem esquerda do Sena",
           "notes": "O Quartier Latin é o bairro dos estudantes, das livrarias e dos cafés de filósofos. Muitas bistrôs e brasseries com ótima relação custo-benefício. Prato: Steak-frites, Boeuf Bourguignon, ou crepes de Bretanha.",
-          "romantic": "Jantar no Quartier Latin, onde gerações de intelectuais e apaixonados debateram a vida — agora é a vez de vocês."
+          "romantic": "Jantar no Quartier Latin, onde gerações de intelectuais e apaixonados debateram a vida — agora é a vez de vocês.",
+          "restaurants": [
+            {
+              "label": "💰 Econômico",
+              "name": "Crêperie Saint-André des Arts",
+              "address": "Rue Saint-André des Arts 50 (Quartier Latin)",
+              "specialty": "Galettes bretonnas salgadas + crêpes doces. Cidra artesanal da Bretanha",
+              "price": "€14–20 pp",
+              "tip": "A primeira refeição parisiense sendo uma crêpe — perfeito. Ambiente simples, serviço rápido. Ótimo após um dia longo de viagem."
+            },
+            {
+              "label": "🍽️ Tradicional",
+              "name": "Le Procope",
+              "address": "Rue de l'Ancienne Comédie 13 (Saint-Germain)",
+              "specialty": "O café mais antigo de Paris (1686) — coq au vin, boeuf bourguignon, soufflé au chocolat",
+              "price": "€35–50 pp",
+              "tip": "Rousseau, Voltaire, Napoleão e Robespierre sentaram nestas mesas. O cardápio tem o chapéu de Napoleão emoldurado. Uma experiência histórica."
+            },
+            {
+              "label": "⭐ Gourmet",
+              "name": "Ze Kitchen Galerie",
+              "address": "Rue des Grands Augustins 4 (Saint-Michel)",
+              "specialty": "1 estrela Michelin. Cozinha francesa com influências asiáticas — William Ledeuil. Degustação com harmonização",
+              "price": "€65–95 pp",
+              "tip": "A vista para o Sena ao entardecer e os menus criativos de Ledeuil fazem deste o jantar ideal de primeira noite em Paris."
+            }
+          ]
         }
       ]
     },
@@ -1799,10 +1955,36 @@
           "id": "evt-1005-meal",
           "type": "restaurant",
           "time": "20:30",
-          "title": "Jantar parisiense",
-          "detail": "Bistrô clássico",
+          "title": "Jantar — Bistrô Parisiense",
+          "detail": "Saint-Germain-des-Prés ou Marais — o clássico jantar parisiense",
           "notes": "Paris tem bistrôs em cada esquina — escolham um com menu fixo (menu du jour) que geralmente é excelente e acessível. Prato: Magret de Canard, Sole Meunière, ou simplesmente Steak-frites com uma carafe de Bordeaux.",
-          "romantic": "Toda janela de bistrô parisiense é um quadro. Sentem à janela e observem Paris passar."
+          "romantic": "Toda janela de bistrô parisiense é um quadro. Sentem à janela e observem Paris passar.",
+          "restaurants": [
+            {
+              "label": "💰 Econômico",
+              "name": "Relais de l'Entrecôte",
+              "address": "Rue Marbeuf 15 (Champs-Élysées) ou Rue Saint-Benoît 20 (Saint-Germain)",
+              "specialty": "Sem cardápio: só steak-frites com molho secreto de ervas. Salada de entrada. Ilimitado",
+              "price": "€25–30 pp",
+              "tip": "A fila começa antes da abertura — chegar 30 min antes. Sem reserva. O molho é um segredo guardado há décadas. Simplesmente inesquecível."
+            },
+            {
+              "label": "🍽️ Tradicional",
+              "name": "Brasserie Lipp",
+              "address": "Boulevard Saint-Germain 151",
+              "specialty": "Choucroute alsaciana, sole meunière, jarret de porc. Ambiente art-nouveau histórico",
+              "price": "€40–55 pp",
+              "tip": "Frequentado por Hemingway, Picasso e presidentes franceses. Pedir mesa no andar térreo (térreo = ambiente histórico, andar de cima = turistas)."
+            },
+            {
+              "label": "⭐ Gourmet",
+              "name": "Septime",
+              "address": "Rue de Charonne 80 (Bastille)",
+              "specialty": "1 estrela Michelin · Cozinha francesa contemporânea com natural wines — o bistrô mais badalado de Paris",
+              "price": "€60–85 pp",
+              "tip": "Reserva abre online 30 dias antes e esgota em minutos. Se conseguirem, é imperdível — lista de vinhos naturais excepcional."
+            }
+          ]
         }
       ]
     },
@@ -2071,10 +2253,36 @@
           "id": "evt-1306-meal",
           "type": "restaurant",
           "time": "20:30",
-          "title": "Jantar de despedida da viagem",
-          "detail": "Um jantar especial para encerrar 14 dias inesquecíveis",
-          "notes": "O jantar mais especial da viagem merece um restaurante à altura. Opções: um bistrô sofisticado perto da Torre Eiffel, um restaurante com vista para o Sena, ou uma mesa com champagne. Opcional: cruzeiro pelo Sena após o jantar — Bateaux Mouches, 1h de paisagem iluminada.",
-          "romantic": "14 dias, 4 cidades, uma fé, dois corações. Brindem: à viagem, ao amor, e aos próximos 12 anos."
+          "title": "Jantar de Despedida da Viagem",
+          "detail": "O último jantar — à altura de 14 dias inesquecíveis",
+          "notes": "O jantar mais especial da viagem merece um endereço que esteja à altura das memórias que estão sendo criadas. Região: 7ème arrondissement (perto da Torre Eiffel) ou Saint-Germain.",
+          "romantic": "14 dias, 4 cidades, uma fé, dois corações. Brindem: à viagem, ao amor, e aos próximos 12 anos.",
+          "restaurants": [
+            {
+              "label": "💰 Econômico",
+              "name": "Café du Marché",
+              "address": "Rue Cler 38 (7ème — perto da Torre Eiffel)",
+              "specialty": "Bistrô parisiense de bairro — steak-frites, moules-frites, crème brûlée. Terrasse com aquecedores",
+              "price": "€25–35 pp",
+              "tip": "A Rue Cler é o mercado de rua mais belo de Paris. Jantar descontraído após a Torre Eiffel — o encerramento perfeito para quem está cansado mas feliz."
+            },
+            {
+              "label": "🍽️ Tradicional",
+              "name": "L'Ami Jean",
+              "address": "Rue Malar 27 (7ème)",
+              "specialty": "Cozinha basca em Paris — cassoulet, pata negra, riz au lait de 8 pessoas (peçam!). Ambiente caloroso e barulhento",
+              "price": "€45–65 pp",
+              "tip": "O riz au lait (arroz-doce) do chef Stéphane Jégo é lendário — vem numa panela enorme para a mesa e serve o quanto quiserem. O jantar mais alegre de Paris."
+            },
+            {
+              "label": "⭐ Gourmet",
+              "name": "Le Jules Verne",
+              "address": "Torre Eiffel — 2º andar (entrada privativa pelo pilar sul)",
+              "specialty": "1 estrela Michelin DENTRO da Torre Eiffel · Menu degustação do chef Frédéric Anton com vista de Paris à noite",
+              "price": "€180–250 pp",
+              "tip": "O jantar mais memorável possível: ver Paris iluminada a 125m de altura enquanto comem. O show de luzes da Torre (às horas cheias) é visto da janela. Reservar com meses de antecedência — indispensável para o encerramento de uma lua de mel de 12 anos."
+            }
+          ]
         }
       ]
     },
