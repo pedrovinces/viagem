@@ -2037,15 +2037,27 @@
           "type": "museum",
           "time": "09:30",
           "title": "Musée d'Orsay",
-          "detail": "RESERVAR ONLINE — recomendado",
+          "detail": "Ingresso reservado · Ref. 6BGFZC · Abertura 09h30 · 2 adultos",
           "duration": "3h",
-          "notes": "O Musée d'Orsay, instalado na magnífica Gare d'Orsay (1900), tem a maior coleção de pintura impressionista do mundo: Monet, Renoir, Degas, Van Gogh, Cézanne, Gauguin. Mais 'humano' e acessível do que o Louvre. Aberto às 9h30.",
-          "romantic": "As Nymphéas de Monet, As Pastoras de Millet, A Dança em Moulin de la Galette de Renoir — o impressionismo é a arte de capturar um momento. Como uma fotografia de alma.",
+          "notes": "Ref: 6BGFZC. Apresentar e-ticket (chegará por e-mail antes da viagem). Operadora: La Belle Vie — WhatsApp +55 84 9849-0375. Inclui: ingresso ao museu. NÃO inclui: transporte e exposições temporárias. Ingresso não reembolsável e intransferível. Funcionamento: todos os dias exceto segunda-feira.",
+          "romantic": "Parar diante de 'Le Déjeuner sur l'herbe' de Manet ou das bailarinas de Degas — a arte que só existe aqui, que só pode ser vista assim, com ela ao seu lado.",
           "coordinates": {
             "lat": 48.86,
             "lng": 2.3266
           },
-          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Mus%C3%A9e_d%27Orsay%2C_3_November_2014.jpg/330px-Mus%C3%A9e_d%27Orsay%2C_3_November_2014.jpg"
+          "photo": "./assets/images/events/evt_orsay.jpg",
+          "booking": {
+            "operator": "La Belle Vie (via Tudo Azul / Azul Viagens)",
+            "reference": "6BGFZC",
+            "date": "27/05/2026",
+            "pax": 2,
+            "includes": "Ingresso ao museu",
+            "excludes": "Transporte, exposições temporárias",
+            "ticket": "E-ticket enviado por e-mail antes da viagem",
+            "emergency": "+55 84 9849-0375 (WhatsApp La Belle Vie)",
+            "policy": "Não reembolsável · não transferível"
+          },
+          "tips": "Chegar pontualmente às 09h30 (abertura). Prioridade: andar superior com os impressionistas — Monet, Renoir, Cézanne, Van Gogh, Degas. O relógio gigante no último andar é imperdível. Reservar ~2h30 de visita."
         },
         {
           "id": "evt-1002-meal",
