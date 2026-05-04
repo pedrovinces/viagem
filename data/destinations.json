@@ -5,7 +5,7 @@
       "name": "Roma",
       "flag": "🇮🇹",
       "color": "#C84B31",
-      "hero": "https://picsum.photos/seed/rome-city-aerial/800/400",
+      "hero": "https://images.pexels.com/photos/2064827/pexels-photo-2064827.jpeg?auto=compress&cs=tinysrgb&w=800&h=400&fit=crop",
       "tagline": "A Cidade Eterna — onde cada pedra guarda dois mil anos de história",
       "destinations": [
         {
@@ -13,11 +13,10 @@
           "type": "🏛️ Monumento",
           "description": "O maior anfiteatro do mundo antigo, símbolo eterno de Roma e da grandeza do Império Romano.",
           "long_description": "O Coliseu — Anfiteatro Flávio — foi inaugurado em 80 d.C. pelo imperador Tito e tinha capacidade para até 80.000 espectadores. Em suas areias aconteceram gladiadores, batalhas navais (o piso era inundado), caçadas de feras exóticas e execuções públicas. O monumento esteve em uso por quase 400 anos. Após a queda do Império, serviu de pedreira, habitação e fortaleza. Hoje é o monumento mais visitado da Itália. O travertino bege e o concreto romano (opus caementicium) resistiram vinte séculos. À noite, iluminado em laranja quente, é simplesmente mágico. Nas redondezas ficam o Arco de Constantino e o Monte Palatino — juntos formam o maior conjunto arqueológico do mundo ocidental.",
-          "photo": "https://picsum.photos/seed/roman-colosseum/800/500",
+          "photo": "https://images.pexels.com/photos/2064827/pexels-photo-2064827.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop",
           "photos": [
-            "https://picsum.photos/seed/roman-colosseum/1200/800",
-            "https://picsum.photos/seed/roman-colosseum-2/800/600",
-            "https://picsum.photos/seed/roman-colosseum-3/800/600"
+            "https://images.pexels.com/photos/2064827/pexels-photo-2064827.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop",
+            "https://images.pexels.com/photos/2064827/pexels-photo-2064827.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
           ],
           "hours": "9h–19h (último acesso 18h). Fechado 1º jan e 25 dez",
           "price": "€18 (inclui Fórum Romano e Palatino) — reserva antecipada recomendada",
@@ -36,11 +35,10 @@
           "type": "🏛️ Arqueologia",
           "description": "O coração da Roma antiga: templos, palácios imperiais e a Sacra Via que Júlio César percorreu.",
           "long_description": "O Fórum Romano foi por séculos o centro político, comercial e religioso de Roma — a praça pública mais importante do mundo antigo. Você caminhará literalmente sobre os mesmos paralelepípedos que Cícero, Augusto e os imperadores pisaram. Os templos de Vesta, de Saturno e o Arco de Tito ainda estão de pé. Subindo a Via Sacra chega-se ao Monte Palatino, a colina mais nobre de Roma, onde ficavam os palácios imperiais e, segundo a lenda, a cabana de Rômulo. A vista do Palatino sobre o Circo Máximo e o Fórum é de tirar o fôlego. O ingresso é conjunto com o Coliseu.",
-          "photo": "https://picsum.photos/seed/roman-forum-hill/800/500",
+          "photo": "https://images.pexels.com/photos/1797161/pexels-photo-1797161.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop",
           "photos": [
-            "https://picsum.photos/seed/roman-forum-hill/1200/800",
-            "https://picsum.photos/seed/roman-forum-hill-2/800/600",
-            "https://picsum.photos/seed/roman-forum-hill-3/800/600"
+            "https://images.pexels.com/photos/1797161/pexels-photo-1797161.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop",
+            "https://images.pexels.com/photos/1797161/pexels-photo-1797161.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
           ],
           "hours": "9h–19h (mesmos horários do Coliseu)",
           "price": "Incluso no ingresso do Coliseu (€18)",
@@ -59,11 +57,10 @@
           "type": "⛪ Fé & Arte",
           "description": "O maior templo cristão do mundo e o coração espiritual do catolicismo — a tumba do Apóstolo Pedro.",
           "long_description": "A Basílica de São Pedro foi construída sobre a tumba do Apóstolo, no local onde ele foi martirizado e sepultado. A atual basílica, obra-prima renascentista e barroca, foi construída entre 1506 e 1626 com projetos de Bramante, Rafael, Michelangelo (que desenhou a cúpula) e Bernini (que criou o baldaquino dourado e o colonato da praça). A nave tem 218 metros de comprimento. A Pietà de Michelangelo — esculpida quando ele tinha apenas 24 anos — fica logo à entrada, coberta por vidro desde 1972. Subir a cúpula (551 degraus, ou de elevador até o tambor) oferece a vista mais esplêndida de Roma. A praça com as colonatas de Bernini abraça os fiéis como dois braços abertos — como o próprio Bernini descreveu. Embaixo da basílica ficam as Grutas Vaticanas, onde estão enterrados os Papas, e ainda mais abaixo a Necrópole Vaticana com a tumba de São Pedro (visita separada com reserva).",
-          "photo": "https://picsum.photos/seed/vatican-st-peter/800/500",
+          "photo": "https://images.pexels.com/photos/3319347/pexels-photo-3319347.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop",
           "photos": [
-            "https://picsum.photos/seed/vatican-st-peter/1200/800",
-            "https://picsum.photos/seed/vatican-st-peter-2/800/600",
-            "https://picsum.photos/seed/vatican-st-peter-3/800/600"
+            "https://images.pexels.com/photos/3319347/pexels-photo-3319347.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop",
+            "https://images.pexels.com/photos/3319347/pexels-photo-3319347.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
           ],
           "hours": "Basílica: 7h–19h (gratuita). Cúpula: 8h–18h (€8 a pé / €6 elevador+escada)",
           "price": "Basílica: gratuita. Cúpula: €8. Museus + Sistina: €20 (reserva obrigatória)",
@@ -82,11 +79,10 @@
           "type": "🎨 Museu & Arte",
           "description": "O maior acervo artístico do mundo — e ao final, o teto pintado por Michelangelo que mudou a história da arte.",
           "long_description": "Os Museus Vaticanos reúnem séculos de coleções papais: esculturas gregas e romanas (o Laocoonte e o Apolo do Belvedere são essenciais), afrescos renascentistas, mapas geográficos do século XVI e muito mais. O percurso padrão tem quase 7 km de galerias. O clímax é a Capela Sistina: Michelangelo pintou o teto entre 1508 e 1512 — sozinho, deitado em andaimes — com 300 figuras representando o Gênesis, da Criação ao Dilúvio. Vinte e três anos depois voltou para pintar o Juízo Final na parede do altar. As Stanze de Rafael (salas adjacentes) mostram A Escola de Atenas, considerado o mais perfeito afresco renascentista. A visita termina, literalmente, com o afresco mais famoso da humanidade sobre a cabeça.",
-          "photo": "https://picsum.photos/seed/sistine-chapel-art/800/500",
+          "photo": "https://images.pexels.com/photos/2676642/pexels-photo-2676642.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop",
           "photos": [
-            "https://picsum.photos/seed/sistine-chapel-art/1200/800",
-            "https://picsum.photos/seed/sistine-chapel-art-2/800/600",
-            "https://picsum.photos/seed/sistine-chapel-art-3/800/600"
+            "https://images.pexels.com/photos/2676642/pexels-photo-2676642.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop",
+            "https://images.pexels.com/photos/2676642/pexels-photo-2676642.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
           ],
           "hours": "Seg–Sáb: 9h–18h (último acesso 16h). Fechado dom (exceto último dom do mês: gratuito, fila enorme)",
           "price": "€20 online (€17 + €3 reserva). Fila sem reserva pode passar de 3h",
@@ -105,11 +101,10 @@
           "type": "🏛️ Monumento",
           "description": "A maior e mais barroca das fontes de Roma — onde jogar uma moeda é um rito de passagem do amor.",
           "long_description": "A Fontana di Trevi foi concluída em 1762 por Nicola Salvi, coroando o terminal do aqueduto romano Acqua Vergine (construído em 19 a.C. por Agrippa). Com 26 metros de altura e 49 de largura, é a maior fonte barroca do mundo. Neptuno, deus do mar, emerge ao centro em uma concha puxada por cavalos marinhos e tritons. A lenda diz que jogar uma moeda com a mão direita por sobre o ombro esquerdo garante o retorno a Roma. Quem joga duas moedas encontrará o amor; três, casará com um romano ou romana. A fonte recebe cerca de três mil moedas por dia — recolhidas regularmente e doadas à Caritas. Na cena mais famosa do cinema, Anita Ekberg dançou aqui em La Dolce Vita de Fellini.",
-          "photo": "https://picsum.photos/seed/trevi-fountain-rome/800/500",
+          "photo": "https://images.pexels.com/photos/2422915/pexels-photo-2422915.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop",
           "photos": [
-            "https://picsum.photos/seed/trevi-fountain-rome/1200/800",
-            "https://picsum.photos/seed/trevi-fountain-rome-2/800/600",
-            "https://picsum.photos/seed/trevi-fountain-rome-3/800/600"
+            "https://images.pexels.com/photos/2422915/pexels-photo-2422915.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop",
+            "https://images.pexels.com/photos/2422915/pexels-photo-2422915.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
           ],
           "hours": "Aberta 24 horas",
           "price": "Gratuito (nova taxa de acesso de €2 pode ser introduzida em 2026)",
@@ -128,11 +123,10 @@
           "type": "🏛️ Monumento",
           "description": "O templo romano mais bem preservado do mundo — 2.000 anos de perfeição arquitetônica com um óculo aberto para o céu.",
           "long_description": "O Panteão foi construído por Adriano entre 118 e 125 d.C., sobre as fundações de um templo anterior de Agripa. A frase da fachada — M·AGRIPPA·L·F·COS·TERTIVM·FECIT — homenageia o fundador original. O interior é uma esfera perfeita: o diâmetro da rotunda (43,3m) iguala exatamente a altura do teto até o óculo. Esse óculo circular de 8,7m de diâmetro é a única fonte de luz e ar — e a única abertura para o exterior. A cúpula permaneceu por 1.300 anos como a maior cúpula do mundo (superada apenas em 1436 por Brunelleschi, em Florença). O Panteão serviu de mausoléu: aqui estão enterrados Rafael e os primeiros reis da Itália unificada. Tornou-se uma igreja cristã em 609 d.C. — o que explica sua preservação impecável.",
-          "photo": "https://picsum.photos/seed/pantheon-rome-ancient/800/500",
+          "photo": "https://images.pexels.com/photos/2675266/pexels-photo-2675266.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop",
           "photos": [
-            "https://picsum.photos/seed/pantheon-rome-ancient/1200/800",
-            "https://picsum.photos/seed/pantheon-rome-ancient-2/800/600",
-            "https://picsum.photos/seed/pantheon-rome-ancient-3/800/600"
+            "https://images.pexels.com/photos/2675266/pexels-photo-2675266.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop",
+            "https://images.pexels.com/photos/2675266/pexels-photo-2675266.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
           ],
           "hours": "Seg–Sáb 9h–19h, Dom 9h–18h",
           "price": "€5 (reserva online recomendada para evitar filas)",
@@ -151,11 +145,10 @@
           "type": "🍽️ Bairro & Gastronomia",
           "description": "O bairro mais autêntico e charmoso de Roma — ruelas de paralelepípedos, heras nas paredes, trattorias com mesas na calçada.",
           "long_description": "Trastevere ('além do Tibre') é o único bairro de Roma que sobreviveu relativamente intacto desde a Idade Média. Suas ruelas estreitas, casas cor de ocre e terracota, igrejas silenciosas e trattorias com mesas na rua formam o cenário perfeito para uma noite romana. A Basílica de Santa Maria in Trastevere (séculos II–XII) tem mosaicos dourados que brilham como jóias à noite. A Piazza di Santa Maria in Trastevere, com sua fonte central e terrace de bares ao redor, é o coração do bairro. Em comparação com o centro turístico, aqui os preços são menores e os romanos de verdade ainda vivem e trabalham. Subindo a colina está o Jardim dos Laranjeiros, com a melhor vista panorâmica de Roma — e um terraço onde casais se beijam enquanto o sol se põe sobre os telhados.",
-          "photo": "https://picsum.photos/seed/trastevere-rome-street/800/500",
+          "photo": "https://images.pexels.com/photos/3757190/pexels-photo-3757190.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop",
           "photos": [
-            "https://picsum.photos/seed/trastevere-rome-street/1200/800",
-            "https://picsum.photos/seed/trastevere-rome-street-2/800/600",
-            "https://picsum.photos/seed/trastevere-rome-street-3/800/600"
+            "https://images.pexels.com/photos/3757190/pexels-photo-3757190.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop",
+            "https://images.pexels.com/photos/3757190/pexels-photo-3757190.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
           ],
           "hours": "Bairro: sempre aberto. Basílica SM Trastevere: 7h30–21h",
           "price": "Gratuito para passear. Jantares de €25–50/pessoa",
@@ -174,11 +167,10 @@
           "type": "🏛️ Praça",
           "description": "A mais bela praça barroca de Roma, com três fontes, incluindo a monumental Fontana dei Quattro Fiumi de Bernini.",
           "long_description": "Piazza Navona ocupa exatamente o espaço do antigo Estádio de Domiciano (86 d.C.) — por isso tem a forma alongada e estreita de uma pista. No século XVII, Inocêncio X transformou-a na praça mais glamorosa de Roma. A obra-prima é a Fontana dei Quattro Fiumi de Bernini (1651): quatro gigantes esculpidos representam os maiores rios de quatro continentes conhecidos — Nilo, Ganges, Danúbio e Rio da Prata — e sustentam um obelisco egípcio de 16 metros. Há ainda outras duas fontes. A Igreja de Sant'Agnese in Agone (Borromini, rival de Bernini) fecha a praça a oeste. Artistas, músicos de rua e turistas enchem a praça durante todo o dia. Ao anoitecer, os bares ao redor abrem para aperitivos.",
-          "photo": "https://picsum.photos/seed/piazza-navona-rome/800/500",
+          "photo": "https://images.pexels.com/photos/4523508/pexels-photo-4523508.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop",
           "photos": [
-            "https://picsum.photos/seed/piazza-navona-rome/1200/800",
-            "https://picsum.photos/seed/piazza-navona-rome-2/800/600",
-            "https://picsum.photos/seed/piazza-navona-rome-3/800/600"
+            "https://images.pexels.com/photos/4523508/pexels-photo-4523508.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop",
+            "https://images.pexels.com/photos/4523508/pexels-photo-4523508.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
           ],
           "hours": "Sempre aberta",
           "price": "Gratuito",
@@ -199,7 +191,7 @@
       "name": "Florença",
       "flag": "🇮🇹",
       "color": "#D4943A",
-      "hero": "https://picsum.photos/seed/florence-city-arno/800/400",
+      "hero": "https://images.pexels.com/photos/1701595/pexels-photo-1701595.jpeg?auto=compress&cs=tinysrgb&w=800&h=400&fit=crop",
       "tagline": "O berço do Renascimento — arte, fé e beleza à beira do Arno",
       "destinations": [
         {
@@ -207,11 +199,10 @@
           "type": "⛪ Fé & Arquitetura",
           "description": "A cúpula de Brunelleschi — a maior proeza arquitetônica do Renascimento — domina o horizonte de Florença há 600 anos.",
           "long_description": "A Catedral de Santa Maria del Fiore é o coração de Florença. Sua fachada neo-gótica em mármore branco, verde e rosa, concluída apenas em 1887, é um deslumbramento. Mas a razão pela qual ela define uma cidade inteira é a cúpula de Filippo Brunelleschi (1420–1436): com 45 metros de diâmetro interno, foi a maior cúpula do mundo por mais de um século e permanece até hoje a maior cúpula de alvenaria da história. Brunelleschi inventou técnicas e máquinas que não existiam — sem usar cimbre de madeira, construindo as duas cascas concêntricas em espinha de peixe para se sustentarem mutuamente durante a construção. Subir os 463 degraus até o lanternin é percorrer essa engenharia por dentro. O Campanile de Giotto (414 degraus) oferece a melhor vista da cúpula vista de fora. O Batistério São João, com seus portais de bronze de Ghiberti que Michelangelo chamou de 'Portas do Paraíso', fecha a Piazza del Duomo.",
-          "photo": "https://picsum.photos/seed/florence-duomo-dome/800/500",
+          "photo": "https://images.pexels.com/photos/1701595/pexels-photo-1701595.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop",
           "photos": [
-            "https://picsum.photos/seed/florence-duomo-dome/1200/800",
-            "https://picsum.photos/seed/florence-duomo-dome-2/800/600",
-            "https://picsum.photos/seed/florence-duomo-dome-3/800/600"
+            "https://images.pexels.com/photos/1701595/pexels-photo-1701595.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop",
+            "https://images.pexels.com/photos/1701595/pexels-photo-1701595.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
           ],
           "hours": "Catedral: 10h15–16h45 (dom: 13h30–16h45). Cúpula: 8h30–19h. Campanile: 8h15–19h30",
           "price": "Passe Brunelleschi €30 (inclui cúpula, campanile, batistério, museu e cripta) — obrigatório reservar online",
@@ -230,11 +221,10 @@
           "type": "🎨 Museu",
           "description": "O museu de arte mais importante do mundo renascentista — Botticelli, Leonardo, Rafael, Caravaggio e Michelangelo sob o mesmo teto.",
           "long_description": "Os Uffizi foram construídos por Giorgio Vasari em 1560 para abrigar os escritórios (uffici) dos magistrados de Cosimo I de' Medici. A família Médici foi a maior mecenas de arte da história — e toda aquela arte está aqui. As obras-primas são incontáveis: A Primavera (1478) e O Nascimento de Vênus (1485) de Botticelli, pintadas para Lorenzo de' Medici e consideradas as mais belas imagens alegóricas do Renascimento. A Anunciação de Leonardo da Vinci. A Madonna do Cardellino de Rafael. A Sacra Família (Tondo Doni) de Michelangelo. O Baco de Caravaggio. E dezenas de outras obras que em qualquer outro museu seriam as joias principais do acervo. O museu fica em um palazzo em ferradura às margens do Arno — a vista das janelas sobre a Ponte Vecchio é em si uma obra de arte.",
-          "photo": "https://picsum.photos/seed/uffizi-gallery-art/800/500",
+          "photo": "https://images.pexels.com/photos/3991371/pexels-photo-3991371.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop",
           "photos": [
-            "https://picsum.photos/seed/uffizi-gallery-art/1200/800",
-            "https://picsum.photos/seed/uffizi-gallery-art-2/800/600",
-            "https://picsum.photos/seed/uffizi-gallery-art-3/800/600"
+            "https://images.pexels.com/photos/3991371/pexels-photo-3991371.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop",
+            "https://images.pexels.com/photos/3991371/pexels-photo-3991371.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
           ],
           "hours": "Ter–Dom: 8h15–18h30. Fechado segundas, 1º jan, 1º mai, 25 dez",
           "price": "€20 (+ €4 de reserva online — imprescindível)",
@@ -253,11 +243,10 @@
           "type": "🎨 Museu & Escultura",
           "description": "O David de Michelangelo — a escultura mais perfeita já criada pelo homem — espera por vocês ao fundo de uma galeria especialmente projetada para ele.",
           "long_description": "Michelangelo esculpiu o David entre 1501 e 1504 a partir de um bloco de mármore de Carrara que outros escultores haviam descartado como inutilizável ('O Gigante', como era chamado). O resultado, com 5,17 metros de altura, representa Davi no momento exato antes de arremessar a pedra em Golias — a tensão, a concentração, a determinação, tudo captado em mármore. Os ombros são propositalmente maiores do que a proporção real, pois a estátua foi originalmente concebida para ser instalada em um contrafonte da Catedral, a ser vista de baixo. A galeria que a abriga tem uma iluminação zenital natural que banha a estátua em luz suave. Ao redor da galeria estão também os famosos Prisioneiros — esculturas inacabadas de Michelangelo em que as figuras parecem emergir do mármore, como se a pedra ainda as aprisionasse.",
-          "photo": "https://picsum.photos/seed/michelangelo-david-statue/800/500",
+          "photo": "https://images.pexels.com/photos/2544496/pexels-photo-2544496.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop",
           "photos": [
-            "https://picsum.photos/seed/michelangelo-david-statue/1200/800",
-            "https://picsum.photos/seed/michelangelo-david-statue-2/800/600",
-            "https://picsum.photos/seed/michelangelo-david-statue-3/800/600"
+            "https://images.pexels.com/photos/2544496/pexels-photo-2544496.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop",
+            "https://images.pexels.com/photos/2544496/pexels-photo-2544496.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
           ],
           "hours": "Ter–Dom: 8h15–18h30. Fechado segundas",
           "price": "€16 (+ €4 reserva online — essencial)",
@@ -276,11 +265,10 @@
           "type": "🌉 Monumento",
           "description": "A ponte mais antiga e famosa de Florença — com joalherias nas paredes e o Arno correndo dourado ao entardecer.",
           "long_description": "A Ponte Vecchio (Ponte Velha) é a única ponte histórica de Florença que sobreviveu à Segunda Guerra Mundial — por ordem expressa de Hitler, segundo a lenda. Construída em sua forma atual em 1345, sobre fundações muito mais antigas, ela foi sempre um espaço comercial: originalmente açougues e peixarias, substituídos no século XVI pelas joalherias que existem até hoje, por decreto de Fernando I (que não suportava o cheiro). Acima das lojas passa o Corridoio Vasariano, o passadiço secreto que Cosimo I construiu para ir do Palazzo Vecchio ao Palazzo Pitti sem precisar descer para a rua. O espetáculo mais belo é ao entardecer: o sol poente tinge o Arno de ouro e todos os pontos de observação da cidade se enchem de casais com câmeras.",
-          "photo": "https://picsum.photos/seed/ponte-vecchio-florence/800/500",
+          "photo": "https://images.pexels.com/photos/257816/pexels-photo-257816.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop",
           "photos": [
-            "https://picsum.photos/seed/ponte-vecchio-florence/1200/800",
-            "https://picsum.photos/seed/ponte-vecchio-florence-2/800/600",
-            "https://picsum.photos/seed/ponte-vecchio-florence-3/800/600"
+            "https://images.pexels.com/photos/257816/pexels-photo-257816.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop",
+            "https://images.pexels.com/photos/257816/pexels-photo-257816.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
           ],
           "hours": "Sempre aberta",
           "price": "Gratuito (joalherias: horários comerciais)",
@@ -299,11 +287,10 @@
           "type": "🌅 Mirante",
           "description": "A melhor vista panorâmica de toda Florença — o Arno, o Duomo, os telhados terracota e os montes toscanos ao fundo.",
           "long_description": "O Piazzale Michelangelo (1869) é o mirante mais famoso de Florença, a 104 metros acima do nível do Arno. A praça tem uma réplica em bronze do David e, ao seu redor, a vista mais completa e emocionante da cidade: o Duomo com a cúpula de Brunelleschi, o Palazzo Vecchio com sua torre medieval, a Ponte Vecchio e as colinas toscanas ao fundo. Ao entardecer, dezenas de pessoas se reúnem aqui para ver o pôr do sol — é um dos espetáculos gratuitos mais bonitos da Itália. Subindo mais um pouco chega-se à Igreja de San Miniato al Monte, romântica basílica românica do século XI com um campanário e um cemitério de mármore vistas extraordinárias.",
-          "photo": "https://picsum.photos/seed/florence-panorama-sunset/800/500",
+          "photo": "https://images.pexels.com/photos/1554646/pexels-photo-1554646.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop",
           "photos": [
-            "https://picsum.photos/seed/florence-panorama-sunset/1200/800",
-            "https://picsum.photos/seed/florence-panorama-sunset-2/800/600",
-            "https://picsum.photos/seed/florence-panorama-sunset-3/800/600"
+            "https://images.pexels.com/photos/1554646/pexels-photo-1554646.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop",
+            "https://images.pexels.com/photos/1554646/pexels-photo-1554646.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
           ],
           "hours": "Sempre aberto",
           "price": "Gratuito",
@@ -322,11 +309,10 @@
           "type": "🏰 Palácio & Jardim",
           "description": "O palácio mais monumental de Florença, residência dos Médici, com os maiores jardins renascentistas da Itália.",
           "long_description": "O Palazzo Pitti é o maior palácio de Florença — uma fachada de 205 metros em bugnato rusticano, que abriga hoje cinco museus, incluindo a Galleria Palatina (Rafael, Tiziano, Caravaggio) e os apartamentos reais. Cosimo I comprou o palácio em 1549 e o transformou na residência oficial dos Grão-Duques da Toscana por quase 300 anos. Atrás do palácio se abrem os Jardins de Boboli (1549): terraços, fontes, esculturas, uma gruta maneirista com afrescos e estátuas de Buontalenti, ciprestes milenares e uma vista sobre Florença. No coração dos jardins fica o Anfiteatro onde os Médici faziam espetáculos e óperas — é considerado o berço do teatro moderno. Em maio, o jardim está em plena floração.",
-          "photo": "https://picsum.photos/seed/pitti-palace-garden/800/500",
+          "photo": "https://images.pexels.com/photos/2832087/pexels-photo-2832087.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop",
           "photos": [
-            "https://picsum.photos/seed/pitti-palace-garden/1200/800",
-            "https://picsum.photos/seed/pitti-palace-garden-2/800/600",
-            "https://picsum.photos/seed/pitti-palace-garden-3/800/600"
+            "https://images.pexels.com/photos/2832087/pexels-photo-2832087.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop",
+            "https://images.pexels.com/photos/2832087/pexels-photo-2832087.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
           ],
           "hours": "Ter–Dom: 8h15–18h30. Jardins de Boboli: 8h15–19h30",
           "price": "Passe museus: €22. Só Jardins de Boboli: €10",
@@ -345,11 +331,10 @@
           "type": "⛪ Fé & Arte",
           "description": "O Panteão florentino — a maior igreja franciscana do mundo, com os túmulos de Michelangelo, Galileu e Maquiavel.",
           "long_description": "A Basílica de Santa Croce é a principal igreja franciscana de Florença e um dos maiores monumentos góticos da Itália, construída em 1294. É chamada de 'Panteão dos Florentinos ilustres' porque abriga os túmulos ou cenotáfios dos maiores nomes da história florentina: Michelangelo Buonarroti (cujo túmulo foi desenhado por Vasari), Galileu Galilei (enterrado aqui depois de reconciliação com a Igreja), Niccolò Maquiavel, Ugo Foscolo, Luigi Cherubini e Rossini. As capelas laterais têm afrescos de Giotto (as Capelas Peruzzi e Bardi, c.1320), considerados a maior realização de Giotto — os mesmos afrescos que influenciaram Michelangelo, Rafael e toda a tradição da pintura ocidental. O claustro de Brunelleschi e a Cappella dei Pazzi (de Brunelleschi) são obras-primas da arquitetura renascentista.",
-          "photo": "https://picsum.photos/seed/santa-croce-florence/800/500",
+          "photo": "https://images.pexels.com/photos/2832087/pexels-photo-2832087.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop",
           "photos": [
-            "https://picsum.photos/seed/santa-croce-florence/1200/800",
-            "https://picsum.photos/seed/santa-croce-florence-2/800/600",
-            "https://picsum.photos/seed/santa-croce-florence-3/800/600"
+            "https://images.pexels.com/photos/2832087/pexels-photo-2832087.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop",
+            "https://images.pexels.com/photos/2832087/pexels-photo-2832087.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
           ],
           "hours": "Seg–Sáb: 9h30–17h30. Dom: 14h–17h30",
           "price": "€8",
@@ -370,7 +355,7 @@
       "name": "Assis",
       "flag": "🇮🇹",
       "color": "#8B7355",
-      "hero": "https://picsum.photos/seed/assisi-town-umbria/800/400",
+      "hero": "https://images.pexels.com/photos/5273932/pexels-photo-5273932.jpeg?auto=compress&cs=tinysrgb&w=800&h=400&fit=crop",
       "tagline": "A cidade de São Francisco — paz, pedra e fé entre os montes da Úmbria",
       "destinations": [
         {
@@ -378,11 +363,10 @@
           "type": "⛪ Fé & Arte",
           "description": "Um dos maiores santuários do mundo cristão — a tumba do Poverello, com os afrescos de Giotto que fundaram a pintura ocidental.",
           "long_description": "A Basílica de São Francisco de Assis é, junto com São Pedro no Vaticano, um dos destinos de peregrinação mais importantes do catolicismo. Construída logo após a morte de Francisco (1226), é na verdade composta de duas igrejas sobrepostas: a Igreja Inferior (mais antiga, escura e contemplativa) e a Igreja Superior (luminosa, gótica, coberta pelos afrescos de Giotto). Os 28 afrescos de Giotto na Igreja Superior (c.1295–1300) narram a vida de Francisco e são considerados o marco fundador da pintura ocidental moderna — antes de Giotto, os personagens eram figuras planas e hieráticas; Giotto deu a eles emoção, peso e humanidade. A Igreja Inferior abriga a tumba de Francisco na cripta — o momento de maior comoção espiritual de toda Assis. As paredes da Igreja Inferior têm afrescos de Cimabue e Simone Martini. Todo o conjunto é Patrimônio da Humanidade pela UNESCO desde 2000.",
-          "photo": "https://picsum.photos/seed/assisi-basilica-francis/800/500",
+          "photo": "https://images.pexels.com/photos/5273932/pexels-photo-5273932.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop",
           "photos": [
-            "https://picsum.photos/seed/assisi-basilica-francis/1200/800",
-            "https://picsum.photos/seed/assisi-basilica-francis-2/800/600",
-            "https://picsum.photos/seed/assisi-basilica-francis-3/800/600"
+            "https://images.pexels.com/photos/5273932/pexels-photo-5273932.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop",
+            "https://images.pexels.com/photos/5273932/pexels-photo-5273932.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
           ],
           "hours": "Igreja Inferior e Cripta: 6h–18h. Igreja Superior: 8h30–18h",
           "price": "Gratuito (área sagrada — silêncio e vestimenta adequada obrigatórios)",
@@ -401,11 +385,10 @@
           "type": "✨ Peregrinação",
           "description": "O corpo de Carlo Acutis, canonizado em 2025 — o primeiro santo da era digital, com 15 anos, que passou à juventude toda a beleza da Eucaristia.",
           "long_description": "Carlo Acutis nasceu em Londres em 1991, filho de italianos, e morreu em Milão em 2006, de leucemia fulminante, com apenas 15 anos. Era um adolescente normal — gostava de videogames, computação e futebol — mas tinha uma devoção extraordinária à Eucaristia e uma alegria contagiante. Usou suas habilidades em programação para criar um site catalogando 136 milagres eucarísticos em todo o mundo, dizendo: 'A Eucaristia é minha autoestrada para o Céu'. Foi beatificado em 2020 e canonizado pelo Papa Francisco em 27 de abril de 2025 — o primeiro santo nascido no século XX, primeiro da era digital. Seu corpo, preservado e vestido com jeans e tênis Nike (sua roupa de todo dia), está exposto para veneração no Santuário della Spogliazione (o local onde Francisco se despiu das roupas do pai para entregar-se a Deus). A devoção ao novo santo já atrai multidões de jovens de todo o mundo.",
-          "photo": "https://picsum.photos/seed/assisi-sanctuary-modern/800/500",
+          "photo": "https://images.pexels.com/photos/5273932/pexels-photo-5273932.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop",
           "photos": [
-            "https://picsum.photos/seed/assisi-sanctuary-modern/1200/800",
-            "https://picsum.photos/seed/assisi-sanctuary-modern-2/800/600",
-            "https://picsum.photos/seed/assisi-sanctuary-modern-3/800/600"
+            "https://images.pexels.com/photos/5273932/pexels-photo-5273932.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop",
+            "https://images.pexels.com/photos/5273932/pexels-photo-5273932.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
           ],
           "hours": "Todos os dias: 8h–19h",
           "price": "Gratuito",
@@ -424,11 +407,10 @@
           "type": "⛪ Fé",
           "description": "A basílica rosa e branca que abriga o corpo incorrupto de Santa Clara — a amiga e seguidora de São Francisco, fundadora das Clarissas.",
           "long_description": "Clara Offreduccio de Assis (1194–1253) foi a primeira mulher a escrever uma Regra Religiosa para mulheres na história da Igreja. Filha de família nobre, abandonou tudo aos 18 anos para seguir São Francisco, fundando a Ordem das Damas Pobres (depois chamadas Clarissas). Seu amor a Francisco era profundo — não romanticamente, mas na amizade e no ideal espiritual partilhado. A basílica em seu nome, construída em 1265, tem uma fachada simples de travertino rosa e branco que combina ao perfeito com a pedra de Assis. No interior, nas catacumbas, o corpo de Clara é exposto para veneração — semi-mumificado naturalmente. Também está exposto aqui o Crucifix de San Damiano: foi diante desse crucifixo que Francisco ouviu a voz de Cristo dizer 'Reconstrói a minha Igreja'. É uma das relíquias mais importantes do franciscanismo.",
-          "photo": "https://picsum.photos/seed/assisi-clara-basilica/800/500",
+          "photo": "https://images.pexels.com/photos/5273932/pexels-photo-5273932.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop",
           "photos": [
-            "https://picsum.photos/seed/assisi-clara-basilica/1200/800",
-            "https://picsum.photos/seed/assisi-clara-basilica-2/800/600",
-            "https://picsum.photos/seed/assisi-clara-basilica-3/800/600"
+            "https://images.pexels.com/photos/5273932/pexels-photo-5273932.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop",
+            "https://images.pexels.com/photos/5273932/pexels-photo-5273932.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
           ],
           "hours": "6h30–12h e 14h–19h",
           "price": "Gratuito",
@@ -447,11 +429,10 @@
           "type": "🏘️ Cidade Medieval",
           "description": "Uma cidadela medieval de pedra rosa, suspensa nas encostas do Monte Subasio — uma das cidades mais bem preservadas da Itália.",
           "long_description": "Assis foi fundada pelos Úmbrios, conquistada pelos Romanos (o templo de Minerva da época romana ainda está de pé na Piazza del Comune), e tornou-se a cidade de Francisco e Clara no século XIII. O centro histórico — todo inscrito no Patrimônio Mundial — é um labirinto de ruelas em pedra cor de rosa escura, arcos medievais, fontes, e vistas inesperadas sobre o Vale Espolentino. A Piazza del Comune tem o Templo de Minerva (século I a.C., convertido em igreja no século XVII), o Palazzo dei Priori e a Torre del Popolo. A Rocca Maggiore, a fortaleza no alto da colina, oferece a vista mais ampla. O silêncio, a lentidão e o perfume das flores de maio tornam Assis um dos lugares mais serenos da Itália.",
-          "photo": "https://picsum.photos/seed/assisi-medieval-town/800/500",
+          "photo": "https://images.pexels.com/photos/1797161/pexels-photo-1797161.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop",
           "photos": [
-            "https://picsum.photos/seed/assisi-medieval-town/1200/800",
-            "https://picsum.photos/seed/assisi-medieval-town-2/800/600",
-            "https://picsum.photos/seed/assisi-medieval-town-3/800/600"
+            "https://images.pexels.com/photos/1797161/pexels-photo-1797161.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop",
+            "https://images.pexels.com/photos/1797161/pexels-photo-1797161.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
           ],
           "hours": "Cidade sempre aberta. Rocca Maggiore: 10h–18h",
           "price": "Gratuito para caminhar. Rocca Maggiore: €5",
@@ -472,7 +453,7 @@
       "name": "Paris",
       "flag": "🇫🇷",
       "color": "#4A6FA5",
-      "hero": "https://picsum.photos/seed/paris-city-seine/800/400",
+      "hero": "https://images.pexels.com/photos/699466/pexels-photo-699466.jpeg?auto=compress&cs=tinysrgb&w=800&h=400&fit=crop",
       "tagline": "A Cidade Luz — onde o amor tem endereço e a beleza é uma forma de vida",
       "destinations": [
         {
@@ -480,11 +461,10 @@
           "type": "🗼 Monumento",
           "description": "O símbolo mais reconhecível do mundo — 330 metros de ferro forjado que continuam, 135 anos depois, sendo a experiência mais inesquecível de Paris.",
           "long_description": "A Torre Eiffel foi construída por Gustave Eiffel para a Exposição Universal de 1889, comemorando o centenário da Revolução Francesa. Tinha vida útil prevista de 20 anos — mas tornou-se o símbolo permanente de Paris e da França. Com 330 metros, foi a estrutura mais alta do mundo por 41 anos. Construída em 18 meses por 300 trabalhadores, usa 2,5 milhões de rebites e pesa 10.100 toneladas de ferro. A cada 7 anos é repintada à mão em três tons de marrom (mais escuro embaixo, mais claro em cima, para dar uniformidade visual). De noite, às horas cheias, 20.000 lâmpadas de LED piscam por 5 minutos — o espetáculo mais gratuito e generoso que Paris oferece. O terceiro andar (276 metros) tem o melhor panorama: numa noite limpa de maio, vê-se a mais de 70 km. Embaixo, nas margens do Sena (Champ de Mars), piqueniques ao entardecer são um ritual parisiense.",
-          "photo": "https://picsum.photos/seed/eiffel-tower-paris/800/500",
+          "photo": "https://images.pexels.com/photos/699466/pexels-photo-699466.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop",
           "photos": [
-            "https://picsum.photos/seed/eiffel-tower-paris/1200/800",
-            "https://picsum.photos/seed/eiffel-tower-paris-2/800/600",
-            "https://picsum.photos/seed/eiffel-tower-paris-3/800/600"
+            "https://images.pexels.com/photos/699466/pexels-photo-699466.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop",
+            "https://images.pexels.com/photos/699466/pexels-photo-699466.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
           ],
           "hours": "9h–23h45 (último acesso às caixas bilheteiras 22h45). Topo: até 23h",
           "price": "€29,40 (elevador até o topo) / €11,30 (escadas ao 2º andar). Reserve online com bastante antecedência",
@@ -503,11 +483,10 @@
           "type": "⛪ Fé & Arquitetura",
           "description": "A catedral gótica mais famosa do mundo — reconstruída com amor após o incêndio de 2019, reaberta em dezembro de 2024.",
           "long_description": "Notre-Dame de Paris foi construída entre 1163 e 1345 — 182 anos de trabalho contínuo. Por 800 anos foi o coração espiritual e geográfico de Paris: o ponto zero da França (Kilomètre Zéro, marcado no chão da praça) a partir do qual todas as distâncias do país são medidas. O incêndio de 15 de abril de 2019 destruiu a flecha do século XIX e boa parte do telhado — mas o esqueleto gótico, a rosácea e o tesouro (incluindo a Coroa de Espinhos) sobreviveram. A restauração, supervisionada por centenas de artesãos usando técnicas medievais, foi concluída em tempo recorde: Notre-Dame foi reaberta em 7 de dezembro de 2024, com o Papa Francisco presente. As rosáceas originais do século XIII — milagrosamente poupadas — voltaram a lançar luz colorida sobre o interior como há oito séculos. A visita ao interior é agora ainda mais especial: o cheiro de madeira nova, os andaimes removidos, e a sensação de estar no renascimento de algo que pertence à humanidade.",
-          "photo": "https://picsum.photos/seed/notre-dame-cathedral/800/500",
+          "photo": "https://images.pexels.com/photos/2901215/pexels-photo-2901215.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop",
           "photos": [
-            "https://picsum.photos/seed/notre-dame-cathedral/1200/800",
-            "https://picsum.photos/seed/notre-dame-cathedral-2/800/600",
-            "https://picsum.photos/seed/notre-dame-cathedral-3/800/600"
+            "https://images.pexels.com/photos/2901215/pexels-photo-2901215.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop",
+            "https://images.pexels.com/photos/2901215/pexels-photo-2901215.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
           ],
           "hours": "Seg–Sex: 8h–19h. Sáb–Dom: 8h–20h (torres e tesouro: horários variados)",
           "price": "Interior: gratuito (reserva de entrada horária recomendada online). Torres: €13",
@@ -526,11 +505,10 @@
           "type": "🎨 Museu",
           "description": "O museu mais bonito de Paris — uma estação de trem transformada em palácio da arte impressionista, com Van Gogh, Monet, Renoir e Degas.",
           "long_description": "O Musée d'Orsay, instalado desde 1986 na antiga Gare d'Orsay (1900), tem a mais importante coleção de pintura impressionista e pós-impressionista do mundo. As obras estão numa sequência que é, por si só, um curso de história da arte: o Realismo (Courbet, Millet), o Impressionismo (Monet, Renoir, Pissarro, Sisley), o Pós-impressionismo (Cézanne, Van Gogh, Gauguin, Seurat), o Simbolismo (Gustave Moreau) e os primórdios do Expressionismo. As obras-primas são incontáveis: A Dançarina de 14 Anos de Degas, Le Moulin de la Galette de Renoir, A Noite Estrelada (a versão do Orsay, não a de Nova York) de Van Gogh, L'Origine du Monde de Courbet. Os grandes relógios de vidro da antiga gare servem de janela para o Sena — com o Musée du Louvre do outro lado. O restaurante do museu (no primeiro andar, sob o teto dourado do restaurante original da Gare) é um dos mais bonitos de Paris.",
-          "photo": "https://picsum.photos/seed/orsay-museum-paris/800/500",
+          "photo": "https://images.pexels.com/photos/1005012/pexels-photo-1005012.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop",
           "photos": [
-            "https://picsum.photos/seed/orsay-museum-paris/1200/800",
-            "https://picsum.photos/seed/orsay-museum-paris-2/800/600",
-            "https://picsum.photos/seed/orsay-museum-paris-3/800/600"
+            "https://images.pexels.com/photos/1005012/pexels-photo-1005012.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop",
+            "https://images.pexels.com/photos/1005012/pexels-photo-1005012.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
           ],
           "hours": "Ter–Dom: 9h30–18h (qui até 21h45). Fechado segundas",
           "price": "€16 (reserve online para evitar fila)",
@@ -549,11 +527,10 @@
           "type": "⛪ Fé & Bairro",
           "description": "A basílica branca no alto de Paris — com adoração perpétua desde 1885 — e o bairro dos artistas que guardou a alma da cidade.",
           "long_description": "A Basílica do Sagrado Coração de Jesus (Sacré-Cœur) foi construída por voto nacional após a derrota na Guerra Franco-Prussiana (1870–71) e a tragédia da Comuna de Paris — uma promessa de reparação e consagração da França ao Coração de Jesus. A construção começou em 1875 e a basílica foi consagrada em 1919. Desde então, a adoração eucarística perpétua não foi jamais interrompida — 24 horas por dia, há 140 anos, religiosos e leigos oram diante do Santíssimo. O campanário tem o sino mais pesado da França — o Savoyarde, com 19 toneladas. A vista da escadaria sobre Paris é a segunda mais alta da cidade. O bairro de Montmartre ao redor foi o epicentro da boemia artística europeia de 1880 a 1920: Picasso, Toulouse-Lautrec, Modigliani, Van Gogh e Renoir viveram e trabalharam aqui. A Place du Tertre tem pintores ao vivo; a Rue Lepic tem mercados e cafés autênticos.",
-          "photo": "https://picsum.photos/seed/sacre-coeur-montmartre/800/500",
+          "photo": "https://images.pexels.com/photos/2775196/pexels-photo-2775196.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop",
           "photos": [
-            "https://picsum.photos/seed/sacre-coeur-montmartre/1200/800",
-            "https://picsum.photos/seed/sacre-coeur-montmartre-2/800/600",
-            "https://picsum.photos/seed/sacre-coeur-montmartre-3/800/600"
+            "https://images.pexels.com/photos/2775196/pexels-photo-2775196.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop",
+            "https://images.pexels.com/photos/2775196/pexels-photo-2775196.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
           ],
           "hours": "Basílica: 6h30–22h30. Cúpula: 9h30–19h (€8)",
           "price": "Basílica: gratuita. Cúpula: €8",
@@ -572,11 +549,10 @@
           "type": "✨ Peregrinação",
           "description": "A capelinha onde Nossa Senhora apareceu a Santa Catarina Labouré em 1830 — berço da Medalha Milagrosa, com o corpo incorrupto da santa.",
           "long_description": "Em 27 de novembro de 1830, numa capelinha da Rue du Bac, Nossa Senhora apareceu a Catarina Labouré (uma jovem noviça vincenciana de 24 anos) e pediu que fosse cunhada uma medalha com sua imagem — prometendo graças especiais a quem a usasse com fé. Era a aparição que daria origem à Medalha Milagrosa, hoje distribuída em mais de um bilhão de exemplares no mundo. Catarina guardou o segredo por 46 anos, até pouco antes de morrer. Seu corpo, exumado em 1933, foi encontrado intacto — incorrupto — e está exposto numa urna de vidro no altar lateral da capelinha. Nossa Senhora apareceu aqui três vezes: as imagens do altar reproduzem a visão da Imaculada Conceição descrita por Catarina. A capelinha é singela, quente e silenciosa — um dos lugares de oração mais tocantes de Paris, muito diferente da monumentalidade de Notre-Dame ou do Sacré-Cœur.",
-          "photo": "https://picsum.photos/seed/rue-du-bac-chapel/800/500",
+          "photo": "https://images.pexels.com/photos/3573523/pexels-photo-3573523.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop",
           "photos": [
-            "https://picsum.photos/seed/rue-du-bac-chapel/1200/800",
-            "https://picsum.photos/seed/rue-du-bac-chapel-2/800/600",
-            "https://picsum.photos/seed/rue-du-bac-chapel-3/800/600"
+            "https://images.pexels.com/photos/3573523/pexels-photo-3573523.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop",
+            "https://images.pexels.com/photos/3573523/pexels-photo-3573523.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
           ],
           "hours": "Seg–Dom: 7h45–13h e 14h30–19h",
           "price": "Gratuito",
@@ -595,11 +571,10 @@
           "type": "🎢 Parque Temático",
           "description": "Dois parques mágicos a 35 minutos do centro — para o dia em que vocês vão se lembrar de que o amor também é diversão e alegria.",
           "long_description": "Disneyland Paris tem dois parques: Disneyland Park (o parque original, com o Castelo da Bela Adormecida no centro, as montanhas russas clássicas, as áreas temáticas baseadas nos filmes Disney) e Walt Disney Studios Park (atrações mais modernas, incluindo as de Marvel e Star Wars). O parque de Disneyland é especialmente bonito em maio: flores nos canteiros, temperaturas agradáveis, menor movimento do que no verão. O show noturno Disney Illuminations (com projeções mapeadas no castelo e fogos) é um dos espetáculos mais emocionantes do parque — e é o encerramento perfeito do dia. As atrações icônicas incluem Big Thunder Mountain, Space Mountain, Pirates of the Caribbean, Phantom Manor e Ratatouille.",
-          "photo": "https://picsum.photos/seed/disneyland-paris-castle/800/500",
+          "photo": "https://images.pexels.com/photos/1268855/pexels-photo-1268855.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop",
           "photos": [
-            "https://picsum.photos/seed/disneyland-paris-castle/1200/800",
-            "https://picsum.photos/seed/disneyland-paris-castle-2/800/600",
-            "https://picsum.photos/seed/disneyland-paris-castle-3/800/600"
+            "https://images.pexels.com/photos/1268855/pexels-photo-1268855.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop",
+            "https://images.pexels.com/photos/1268855/pexels-photo-1268855.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
           ],
           "hours": "10h–22h (horários variam por temporada — confirmar no app Disney)",
           "price": "Ingresso: já reservado (ABI-1153746, 28/05/2026)",
@@ -618,11 +593,10 @@
           "type": "🎨 Museu",
           "description": "O maior museu do mundo — com a Mona Lisa, a Vênus de Milo e 35.000 obras numa antiga fortaleza medieval tornada palácio real.",
           "long_description": "O Louvre tem 73.000 m² de espaço expositivo, 35.000 obras em exibição permanente e levaria 100 dias para ver tudo em 30 segundos por obra. A pirâmide de vidro de I. M. Pei (1989) é a entrada mais famosa do mundo. As obras indispensáveis: a Mona Lisa (Sala 711 — prepare-se para a multidão), a Grande Odalisca de Ingres, o Casamento em Caná de Veronese (a maior tela do mundo, na sala oposta à Mona Lisa), a Vitória de Samotrácia (escadaria Daru) e a Vênus de Milo. A ala de Antiguidades Egípcias, Gregas e Orientais são mundos à parte. O palácio em si — com seus tetos pintados, galerias douradas e jardins — é uma obra de arte antes das obras. O Jardim des Tuileries ao lado conecta o Louvre à Place de la Concorde num eixo monumental de 3 km.",
-          "photo": "https://picsum.photos/seed/louvre-pyramid-paris/800/500",
+          "photo": "https://images.pexels.com/photos/2363522/pexels-photo-2363522.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop",
           "photos": [
-            "https://picsum.photos/seed/louvre-pyramid-paris/1200/800",
-            "https://picsum.photos/seed/louvre-pyramid-paris-2/800/600",
-            "https://picsum.photos/seed/louvre-pyramid-paris-3/800/600"
+            "https://images.pexels.com/photos/2363522/pexels-photo-2363522.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop",
+            "https://images.pexels.com/photos/2363522/pexels-photo-2363522.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
           ],
           "hours": "9h–18h (qua e sex até 21h45). Fechado terças",
           "price": "€22 (reserva online obrigatória — entradas sem reserva não garantidas)",
@@ -641,11 +615,10 @@
           "type": "🏛️ Monumento & Fé",
           "description": "A ilha no coração de Paris onde a cidade nasceu — e a Sainte-Chapelle, uma caixa de luz com 15 metros de vitrais góticos do século XIII.",
           "long_description": "A Île de la Cité é literalmente o berço de Paris: aqui os Parisiis (tribo gaulesa) fundaram a aldeia que os romanos chamaram de Lutetia e que se tornaria Paris. Hoje a ilha concentra Notre-Dame, a Sainte-Chapelle, a Conciergerie (antiga prisão real onde Maria Antonieta ficou antes da guilhotina) e o Palácio de Justiça. A Sainte-Chapelle (1248) foi construída pelo Rei Luís IX (São Luís) para abrigar relíquias da Paixão de Cristo, incluindo a Coroa de Espinhos. A câmara superior é completamente dominada por 15 vidraças de 15 metros de altura — 1.113 painéis de vitral que narram 1.131 cenas bíblicas desde o Gênesis até o Apocalipse. Quando o sol da tarde entra pelas vidraças, o interior parece feito de luz. É um dos grandes milagres da arquitetura gótica.",
-          "photo": "https://picsum.photos/seed/ile-de-la-cite-paris/800/500",
+          "photo": "https://images.pexels.com/photos/4350054/pexels-photo-4350054.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop",
           "photos": [
-            "https://picsum.photos/seed/ile-de-la-cite-paris/1200/800",
-            "https://picsum.photos/seed/ile-de-la-cite-paris-2/800/600",
-            "https://picsum.photos/seed/ile-de-la-cite-paris-3/800/600"
+            "https://images.pexels.com/photos/4350054/pexels-photo-4350054.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop",
+            "https://images.pexels.com/photos/4350054/pexels-photo-4350054.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
           ],
           "hours": "9h–19h (abr–set). 9h–17h (out–mar)",
           "price": "€13,50 (comprar online para evitar fila longa)",
