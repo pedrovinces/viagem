@@ -1281,30 +1281,32 @@
         {
           "id": "evt-601-mass",
           "type": "church",
-          "time": "10:00",
-          "title": "Missa Dominical em Florença",
-          "detail": "Igreja de Santo Spirito (Oltrarno) ou Santa Croce — ambas celebram missa às 10h",
-          "notes": "A Igreja de Santo Spirito (Piazza Santo Spirito) é a mais autêntica — paróquia viva, fora do circuito turístico, frequentada por florentinos. O tour passa pelo Duomo depois, então a missa pode ser aqui. Chegar com 10 min de antecedência.",
-          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Santo_Spirito_Firenze.jpg/330px-Santo_Spirito_Firenze.jpg",
+          "time": "09:30",
+          "title": "Missa Dominical — Santissima Annunziata",
+          "detail": "Uma das igrejas mais veneradas de Florença — a 2 min do ponto de encontro do tour",
+          "notes": "Missa dominical às 9h30 na Basílica della Santissima Annunziata (Piazza della Santissima Annunziata). Termine por volta de 10h20 e siga direto a pé até Via Camillo Cavour 18 (Ciao Florence) — ~2 minutos. Traje adequado obrigatório.",
           "coordinates": {
-            "lat": 43.765,
-            "lng": 11.2478
-          }
+            "lat": 43.7771,
+            "lng": 11.2621
+          },
+          "history": "Fundada em 1250 pelos Servitas, a Santissima Annunziata é o principal santuário mariano de Florença. Guarda uma das imagens mais veneradas da Itália: uma Anunciação que, segundo a tradição, foi completada milagrosamente por um anjo durante o sono do monge que a pintava. O atrium coberto (Chiostrino dei Voti) é decorado com afrescos de Andrea del Sarto e Pontormo. Florença tem devoção especial a este santuário — noivas florentinas visitam a igreja no dia do casamento para rezar diante da imagem sagrada.",
+          "romantic": "Rezar juntos diante da imagem que os florentinos veneram há setecentos anos — começar o dia com a mesma fé que encheu esta cidade de beleza.",
+          "tips": "Chegar 10 min antes (9h20) para garantir lugar. A porta lateral da Piazza é geralmente aberta para missas. Após a missa, aproveite 2 minutos no Chiostrino dei Voti (o belo pátio com afrescos de Andrea del Sarto) antes de seguir ao tour."
         },
         {
           "id": "evt-602-transfer",
           "type": "walk",
-          "time": "10:50",
-          "title": "Deslocamento ao Ponto de Encontro do Tour",
-          "detail": "Via Camillo Cavour 18 — Ciao Florence Office (junto a Piazza San Marco)",
+          "time": "10:20",
+          "title": "Caminhada até o Ponto de Encontro do Tour",
+          "detail": "Santissima Annunziata → Via Camillo Cavour 18 · ~2 min a pé",
           "steps": [
             {
-              "icon": "🚶",
-              "text": "Santo Spirito → Ponte Vecchio → Via dei Calzaiuoli → Duomo → Via Cavour 18"
+              "desc": "Sair pela porta lateral da Santissima Annunziata em direção à Via dei Servi",
+              "duration": "1 min"
             },
             {
-              "icon": "⏱️",
-              "text": "~20 min a pé · Chegar às 10:55 (20 min antes do tour)"
+              "desc": "Virar à esquerda na Via Cesare Battisti → Via Camillo Cavour 18 (Ciao Florence Office)",
+              "duration": "2 min"
             }
           ]
         },
