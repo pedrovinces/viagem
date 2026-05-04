@@ -269,17 +269,19 @@ h1, h2, h3, h4 {
    ---------------------------------------------------------- */
 .app-main {
   flex: 1;
-  overflow: hidden;
+  min-height: 0;
   position: relative;
+  overflow: hidden;
 }
 
 .app-section {
   display: none;
-  height: 100%;
+  position: absolute;
+  inset: 0;
   overflow-y: auto;
-  overscroll-behavior-y: contain;
-  padding-bottom: calc(var(--nav-h) + var(--safe-b) + var(--s4));
+  overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
+  padding-bottom: calc(var(--nav-h) + var(--safe-b) + var(--s5));
 }
 
 .app-section.active {
