@@ -857,21 +857,35 @@
         {
           "id": "evt-701-train",
           "type": "train",
-          "time": "07:14",
+          "time": "08:02",
           "title": "Florença → Assis (Trem Regional)",
-          "detail": "Firenze Santa Maria Novella → Assisi",
-          "duration": "~2h15 (com baldeação em Terontola-Cortona)",
-          "notes": "Trem das 7:14 de Firenze SMN. Baldeação em Terontola-Cortona. Chegada em Assisi por volta das 9:30. Comprar bilhetes na Trenitalia (app ou bilheteria). Partidas alternativas entre 7:00-7:30 — quanto mais cedo, mais tempo em Assis.",
+          "detail": "Regionale Veloce 4073 · Firenze SMN → Assisi · 1ª Classe",
+          "duration": "2h39 (chegada 10:41)",
+          "booking": {
+            "operator": "Trenitalia",
+            "train": "Regionale Veloce 4073",
+            "class": "1ª Classe",
+            "departure": "Firenze S. M. Novella · 08:02",
+            "arrival": "Assisi · 10:41",
+            "via": "Arezzo → Terontola-Cortona → Assisi",
+            "tickets": [
+              { "passenger": "Pedro Vinces", "code": "2822856720" },
+              { "passenger": "Clarice Maria Ribeiro", "code": "2822856710" }
+            ],
+            "price_per_person": "€25,80",
+            "receipt": "1914345848"
+          },
+          "notes": "Bilhetes já emitidos — mostrar na tela do celular (código Pedro: 2822856720 · código Clarice: 2822856710). Trem Regionale Veloce 4073, 1ª Classe. Sem baldeação necessária — trem direto via Arezzo e Terontola-Cortona. Chegar à estação Firenze SMN às 07:45.",
           "romantic": "O trem atravessa a Úmbria ao amanhecer — campos de papoulas, oliveiras e o campanário de Assis ao longe. Paisagem de oração."
         },
         {
           "id": "evt-702-bus",
           "type": "bus",
-          "time": "09:40",
+          "time": "10:45",
           "title": "Estação → Centro de Assis (Ônibus)",
           "detail": "Ônibus da estação até a Porta San Francesco",
           "duration": "~10 min",
-          "notes": "Na saída do trem, pegar o ônibus para o centro. Parada próxima à Basílica de Santa Clara. Bilhete comprado no ônibus ou nas máquinas."
+          "notes": "Na saída do trem (chegada 10:41), pegar o ônibus para o centro. Parada próxima à Basílica de Santa Clara. Bilhete comprado no ônibus ou nas máquinas."
         },
         {
           "id": "evt-703-visit",
@@ -939,11 +953,26 @@
         {
           "id": "evt-709-train",
           "type": "train",
-          "time": "17:30",
+          "time": "17:21",
           "title": "Assis → Florença (Retorno)",
-          "detail": "Trem regional com baldeação em Terontola-Cortona",
-          "duration": "~2h15",
-          "notes": "Trem de retorno entre 17h e 18h. Verificar horários na Trenitalia. Chegar na estação com 20 min de antecedência.",
+          "detail": "Regionale Veloce 4082 · Assisi → Firenze SMN · 1ª Classe",
+          "duration": "2h31 (chegada 19:52)",
+          "booking": {
+            "operator": "Trenitalia",
+            "train": "Regionale Veloce 4082",
+            "class": "1ª Classe",
+            "departure": "Assisi · 17:21",
+            "arrival": "Firenze S. M. Novella · 19:52",
+            "via": "Terontola-Cortona → Arezzo → Firenze SMN",
+            "tickets": [
+              { "passenger": "Pedro Vinces", "code": "2822856722" },
+              { "passenger": "Clarice Maria Ribeiro", "code": "2822856714" }
+            ],
+            "price_per_person": "€25,80",
+            "receipt": "1914345850",
+            "important": "Levar documento de identidade original — exigido na validação"
+          },
+          "notes": "Bilhetes já emitidos — mostrar na tela do celular (código Pedro: 2822856722 · código Clarice: 2822856714). Trem Regionale Veloce 4082, 1ª Classe. Chegar à estação de Assis às 17:00. ⚠️ Levar documento de identidade original — obrigatório para este bilhete.",
           "romantic": "A viagem de volta pela Úmbria ao entardecer, com as memórias de Assis no coração."
         }
       ]
