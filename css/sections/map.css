@@ -1,7 +1,8 @@
 /* ============================================================
-   MAPA — Leaflet + controles customizados · Editorial
+   MAPA — Mobile-first · Controles flutuantes sobre o mapa
    ============================================================ */
 
+/* ── Seção ────────────────────────────────────────────────── */
 #section-map {
   display: none;
   flex-direction: column;
@@ -13,275 +14,148 @@
   animation: fadeInSection var(--t-med);
 }
 
-.map-header {
-  background: var(--bg);
-  border-bottom: 1px solid var(--border);
-  padding: var(--s3) var(--s5);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--s3);
-  flex-shrink: 0;
-}
-
-/* ── Tabs: Visão Geral / Por Dia ──────────────────────── */
-.map-view-tabs {
-  display: flex;
-  background: var(--bg);
-  border-bottom: 1px solid var(--border);
-  flex-shrink: 0;
-}
-.map-view-tab {
+/* ── Wrapper que ocupa todo o espaço disponível ───────────── */
+.map-wrap {
   flex: 1;
-  padding: 10px var(--s4);
-  font-family: var(--font-mono);
-  font-size: 9px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--text3);
-  background: none;
-  border: none;
-  border-bottom: 2px solid transparent;
-  cursor: pointer;
-  transition: all var(--t-fast);
-  -webkit-tap-highlight-color: transparent;
-}
-.map-view-tab.active {
-  color: var(--c-primary);
-  border-bottom-color: var(--c-primary);
+  position: relative;
+  overflow: hidden;
+  min-height: 0;
 }
 
-/* ── Painéis dos modos ────────────────────────────────── */
-.map-panel {
-  background: var(--bg);
-  border-bottom: 1px solid var(--border);
-  flex-shrink: 0;
-  padding: var(--s2) var(--s3);
+/* ── Mapa (preenche tudo) ─────────────────────────────────── */
+#leaflet-map {
+  position: absolute;
+  inset: 0;
+  background: #e8e0d0;
+}
+
+/* ── Overlays flutuantes ──────────────────────────────────── */
+.map-overlay {
+  position: absolute;
+  left: var(--s3);
+  right: var(--s3);
+  z-index: 400;
+  pointer-events: none;   /* passa toques para o mapa nas áreas vazias */
+}
+.map-overlay > * { pointer-events: auto; }
+
+.map-overlay--top {
+  top: var(--s3);
   display: flex;
   flex-direction: column;
   gap: var(--s2);
 }
-.map-panel--hidden { display: none !important; }
 
-.map-city-filters {
+.map-overlay--bottom {
+  bottom: calc(var(--nav-h) + var(--safe-b) + var(--s3));
+}
+
+/* Utilitário de visibilidade */
+.map-hidden { display: none !important; }
+
+/* ── Pílulas de modo: Visão Geral / Por Dia ───────────────── */
+.map-mode-row {
   display: flex;
-  gap: var(--s2);
-  overflow-x: auto;
-  scrollbar-width: none;
-  flex: 1;
+  justify-content: center;
 }
-.map-city-filters::-webkit-scrollbar { display: none; }
-
-.map-filter-btn {
-  padding: 5px var(--s3);
-  border-radius: var(--r-xl);
-  border: 1px solid var(--border);
-  font-family: var(--font-mono);
-  font-size: 8.5px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  white-space: nowrap;
-  cursor: pointer;
-  transition: all var(--t-fast);
-  color: var(--text3);
-  background: var(--bg);
-  -webkit-tap-highlight-color: transparent;
-}
-.map-filter-btn.active {
-  background: var(--c-primary);
-  border-color: var(--c-primary);
-  color: var(--bg);
-}
-
-#leaflet-map {
-  flex: 1;
-  z-index: 1;
-  background: var(--bg2);
-}
-
-/* Leaflet customizado */
-.leaflet-container {
-  background: var(--bg2);
-  font-family: var(--font-sans);
-}
-
-.leaflet-popup-content-wrapper {
-  border-radius: var(--r-md) !important;
-  box-shadow: 0 4px 20px var(--shadow-md) !important;
-  border: 1px solid var(--border) !important;
-  padding: 0 !important;
-  overflow: hidden;
-  background: var(--bg) !important;
-  color: var(--text) !important;
-}
-.leaflet-popup-content {
-  margin: 0 !important;
-  min-width: 180px;
-}
-.leaflet-popup-tip { background: var(--bg) !important; }
-.leaflet-popup-close-button { color: var(--text3) !important; }
-.leaflet-control-zoom a {
-  background: var(--bg) !important;
-  color: var(--text) !important;
-  border-color: var(--border) !important;
-  font-family: var(--font-sans);
-}
-
-.map-popup { font-family: var(--font-sans); }
-
-.map-popup-header {
-  padding: var(--s3) var(--s4) var(--s2);
-  border-bottom: 1px solid var(--border);
-}
-
-.map-popup-title {
-  font-family: var(--font-serif);
-  font-size: 0.95rem;
-  color: var(--text);
-}
-
-.map-popup-body {
-  padding: var(--s2) var(--s4) var(--s3);
-}
-
-.map-popup-meta {
-  font-family: var(--font-mono);
-  font-size: 8px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--text3);
-  margin-bottom: var(--s2);
-}
-
-.map-popup-link {
+.map-mode-pills {
   display: inline-flex;
-  align-items: center;
-  gap: 3px;
+  background: rgba(253,250,243,0.93);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  backdrop-filter: blur(12px) saturate(180%);
+  border: 1px solid rgba(26,20,16,0.12);
+  border-radius: var(--r-xl);
+  padding: 3px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+  gap: 2px;
+}
+.map-mode-pill {
+  padding: 7px 18px;
+  border-radius: var(--r-xl);
   font-family: var(--font-mono);
-  font-size: 8px;
+  font-size: 9.5px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--c-primary);
-}
-
-/* Marcadores */
-.custom-marker {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50% 50% 50% 0;
-  transform: rotate(-45deg);
-  border: 2px solid rgba(255,255,255,0.9);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-}
-
-.custom-marker-inner {
-  transform: rotate(45deg);
-  font-size: 0.85rem;
-  line-height: 1;
-}
-
-/* Pin estilo reference */
-.pin {
-  background: transparent !important;
-  border: none !important;
-}
-.pin-inner {
-  width: 28px;
-  height: 28px;
-  border-radius: 50% 50% 50% 0;
-  transform: rotate(-45deg);
-  border: 2px solid #fdfaf3;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.35);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-serif);
-  font-weight: 600;
-  font-size: 12px;
-  color: #fdfaf3;
-}
-.pin-inner span { transform: rotate(45deg); }
-
-/* Linha de rota */
-.route-line {
-  stroke-dasharray: 8 6;
-  animation: dash 20s linear infinite;
-}
-@keyframes dash {
-  to { stroke-dashoffset: -1000; }
-}
-
-/* Botão localização */
-.map-locate-btn {
-  position: absolute;
-  bottom: calc(var(--s4) + var(--nav-h) + var(--safe-b));
-  right: var(--s4);
-  z-index: 10;
-  background: var(--bg);
-  border: 1px solid var(--border);
-  border-radius: var(--r-md);
-  width: 38px;
-  height: 38px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: var(--text3);
-  box-shadow: 0 2px 8px var(--shadow);
+  background: transparent;
+  border: none;
   cursor: pointer;
-  transition: var(--t-fast);
+  transition: all var(--t-fast);
+  -webkit-tap-highlight-color: transparent;
+  white-space: nowrap;
+  min-height: 34px;
 }
-.map-locate-btn:hover { background: var(--bg2); color: var(--c-primary); }
+.map-mode-pill.active {
+  background: var(--c-primary);
+  color: #fff;
+  box-shadow: 0 1px 4px rgba(139,30,30,0.35);
+}
 
-/* ── Tipo filters ─────────────────────────────────────── */
-.map-type-filters {
+/* ── Grupos de filtro (fundo translúcido) ─────────────────── */
+.map-filter-group {
+  background: rgba(253,250,243,0.90);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  backdrop-filter: blur(12px) saturate(180%);
+  border: 1px solid rgba(26,20,16,0.10);
+  border-radius: var(--r-lg);
+  padding: var(--s2) var(--s3);
   display: flex;
+  flex-direction: column;
   gap: var(--s2);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+}
+
+/* ── Linha de chips com scroll horizontal ─────────────────── */
+.map-chips-scroll {
+  display: flex;
+  gap: var(--s1);
   overflow-x: auto;
   scrollbar-width: none;
+  padding: 1px 0;
 }
-.map-type-filters::-webkit-scrollbar { display: none; }
-.map-type-btn {
-  padding: 4px var(--s3);
+.map-chips-scroll::-webkit-scrollbar { display: none; }
+
+/* ── Chip genérico ────────────────────────────────────────── */
+.map-chip {
+  padding: 6px 12px;
   border-radius: var(--r-xl);
   border: 1px solid var(--border);
   font-family: var(--font-mono);
-  font-size: 8px;
+  font-size: 9px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   white-space: nowrap;
   cursor: pointer;
-  transition: all var(--t-fast);
-  color: var(--text3);
   background: var(--bg);
+  color: var(--text3);
+  transition: all var(--t-fast);
   -webkit-tap-highlight-color: transparent;
+  flex-shrink: 0;
+  min-height: 32px;
+  display: flex;
+  align-items: center;
 }
-.map-type-btn.active {
+.map-chip--city.active {
+  background: var(--chip-color, var(--c-primary));
+  border-color: var(--chip-color, var(--c-primary));
+  color: #fff;
+}
+.map-chip--type.active {
   background: var(--c-ink);
   border-color: var(--c-ink);
   color: var(--c-cream);
 }
 
-/* ── Abas de dia ──────────────────────────────────────── */
-.map-day-tabs-wrap {
-  overflow: hidden;
-}
-.map-day-tabs-scroll {
-  display: flex;
-  gap: var(--s1);
-  overflow-x: auto;
-  scrollbar-width: none;
-  padding-bottom: 2px;
-}
-.map-day-tabs-scroll::-webkit-scrollbar { display: none; }
+/* ── Abas de dia ──────────────────────────────────────────── */
+.map-chips-scroll--days { gap: var(--s2); }
 
-.map-day-tab {
+.map-day-chip {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-width: 40px;
-  padding: 5px 6px;
+  min-width: 44px;
+  padding: 6px 8px;
   border-radius: var(--r-md);
   border: 1px solid var(--border);
   background: var(--bg);
@@ -290,74 +164,97 @@
   -webkit-tap-highlight-color: transparent;
   flex-shrink: 0;
 }
-.map-day-tab.active {
-  background: var(--day-color, var(--c-primary));
-  border-color: var(--day-color, var(--c-primary));
+.map-day-chip.active {
+  background: var(--chip-color, var(--c-primary));
+  border-color: var(--chip-color, var(--c-primary));
 }
-.map-day-tab-num {
+.map-day-chip-num {
   font-family: var(--font-serif);
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 500;
   line-height: 1;
   color: var(--text);
 }
-.map-day-tab.active .map-day-tab-num { color: #fff; }
-.map-day-tab-mon {
+.map-day-chip.active .map-day-chip-num { color: #fff; }
+.map-day-chip-mon {
+  font-family: var(--font-mono);
+  font-size: 7.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text3);
+  margin-top: 3px;
+}
+.map-day-chip.active .map-day-chip-mon { color: rgba(255,255,255,0.85); }
+
+/* ── Card de info do dia (overlay inferior) ───────────────── */
+.map-day-info-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s3);
+  padding: var(--s3) var(--s4);
+  background: rgba(253,250,243,0.94);
+  -webkit-backdrop-filter: blur(14px) saturate(180%);
+  backdrop-filter: blur(14px) saturate(180%);
+  border: 1px solid rgba(26,20,16,0.10);
+  border-left: 3px solid var(--accent, var(--c-primary));
+  border-radius: var(--r-lg);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.14);
+}
+.map-day-info-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+.map-day-info-city {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent, var(--c-primary));
+}
+.map-day-info-title {
+  font-family: var(--font-serif);
+  font-size: 0.92rem;
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.map-day-info-pts {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  color: var(--accent, var(--c-primary));
+  text-align: center;
+  line-height: 1;
+  flex-shrink: 0;
+}
+.map-day-info-pts small {
   font-family: var(--font-mono);
   font-size: 7px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--text3);
+  display: block;
   margin-top: 2px;
 }
-.map-day-tab.active .map-day-tab-mon { color: rgba(255,255,255,0.8); }
 
-/* ── Info do dia selecionado ──────────────────────────── */
-.map-day-info-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--s3);
-  padding: 6px var(--s2);
-  border-left: 3px solid var(--c-primary);
-  background: var(--bg2);
-  border-radius: 0 var(--r-sm) var(--r-sm) 0;
-}
-.map-day-info-city {
-  font-family: var(--font-mono);
-  font-size: 8px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  margin-right: var(--s2);
-}
-.map-day-info-title {
-  font-family: var(--font-serif);
-  font-size: 0.88rem;
-  color: var(--text);
-}
-.map-day-info-meta {
-  font-family: var(--font-mono);
-  font-size: 7.5px;
-  letter-spacing: 0.08em;
-  color: var(--text3);
-  white-space: nowrap;
-  text-transform: uppercase;
-}
-
-/* ── Marcadores ───────────────────────────────────────── */
+/* ── Marcadores ───────────────────────────────────────────── */
 .map-marker {
-  width: 32px;
-  height: 32px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 15px;
-  border: 2px solid rgba(255,255,255,0.9);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  font-size: 16px;
+  border: 2.5px solid rgba(255,255,255,0.95);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  cursor: pointer;
 }
 .map-city-label {
-  padding: 3px 10px;
+  padding: 4px 10px;
   border-radius: 20px;
   color: #fff;
   font-family: var(--font-mono);
@@ -365,25 +262,72 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   white-space: nowrap;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.22);
 }
 
-/* ── Popup ────────────────────────────────────────────── */
+/* ── Leaflet customizado ──────────────────────────────────── */
+.leaflet-container {
+  font-family: var(--font-sans);
+}
+.leaflet-popup-content-wrapper {
+  border-radius: var(--r-md) !important;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.18) !important;
+  border: 1px solid var(--border) !important;
+  padding: 0 !important;
+  overflow: hidden;
+  background: var(--bg) !important;
+  color: var(--text) !important;
+  min-width: 200px;
+}
+.leaflet-popup-content { margin: 0 !important; }
+.leaflet-popup-tip     { background: var(--bg) !important; }
+.leaflet-popup-close-button {
+  color: var(--text3) !important;
+  font-size: 18px !important;
+  width: 30px !important;
+  height: 30px !important;
+}
+/* Zoom acima da barra de navegação */
+.leaflet-bottom.leaflet-right {
+  bottom: calc(var(--nav-h) + var(--safe-b) + var(--s3)) !important;
+  right: var(--s3) !important;
+}
+.leaflet-control-zoom a {
+  width: 36px !important;
+  height: 36px !important;
+  line-height: 36px !important;
+  font-size: 18px !important;
+  background: rgba(253,250,243,0.93) !important;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  color: var(--text) !important;
+  border-color: rgba(26,20,16,0.12) !important;
+}
+.leaflet-control-zoom-in  { border-radius: var(--r-md) var(--r-md) 0 0 !important; }
+.leaflet-control-zoom-out { border-radius: 0 0 var(--r-md) var(--r-md) !important; }
+
+/* ── Popup conteúdo ───────────────────────────────────────── */
 .map-popup {
   font-family: var(--font-sans);
   padding: var(--s3) var(--s4);
 }
 .map-popup-type {
   font-family: var(--font-mono);
-  font-size: 8px;
+  font-size: 8.5px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  margin-bottom: 3px;
+  margin-bottom: 4px;
+}
+.map-popup-title {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  color: var(--text);
+  line-height: 1.3;
 }
 .map-popup-detail {
   font-size: 0.8rem;
   color: var(--text2);
-  margin-top: 3px;
+  margin-top: 4px;
   line-height: 1.4;
 }
 .map-popup-date {
@@ -393,4 +337,33 @@
   margin-top: var(--s2);
   letter-spacing: 0.08em;
   text-transform: uppercase;
+}
+
+/* ── Linha de rota animada ────────────────────────────────── */
+.route-line {
+  stroke-dasharray: 8 6;
+  animation: dash 20s linear infinite;
+}
+@keyframes dash { to { stroke-dashoffset: -1000; } }
+
+/* ── Dark mode ────────────────────────────────────────────── */
+[data-theme="dark"] .map-mode-pills,
+[data-theme="dark"] .map-filter-group,
+[data-theme="dark"] .map-day-info-card {
+  background: rgba(26,20,16,0.88);
+  border-color: rgba(253,250,243,0.10);
+}
+[data-theme="dark"] .map-chip {
+  background: rgba(253,250,243,0.07);
+  color: rgba(253,250,243,0.6);
+  border-color: rgba(253,250,243,0.12);
+}
+[data-theme="dark"] .map-day-chip {
+  background: rgba(253,250,243,0.07);
+  border-color: rgba(253,250,243,0.12);
+}
+[data-theme="dark"] .leaflet-control-zoom a {
+  background: rgba(26,20,16,0.88) !important;
+  color: rgba(253,250,243,0.85) !important;
+  border-color: rgba(253,250,243,0.12) !important;
 }

@@ -1,5 +1,5 @@
 /* ============================================================
-   MAP.JS — Leaflet interativo · Visão Geral + Por Dia
+   MAP.JS — Leaflet interativo · Controles flutuantes mobile-first
    ============================================================ */
 
 const section = document.getElementById('section-map');
@@ -30,116 +30,144 @@ export async function init(data) {
   renderMapShell(data);
   await waitForLeaflet();
   initMap(data);
+  watchSection();
 }
 
-/* ─── Shell ─────────────────────────────────────────────── */
+/* ─── Shell com controles flutuantes ─────────────────────── */
 
 function renderMapShell(data) {
   const days = data.days || [];
 
   section.innerHTML = `
-    <div class="map-view-tabs">
-      <button class="map-view-tab active" data-view="overview">Visão Geral</button>
-      <button class="map-view-tab" data-view="daily">Por Dia</button>
-    </div>
+    <div class="map-wrap" id="map-wrap">
 
-    <!-- Painel visão geral -->
-    <div class="map-panel" id="map-overview-panel">
-      <div class="map-city-filters">
-        <button class="map-filter-btn active" data-filter="all">Todos</button>
-        ${Object.entries(CITY_META).map(([id, m]) =>
-          `<button class="map-filter-btn" data-filter="${id}" style="--city-color:${m.color}">${m.name}</button>`
-        ).join('')}
-      </div>
-      <div class="map-type-filters">
-        <button class="map-type-btn active" data-type="all">Tudo</button>
-        <button class="map-type-btn" data-type="church">⛪ Igrejas</button>
-        <button class="map-type-btn" data-type="museum">🖼️ Museus</button>
-        <button class="map-type-btn" data-type="hotel">🏨 Hotéis</button>
-        <button class="map-type-btn" data-type="restaurant">🍽️ Rest.</button>
-      </div>
-    </div>
+      <!-- Mapa (fundo de tudo) -->
+      <div id="leaflet-map"></div>
 
-    <!-- Painel por dia -->
-    <div class="map-panel map-panel--hidden" id="map-daily-panel">
-      <div class="map-day-tabs-wrap">
-        <div class="map-day-tabs-scroll" id="map-day-tabs-scroll">
-          ${days.map((d, i) => {
-            const date = new Date(d.date + 'T00:00:00');
-            const dayNum = date.getDate();
-            const mon = date.toLocaleDateString('pt-BR', { month: 'short' }).replace('.', '');
-            const color = CITY_META[d.city]?.color || '#999';
-            return `<button class="map-day-tab" data-day="${i}" style="--day-color:${color}">
-              <span class="map-day-tab-num">${dayNum}</span>
-              <span class="map-day-tab-mon">${mon}</span>
-            </button>`;
-          }).join('')}
+      <!-- Overlay superior: modo + filtros -->
+      <div class="map-overlay map-overlay--top" id="map-overlay-top">
+
+        <!-- Alternador de modo -->
+        <div class="map-mode-row">
+          <div class="map-mode-pills">
+            <button class="map-mode-pill active" data-view="overview">Visão Geral</button>
+            <button class="map-mode-pill" data-view="daily">Por Dia</button>
+          </div>
         </div>
+
+        <!-- Filtros: visão geral -->
+        <div class="map-filter-group" id="map-filters-overview">
+          <div class="map-chips-scroll">
+            <button class="map-chip map-chip--city active" data-filter="all">Todos</button>
+            ${Object.entries(CITY_META).map(([id, m]) =>
+              `<button class="map-chip map-chip--city" data-filter="${id}" style="--chip-color:${m.color}">${m.name}</button>`
+            ).join('')}
+          </div>
+          <div class="map-chips-scroll">
+            <button class="map-chip map-chip--type active" data-type="all">Tudo</button>
+            <button class="map-chip map-chip--type" data-type="church">⛪ Igrejas</button>
+            <button class="map-chip map-chip--type" data-type="museum">🖼️ Museus</button>
+            <button class="map-chip map-chip--type" data-type="hotel">🏨 Hotéis</button>
+            <button class="map-chip map-chip--type" data-type="restaurant">🍽️ Rest.</button>
+          </div>
+        </div>
+
+        <!-- Abas de dia: modo Por Dia -->
+        <div class="map-filter-group map-hidden" id="map-filters-daily">
+          <div class="map-chips-scroll map-chips-scroll--days" id="map-day-chips">
+            ${days.map((d, i) => {
+              const date = new Date(d.date + 'T00:00:00');
+              const dayNum = date.getDate();
+              const mon = date.toLocaleDateString('pt-BR', { month: 'short' }).replace('.', '');
+              const color = CITY_META[d.city]?.color || '#999';
+              return `<button class="map-day-chip" data-day="${i}" style="--chip-color:${color}">
+                <span class="map-day-chip-num">${dayNum}</span>
+                <span class="map-day-chip-mon">${mon}</span>
+              </button>`;
+            }).join('')}
+          </div>
+        </div>
+
       </div>
-      <div class="map-day-info" id="map-day-info"></div>
-    </div>
 
-    <div id="leaflet-map" class="map-container"></div>`;
+      <!-- Overlay inferior: info do dia (só no modo Por Dia) -->
+      <div class="map-overlay map-overlay--bottom map-hidden" id="map-day-info"></div>
 
-  /* Eventos: view tabs */
-  section.querySelectorAll('.map-view-tab').forEach(btn => {
+    </div>`;
+
+  /* Eventos: alternador de modo */
+  section.querySelectorAll('.map-mode-pill').forEach(btn => {
     btn.addEventListener('click', () => {
-      section.querySelectorAll('.map-view-tab').forEach(b => b.classList.remove('active'));
+      section.querySelectorAll('.map-mode-pill').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       switchView(btn.dataset.view);
     });
   });
 
   /* Eventos: filtros de cidade */
-  section.querySelectorAll('.map-filter-btn').forEach(btn => {
+  section.querySelectorAll('.map-chip--city').forEach(btn => {
     btn.addEventListener('click', () => {
-      section.querySelectorAll('.map-filter-btn').forEach(b => b.classList.remove('active'));
+      section.querySelectorAll('.map-chip--city').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       filterByCity(btn.dataset.filter);
     });
   });
 
   /* Eventos: filtros de tipo */
-  section.querySelectorAll('.map-type-btn').forEach(btn => {
+  section.querySelectorAll('.map-chip--type').forEach(btn => {
     btn.addEventListener('click', () => {
-      section.querySelectorAll('.map-type-btn').forEach(b => b.classList.remove('active'));
+      section.querySelectorAll('.map-chip--type').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       filterByType(btn.dataset.type);
     });
   });
 
   /* Eventos: abas de dia */
-  section.querySelectorAll('.map-day-tab').forEach(btn => {
+  section.querySelectorAll('.map-day-chip').forEach(btn => {
     btn.addEventListener('click', () => {
-      section.querySelectorAll('.map-day-tab').forEach(b => b.classList.remove('active'));
+      section.querySelectorAll('.map-day-chip').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       activateDayView(parseInt(btn.dataset.day));
     });
   });
 }
 
+/* ─── Observa quando a seção fica ativa (invalidateSize) ─── */
+
+function watchSection() {
+  const obs = new MutationObserver(() => {
+    if (section.classList.contains('active') && mapInstance) {
+      requestAnimationFrame(() => mapInstance.invalidateSize());
+    }
+  });
+  obs.observe(section, { attributes: true, attributeFilter: ['class'] });
+}
+
 /* ─── Troca de modo ──────────────────────────────────────── */
 
 function switchView(view) {
   currentView = view;
-  const overviewPanel = document.getElementById('map-overview-panel');
-  const dailyPanel    = document.getElementById('map-daily-panel');
+  const overviewFilters = document.getElementById('map-filters-overview');
+  const dailyFilters    = document.getElementById('map-filters-daily');
+  const dayInfoEl       = document.getElementById('map-day-info');
 
   if (view === 'overview') {
-    overviewPanel.classList.remove('map-panel--hidden');
-    dailyPanel.classList.add('map-panel--hidden');
+    overviewFilters?.classList.remove('map-hidden');
+    dailyFilters?.classList.add('map-hidden');
+    dayInfoEl?.classList.add('map-hidden');
     showOverview();
   } else {
-    overviewPanel.classList.add('map-panel--hidden');
-    dailyPanel.classList.remove('map-panel--hidden');
+    overviewFilters?.classList.add('map-hidden');
+    dailyFilters?.classList.remove('map-hidden');
     const todayIdx = findTodayIndex();
     const target   = todayIdx >= 0 ? todayIdx : 0;
-    const tab = section.querySelector(`.map-day-tab[data-day="${target}"]`);
-    if (tab) {
-      section.querySelectorAll('.map-day-tab').forEach(b => b.classList.remove('active'));
-      tab.classList.add('active');
-      tab.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+    const chip = section.querySelector(`.map-day-chip[data-day="${target}"]`);
+    if (chip) {
+      section.querySelectorAll('.map-day-chip').forEach(b => b.classList.remove('active'));
+      chip.classList.add('active');
+      chip.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
     }
+    dayInfoEl?.classList.remove('map-hidden');
     activateDayView(target);
   }
 }
@@ -164,27 +192,23 @@ function activateDayView(dayIdx) {
   const dayData = mapData.days[dayIdx];
   if (!dayData) return;
 
-  /* Remove tudo da visão geral */
   if (overviewPolyline) overviewPolyline.remove();
   allMarkersData.forEach(({ marker }) => marker.remove());
   if (activeDayPolyline) { activeDayPolyline.remove(); activeDayPolyline = null; }
 
-  /* Adiciona marcadores do dia */
   const dayMarkers = allMarkersData.filter(m => m.dayIdx === dayIdx);
   dayMarkers.forEach(({ marker }) => marker.addTo(mapInstance));
 
-  /* Desenha rota do dia */
   const coords = dayMarkers.map(m => m.coords);
   if (coords.length > 1) {
     const color = CITY_META[dayData.city]?.color || '#C84B31';
     activeDayPolyline = L.polyline(coords, {
-      color, weight: 3, opacity: 0.85, dashArray: '6,5',
+      color, weight: 3, opacity: 0.9, dashArray: '6,5',
     }).addTo(mapInstance);
   }
 
-  /* Ajusta zoom para o dia */
   if (coords.length > 0) {
-    mapInstance.fitBounds(L.latLngBounds(coords), { padding: [50, 50], maxZoom: 15 });
+    mapInstance.fitBounds(L.latLngBounds(coords), { padding: [60, 60], maxZoom: 15 });
   } else {
     const cm = CITY_META[dayData.city];
     if (cm) mapInstance.flyTo([cm.lat, cm.lng], 13);
@@ -197,14 +221,13 @@ function updateDayInfoPanel(dayData, pointCount) {
   const el = document.getElementById('map-day-info');
   if (!el) return;
   const cm = CITY_META[dayData.city];
-  const dateStr = window.formatDate ? window.formatDate(dayData.date) : dayData.date;
   el.innerHTML = `
-    <div class="map-day-info-bar" style="border-left-color:${cm?.color || '#C84B31'}">
-      <div>
-        <span class="map-day-info-city" style="color:${cm?.color || '#C84B31'}">${cm?.name || ''}</span>
+    <div class="map-day-info-card" style="--accent:${cm?.color || '#C84B31'}">
+      <div class="map-day-info-left">
+        <span class="map-day-info-city">${cm?.name || ''}</span>
         <span class="map-day-info-title">${dayData.title}</span>
       </div>
-      <span class="map-day-info-meta">${dateStr}${pointCount ? ` · ${pointCount} pontos` : ''}</span>
+      <span class="map-day-info-pts">${pointCount || 0}<br><small>pontos</small></span>
     </div>`;
 }
 
@@ -223,20 +246,22 @@ function initMap(data) {
   if (!mapEl || mapInstance) return;
 
   mapInstance = L.map(mapEl, { zoomControl: false }).setView([44.5, 10], 5);
+
+  /* Zoom control acima da nav */
   L.control.zoom({ position: 'bottomright' }).addTo(mapInstance);
 
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '© <a href="https://openstreetmap.org">OpenStreetMap</a>',
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OSM</a>',
     maxZoom: 19,
   }).addTo(mapInstance);
 
-  /* Linha de rota entre cidades (visão geral) */
+  /* Linha de rota geral */
   overviewPolyline = L.polyline(ROUTE_CITIES, {
-    color: '#C84B31', weight: 2, dashArray: '8,6', opacity: 0.6,
+    color: '#C84B31', weight: 2, dashArray: '8,6', opacity: 0.55,
   });
   overviewPolyline.addTo(mapInstance);
 
-  /* Marcadores de hotéis (dayIdx -1 → visíveis na visão geral) */
+  /* Hotéis */
   (data.hotels || []).forEach(hotel => {
     if (!hotel.coordinates) return;
     const cm = CITY_META[hotel.city] || CITY_META.rome;
@@ -246,7 +271,7 @@ function initMap(data) {
     marker.addTo(mapInstance);
   });
 
-  /* Marcadores de eventos por dia */
+  /* Eventos por dia */
   (data.days || []).forEach((day, dayIdx) => {
     (day.events || []).forEach(evt => {
       if (!evt.coordinates) return;
@@ -269,6 +294,9 @@ function initMap(data) {
     });
     L.marker([meta.lat, meta.lng], { icon: cityIcon }).addTo(mapInstance);
   });
+
+  /* Forçar tamanho correto logo após render */
+  requestAnimationFrame(() => requestAnimationFrame(() => mapInstance.invalidateSize()));
 }
 
 function getEventEmoji(type) {
@@ -286,8 +314,8 @@ function createMarker(L, lat, lng, color, emoji) {
   const icon = L.divIcon({
     className: '',
     html: `<div class="map-marker" style="background:${color}">${emoji}</div>`,
-    iconAnchor: [16, 16],
-    popupAnchor: [0, -20],
+    iconAnchor: [18, 18],
+    popupAnchor: [0, -22],
   });
   return L.marker([lat, lng], { icon });
 }
@@ -303,8 +331,7 @@ function buildPopup(title, detail, type, color, date) {
 
 function filterByCity(cityId) {
   allMarkersData.forEach(({ marker, city }) => {
-    const show = cityId === 'all' || city === cityId;
-    show ? marker.addTo(mapInstance) : marker.remove();
+    (cityId === 'all' || city === cityId) ? marker.addTo(mapInstance) : marker.remove();
   });
   if (cityId !== 'all' && CITY_META[cityId]) {
     const { lat, lng } = CITY_META[cityId];
@@ -316,7 +343,6 @@ function filterByCity(cityId) {
 
 function filterByType(type) {
   allMarkersData.forEach(({ marker, type: mType }) => {
-    const show = type === 'all' || mType === type;
-    show ? marker.addTo(mapInstance) : marker.remove();
+    (type === 'all' || mType === type) ? marker.addTo(mapInstance) : marker.remove();
   });
 }
