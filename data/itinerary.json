@@ -2464,18 +2464,41 @@
       "hero": "./assets/images/heroes/day13_eiffel.jpg",
       "events": [
         {
-          "id": "evt-1301-mass",
-          "type": "mass",
-          "time": "09:30",
-          "title": "Missa Dominical (escolha)",
-          "detail": "Saint-Sulpice, Notre-Dame ou Sacré-Cœur",
-          "notes": "Opções de Missa dominical: Saint-Sulpice (grandes missas com o órgão histórico de 6.700 tubos, às 11h) | Notre-Dame (às 10h15 e 11h30) | Sacré-Cœur (adoração perpétua — Missa às 11h).",
-          "romantic": "Começar o último domingo completo em Paris com Missa, em comunidade, é uma bênção sobre toda a viagem."
+          "id": "day13-hotel-to-bac",
+          "time": "08:50",
+          "type": "transfer",
+          "title": "Hotel → Capelinha da Rue du Bac",
+          "detail": "Rue Riquet (18º) → 40 Rue du Bac (7º) · ~38 min",
+          "notes": "Um único bilhete t+ (€2,15/pp) cobre Metrô 7 + Linha 4 sem sair das catracas.",
+          "steps": [
+            {
+              "desc": "🚶 2 min a pé da Rue Riquet até a estação Riquet (Metrô Linha 7)",
+              "duration": "~2 min"
+            },
+            {
+              "desc": "🚇 Metrô Linha 7 (dir. Villejuif-Louis Aragon) → Châtelet (10 paradas)",
+              "duration": "~18 min",
+              "price": "€2,15/pp (bilhete t+)"
+            },
+            {
+              "desc": "🔄 Baldeação em Châtelet: seguir sinalizações Linha 4 (dir. Montrouge) → Saint-Germain-des-Prés (4 paradas: Cité, Saint-Michel, Odéon, Saint-Germain-des-Prés)",
+              "duration": "~10 min"
+            },
+            {
+              "desc": "🚶 Saída Saint-Germain-des-Prés: 10 min a pé — Rue de Rennes norte → Rue de Grenelle → 40 Rue du Bac (a Capelinha fica à direita, azul e branca)",
+              "duration": "~10 min"
+            }
+          ],
+          "tips": "Saindo às 08:50 chegam por volta das 09:25 — tempo suficiente para entrar calmamente antes das 09:30 e encontrar bons lugares.",
+          "coordinates": {
+            "lat": 48.8539,
+            "lng": 2.3235
+          }
         },
         {
           "id": "evt-1302-visit",
           "type": "church",
-          "time": "11:00",
+          "time": "09:30",
           "title": "Capelinha da Rue du Bac — Medalha Milagrosa",
           "detail": "40 Rue du Bac, Paris 7e — Metrô Rue du Bac (Linha 12)",
           "duration": "1h",
@@ -2489,9 +2512,37 @@
           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Chapel_of_Our_Lady_of_the_Miraculous_Medal_-_exterior.jpg/330px-Chapel_of_Our_Lady_of_the_Miraculous_Medal_-_exterior.jpg"
         },
         {
+          "id": "day13-bac-to-sacrecoeur",
+          "time": "10:40",
+          "type": "transfer",
+          "title": "Rue du Bac → Sacré-Cœur",
+          "detail": "Metro Rue du Bac (L.12) → Abbesses · ~25 min",
+          "notes": "Bilhete t+ €2,15/pp. A estação de metrô 'Rue du Bac' (Linha 12) fica a 3 minutos a pé da Capelinha, na mesma rua.",
+          "steps": [
+            {
+              "desc": "🚶 3 min a pé até a estação Rue du Bac (Metrô Linha 12), na mesma rua da capelinha",
+              "duration": "~3 min"
+            },
+            {
+              "desc": "🚇 Metrô Linha 12 (dir. Aubervilliers-Pantin Quatre Chemins) → Abbesses (10 paradas: Assemblée Nationale, Concorde, Madeleine, Opéra, Havre-Caumartin, Trinité, Notre-Dame-de-Lorette, Saint-Georges, Pigalle, Abbesses)",
+              "duration": "~18 min",
+              "price": "€2,15/pp (bilhete t+)"
+            },
+            {
+              "desc": "🚠 Saída Abbesses: tomar o funicular (coberto pelo bilhete t+) ou subir a escadaria (~8 min) até o adro do Sacré-Cœur",
+              "duration": "~5 min"
+            }
+          ],
+          "tips": "O funicular sobe da Place Saint-Pierre até a base da basílica — aceita bilhete t+ normal. Vale a pena para poupar as pernas antes do tour a pé de Montmartre.",
+          "coordinates": {
+            "lat": 48.8867,
+            "lng": 2.3431
+          }
+        },
+        {
           "id": "evt-1303-visit",
           "type": "church",
-          "time": "13:00",
+          "time": "11:00",
           "title": "Sacré-Cœur — Montmartre",
           "detail": "Metrô Abbesses (Linha 12) + escada ou funicular",
           "duration": "1h30",
@@ -2505,6 +2556,41 @@
           "photo": "./assets/images/events/evt_sacre_coeur.jpg"
         },
         {
+          "id": "day13-lunch-montmartre",
+          "time": "12:30",
+          "type": "meal",
+          "title": "Almoço em Montmartre",
+          "detail": "Culinária francesa tradicional no bairro dos artistas",
+          "notes": "Montmartre tem boa oferta de bistrôs com qualidade acima da média turística. Evitar os lugares com cardápio em 10 idiomas na escadaria do Sacré-Cœur — descer um pouco pelo bairro para melhor custo-benefício.",
+          "romantic": "Almoçar em Montmartre — onde Renoir, Picasso e Toulouse-Lautrec se inspiravam — é ser parte da história da arte e do amor.",
+          "restaurants": [
+            {
+              "label": "💰 Econômico",
+              "name": "Le Consulat",
+              "address": "18 Rue Norvins, Montmartre (2 min do Sacré-Cœur)",
+              "specialty": "Bistrô parisiense histórico (1900) — steak-frites, entrecôte, moules marinières, tarte tatin. Terrasse animada na ruinha mais fotogênica de Montmartre",
+              "price": "€18–25 pp",
+              "tip": "Um dos bistrôs mais antigos do bairro. Fachada com flores, calçada de paralelepípedo. Chegar cedo para pegar mesa na terrasse."
+            },
+            {
+              "label": "🍽️ Tradicional",
+              "name": "Le Moulin de la Galette",
+              "address": "83 Rue Lepic, Montmartre",
+              "specialty": "No mesmo local onde Renoir pintou 'Bal du Moulin de la Galette' (1876) — pintadera à bretonne, confit de canard, soufflé au Grand Marnier",
+              "price": "€35–50 pp",
+              "tip": "Almoçar onde Renoir pintou talvez o quadro mais alegre do impressionismo. O moinho original ainda está lá. Reservar com antecedência."
+            },
+            {
+              "label": "⭐ Gourmet",
+              "name": "La Table d'Eugène",
+              "address": "18 Rue Eugène Sue, Montmartre",
+              "specialty": "1 estrela Michelin. Menu do dia ao almoço com culinária francesa criativa — mise en bouche, prato principal, sobremesa. Relação qualidade/preço excepcional ao almoço",
+              "price": "€45–65 pp (menu almoço)",
+              "tip": "A estrela Michelin mais acessível de Paris ao almoço (jantar sai bem mais caro). Reservar com semanas de antecedência — poucos lugares."
+            }
+          ]
+        },
+        {
           "id": "evt-1304-walk",
           "type": "walk",
           "time": "14:30",
@@ -2512,6 +2598,38 @@
           "detail": "Passeio pelas ruelas da colina",
           "notes": "Montmartre é o bairro boêmio onde viveram Picasso, Modigliani, Toulouse-Lautrec, Renoir. Place du Tertre tem artistas de rua. Viela da rue Lepic e a Moulin Rouge são imperdíveis.",
           "romantic": "Montmartre foi inspiração para gerações de artistas que tentavam capturar Paris em telas. Vocês não precisam capturar — apenas viver."
+        },
+        {
+          "id": "day13-montmartre-to-eiffel",
+          "time": "16:45",
+          "type": "transfer",
+          "title": "Montmartre → Torre Eiffel",
+          "detail": "Abbesses → Charles de Gaulle-Étoile → Bir-Hakeim · ~40 min",
+          "notes": "Saindo às 16:45 chegam à Torre Eiffel às ~17:25 — na hora certa para o pôr do sol e o show de luzes das 18h.",
+          "steps": [
+            {
+              "desc": "🚶 Descer de Sacré-Cœur até a estação Anvers (Metrô Linha 2) — ~10 min a pé descendo as escadarias",
+              "duration": "~10 min"
+            },
+            {
+              "desc": "🚇 Metrô Linha 2 (dir. Porte Dauphine) → Charles de Gaulle-Étoile (8 paradas: Pigalle, Blanche, Place de Clichy, Rome, Villiers, Monceau, Courcelles, Ternes, Charles de Gaulle-Étoile)",
+              "duration": "~15 min",
+              "price": "€2,15/pp (bilhete t+)"
+            },
+            {
+              "desc": "🔄 Baldeação: Linha 6 (dir. Nation) → Bir-Hakeim (3 paradas: Kléber, Trocadéro, Passy, Bir-Hakeim)",
+              "duration": "~8 min"
+            },
+            {
+              "desc": "🚶 Saída Bir-Hakeim: a Torre Eiffel está à vista, 5 min a pé pelo Champ de Mars",
+              "duration": "~5 min"
+            }
+          ],
+          "tips": "Alternativa mais simples: Uber ou taxi de Montmartre direto à Torre Eiffel (~20 min, €14–20). Recomendado se estiverem cansados após o dia todo a pé.",
+          "coordinates": {
+            "lat": 48.8584,
+            "lng": 2.2945
+          }
         },
         {
           "id": "evt-1305-visit",
