@@ -1064,7 +1064,7 @@
       "date": "2026-05-23",
       "city": "florence",
       "title": "Florença — Arte e Fé",
-      "subtitle": "Missa, o David, e as belezas da cidade de Dante",
+      "subtitle": "Missa, Tour a Pé, o David e as ruas de Dante",
       "summary": "Domingo em Florença começa com Missa — uma das experiências mais bonitas é assistir à Missa italiana numa das antigas igrejas. Depois, a Galleria dell'Accademia para o encontro com o David de Michelangelo, o Batistério e um passeio pelo mercado central.",
       "tags": [
         "domingo",
@@ -1077,57 +1077,98 @@
       "events": [
         {
           "id": "evt-601-mass",
-          "type": "mass",
+          "type": "church",
           "time": "10:00",
           "title": "Missa Dominical em Florença",
-          "detail": "Catedral de Santa Maria del Fiore (Duomo) ou Igreja Santo Spirito",
-          "notes": "Opções: Catedral de Santa Maria del Fiore — Missa em italiano normalmente às 10h ou 11h. Chegar 30 min antes. Trajes adequados obrigatórios. Alternativa mais íntima: Igreja Santo Spirito (Oltrarno) — comunidade mais local, menos turística.",
-          "history": "A Catedral de Santa Maria del Fiore foi construída entre 1296 e 1461. Sua cúpula de Brunelleschi (1436), com 45m de diâmetro, foi a maior do mundo por séculos. O sino da catedral ecoa pelos séculos de história cristã florentina.",
-          "romantic": "Participar da Missa na língua de Dante, numa catedral de 700 anos, como casal em peregrinação.",
+          "detail": "Igreja de Santo Spirito (Oltrarno) ou Santa Croce — ambas celebram missa às 10h",
+          "notes": "A Igreja de Santo Spirito (Piazza Santo Spirito) é a mais autêntica — paróquia viva, fora do circuito turístico, frequentada por florentinos. O tour passa pelo Duomo depois, então a missa pode ser aqui. Chegar com 10 min de antecedência.",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Santo_Spirito_Firenze.jpg/330px-Santo_Spirito_Firenze.jpg",
           "coordinates": {
-            "lat": 43.7731,
-            "lng": 11.2559
+            "lat": 43.765,
+            "lng": 11.2478
           }
         },
         {
-          "id": "evt-602-visit",
-          "type": "visit",
-          "time": "11:30",
-          "title": "Piazza del Duomo e Batistério",
-          "detail": "Praça central de Florença",
-          "duration": "1h",
-          "notes": "Após a Missa, aproveite para caminhar ao redor do Duomo. O Batistério de São João (séc. IV-VIII), com suas famosas Portas do Paraíso de Ghiberti (1452), fica na praça. Michelangelo disse que eram dignas de ser as portas do Paraíso.",
-          "coordinates": {
-            "lat": 43.7731,
-            "lng": 11.255
-          },
-          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Firenze_-_Cattedrale_di_Santa_Maria_del_Fiore.jpg/330px-Firenze_-_Cattedrale_di_Santa_Maria_del_Fiore.jpg"
+          "id": "evt-602-transfer",
+          "type": "walk",
+          "time": "10:50",
+          "title": "Deslocamento ao Ponto de Encontro do Tour",
+          "detail": "Via Camillo Cavour 18 — Ciao Florence Office (junto a Piazza San Marco)",
+          "steps": [
+            {
+              "icon": "🚶",
+              "text": "Santo Spirito → Ponte Vecchio → Via dei Calzaiuoli → Duomo → Via Cavour 18"
+            },
+            {
+              "icon": "⏱️",
+              "text": "~20 min a pé · Chegar às 10:55 (20 min antes do tour)"
+            }
+          ]
         },
         {
-          "id": "evt-603-meal",
-          "type": "meal",
-          "time": "13:00",
-          "title": "Almoço — Mercado Central de Florença",
-          "detail": "Mercato Centrale · Via dell'Ariento (San Lorenzo)",
-          "notes": "O Mercato Centrale (piso superior) é uma experiência gastronômica completa — não uma simples praça de alimentação. Cada bancada tem um especialista. No piso térreo há o mercado tradicional.",
-          "coordinates": {
-            "lat": 43.7773,
-            "lng": 11.2527
+          "id": "evt-603-tour",
+          "type": "visit",
+          "time": "11:15",
+          "title": "Tour a Pé por Florença + Catedral do Duomo",
+          "detail": "Ciao Florence · Ref. 207-16101689 · Guia em espanhol · 2h15min",
+          "notes": "O tour cobre os pontos mais icônicos de Florença a pé: Piazza della Repubblica → Loggia del Mercato Nuovo (Porcellino) → Ponte Vecchio → Piazza degli Uffizi → Piazza della Signoria (Palazzo Vecchio, Perseu de Cellini, Rapto das Sabinas) → Piazza del Duomo com entrada prioritária à Catedral de Santa Maria del Fiore.\n\nDentro do Duomo, o guia revelará os segredos artísticos e arquitetônicos da catedral — de Brunelleschi ao mosaico do Giudizio Universale. Duração no interior: ~1h.\n\n⚠️ DRESS CODE OBRIGATÓRIO: ombros e joelhos cobertos. Bolsas grandes e malas proibidas.\n\nO tour termina na Catedral de Florença às ~13:30.",
+          "booking": {
+            "operator": "Ciao Florence (CIAOFLORENCE TOURS AND TRAVELS SRL)",
+            "reference": "207-16101689",
+            "internal_code": "CIAO-T129813956",
+            "external_order": "ABI-1171406",
+            "option": "Tour + Acesso prioritário ao Duomo (espanhol)",
+            "language": "Espanhol",
+            "date": "23/05/2026",
+            "time": "11:15",
+            "duration": "2 horas e 15 minutos",
+            "meeting_point": "Via Camillo Cavour, 18, 50129 Firenze FI (Ciao Florence Office)",
+            "meeting_time": "10:55 (20 min antes)",
+            "end_point": "Catedral de Florença (Duomo)",
+            "phone_emergency": "+39 055 354 044 / +39 334 614 83 57",
+            "voucher_type": "Impresso ou eletrônico — mostrar na tela do celular",
+            "includes": "Guia profissional, fones de ouvido, ingresso skip-the-line Catedral Santa Maria del Fiore, tour guiado 1h no interior, Ingresso Museo della Misericordia",
+            "not_includes": "Acesso para cadeira de rodas / mobilidade reduzida",
+            "mandatory": "Ombros e joelhos cobertos (obrigatório para entrar no Duomo). Bolsas grandes e malas são proibidas. Filas de segurança podem aumentar o tempo de espera.",
+            "cancellation": "Cancelamento gratuito até 21/05/2026. Após: R$ 759,35",
+            "passengers": [
+              {
+                "name": "Pedro Pereira",
+                "dob": "20/10/1987"
+              },
+              {
+                "name": "Clarice Ribeiro",
+                "dob": "04/07/1986"
+              }
+            ]
           },
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Firenze_-_Cattedrale_di_Santa_Maria_del_Fiore.jpg/330px-Firenze_-_Cattedrale_di_Santa_Maria_del_Fiore.jpg",
+          "coordinates": {
+            "lat": 43.7731,
+            "lng": 11.256
+          }
+        },
+        {
+          "id": "evt-604-meal",
+          "type": "meal",
+          "time": "13:45",
+          "title": "Almoço — Mercado Central de Florença",
+          "detail": "Mercato Centrale · Via dell'Ariento (San Lorenzo) · 10 min a pé do Duomo",
+          "notes": "Do Duomo, desça pela Via dei Servi / Via dell'Ariento até o Mercato Centrale (~10 min a pé).",
           "restaurants": [
             {
               "label": "💰 Econômico",
               "name": "Trattoria Mario",
               "address": "Via Rosina 2 (atrás do Mercato Centrale)",
-              "specialty": "Ribollita, pappardelle al cinghiale, bistecca fiorentina (compartilhar)",
+              "specialty": "Ribollita, pappardelle al cinghiale, bistecca fiorentina",
               "price": "€12–18 pp",
-              "tip": "Aberto desde 1953. Mesas compartilhadas com florentinos de verdade. Sem reserva — chegar cedo. Fecha às 15h30."
+              "tip": "Aberto desde 1953. Mesas compartilhadas com florentinos. Sem reserva — chegar cedo. Fecha às 15h30."
             },
             {
               "label": "🍽️ Tradicional",
               "name": "Mercato Centrale — Piso Superior",
-              "address": "Piazza del Mercato Centrale (entrada pela Via dell'Ariento)",
-              "specialty": "Lampredotto (prato típico florentino), pasta fresca, fiorentina grelhada na hora, gelato",
+              "address": "Piazza del Mercato Centrale (entrada Via dell'Ariento)",
+              "specialty": "Lampredotto, pasta fresca, fiorentina grelhada, gelato",
               "price": "€15–25 pp",
               "tip": "Cada bancada é um chef diferente. Provem o lampredotto — o prato mais autêntico de Florença."
             },
@@ -1135,44 +1176,73 @@
               "label": "⭐ Gourmet",
               "name": "Buca Mario",
               "address": "Piazza degli Ottaviani 16 (10 min a pé)",
-              "specialty": "Bistecca alla Fiorentina, pappa al pomodoro, ribollita, cantuccini com Vin Santo",
+              "specialty": "Bistecca alla Fiorentina, pappa al pomodoro, cantuccini com Vin Santo",
               "price": "€45–65 pp",
-              "tip": "O restaurante mais antigo de Florença (1886). Ambiente de cantina histórica. Reservar."
+              "tip": "O restaurante mais antigo de Florença (1886). Reservar."
             }
           ]
         },
         {
-          "id": "evt-604-visit",
+          "id": "evt-605-visit",
           "type": "museum",
-          "time": "14:30",
+          "time": "15:30",
           "title": "Galleria dell'Accademia — O David de Michelangelo",
-          "detail": "RESERVAR INGRESSO ONLINE — obrigatório",
-          "duration": "1h30",
-          "notes": "O David (1501-1504) é a mais famosa escultura do mundo. Mede 5,17m. Ver ao vivo é uma experiência completamente diferente de qualquer foto. RESERVAR COM ANTECEDÊNCIA — sem reserva, a fila pode ser de 2-3h.",
-          "history": "Michelangelo tinha 26 anos quando começou o David. A escultura foi feita de um único bloco de mármore de Carrara que outros escultores haviam abandonado. Michelangelo disse que simplesmente 'removeu o mármore que sobrava'.",
-          "romantic": "Ficar face a face com o David é um momento que não cabe em palavras. Contemplem em silêncio.",
+          "detail": "RESERVAR INGRESSO ONLINE com horário às 15:30 — obrigatório",
+          "notes": "Reserve em advance.uffizi.it. Escolha o horário de entrada às 15:30 para ter tempo confortável após o almoço. A fila sem ingresso agendado pode passar de 2 horas. O David fica no fundo da galeria — reserve pelo menos 1h dentro.",
+          "history": "O David foi esculpido por Michelangelo entre 1501 e 1504 num bloco de mármore de Carrara que havia sido descartado por dois outros escultores. Com 5,17 metros de altura, representa Davi no momento de concentração antes de lançar a pedra contra Golias — não depois. Os olhos levemente alterados (esquerdo maior) foram pensados para a visão a partir de baixo, onde a estátua estaria originalmente.",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/%27David%27_by_Michelangelo_Fir_JBU002.jpg/330px-%27David%27_by_Michelangelo_Fir_JBU002.jpg",
           "coordinates": {
             "lat": 43.7767,
-            "lng": 11.2588
-          },
-          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/%27David%27_by_Michelangelo_Fir_JBU002.jpg/330px-%27David%27_by_Michelangelo_Fir_JBU002.jpg"
+            "lng": 11.2585
+          }
         },
         {
-          "id": "evt-605-walk",
+          "id": "evt-606-walk",
           "type": "walk",
-          "time": "16:30",
-          "title": "Passeio pelo centro histórico",
-          "detail": "Via dei Calzaiuoli → Piazza della Signoria → Ponte Vecchio",
-          "notes": "Florença é feita para ser vivida a pé. A Via dei Calzaiuoli liga o Duomo à Piazza della Signoria — o coração político de Florença. A Loggia dei Lanzi tem esculturas ao ar livre (Perseu de Cellini, O Rapto das Sabinas de Giambologna).",
-          "romantic": "O passeio ao entardecer pela Piazza della Signoria, com a réplica do David em frente ao Palazzo Vecchio, tem um charme atemporal."
+          "time": "17:00",
+          "title": "Piazzale Michelangelo — Por do Sol sobre Florença",
+          "detail": "20 min a pé subindo a colina · Vista panorâmica de toda a cidade",
+          "notes": "Em maio o sol se põe por volta das 20h30. Chegar ao Piazzale às 17h dá tempo para apreciar a luz dourada sobre as cúpulas. Desça depois pelo Jardim das Rosas (Giardino delle Rose) — gratuito e um dos mais belos de Florença.",
+          "romantic": "Ver Florença inteira ao entardecer do Piazzale Michelangelo — o Duomo, o Palazzo Vecchio, o Arno serpenteando sob as pontes — é a cena que fecha um dia perfeito. Levem uma garrafa de vinho do mercado.",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Firenze_Piazzale_Michelangelo_-_panoramio.jpg/330px-Firenze_Piazzale_Michelangelo_-_panoramio.jpg",
+          "coordinates": {
+            "lat": 43.7629,
+            "lng": 11.265
+          }
         },
         {
-          "id": "evt-606-meal",
-          "type": "restaurant",
+          "id": "evt-607-meal",
+          "type": "meal",
           "time": "20:00",
-          "title": "Jantar",
-          "detail": "Escolha livre",
-          "notes": "Sugestão: Buca Mario (fundado em 1886, a trattoria mais antiga de Florença) ou Trattoria Mario (almoço apenas, mas clássico). Para jantar: qualquer trattoria no Oltrarno (lado sul do Arno)."
+          "title": "Jantar em Florença",
+          "detail": "Escolha livre — bairro Oltrarno ou Santa Croce",
+          "notes": "Após o Piazzale, desçam para o Oltrarno (margem sul) — o bairro mais autêntico de Florença para jantar.",
+          "restaurants": [
+            {
+              "label": "💰 Econômico",
+              "name": "Trattoria da Ruggero",
+              "address": "Via Senese 89 (Oltrarno)",
+              "specialty": "Peposo alla fornacina, ribollita, bistecca — cozinha caseira florentina",
+              "price": "€18–25 pp",
+              "tip": "O restaurante favorito dos florentinos no Oltrarno. Sem cardápio em inglês — um charme."
+            },
+            {
+              "label": "🍽️ Tradicional",
+              "name": "Buca Mario",
+              "address": "Piazza degli Ottaviani 16",
+              "specialty": "Bistecca fiorentina, ribollita, cantuccini com Vin Santo",
+              "price": "€40–60 pp",
+              "tip": "Se não foram ao almoço, vale o jantar. O mais histórico de Florença (1886)."
+            },
+            {
+              "label": "⭐ Gourmet",
+              "name": "Borro Tuscan Bistro",
+              "address": "Lungarno Acciaiuoli 2r (junto a Ponte Vecchio)",
+              "specialty": "Cozinha toscana contemporânea com vista para o Arno à noite",
+              "price": "€55–80 pp",
+              "tip": "Varanda com vista para o Arno iluminado à noite. Reservar com antecedência."
+            }
+          ]
         }
       ]
     },
