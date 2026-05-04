@@ -24,6 +24,45 @@
   flex-shrink: 0;
 }
 
+/* ── Tabs: Visão Geral / Por Dia ──────────────────────── */
+.map-view-tabs {
+  display: flex;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+}
+.map-view-tab {
+  flex: 1;
+  padding: 10px var(--s4);
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text3);
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: all var(--t-fast);
+  -webkit-tap-highlight-color: transparent;
+}
+.map-view-tab.active {
+  color: var(--c-primary);
+  border-bottom-color: var(--c-primary);
+}
+
+/* ── Painéis dos modos ────────────────────────────────── */
+.map-panel {
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+  padding: var(--s2) var(--s3);
+  display: flex;
+  flex-direction: column;
+  gap: var(--s2);
+}
+.map-panel--hidden { display: none !important; }
+
 .map-city-filters {
   display: flex;
   gap: var(--s2);
@@ -193,3 +232,165 @@
   transition: var(--t-fast);
 }
 .map-locate-btn:hover { background: var(--bg2); color: var(--c-primary); }
+
+/* ── Tipo filters ─────────────────────────────────────── */
+.map-type-filters {
+  display: flex;
+  gap: var(--s2);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.map-type-filters::-webkit-scrollbar { display: none; }
+.map-type-btn {
+  padding: 4px var(--s3);
+  border-radius: var(--r-xl);
+  border: 1px solid var(--border);
+  font-family: var(--font-mono);
+  font-size: 8px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all var(--t-fast);
+  color: var(--text3);
+  background: var(--bg);
+  -webkit-tap-highlight-color: transparent;
+}
+.map-type-btn.active {
+  background: var(--c-ink);
+  border-color: var(--c-ink);
+  color: var(--c-cream);
+}
+
+/* ── Abas de dia ──────────────────────────────────────── */
+.map-day-tabs-wrap {
+  overflow: hidden;
+}
+.map-day-tabs-scroll {
+  display: flex;
+  gap: var(--s1);
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding-bottom: 2px;
+}
+.map-day-tabs-scroll::-webkit-scrollbar { display: none; }
+
+.map-day-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  padding: 5px 6px;
+  border-radius: var(--r-md);
+  border: 1px solid var(--border);
+  background: var(--bg);
+  cursor: pointer;
+  transition: all var(--t-fast);
+  -webkit-tap-highlight-color: transparent;
+  flex-shrink: 0;
+}
+.map-day-tab.active {
+  background: var(--day-color, var(--c-primary));
+  border-color: var(--day-color, var(--c-primary));
+}
+.map-day-tab-num {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1;
+  color: var(--text);
+}
+.map-day-tab.active .map-day-tab-num { color: #fff; }
+.map-day-tab-mon {
+  font-family: var(--font-mono);
+  font-size: 7px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text3);
+  margin-top: 2px;
+}
+.map-day-tab.active .map-day-tab-mon { color: rgba(255,255,255,0.8); }
+
+/* ── Info do dia selecionado ──────────────────────────── */
+.map-day-info-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s3);
+  padding: 6px var(--s2);
+  border-left: 3px solid var(--c-primary);
+  background: var(--bg2);
+  border-radius: 0 var(--r-sm) var(--r-sm) 0;
+}
+.map-day-info-city {
+  font-family: var(--font-mono);
+  font-size: 8px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-right: var(--s2);
+}
+.map-day-info-title {
+  font-family: var(--font-serif);
+  font-size: 0.88rem;
+  color: var(--text);
+}
+.map-day-info-meta {
+  font-family: var(--font-mono);
+  font-size: 7.5px;
+  letter-spacing: 0.08em;
+  color: var(--text3);
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+/* ── Marcadores ───────────────────────────────────────── */
+.map-marker {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  border: 2px solid rgba(255,255,255,0.9);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+.map-city-label {
+  padding: 3px 10px;
+  border-radius: 20px;
+  color: #fff;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}
+
+/* ── Popup ────────────────────────────────────────────── */
+.map-popup {
+  font-family: var(--font-sans);
+  padding: var(--s3) var(--s4);
+}
+.map-popup-type {
+  font-family: var(--font-mono);
+  font-size: 8px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 3px;
+}
+.map-popup-detail {
+  font-size: 0.8rem;
+  color: var(--text2);
+  margin-top: 3px;
+  line-height: 1.4;
+}
+.map-popup-date {
+  font-family: var(--font-mono);
+  font-size: 8px;
+  color: var(--text3);
+  margin-top: var(--s2);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
