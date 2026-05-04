@@ -378,7 +378,7 @@
         "voo",
         "partida"
       ],
-      "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Aeroporto_Tom_Jobim_Rio_de_Janeiro_2.jpg/800px-Aeroporto_Tom_Jobim_Rio_de_Janeiro_2.jpg",
+      "hero": "./assets/images/heroes/day00_gig_airport.jpg",
       "events": [
         {
           "id": "evt-000-flight",
@@ -413,7 +413,7 @@
         "voo",
         "primeiro dia"
       ],
-      "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/St_Peter%27s_Square%2C_Vatican_City_-_April_2007.jpg/800px-St_Peter%27s_Square%2C_Vatican_City_-_April_2007.jpg",
+      "hero": "./assets/images/heroes/day01_st_peters_square.jpg",
       "events": [
         {
           "id": "evt-101-flight",
@@ -424,7 +424,7 @@
           "duration": "~3h",
           "flight_ref": "flt-lis-fco",
           "notes": "Embarque em Lisboa. Chegada em Roma Fiumicino às 16:40.",
-          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/All_Nippon_Airways_Boeing_777-381ER_JA784A_OKJ_in_flight.jpg/330px-All_Nippon_Airways_Boeing_777-381ER_JA784A_OKJ_in_flight.jpg"
+          "photo": "./assets/images/events/evt_airplane.jpg"
         },
         {
           "id": "evt-102-transfer",
@@ -535,7 +535,7 @@
         "religioso",
         "jantar romântico"
       ],
-      "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/800px-Colosseo_2020.jpg",
+      "hero": "./assets/images/heroes/day02_colosseum.jpg",
       "events": [
         {
           "id": "evt-201-metro",
@@ -560,7 +560,8 @@
               "icon": "🏛️",
               "detail": "1 parada · saída já com vista do Coliseu"
             }
-          ]
+          ],
+          "photo": "./assets/images/events/evt_colosseum.jpg"
         },
         {
           "id": "evt-202-visit",
@@ -676,7 +677,7 @@
             "lat": 41.8902,
             "lng": 12.4922
           },
-          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/330px-Colosseo_2020.jpg"
+          "photo": "./assets/images/events/evt_colosseum.jpg"
         },
         {
           "id": "evt-203-visit",
@@ -837,7 +838,7 @@
         "espiritual",
         "reserva"
       ],
-      "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg/800px-Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg",
+      "hero": "./assets/images/heroes/day03_st_peters_basilica.jpg",
       "events": [
         {
           "id": "evt-301-walk",
@@ -870,84 +871,156 @@
           }
         },
         {
-          "id": "evt-303-visit",
+          "id": "day5-lunch",
+          "time": "11:30",
+          "type": "meal",
+          "title": "Almoço perto do Vaticano",
+          "detail": "Uma hora livre para almoçar antes da entrada nos museus às 13h",
+          "notes": "A região de Prati, logo ao lado do Vaticano, tem ótimas opções. Aproveite para descansar os pés após a Audiência Papal.",
+          "restaurants": [
+            {
+              "label": "🍕 Econômico",
+              "name": "Pizzarium (Bonci)",
+              "address": "Via della Meloria, 43 — 8 min a pé do Vaticano",
+              "specialty": "Pizza al taglio artesanal — o melhor de Roma",
+              "price": "€8–12/pp",
+              "tip": "Fila anda rápido. Ideal para comer na rua ou sentado no balcão."
+            },
+            {
+              "label": "🍝 Tradicional",
+              "name": "Osteria dell'Angelo",
+              "address": "Via G. Bettolo, 24 — 10 min a pé",
+              "specialty": "Almoço com menu fixo romano: cacio e pepe, coda alla vaccinara",
+              "price": "€15–20/pp",
+              "tip": "Reservar pelo menos com um dia de antecedência. Fechado no jantar de sexta."
+            },
+            {
+              "label": "✨ Gourmet",
+              "name": "Settimio all'Arancio",
+              "address": "Via dell'Arancio, 50 — Prati, 12 min a pé",
+              "specialty": "Culinária romana refinada, ambiente elegante, ótimo para casal",
+              "price": "€35–50/pp",
+              "tip": "Peça os tonnarelli cacio e pepe e o tiramisù. Reserva recomendada."
+            }
+          ]
+        },
+        {
+          "id": "day5-museums",
+          "time": "13:00",
           "type": "museum",
-          "time": "11:00",
           "title": "Museus Vaticanos e Capela Sistina",
-          "detail": "Reservar ingresso online — evitar filas de horas",
-          "duration": "3-4h",
-          "notes": "COMPRAR ONLINE. Com fila: espera de 2-3h. Rota clássica: Galeria das Cartas Geográficas → Stanze di Raffaello → Capela Sistina → Basílica de São Pedro (gratuita). Última entrada para a Basílica: 17:30.",
-          "history": "Os Museus Vaticanos foram fundados por Júlio II no séc. XVI e contêm uma das maiores coleções de arte do mundo. A Capela Sistina, pintada por Michelangelo entre 1508-1512, é considerada a obra de arte mais contemplada da humanidade.",
-          "romantic": "Erguer os olhos para a Criação de Adão, pintada por Michelangelo deitado andaimes há 500 anos, é uma experiência de beleza que une arte e fé.",
-          "tips": "A Sistina proíbe fotos — relaxem e simplesmente olhem. O silêncio pedido não é cumprido, mas a beleza atordoa de qualquer forma.",
+          "detail": "Entrada com ingresso reservado — acesso rápido sem fila",
+          "photo": "./assets/images/events/evt_vatican_museums.jpg",
+          "notes": "Ref: 207-16097238 · TIC-T129737115. Chegue 15 min antes ao ponto de encontro: Touristation Office, Viale Vaticano 97. Duração: ~3h30. Inclui: acesso rápido, WiFi no ponto de encontro. NÃO inclui: guia, audioguia, Basílica de São Pedro. Emergências: +39 347 974 54 05.",
+          "history": "Os Museus do Vaticano abrigam uma das maiores coleções de arte do mundo, acumulada por séculos de papas mecenas. Percorra a Galeria das Cartas Geográficas — 40 afrescos de regiões italianas —, o Pátio do Pinheiro com a esfera de Arnaldo Pomodoro, e a Galeria das Tapeçarias de Rafael. O ponto culminante é a Capela Sistina: os afrescos do teto pintados por Michelangelo entre 1508 e 1512, incluindo a Criação de Adão e o Juízo Final, obras que definiram para sempre o ideal da beleza renascentista.",
+          "romantic": "Ficar em silêncio diante do Juízo Final e olhar um para o outro — sabendo que estão juntos nessa eternidade.",
+          "tips": "Fotografia sem flash é permitida na maioria das galerias. Na Sistina é proibido fotografar. Leve água — os museus são grandes e quentes. Saída direta para a Basílica de São Pedro (opcional, sem fila extra).",
+          "booking": {
+            "operator": "Touristation / Ticket Station",
+            "reference": "207-16097238",
+            "ticket_code": "TIC-T129737115",
+            "meeting_point": "Viale Vaticano, 97 — Touristation Vaticano Office",
+            "start_time": "13:00",
+            "duration": "3h30",
+            "pax": 2,
+            "includes": "Ingressos + acesso rápido + assistência de staff + WiFi",
+            "excludes": "Guia, audioguia, transfer, Basílica de São Pedro",
+            "emergency": "+39 347 974 54 05",
+            "voucher": "Impresso ou e-voucher no celular"
+          },
           "coordinates": {
             "lat": 41.9065,
             "lng": 12.4536
-          },
-          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Vatican_Museum_Spiral_Staircase_2012.jpg/330px-Vatican_Museum_Spiral_Staircase_2012.jpg"
-        },
-        {
-          "id": "evt-304-visit",
-          "type": "church",
-          "time": "14:30",
-          "title": "Igreja Santa Maria della Pace",
-          "detail": "Igreja do Opus Dei — próxima à Piazza Navona",
-          "duration": "30 min",
-          "notes": "Uma pequena joia do Renascimento romano, com a famosa galeria de Bramante (pátio). Fica a poucos minutos da Piazza Navona. Afrescos de Rafael na primeira capela.",
-          "coordinates": {
-            "lat": 41.8986,
-            "lng": 12.472
-          },
-          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Santa_Maria_della_Pace_-_Roma.jpg/330px-Santa_Maria_della_Pace_-_Roma.jpg"
-        },
-        {
-          "id": "evt-305-ticket",
-          "type": "ticket",
-          "time": "16:30",
-          "title": "Necrópole Trionfale — Túmulo de São Pedro",
-          "detail": "Visita guiada sob a Basílica de São Pedro",
-          "duration": "~1h30",
-          "ticket_ref": "tkt-necropolis",
-          "notes": "Código: AUYY-7VDB. Apresentar na entrada da Fabbrica di San Pietro (ao lado da Basílica). Guia em português incluído. Grupo pequeno. Câmeras permitidas (sem flash). CONFIRMAÇÃO POR E-MAIL PENDENTE.",
-          "history": "A Necrópole Trionfale é uma cidade subterrânea dos mortos do séc. I ao IV d.C., descoberta em escavações de 1939-1949. No seu coração está o Tropaion de Pedro — o memorial erguido pelos primeiros cristãos sobre a tumba do apóstolo mártir. As escavações confirmaram com alta probabilidade que ali jazem os ossos de São Pedro.",
-          "romantic": "Descer sob São Pedro para estar diante da tumba do príncipe dos apóstolos — onde Pedro repousa desde o ano 67 d.C. — é um momento de profundidade espiritual raro.",
-          "coordinates": {
-            "lat": 41.9022,
-            "lng": 12.4554
           }
         },
         {
-          "id": "evt-306-meal",
+          "id": "day5-necropole",
+          "time": "16:30",
+          "type": "ticket",
+          "title": "⚠️ Necrópole Trionfale — Túmulo de São Pedro (OPCIONAL)",
+          "detail": "Visita guiada sob a Basílica · pendente de confirmação pelo Vaticano",
+          "notes": "Código: AUYY-7VDB. Apresentar na entrada da Fabbrica di San Pietro (ao lado da Basílica). Guia em português. €20/pp. ATENÇÃO: esta visita está pendente de confirmação. Se confirmada, encaixa logo após os museus (~16:30). Se não confirmada, aproveite o tempo livre na Praça São Pedro antes de seguir para Santa Maria della Pace.",
+          "history": "Sob a Basílica de São Pedro jaz a Necrópole Vaticana, um cemitério romano do séc. I–III d.C. No centro desta necrópole, os arqueólogos identificaram, em 1968, o que acreditam ser os ossos do Apóstolo Pedro — o 'locus Petri' que justificou a construção de toda a Basílica sobre este ponto específico. Uma das descobertas arqueológicas mais significativas da história cristã.",
+          "romantic": "Estar no lugar exato onde Pedro foi sepultado — a pedra sobre a qual foi construída a Igreja.",
+          "tips": "Visita de ~1h30. Roupas cobertas obrigatórias. Não permitido fotografar dentro da necrópole. Máx. 15 pessoas por grupo.",
+          "coordinates": {
+            "lat": 41.9022,
+            "lng": 12.4539
+          }
+        },
+        {
+          "id": "day5-transfer-pace",
+          "time": "17:45",
+          "type": "walk",
+          "title": "Trajeto: Vaticano → Santa Maria della Pace",
+          "detail": "~2,2 km — chegue às 18h no máximo",
+          "steps": [
+            {
+              "desc": "🚶 A pé (recomendado): Porta Sant'Anna → Via della Conciliazione → Ponte Sant'Angelo → Via del Governo Vecchio → Vicolo della Pace",
+              "duration": "25–30 min",
+              "price": "Grátis"
+            },
+            {
+              "desc": "🚌 Ônibus 40/64/23: Embarca em Lungotevere in Sassia → desce em Corso Vittorio Emanuele II → 5 min a pé até a chiesa",
+              "duration": "~20 min",
+              "price": "€1,50"
+            },
+            {
+              "desc": "🚕 Táxi/Uber: direto da saída dos museus",
+              "duration": "~10 min",
+              "price": "€8–12"
+            }
+          ],
+          "tips": "O caminho a pé passa pelo Castel Sant'Angelo e pela famosa Via del Governo Vecchio — uma das ruas medievais mais bonitas de Roma, ótima para uma vitrine ou gelato."
+        },
+        {
+          "id": "day5-pace",
+          "time": "18:00",
+          "type": "church",
+          "title": "Igreja Santa Maria della Pace",
+          "detail": "Igreja do século XV — Bramante e Rafael",
+          "photo": "./assets/images/events/evt_sm_pace.jpg",
+          "notes": "Fica na Vicolo della Pace, a poucos metros da Piazza Navona. Horários: 09h–12h e 16h–19h (verificar). Entrada gratuita.",
+          "history": "Construída por encomenda do Papa Sisto IV em 1482, Santa Maria della Pace esconde duas obras-primas: o pórtico semicircular de Bramante (1500) — considerado um dos primeiros trabalhos de alto Renascimento em Roma — e as Sibilas de Rafael (1514), pintadas no arco da Cappella Chigi. As Sibilas — figuras proféticas da Antiguidade — são aqui representadas em plena inspiração divina, numa composição de beleza e movimento raros. Uma visita íntima, longe das multidões.",
+          "romantic": "Um pátio renascentista só para vocês dois — como se o tempo tivesse parado em 1514.",
+          "tips": "A igreja costuma estar quase vazia — raramente visitada pelos turistas apressados. Aproveite o silêncio. O pórtico de Bramante pode ser visitado mesmo com a igreja fechada, pois fica numa ruela aberta.",
+          "coordinates": {
+            "lat": 41.8999,
+            "lng": 12.4726
+          }
+        },
+        {
+          "id": "day5-dinner",
+          "time": "20:30",
           "type": "restaurant",
-          "time": "20:00",
-          "title": "Jantar — Centro Histórico / Piazza Navona",
-          "detail": "Após o dia no Vaticano — área entre Prati e Navona",
-          "notes": "Piazza Navona foi construída sobre o Estádio de Domiciano (séc. I d.C.). A Fontana dei Quattro Fiumi de Bernini é a peça central. À noite, com as luzes do barroco, é inesquecível.",
-          "romantic": "Jantar na Piazza Navona após um dia tão espiritual é o equilíbrio perfeito entre o sagrado e o belo.",
+          "title": "Jantar — Piazza Navona",
+          "detail": "Uma das praças mais belas do mundo — ao ar livre ou em restaurante próximo",
+          "notes": "Piazza Navona foi construída sobre o Estádio de Domiciano (séc. I d.C.). A Fontana dei Quattro Fiumi, de Bernini (1651), domina o centro. À noite, com as luzes e os músicos de rua, é mágica.",
+          "romantic": "Jantar com vista para a fonte de Bernini iluminada — a bela Roma que só existia nos seus sonhos juntos.",
           "restaurants": [
             {
-              "label": "💰 Econômico",
-              "name": "Osteria dell'Angelo",
-              "address": "Via G. Bettolo 24 (Prati — perto do Airbnb)",
-              "specialty": "Menu fixo romano — cacio e pepe, rigatoni alla gricia, abbacchio al forno",
-              "price": "€15–20 pp (menu fixo)",
-              "tip": "Menu fixo tradicional com vinho incluído por preço imbatível. O favorito dos moradores de Prati. Reservar."
+              "label": "🍕 Econômico",
+              "name": "Da Francesco",
+              "address": "Via della Fossa, 29 — 3 min da Piazza Navona",
+              "specialty": "Pizza e pasta romana clássica desde 1948. Ambiente animado, mesas externas",
+              "price": "€15–25/pp",
+              "tip": "Sempre lotado. Chegar cedo (20h) ou esperar fila de ~20 min. Peça a pizza al mattone."
             },
             {
-              "label": "🍽️ Tradicional",
-              "name": "Ristorante La Campana",
-              "address": "Vicolo della Campana 18 (Navona)",
-              "specialty": "Cozinha romana clássica desde 1518 — saltimbocca, pajata, trippa alla romana",
-              "price": "€32–45 pp",
-              "tip": "Sentar na calçada com a Piazza Navona ao fundo. Pedir o carciofo alla giudia como entrada."
+              "label": "🍝 Tradicional",
+              "name": "Ristorante Myosotis",
+              "address": "Via della Vaccarella, 3/5 — 4 min da Piazza Navona",
+              "specialty": "Culinária romana autêntica: cacio e pepe, abbacchio, coda alla vaccinara",
+              "price": "€30–45/pp",
+              "tip": "Reserva recomendada. Ambiente íntimo, serviço atencioso. Ótimo vinho da casa."
             },
             {
-              "label": "⭐ Gourmet",
+              "label": "✨ Gourmet",
               "name": "Il Convivio Troiani",
-              "address": "Vicolo dei Soldati 31 (Navona)",
-              "specialty": "Alta cozinha romana · 1 Michelin · Menu degustação com harmonização de vinhos italianos",
-              "price": "€90–130 pp",
-              "tip": "Após um dia no Vaticano e na Necrópole — o jantar mais especial de Roma. Reservar com antecedência."
+              "address": "Vicolo dei Soldati, 31 — 5 min da Piazza Navona",
+              "specialty": "1 estrela Michelin. Alta gastronomia romana contemporânea",
+              "price": "€70–90/pp",
+              "tip": "Reserva obrigatória. Menu degustação imperdível. Celebração de 12 anos à altura."
             }
           ]
         }
@@ -966,7 +1039,7 @@
         "espiritual",
         "despedida de Roma"
       ],
-      "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Basilica_di_Santa_Maria_Maggiore_-_Roma.jpg/800px-Basilica_di_Santa_Maria_Maggiore_-_Roma.jpg",
+      "hero": "./assets/images/heroes/day04_smm.jpg",
       "events": [
         {
           "id": "evt-401-visit",
@@ -981,7 +1054,7 @@
             "lat": 41.8858,
             "lng": 12.5057
           },
-          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/San_Giovanni_in_Laterano.jpg/330px-San_Giovanni_in_Laterano.jpg"
+          "photo": "./assets/images/events/evt_lateran.jpg"
         },
         {
           "id": "evt-402-visit",
@@ -997,7 +1070,7 @@
             "lat": 41.8976,
             "lng": 12.4993
           },
-          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Basilica_di_Santa_Maria_Maggiore_-_Roma.jpg/330px-Basilica_di_Santa_Maria_Maggiore_-_Roma.jpg"
+          "photo": "./assets/images/events/evt_smm_event.jpg"
         },
         {
           "id": "evt-403-meal",
@@ -1047,7 +1120,7 @@
             "lat": 41.8582,
             "lng": 12.4767
           },
-          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Basilica_di_San_Paolo_fuori_le_mura.jpg/330px-Basilica_di_San_Paolo_fuori_le_mura.jpg"
+          "photo": "./assets/images/events/evt_san_paolo.jpg"
         },
         {
           "id": "evt-405-meal",
@@ -1098,7 +1171,7 @@
         "chegada",
         "pôr do sol"
       ],
-      "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Firenze_-_Ponte_vecchio.jpg/800px-Firenze_-_Ponte_vecchio.jpg",
+      "hero": "./assets/images/heroes/day05_ponte_vecchio.jpg",
       "events": [
         {
           "id": "evt-501-checkout",
@@ -1203,7 +1276,7 @@
         "David",
         "Duomo"
       ],
-      "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/%27David%27_by_Michelangelo_Fir_JBU002.jpg/800px-%27David%27_by_Michelangelo_Fir_JBU002.jpg",
+      "hero": "./assets/images/heroes/day06_david.jpg",
       "events": [
         {
           "id": "evt-601-mass",
@@ -1389,7 +1462,7 @@
         "Carlo Acutis",
         "excursão"
       ],
-      "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/AssisiDec122023_03.jpg/800px-AssisiDec122023_03.jpg",
+      "hero": "./assets/images/heroes/day07_assisi.jpg",
       "events": [
         {
           "id": "evt-701-train",
@@ -1445,7 +1518,7 @@
             "lat": 43.0717,
             "lng": 12.6175
           },
-          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Assisi_chiesa_san_damiano.jpg/330px-Assisi_chiesa_san_damiano.jpg"
+          "photo": "./assets/images/events/evt_carlo_acutis.jpg"
         },
         {
           "id": "evt-704-mass",
@@ -1601,7 +1674,7 @@
         "BARCO",
         "STREET FOOD"
       ],
-      "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Vernazza_Cinque_Terre.jpg/800px-Vernazza_Cinque_Terre.jpg",
+      "hero": "./assets/images/heroes/day08_cinque_terre.jpg",
       "events": [
         {
           "id": "evt-801-transfer",
@@ -1665,7 +1738,7 @@
               }
             ]
           },
-          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Vernazza_Cinque_Terre.jpg/330px-Vernazza_Cinque_Terre.jpg"
+          "photo": "./assets/images/events/evt_cinque_terre.jpg"
         },
         {
           "id": "evt-803-meal",
@@ -1725,7 +1798,7 @@
         "Île de la Cité",
         "voo Vueling"
       ],
-      "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Notre-Dame_de_Paris_2013-07-24.jpg/800px-Notre-Dame_de_Paris_2013-07-24.jpg",
+      "hero": "./assets/images/heroes/day09_notre_dame.jpg",
       "events": [
         {
           "id": "evt-900-wakeup",
@@ -1810,7 +1883,7 @@
             "lat": 48.853,
             "lng": 2.3499
           },
-          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Notre-Dame_de_Paris%2C_4_October_2017.jpg/330px-Notre-Dame_de_Paris%2C_4_October_2017.jpg"
+          "photo": "./assets/images/events/evt_notre_dame.jpg"
         },
         {
           "id": "evt-906-walk",
@@ -1875,7 +1948,7 @@
         "arte",
         "devoção"
       ],
-      "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Mus%C3%A9e_d%27Orsay%2C_3_November_2014.jpg/800px-Mus%C3%A9e_d%27Orsay%2C_3_November_2014.jpg",
+      "hero": "./assets/images/heroes/day10_orsay.jpg",
       "events": [
         {
           "id": "evt-1001-visit",
@@ -2000,7 +2073,7 @@
         "diversão",
         "dia especial"
       ],
-      "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Disneyland_Paris_castle.jpg/800px-Disneyland_Paris_castle.jpg",
+      "hero": "./assets/images/heroes/day11_disneyland.jpg",
       "events": [
         {
           "id": "evt-1101-transfer",
@@ -2052,7 +2125,7 @@
         "Bélgica",
         "trem"
       ],
-      "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Brussels_Grand_Place_2009.JPG/800px-Brussels_Grand_Place_2009.JPG",
+      "hero": "./assets/images/heroes/day12_grand_place.jpg",
       "events": [
         {
           "id": "evt-1201-train",
@@ -2113,7 +2186,7 @@
           "duration": "15 min",
           "notes": "A pequena estátua de bronze (61 cm) do menino urinando é um símbolo de irreverência e humor belga. Fica a poucos metros da Grand-Place. Costuma estar vestido em algum traje folclórico.",
           "romantic": "Para rir juntos — o Manneken Pis é inescapavelmente divertido.",
-          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Manneken_Pis_2011.jpg/330px-Manneken_Pis_2011.jpg"
+          "photo": "./assets/images/events/evt_manneken_pis.jpg"
         },
         {
           "id": "evt-1206-meal",
@@ -2183,7 +2256,7 @@
         "Torre Eiffel",
         "jantar de despedida"
       ],
-      "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Tour_Eiffel_Wikimedia_Commons.jpg/800px-Tour_Eiffel_Wikimedia_Commons.jpg",
+      "hero": "./assets/images/heroes/day13_eiffel.jpg",
       "events": [
         {
           "id": "evt-1301-mass",
@@ -2224,7 +2297,7 @@
             "lat": 48.8867,
             "lng": 2.3431
           },
-          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sacre_Coeur_Basilica%2C_Montmartre%2C_Paris_June_2010.jpg/330px-Sacre_Coeur_Basilica%2C_Montmartre%2C_Paris_June_2010.jpg"
+          "photo": "./assets/images/events/evt_sacre_coeur.jpg"
         },
         {
           "id": "evt-1304-walk",
@@ -2298,7 +2371,7 @@
         "voo",
         "despedida"
       ],
-      "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/All_Nippon_Airways_Boeing_777-381ER_JA784A_OKJ_in_flight.jpg/800px-All_Nippon_Airways_Boeing_777-381ER_JA784A_OKJ_in_flight.jpg",
+      "hero": "./assets/images/heroes/day14_airplane.jpg",
       "events": [
         {
           "id": "evt-1401-checkout",
