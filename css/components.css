@@ -12,7 +12,7 @@
   padding: var(--s3) var(--s5);
   border-radius: var(--r-xl);
   font-family: var(--font-mono);
-  font-size: 9px;
+  font-size: 11px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   transition: all var(--t-fast);
@@ -27,7 +27,7 @@
   padding: var(--s3) var(--s4);
   border-radius: var(--r-xl);
   font-family: var(--font-mono);
-  font-size: 9px;
+  font-size: 11px;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   border: 1px solid var(--border);
@@ -60,7 +60,7 @@
 
 .card-meta {
   font-family: var(--font-mono);
-  font-size: 9px;
+  font-size: 11px;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--text3);
@@ -77,7 +77,7 @@
   align-items: center;
   gap: 3px;
   font-family: var(--font-mono);
-  font-size: 8px;
+  font-size: 11px;
   letter-spacing: 0.15em;
   padding: 2px 7px;
   border-radius: var(--r-xl);
@@ -105,7 +105,7 @@
   margin: var(--s5) 0;
   color: var(--text3);
   font-family: var(--font-mono);
-  font-size: 8px;
+  font-size: 11px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
@@ -135,7 +135,7 @@
 
 .event-time {
   font-family: var(--font-mono);
-  font-size: 9px;
+  font-size: 11px;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--text3);
@@ -186,7 +186,7 @@
 
 .day-weekday {
   font-family: var(--font-mono);
-  font-size: 9px;
+  font-size: 11px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--text3);
@@ -203,7 +203,7 @@
   background: var(--c-primary);
   color: var(--bg);
   font-family: var(--font-mono);
-  font-size: 8px;
+  font-size: 11px;
   letter-spacing: 0.15em;
   padding: 2px 8px;
   border-radius: var(--r-xl);
@@ -303,7 +303,7 @@
   padding: 3px var(--s3);
   border-radius: var(--r-xl);
   font-family: var(--font-mono);
-  font-size: 9px;
+  font-size: 11px;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--text3);
@@ -316,7 +316,7 @@
 
 .modal-section-title {
   font-family: var(--font-mono);
-  font-size: 9px;
+  font-size: 11px;
   letter-spacing: 0.25em;
   text-transform: uppercase;
   color: var(--text3);
@@ -396,7 +396,7 @@
 
 .more-drawer-mono-label {
   font-family: var(--font-mono);
-  font-size: 9px;
+  font-size: 11px;
   letter-spacing: 0.3em;
   text-transform: uppercase;
   color: var(--text3);
@@ -435,7 +435,7 @@
 
 .drawer-item-label {
   font-family: var(--font-mono);
-  font-size: 9px;
+  font-size: 11px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   line-height: 1.2;
@@ -445,7 +445,7 @@
   text-align: center;
   color: var(--text3);
   font-family: var(--font-mono);
-  font-size: 9px;
+  font-size: 11px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   padding-top: var(--s2);
@@ -591,7 +591,7 @@
   color: var(--bg);
   border-radius: var(--r-md);
   font-family: var(--font-mono);
-  font-size: 9px;
+  font-size: 11px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   transition: filter var(--t-fast);

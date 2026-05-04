@@ -68,7 +68,7 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 html {
-  font-size: 16px;
+  font-size: 17px;
   -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth;
 }
@@ -145,7 +145,7 @@ h1, h2, h3, h4 {
 
 .header-mono-label {
   font-family: var(--font-mono);
-  font-size: 9px;
+  font-size: 11px;
   letter-spacing: 0.28em;
   text-transform: uppercase;
   color: var(--text3);
@@ -181,7 +181,7 @@ h1, h2, h3, h4 {
 
 .header-mono-sub {
   font-family: var(--font-mono);
-  font-size: 9px;
+  font-size: 11px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--text3);
@@ -236,7 +236,7 @@ h1, h2, h3, h4 {
 
 .stat-label {
   font-family: var(--font-mono);
-  font-size: 8.5px;
+  font-size: 11px;
   letter-spacing: 0.25em;
   text-transform: uppercase;
   color: var(--text3);
@@ -256,7 +256,7 @@ h1, h2, h3, h4 {
 
 .stat-sub {
   font-family: var(--font-mono);
-  font-size: 8px;
+  font-size: 11px;
   color: var(--text3);
   margin-top: 1px;
   white-space: nowrap;
@@ -350,7 +350,7 @@ h1, h2, h3, h4 {
   gap: 3px;
   color: var(--text3);
   font-family: var(--font-mono);
-  font-size: 9px;
+  font-size: 11px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   transition: color var(--t-fast);
@@ -400,7 +400,7 @@ h1, h2, h3, h4 {
 
 .section-mono-label {
   font-family: var(--font-mono);
-  font-size: 9px;
+  font-size: 11px;
   letter-spacing: 0.3em;
   text-transform: uppercase;
   color: var(--c-primary);
@@ -417,7 +417,7 @@ h1, h2, h3, h4 {
 
 .section-subtitle {
   font-family: var(--font-mono);
-  font-size: 9px;
+  font-size: 11px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--text3);
@@ -496,7 +496,7 @@ h1, h2, h3, h4 {
    ---------------------------------------------------------- */
 .mono-label {
   font-family: var(--font-mono);
-  font-size: 9px;
+  font-size: 11px;
   letter-spacing: 0.3em;
   text-transform: uppercase;
   color: var(--text3);
@@ -541,7 +541,7 @@ h1, h2, h3, h4 {
   border-radius: var(--r-xl);
   border: 1px solid var(--border);
   font-family: var(--font-mono);
-  font-size: 9px;
+  font-size: 11px;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   white-space: nowrap;
@@ -601,7 +601,7 @@ h1, h2, h3, h4 {
     justify-content: flex-start;
     padding: var(--s3) var(--s5);
     gap: var(--s3);
-    font-size: 9px;
+    font-size: 11px;
     border-radius: 0;
   }
   .nav-item.active::before {

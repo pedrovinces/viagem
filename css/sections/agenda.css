@@ -13,7 +13,7 @@
 
 .agenda-mono-label {
   font-family: var(--font-mono);
-  font-size: 9px;
+  font-size: 11px;
   letter-spacing: 0.3em;
   text-transform: uppercase;
   color: var(--c-primary);
@@ -31,7 +31,7 @@
 
 .agenda-subtitle {
   font-family: var(--font-mono);
-  font-size: 9px;
+  font-size: 11px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--text3);
@@ -99,7 +99,7 @@
 
 .tab-mon {
   font-family: var(--font-mono);
-  font-size: 7.5px;
+  font-size: 10px;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   opacity: 0.7;
@@ -152,7 +152,7 @@
   align-items: center;
   gap: 4px;
   font-family: var(--font-mono);
-  font-size: 8px;
+  font-size: 11px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   background: rgba(139,30,30,0.85);
@@ -179,7 +179,7 @@
 
 .day-date-label {
   font-family: var(--font-mono);
-  font-size: 8px;
+  font-size: 11px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   opacity: 0.7;
@@ -206,7 +206,7 @@
   margin-right: var(--s1);
   margin-bottom: var(--s1);
   font-family: var(--font-mono);
-  font-size: 8px;
+  font-size: 11px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   padding: 2px 7px;
@@ -224,7 +224,7 @@
 
 .event-section-label {
   font-family: var(--font-mono);
-  font-size: 8.5px;
+  font-size: 11px;
   letter-spacing: 0.25em;
   text-transform: uppercase;
   color: var(--text3);
@@ -260,7 +260,7 @@
 
 .event-time {
   font-family: var(--font-mono);
-  font-size: 9px;
+  font-size: 11px;
   letter-spacing: 0.08em;
   color: var(--text3);
   text-align: right;
@@ -351,7 +351,7 @@
 .event-step-duration,
 .event-step-price {
   font-family: var(--font-mono);
-  font-size: 8px;
+  font-size: 11px;
   letter-spacing: 0.1em;
   color: var(--c-gold);
   flex-shrink: 0;
@@ -397,7 +397,7 @@
 
 .event-modal-time {
   font-family: var(--font-mono);
-  font-size: 9px;
+  font-size: 11px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--text3);
@@ -417,7 +417,7 @@
 
 .modal-section-label {
   font-family: var(--font-mono);
-  font-size: 9px;
+  font-size: 11px;
   letter-spacing: 0.25em;
   text-transform: uppercase;
   color: var(--text3);
@@ -606,7 +606,7 @@
 
 .transport-step-label {
   font-family: var(--font-mono);
-  font-size: 8.5px;
+  font-size: 11px;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--text3);
