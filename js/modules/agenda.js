@@ -58,7 +58,7 @@ function renderDayCard(day, idx, cityMap, data) {
 
   return `
     <article class="day-card" id="day-card-${idx}" data-day="${idx}" data-date="${day.date}">
-      <div class="day-card-header" style="${heroStyle}">
+      <div class="day-card-header day-card-header--${day.city || 'default'}" style="${heroStyle}">
         <div class="day-card-header-overlay"></div>
         <div class="day-card-header-content">
           <div class="day-city-badge">${city.name || ''}</div>

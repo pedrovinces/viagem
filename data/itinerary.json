@@ -378,7 +378,7 @@
         "voo",
         "partida"
       ],
-      "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Aeroporto_Tom_Jobim_Rio_de_Janeiro_2.jpg/1920px-Aeroporto_Tom_Jobim_Rio_de_Janeiro_2.jpg",
+      "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Aeroporto_Tom_Jobim_Rio_de_Janeiro_2.jpg/800px-Aeroporto_Tom_Jobim_Rio_de_Janeiro_2.jpg",
       "events": [
         {
           "id": "evt-000-flight",
@@ -413,7 +413,7 @@
         "voo",
         "primeiro dia"
       ],
-      "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/St_Peter%27s_Square%2C_Vatican_City_-_April_2007.jpg/1920px-St_Peter%27s_Square%2C_Vatican_City_-_April_2007.jpg",
+      "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/St_Peter%27s_Square%2C_Vatican_City_-_April_2007.jpg/800px-St_Peter%27s_Square%2C_Vatican_City_-_April_2007.jpg",
       "events": [
         {
           "id": "evt-101-flight",
@@ -508,7 +508,7 @@
         "religioso",
         "jantar romântico"
       ],
-      "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/1920px-Colosseo_2020.jpg",
+      "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/800px-Colosseo_2020.jpg",
       "events": [
         {
           "id": "evt-201-metro",
@@ -782,7 +782,7 @@
         "espiritual",
         "reserva"
       ],
-      "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg/1920px-Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg",
+      "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg/800px-Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg",
       "events": [
         {
           "id": "evt-301-walk",
@@ -883,7 +883,7 @@
         "espiritual",
         "despedida de Roma"
       ],
-      "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Basilica_di_Santa_Maria_Maggiore_-_Roma.jpg/1920px-Basilica_di_Santa_Maria_Maggiore_-_Roma.jpg",
+      "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Basilica_di_Santa_Maria_Maggiore_-_Roma.jpg/800px-Basilica_di_Santa_Maria_Maggiore_-_Roma.jpg",
       "events": [
         {
           "id": "evt-401-visit",
@@ -986,7 +986,7 @@
         "chegada",
         "pôr do sol"
       ],
-      "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Firenze_-_Ponte_vecchio.jpg/1920px-Firenze_-_Ponte_vecchio.jpg",
+      "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Firenze_-_Ponte_vecchio.jpg/800px-Firenze_-_Ponte_vecchio.jpg",
       "events": [
         {
           "id": "evt-501-checkout",
@@ -1065,7 +1065,7 @@
         "David",
         "Duomo"
       ],
-      "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/%27David%27_by_Michelangelo_Fir_JBU002.jpg/1920px-%27David%27_by_Michelangelo_Fir_JBU002.jpg",
+      "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/%27David%27_by_Michelangelo_Fir_JBU002.jpg/800px-%27David%27_by_Michelangelo_Fir_JBU002.jpg",
       "events": [
         {
           "id": "evt-601-mass",
@@ -1179,7 +1179,7 @@
         "Carlo Acutis",
         "excursão"
       ],
-      "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/AssisiDec122023_03.jpg/1920px-AssisiDec122023_03.jpg",
+      "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/AssisiDec122023_03.jpg/800px-AssisiDec122023_03.jpg",
       "events": [
         {
           "id": "evt-701-train",
@@ -1386,7 +1386,7 @@
         "jardins",
         "despedida de Florença"
       ],
-      "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Uffizi.jpg/1920px-Uffizi.jpg",
+      "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Uffizi.jpg/800px-Uffizi.jpg",
       "events": [
         {
           "id": "evt-801-visit",
@@ -1475,7 +1475,7 @@
         "Île de la Cité",
         "voo Vueling"
       ],
-      "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Notre-Dame_de_Paris_2013-07-24.jpg/1920px-Notre-Dame_de_Paris_2013-07-24.jpg",
+      "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Notre-Dame_de_Paris_2013-07-24.jpg/800px-Notre-Dame_de_Paris_2013-07-24.jpg",
       "events": [
         {
           "id": "evt-900-wakeup",
@@ -1598,7 +1598,7 @@
         "arte",
         "devoção"
       ],
-      "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Mus%C3%A9e_d%27Orsay%2C_3_November_2014.jpg/1920px-Mus%C3%A9e_d%27Orsay%2C_3_November_2014.jpg",
+      "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Mus%C3%A9e_d%27Orsay%2C_3_November_2014.jpg/800px-Mus%C3%A9e_d%27Orsay%2C_3_November_2014.jpg",
       "events": [
         {
           "id": "evt-1001-visit",
@@ -1695,7 +1695,7 @@
         "diversão",
         "dia especial"
       ],
-      "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Disneyland_Paris_castle.jpg/1920px-Disneyland_Paris_castle.jpg",
+      "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Disneyland_Paris_castle.jpg/800px-Disneyland_Paris_castle.jpg",
       "events": [
         {
           "id": "evt-1101-transfer",
@@ -1747,7 +1747,7 @@
         "Bélgica",
         "trem"
       ],
-      "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Brussels_Grand_Place_2009.JPG/1920px-Brussels_Grand_Place_2009.JPG",
+      "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Brussels_Grand_Place_2009.JPG/800px-Brussels_Grand_Place_2009.JPG",
       "events": [
         {
           "id": "evt-1201-train",
@@ -1874,7 +1874,7 @@
         "Torre Eiffel",
         "jantar de despedida"
       ],
-      "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Tour_Eiffel_Wikimedia_Commons.jpg/1920px-Tour_Eiffel_Wikimedia_Commons.jpg",
+      "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Tour_Eiffel_Wikimedia_Commons.jpg/800px-Tour_Eiffel_Wikimedia_Commons.jpg",
       "events": [
         {
           "id": "evt-1301-mass",
@@ -1961,7 +1961,7 @@
         "voo",
         "despedida"
       ],
-      "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Tour_Eiffel_Wikimedia_Commons.jpg/1920px-Tour_Eiffel_Wikimedia_Commons.jpg",
+      "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/All_Nippon_Airways_Boeing_777-381ER_JA784A_OKJ_in_flight.jpg/800px-All_Nippon_Airways_Boeing_777-381ER_JA784A_OKJ_in_flight.jpg",
       "events": [
         {
           "id": "evt-1401-checkout",

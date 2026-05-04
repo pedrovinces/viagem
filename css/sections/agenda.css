@@ -118,10 +118,15 @@
   position: relative;
   height: 160px;
   overflow: hidden;
-  background: var(--bg2);
+  background: #3a2a1a;
   background-size: cover;
   background-position: center;
 }
+.day-card-header--rome    { background-color: #6b1f10; }
+.day-card-header--florence { background-color: #7a4e10; }
+.day-card-header--assisi  { background-color: #5a4530; }
+.day-card-header--paris   { background-color: #1a3055; }
+.day-card-header--travel  { background-color: #1a2a3a; }
 
 .day-card-header-overlay {
   position: absolute;
