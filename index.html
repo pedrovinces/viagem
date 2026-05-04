@@ -33,10 +33,71 @@
   <link rel="stylesheet" href="./css/sections/religion.css" />
   <link rel="stylesheet" href="./css/sections/destinations.css" />
   <link rel="stylesheet" href="./css/sections/documents.css" />
+  <link rel="stylesheet" href="./css/lock.css" />
 
   <title>Nossa Viagem · 12 Anos</title>
 </head>
 <body>
+
+  <!-- LOCK SCREEN -->
+  <div id="lock-screen">
+    <div class="lock-card">
+      <div class="lock-ornament">✦</div>
+      <h1 class="lock-title">Nossa <em>Viagem</em></h1>
+      <p class="lock-sub">Pedro &amp; Clarice · Maio MMXXVI</p>
+      <form id="lock-form" autocomplete="off">
+        <input
+          id="lock-input"
+          type="password"
+          placeholder="senha"
+          autocomplete="current-password"
+          spellcheck="false"
+        />
+        <button type="submit">Entrar</button>
+        <p id="lock-error" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+  <script>
+    // Verificação síncrona — evita flash de conteúdo se já desbloqueado
+    if (sessionStorage.getItem('nv_unlocked') === '1') {
+      document.getElementById('lock-screen').remove();
+    } else {
+      document.body.style.overflow = 'hidden';
+    }
+  </script>
+  <script type="module">
+    const HASH = 'b73a63ed9a729595333238dcf806c7799b0102bce0ded2e696f9ca3257b2466d';
+    async function sha256(str) {
+      const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(str));
+      return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, '0')).join('');
+    }
+    const screen = document.getElementById('lock-screen');
+    const form   = document.getElementById('lock-form');
+    const input  = document.getElementById('lock-input');
+    const error  = document.getElementById('lock-error');
+    if (form && screen) {
+      requestAnimationFrame(() => input.focus());
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const ok = await sha256(input.value.trim()) === HASH;
+        if (ok) {
+          sessionStorage.setItem('nv_unlocked', '1');
+          document.body.style.overflow = '';
+          screen.classList.add('lock-fade-out');
+          screen.addEventListener('transitionend', () => screen.remove(), { once: true });
+        } else {
+          error.textContent = 'Senha incorreta';
+          input.value = '';
+          input.focus();
+          const card = screen.querySelector('.lock-card');
+          card.classList.add('lock-shake');
+          card.addEventListener('animationend', () => card.classList.remove('lock-shake'), { once: true });
+        }
+      });
+    }
+  </script>
+
   <div id="app">
 
     <!-- HEADER EDITORIAL -->

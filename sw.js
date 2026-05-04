@@ -1,4 +1,4 @@
-const CACHE = 'nossa-viagem-v6';
+const CACHE = 'nossa-viagem-v7';
 
 const PRECACHE = [
   './',
@@ -15,8 +15,10 @@ const PRECACHE = [
   './css/sections/religion.css',
   './css/sections/destinations.css',
   './css/sections/documents.css',
+  './css/lock.css',
   './js/pwa.js',
   './js/app.js',
+  './js/lock.js',
   './js/modules/agenda.js',
   './js/modules/map.js',
   './js/modules/transport.js',
