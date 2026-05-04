@@ -254,3 +254,46 @@
   flex-wrap: wrap;
   gap: 0;
 }
+
+/* ── Toast: voz não instalada ─────────────────────────────── */
+.no-voice-toast {
+  position: fixed;
+  bottom: calc(var(--nav-h) + var(--safe-b) + var(--s4));
+  left: var(--s4);
+  right: var(--s4);
+  z-index: 300;
+  background: var(--c-ink);
+  color: var(--c-cream);
+  border-radius: var(--r-lg);
+  padding: var(--s3) var(--s4);
+  display: flex;
+  align-items: flex-start;
+  gap: var(--s3);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.25);
+  animation: slideUp var(--t-med);
+}
+.no-voice-icon { font-size: 1.2rem; flex-shrink: 0; margin-top: 2px; }
+.no-voice-body { flex: 1; min-width: 0; }
+.no-voice-body strong {
+  font-family: var(--font-serif);
+  font-size: 0.88rem;
+  display: block;
+  margin-bottom: 3px;
+}
+.no-voice-body p {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.03em;
+  color: rgba(253,250,243,0.75);
+  line-height: 1.4;
+}
+.no-voice-close {
+  background: none;
+  border: none;
+  color: rgba(253,250,243,0.5);
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 0 0 0 var(--s2);
+  flex-shrink: 0;
+  -webkit-tap-highlight-color: transparent;
+}

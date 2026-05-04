@@ -128,16 +128,60 @@ function initVoices() {
     const v = synth.getVoices();
     if (v.length) cachedVoices = v;
   };
-  load(); // Funciona sincronamente no desktop
-  synth.addEventListener('voiceschanged', load); // Essencial para mobile
+  load();
+  synth.addEventListener('voiceschanged', load);
 }
 
+/**
+ * Seleciona a melhor voz para o idioma.
+ * Prioridade: online+exata → local+exata → online+prefixo → local+prefixo
+ * Vozes "online" (localService=false) têm qualidade superior nas plataformas móveis.
+ */
 function pickVoice(lang) {
   const voices = cachedVoices.length ? cachedVoices : (window.speechSynthesis?.getVoices() || []);
-  // Prioridade: correspondência exata → prefixo de língua → null
-  return voices.find(v => v.lang === lang)
-      || voices.find(v => v.lang.startsWith(lang.slice(0, 2)))
-      || null;
+  const prefix = lang.slice(0, 2); // 'fr' de 'fr-FR'
+
+  const exact   = voices.filter(v => v.lang === lang);
+  const partial = voices.filter(v => v.lang !== lang && v.lang.startsWith(prefix + '-'));
+
+  // Ordem: online/premium antes, local/compacto depois
+  const ranked = [
+    ...exact.filter(v => !v.localService),
+    ...exact.filter(v =>  v.localService),
+    ...partial.filter(v => !v.localService),
+    ...partial.filter(v =>  v.localService),
+  ];
+
+  return ranked[0] || null;
+}
+
+/** Mostra um toast com instruções quando nenhuma voz nativa foi encontrada */
+function showNoVoiceToast(lang) {
+  const existing = document.getElementById('no-voice-toast');
+  if (existing) { existing.remove(); }
+
+  const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+  const langName = lang.startsWith('fr') ? 'francesa' : 'italiana';
+  const langLabel = lang.startsWith('fr') ? 'Francês' : 'Italiano';
+
+  const instructions = isIOS
+    ? `Baixe a voz ${langLabel} em: Ajustes → Acessibilidade → Conteúdo falado → Idiomas`
+    : `Baixe o pacote de voz ${langLabel} nas configurações do Android → Acessibilidade → Texto para voz`;
+
+  const toast = document.createElement('div');
+  toast.id = 'no-voice-toast';
+  toast.className = 'no-voice-toast';
+  toast.innerHTML = `
+    <span class="no-voice-icon">🔇</span>
+    <div class="no-voice-body">
+      <strong>Voz ${langName} não encontrada</strong>
+      <p>${instructions}</p>
+    </div>
+    <button class="no-voice-close" aria-label="Fechar">✕</button>`;
+
+  toast.querySelector('.no-voice-close').addEventListener('click', () => toast.remove());
+  section.appendChild(toast);
+  setTimeout(() => toast?.remove(), 9000);
 }
 
 function doSpeak(text, lang, btn) {
@@ -151,13 +195,19 @@ function doSpeak(text, lang, btn) {
   if (synth.speaking) synth.cancel();
   if (currentPlayBtn) currentPlayBtn.classList.remove('is-playing');
 
-  const utterance = new SpeechSynthesisUtterance(text);
-  utterance.lang = lang;   // Sempre definir lang — crítico para a pronúncia
-  utterance.rate = 0.85;
-  utterance.pitch = 1;
-
   const voice = pickVoice(lang);
-  if (voice) utterance.voice = voice;
+
+  // Se não há voz para o idioma, avisa o usuário e não toca (evita falar errado)
+  if (!voice) {
+    showNoVoiceToast(lang);
+    return;
+  }
+
+  const utterance = new SpeechSynthesisUtterance(text);
+  utterance.lang  = lang;
+  utterance.voice = voice;
+  utterance.rate  = lang.startsWith('fr') ? 0.82 : 0.85; // Francês ligeiramente mais lento
+  utterance.pitch = 1;
 
   utterance.onstart  = () => { btn.classList.add('is-playing'); currentPlayBtn = btn; };
   utterance.onend    = () => { btn.classList.remove('is-playing'); currentPlayBtn = null; };
@@ -170,7 +220,6 @@ function doSpeak(text, lang, btn) {
 function speakPhrase(text, lang, btn) {
   if (!window.speechSynthesis) return;
 
-  // Se vozes ainda não carregaram (comum em mobile), aguarda evento
   if (cachedVoices.length === 0) {
     const freshVoices = window.speechSynthesis.getVoices();
     if (freshVoices.length > 0) {
