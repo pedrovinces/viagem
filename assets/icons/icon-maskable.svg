@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Maskable: fundo cobre 100% sem bordas arredondadas -->
+  <rect width="512" height="512" fill="#C84B31"/>
+
+  <!-- Gradiente -->
+  <defs>
+    <radialGradient id="gm" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#E8633F" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#8B1A0A" stop-opacity="0.4"/>
+    </radialGradient>
+  </defs>
+  <rect width="512" height="512" fill="url(#gm)"/>
+
+  <!-- Safe zone: conteúdo dentro do círculo central de ~300px (58% de 512) -->
+  <!-- Cruz dourada — menor e mais centrada para safe zone -->
+  <rect x="243" y="146" width="26" height="160" rx="7" fill="#D4943A"/>
+  <rect x="176" y="210" width="160" height="26" rx="7" fill="#D4943A"/>
+
+  <!-- Ornamento -->
+  <text x="256" y="358" font-size="36" text-anchor="middle" fill="#FAF3E0" opacity="0.65" font-family="serif">✦</text>
+
+  <!-- Texto -->
+  <text x="256" y="388" font-size="20" text-anchor="middle" fill="#FAF3E0" opacity="0.5"
+    font-family="Georgia, serif" letter-spacing="8">NOSSA VIAGEM</text>
+</svg>

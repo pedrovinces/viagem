@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="auto">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Guia de viagem — Roma, Florença, Assis e Paris. 12 anos de amor." />
+  <meta name="theme-color" content="#C84B31" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Nossa Viagem" />
+
+  <link rel="manifest" href="./manifest.json" />
+  <link rel="apple-touch-icon" href="./assets/icons/icon-192.svg" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+  <!-- App CSS -->
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/components.css" />
+  <link rel="stylesheet" href="./css/dark-mode.css" />
+  <link rel="stylesheet" href="./css/sections/agenda.css" />
+  <link rel="stylesheet" href="./css/sections/map.css" />
+  <link rel="stylesheet" href="./css/sections/transport.css" />
+  <link rel="stylesheet" href="./css/sections/phrases.css" />
+  <link rel="stylesheet" href="./css/sections/weather.css" />
+  <link rel="stylesheet" href="./css/sections/religion.css" />
+  <link rel="stylesheet" href="./css/sections/destinations.css" />
+  <link rel="stylesheet" href="./css/sections/documents.css" />
+
+  <title>Nossa Viagem · 12 Anos</title>
+</head>
+<body>
+  <div id="app">
+
+    <!-- HEADER -->
+    <header class="app-header">
+      <div class="header-left">
+        <span class="header-logo">✦</span>
+        <div class="header-titles">
+          <h1 class="header-title">Nossa Viagem</h1>
+          <span class="header-subtitle" id="current-city-label">12 Anos de Amor</span>
+        </div>
+      </div>
+      <div class="header-actions">
+        <span class="header-city-flag" id="current-city-flag"></span>
+        <button class="btn-icon" id="theme-toggle" aria-label="Alternar tema" title="Alternar tema">
+          <span class="icon-sun">☀️</span>
+          <span class="icon-moon">🌙</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="app-main" id="app-main">
+
+      <!-- AGENDA -->
+      <section id="section-agenda" class="app-section active" data-module="agenda">
+        <div class="section-loading">
+          <div class="spinner"></div>
+          <p>Carregando agenda…</p>
+        </div>
+      </section>
+
+      <!-- MAPA -->
+      <section id="section-map" class="app-section" data-module="map">
+        <div class="section-loading">
+          <div class="spinner"></div>
+          <p>Carregando mapa…</p>
+        </div>
+      </section>
+
+      <!-- TRANSPORTE -->
+      <section id="section-transport" class="app-section" data-module="transport">
+        <div class="section-loading">
+          <div class="spinner"></div>
+          <p>Carregando transporte…</p>
+        </div>
+      </section>
+
+      <!-- FRASES -->
+      <section id="section-phrases" class="app-section" data-module="phrases">
+        <div class="section-loading">
+          <div class="spinner"></div>
+          <p>Carregando frases…</p>
+        </div>
+      </section>
+
+      <!-- CLIMA -->
+      <section id="section-weather" class="app-section" data-module="weather">
+        <div class="section-loading">
+          <div class="spinner"></div>
+          <p>Carregando clima…</p>
+        </div>
+      </section>
+
+      <!-- FÉ / GUIA RELIGIOSO -->
+      <section id="section-religion" class="app-section" data-module="religion">
+        <div class="section-loading">
+          <div class="spinner"></div>
+          <p>Carregando guia espiritual…</p>
+        </div>
+      </section>
+
+      <!-- DESTINOS -->
+      <section id="section-destinations" class="app-section" data-module="destinations">
+        <div class="section-loading">
+          <div class="spinner"></div>
+          <p>Carregando destinos…</p>
+        </div>
+      </section>
+
+      <!-- DOCUMENTOS -->
+      <section id="section-documents" class="app-section" data-module="documents">
+        <div class="section-loading">
+          <div class="spinner"></div>
+          <p>Carregando documentos…</p>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- BOTTOM NAVIGATION -->
+    <nav class="bottom-nav" role="navigation" aria-label="Navegação principal">
+      <a href="#agenda" class="nav-item active" data-section="agenda" aria-label="Agenda">
+        <span class="nav-icon">📅</span>
+        <span class="nav-label">Agenda</span>
+      </a>
+      <a href="#map" class="nav-item" data-section="map" aria-label="Mapa">
+        <span class="nav-icon">🗺️</span>
+        <span class="nav-label">Mapa</span>
+      </a>
+      <a href="#transport" class="nav-item" data-section="transport" aria-label="Transporte">
+        <span class="nav-icon">🚆</span>
+        <span class="nav-label">Transporte</span>
+      </a>
+      <a href="#phrases" class="nav-item" data-section="phrases" aria-label="Frases">
+        <span class="nav-icon">🗣️</span>
+        <span class="nav-label">Frases</span>
+      </a>
+      <button class="nav-item nav-more-btn" id="more-btn" aria-label="Mais opções" aria-expanded="false">
+        <span class="nav-icon">☰</span>
+        <span class="nav-label">Mais</span>
+      </button>
+    </nav>
+
+    <!-- "MAIS" DRAWER -->
+    <div id="more-drawer" class="more-drawer" aria-hidden="true">
+      <div class="more-drawer-backdrop" id="drawer-backdrop"></div>
+      <div class="more-drawer-panel">
+        <div class="more-drawer-handle"></div>
+        <h2 class="more-drawer-title">Mais opções</h2>
+        <div class="more-drawer-grid">
+          <a href="#weather" class="drawer-item" data-section="weather">
+            <span class="drawer-item-icon">🌤️</span>
+            <span class="drawer-item-label">Clima</span>
+          </a>
+          <a href="#religion" class="drawer-item" data-section="religion">
+            <span class="drawer-item-icon">✝️</span>
+            <span class="drawer-item-label">Fé &amp; Espiritualidade</span>
+          </a>
+          <a href="#destinations" class="drawer-item" data-section="destinations">
+            <span class="drawer-item-icon">🏛️</span>
+            <span class="drawer-item-label">Destinos</span>
+          </a>
+          <a href="#documents" class="drawer-item" data-section="documents">
+            <span class="drawer-item-icon">📋</span>
+            <span class="drawer-item-label">Documentos</span>
+          </a>
+          <button class="drawer-item" id="drawer-theme-toggle">
+            <span class="drawer-item-icon theme-icon-day">☀️</span>
+            <span class="drawer-item-icon theme-icon-night" style="display:none">🌙</span>
+            <span class="drawer-item-label">Tema</span>
+          </button>
+        </div>
+        <p class="more-drawer-footer">✦ Com amor, em cada passo ✦</p>
+      </div>
+    </div>
+
+    <!-- MODAL DE DETALHES -->
+    <div id="event-modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+      <div class="modal-backdrop" id="modal-backdrop"></div>
+      <div class="modal-panel">
+        <button class="modal-close" id="modal-close" aria-label="Fechar">✕</button>
+        <div class="modal-content" id="modal-content"><!-- preenchido por JS --></div>
+      </div>
+    </div>
+
+    <!-- BANNER DE ATUALIZAÇÃO -->
+    <div id="update-banner" class="update-banner hidden" role="alert">
+      <span>Nova versão disponível</span>
+      <button id="update-btn" class="btn-sm">Atualizar</button>
+    </div>
+
+    <!-- PROMPT DE INSTALAÇÃO -->
+    <div id="install-prompt" class="install-prompt hidden">
+      <div class="install-prompt-content">
+        <span class="install-prompt-icon">📲</span>
+        <div>
+          <strong>Instalar no celular</strong>
+          <p>Acesse offline durante a viagem</p>
+        </div>
+        <div class="install-prompt-actions">
+          <button id="install-btn" class="btn-primary btn-sm">Instalar</button>
+          <button id="install-dismiss" class="btn-ghost btn-sm">Depois</button>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- #app -->
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <!-- App JS -->
+  <script src="./js/pwa.js"></script>
+  <script src="./js/app.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+/* ============================================================
+   NOSSA VIAGEM — Tema Escuro
+   Cores quentes escurecidas, mantendo o clima mediterrâneo
+   ============================================================ */
+
+[data-theme="dark"] {
+  --bg:      #1A1008;
+  --bg2:     #261608;
+  --surface: #2C1810;
+  --surface2:#341E12;
+  --border:  #4D2E1A;
+  --text:    #FAF3E0;
+  --text2:   #D4B896;
+  --text3:   #9C7A60;
+  --shadow:     rgba(0, 0, 0, 0.4);
+  --shadow-md:  rgba(0, 0, 0, 0.6);
+}
+
+/* Ajustes específicos no dark mode */
+[data-theme="dark"] .app-header {
+  background: var(--surface);
+  border-bottom-color: var(--border);
+}
+
+[data-theme="dark"] .bottom-nav {
+  background: var(--surface);
+  border-top-color: var(--border);
+}
+
+[data-theme="dark"] .more-drawer-panel,
+[data-theme="dark"] .modal-panel {
+  background: var(--surface);
+}
+
+[data-theme="dark"] .drawer-item {
+  background: var(--bg2);
+  border-color: var(--border);
+  color: var(--text2);
+}
+
+[data-theme="dark"] .card {
+  background: var(--surface);
+  border-color: var(--border);
+}
+
+[data-theme="dark"] .info-card {
+  background: var(--surface);
+  border-color: var(--border);
+}
+
+[data-theme="dark"] .info-card-header {
+  background: var(--bg2);
+  border-bottom-color: var(--border);
+}
+
+[data-theme="dark"] .event-card {
+  background: var(--surface);
+  border-color: var(--border);
+}
+
+[data-theme="dark"] .accordion-item {
+  border-color: var(--border);
+}
+
+[data-theme="dark"] .accordion-trigger {
+  background: var(--surface);
+}
+
+[data-theme="dark"] .accordion-trigger:hover {
+  background: var(--bg2);
+}
+
+[data-theme="dark"] .accordion-content {
+  background: var(--surface2);
+}
+
+[data-theme="dark"] .section-header {
+  background: var(--surface);
+  border-bottom-color: var(--border);
+}
+
+[data-theme="dark"] .city-pills {
+  background: var(--surface);
+  border-bottom-color: var(--border);
+}
+
+[data-theme="dark"] .city-pill {
+  background: var(--surface);
+  border-color: var(--border);
+  color: var(--text3);
+}
+
+[data-theme="dark"] .modal-tip {
+  background: var(--bg2);
+}
+
+[data-theme="dark"] .btn-icon {
+  background: var(--bg2);
+  color: var(--text);
+}
+
+[data-theme="dark"] .icon-sun { display: inline; }
+[data-theme="dark"] .icon-moon { display: none; }
+
+/* Ícone do tema: light=moon, dark=sun */
+[data-theme="light"] .icon-sun { display: none; }
+[data-theme="light"] .icon-moon { display: inline; }
+
+/* Leaflet em dark mode */
+[data-theme="dark"] .leaflet-popup-content-wrapper {
+  background: var(--surface);
+  color: var(--text);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.5);
+}
+[data-theme="dark"] .leaflet-popup-tip {
+  background: var(--surface);
+}
+[data-theme="dark"] .leaflet-bar a {
+  background: var(--surface);
+  color: var(--text);
+  border-bottom-color: var(--border);
+}
+
+/* Update banner dark */
+[data-theme="dark"] .update-banner {
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+/* Install prompt dark */
+[data-theme="dark"] .install-prompt {
+  background: var(--surface);
+  border-color: var(--border);
+}

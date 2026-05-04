@@ -1,0 +1,264 @@
+/* ============================================================
+   DESTINOS — Guia de atrações por cidade
+   ============================================================ */
+
+.destinations-city-section { margin-bottom: var(--s6); }
+
+.destinations-city-banner {
+  padding: var(--s8) var(--s5);
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.destinations-city-banner img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.destinations-city-banner::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(26,16,8,0.85) 0%, transparent 60%);
+}
+
+.destinations-city-banner-content { position: relative; z-index: 1; }
+
+.destinations-city-name {
+  font-family: var(--font-serif);
+  font-size: 2.2rem;
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: var(--s1);
+}
+
+.destinations-city-tagline {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* Cards de atração */
+.destination-cards { padding: var(--s3) var(--s4); }
+
+.destination-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  overflow: hidden;
+  margin-bottom: var(--s4);
+  cursor: pointer;
+  transition: all var(--t-fast);
+  -webkit-tap-highlight-color: transparent;
+}
+.destination-card:hover {
+  box-shadow: 0 4px 16px var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.destination-card-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  background: var(--bg2);
+}
+
+.destination-card-body { padding: var(--s4); }
+
+.destination-card-type {
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text3);
+  margin-bottom: var(--s1);
+}
+
+.destination-card-title {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  color: var(--text);
+  margin-bottom: var(--s2);
+  line-height: 1.2;
+}
+
+.destination-card-desc {
+  font-size: 0.82rem;
+  color: var(--text2);
+  line-height: 1.6;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: var(--s3);
+}
+
+.destination-card-meta {
+  display: flex;
+  gap: var(--s3);
+  font-size: 0.72rem;
+  color: var(--text3);
+  flex-wrap: wrap;
+}
+
+.destination-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Modal de destino (expandido) */
+.destination-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  margin-bottom: var(--s4);
+}
+
+.destination-gallery img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  cursor: pointer;
+  transition: opacity var(--t-fast);
+}
+.destination-gallery img:hover { opacity: 0.85; }
+.destination-gallery img:first-child {
+  grid-column: span 3;
+  aspect-ratio: 16/9;
+}
+
+/* ----------------------------------------------------------
+   MODAL DE DESTINO
+   ---------------------------------------------------------- */
+.dest-modal-name {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  color: var(--text);
+  margin-bottom: var(--s1);
+  line-height: 1.2;
+}
+
+.dest-modal-type {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text3);
+  margin-bottom: var(--s5);
+}
+
+.dest-modal-info {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  overflow: hidden;
+  margin-bottom: var(--s5);
+}
+
+.dest-info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--s3);
+  padding: var(--s3) var(--s4);
+  border-bottom: 1px solid var(--border);
+  font-size: 0.85rem;
+}
+.dest-info-row:last-child { border-bottom: none; }
+.dest-info-row span:first-child {
+  color: var(--text3);
+  font-size: 0.78rem;
+  flex-shrink: 0;
+}
+.dest-info-row span:last-child {
+  color: var(--text);
+  font-weight: 500;
+  text-align: right;
+}
+
+.dest-modal-desc {
+  margin-bottom: var(--s5);
+}
+.dest-modal-desc p {
+  font-size: 0.9rem;
+  color: var(--text2);
+  line-height: 1.8;
+  margin-bottom: var(--s3);
+}
+.dest-modal-desc p:last-child { margin-bottom: 0; }
+
+/* Drop-cap no texto do destino */
+.drop-cap::first-letter {
+  font-family: var(--font-serif);
+  font-size: 3rem;
+  font-weight: 500;
+  float: left;
+  line-height: 0.8;
+  margin-right: 6px;
+  margin-top: 4px;
+  color: var(--c-primary);
+}
+
+.dest-modal-tips {
+  background: linear-gradient(90deg, rgba(212,148,58,0.08), transparent);
+  border-left: 3px solid var(--c-gold);
+  padding: var(--s4) var(--s5);
+  border-radius: 0 var(--r-sm) var(--r-sm) 0;
+  margin-bottom: var(--s5);
+  font-size: 0.85rem;
+  color: var(--text2);
+  line-height: 1.7;
+}
+
+.dest-tips-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--c-gold);
+  margin-bottom: var(--s2);
+}
+
+.dest-modal-romantic {
+  text-align: center;
+  padding: var(--s4) 0;
+  margin-bottom: var(--s5);
+}
+.dest-modal-romantic .religion-quote {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--c-primary);
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+.modal-maps-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--s2);
+  width: 100%;
+  padding: var(--s4);
+  background: var(--c-primary);
+  color: #fff;
+  border-radius: var(--r-md);
+  font-weight: 700;
+  font-size: 0.9rem;
+  transition: filter var(--t-fast);
+  text-decoration: none;
+}
+.modal-maps-btn:hover { filter: brightness(1.1); }

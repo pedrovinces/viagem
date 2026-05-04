@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Fundo -->
+  <rect width="512" height="512" rx="72" fill="#C84B31"/>
+
+  <!-- Gradiente de profundidade -->
+  <defs>
+    <radialGradient id="g1" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#E8633F" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#8B1A0A" stop-opacity="0.4"/>
+    </radialGradient>
+  </defs>
+  <rect width="512" height="512" rx="72" fill="url(#g1)"/>
+
+  <!-- Cruz dourada estilizada -->
+  <rect x="236" y="96" width="40" height="210" rx="10" fill="#D4943A"/>
+  <rect x="148" y="182" width="216" height="40" rx="10" fill="#D4943A"/>
+
+  <!-- Ornamento abaixo da cruz -->
+  <text x="256" y="390" font-size="48" text-anchor="middle" fill="#FAF3E0" opacity="0.7" font-family="serif">✦</text>
+
+  <!-- Título -->
+  <text x="256" y="452" font-size="28" text-anchor="middle" fill="#FAF3E0" opacity="0.55"
+    font-family="Georgia, serif" font-weight="400" letter-spacing="10">NOSSA VIAGEM</text>
+
+  <!-- Subtítulo -->
+  <text x="256" y="480" font-size="18" text-anchor="middle" fill="#D4943A" opacity="0.7"
+    font-family="Georgia, serif" font-style="italic">12 Anos</text>
+</svg>

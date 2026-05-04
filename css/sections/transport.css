@@ -1,0 +1,196 @@
+/* ============================================================
+   TRANSPORTE — Cards por cidade
+   ============================================================ */
+
+.transport-city-group {
+  margin-bottom: var(--s6);
+}
+
+.transport-city-title {
+  display: flex;
+  align-items: center;
+  gap: var(--s3);
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  color: var(--text);
+  padding: var(--s5) var(--s4) var(--s3);
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+.transport-city-flag { font-size: 1.2rem; }
+
+.transport-mode-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  overflow: hidden;
+  margin: var(--s3) var(--s4);
+}
+
+.transport-mode-header {
+  display: flex;
+  align-items: center;
+  gap: var(--s3);
+  padding: var(--s3) var(--s4);
+  background: var(--bg2);
+  border-bottom: 1px solid var(--border);
+}
+
+.transport-mode-icon { font-size: 1.3rem; }
+
+.transport-mode-name {
+  font-weight: 700;
+  font-size: 0.9rem;
+  flex: 1;
+}
+
+.transport-mode-cost {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--c-olive);
+  background: rgba(107, 123, 58, 0.1);
+  padding: 2px 8px;
+  border-radius: var(--r-xl);
+}
+
+.transport-detail-row {
+  display: flex;
+  padding: var(--s3) var(--s4);
+  border-bottom: 1px solid var(--bg2);
+  gap: var(--s3);
+  font-size: 0.85rem;
+  align-items: flex-start;
+}
+.transport-detail-row:last-child { border-bottom: none; }
+
+.transport-detail-icon { font-size: 1rem; flex-shrink: 0; margin-top: 1px; }
+.transport-detail-label { color: var(--text3); min-width: 80px; flex-shrink: 0; font-size: 0.78rem; }
+.transport-detail-value { color: var(--text); line-height: 1.4; }
+
+/* ----------------------------------------------------------
+   ITINERÁRIO DE TRANSPORTE ENTRE CIDADES
+   ---------------------------------------------------------- */
+.intercity-route {
+  margin: var(--s4);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  overflow: hidden;
+}
+
+.intercity-route-header {
+  padding: var(--s4);
+  background: linear-gradient(135deg, var(--c-primary), color-mix(in srgb, var(--c-primary) 70%, black));
+  color: #fff;
+}
+
+.intercity-route-legs {
+  display: flex;
+  align-items: center;
+  gap: var(--s2);
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  margin-bottom: var(--s1);
+}
+
+.intercity-route-arrow { font-size: 0.8rem; opacity: 0.7; }
+
+.intercity-route-meta {
+  font-size: 0.7rem;
+  opacity: 0.8;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* ----------------------------------------------------------
+   METRÔ MAP
+   ---------------------------------------------------------- */
+.metro-diagram {
+  padding: var(--s4);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.metro-diagram::-webkit-scrollbar { display: none; }
+
+.metro-line {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--s3);
+  min-width: max-content;
+}
+
+.metro-line-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  margin-right: var(--s3);
+  flex-shrink: 0;
+}
+
+.metro-line-a { background: #FF6B35; }
+.metro-line-b { background: #4A90D9; }
+.metro-line-c { background: #5BAD6F; }
+.metro-rer-a  { background: #D33B6C; }
+
+.metro-stations {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.metro-station {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.metro-station-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid currentColor;
+  background: var(--surface);
+  z-index: 1;
+  transition: transform var(--t-fast);
+}
+
+.metro-station.highlight .metro-station-dot {
+  background: currentColor;
+  transform: scale(1.4);
+}
+
+.metro-station-connector {
+  width: 32px;
+  height: 3px;
+  background: currentColor;
+  opacity: 0.4;
+}
+
+.metro-station-name {
+  font-size: 0.55rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text3);
+  margin-top: 4px;
+  text-align: center;
+  max-width: 50px;
+  line-height: 1.2;
+}
+
+.metro-station.highlight .metro-station-name {
+  color: var(--text);
+  font-weight: 700;
+}

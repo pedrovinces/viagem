@@ -1,0 +1,353 @@
+{
+  "rome": {
+    "sections": [
+      {
+        "title": "Leonardo Express — Aeroporto → Centro",
+        "icon": "✈️",
+        "items": [
+          {
+            "type": "route",
+            "from": "FCO (Fiumicino)",
+            "to": "Roma Termini",
+            "duration": "32 min",
+            "steps": [
+              { "mode": "train", "label": "Leonardo Express", "detail": "Saída a cada 15 min, direto sem paradas", "duration": "32 min", "price": "€14/pp" }
+            ],
+            "notes": "Bilhete no aeroporto (máquinas automáticas ou balcão Trenitalia). Trem marca do aeroporto até Termini. De Termini: metrô Linha A até Lepanto (~12 min), depois 7 min a pé até Via Boezio 6."
+          }
+        ]
+      },
+      {
+        "title": "Metrô de Roma",
+        "icon": "🚇",
+        "items": [
+          {
+            "type": "metro",
+            "lines": [
+              {
+                "name": "Linha A",
+                "color": "#F87600",
+                "description": "Battistini ↔ Anagnina",
+                "key_stations": ["Ottaviano (Vaticano)", "Lepanto (co.sleep)", "Spagna (Trevi/Espanha)", "Barberini", "Repubblica", "Termini"]
+              },
+              {
+                "name": "Linha B",
+                "color": "#009DE0",
+                "description": "Laurentina ↔ Jonio",
+                "key_stations": ["Termini", "Colosseo (Coliseu)", "Circo Massimo", "Piramide"]
+              }
+            ],
+            "ticket_info": "Bilhete simples: €1,50 (válido 100 min, 1 viagem metrô). Diário: €7. Semanal: €24. Comprar nas máquinas ou tabacchi.",
+            "notes": "Vaticano = parada Ottaviano (Linha A). Coliseu = parada Colosseo (Linha B, troca em Termini)."
+          }
+        ]
+      },
+      {
+        "title": "Rotas principais",
+        "icon": "🗺️",
+        "items": [
+          {
+            "type": "route",
+            "from": "co.sleep (Via Boezio)",
+            "to": "Vaticano",
+            "duration": "15 min a pé",
+            "steps": [
+              { "mode": "walk", "label": "A pé pela Via Cola di Rienzo", "detail": "Via Boezio → Cola di Rienzo → Lungotevere → Piazza Risorgimento", "duration": "15 min" }
+            ],
+            "notes": "Rota direta e linda — passa pela Via Cola di Rienzo (comércio local) e chega à entrada dos Museus Vaticanos."
+          },
+          {
+            "type": "route",
+            "from": "co.sleep (Via Boezio)",
+            "to": "Coliseu",
+            "duration": "30-35 min",
+            "steps": [
+              { "mode": "walk", "label": "Caminhar até Lepanto", "duration": "7 min" },
+              { "mode": "metro", "label": "Metrô Linha A → Termini", "duration": "12 min", "price": "€1,50" },
+              { "mode": "metro", "label": "Metrô Linha B → Colosseo", "duration": "5 min" },
+              { "mode": "walk", "label": "Saída da estação ao Coliseu", "duration": "2 min" }
+            ]
+          },
+          {
+            "type": "route",
+            "from": "co.sleep",
+            "to": "Trastevere",
+            "duration": "25 min a pé / 15 min de bonde",
+            "steps": [
+              { "mode": "walk", "label": "Caminhada pelo Lungotevere", "detail": "Rota mais romântica — siga o Rio Tibre", "duration": "25 min" }
+            ],
+            "notes": "Alternativa: Bonde 8 de Largo Torre Argentina (~10 min, €1,50). Trastevere fica na margem direita do Tibre."
+          }
+        ]
+      },
+      {
+        "title": "Ônibus e Bonde",
+        "icon": "🚌",
+        "items": [
+          { "type": "generic", "title": "Bonde 8", "detail": "Largo Argentina ↔ Trastevere (Piazza Trilussa)", "price": "€1,50", "notes": "Ideal para ir a Trastevere sem metrô. Funciona até ~23h." },
+          { "type": "generic", "title": "Ônibus 23", "detail": "Ao longo do Tibre, conecta Vaticano ↔ Trastevere ↔ Testaccio", "price": "€1,50" },
+          { "type": "tip", "text": "Prefira metrô nos horários de pico (8-9h e 18-19h). Os ônibus travam no trânsito romano." }
+        ]
+      },
+      {
+        "title": "Táxi e Uber",
+        "icon": "🚕",
+        "items": [
+          { "type": "generic", "title": "Táxi oficial", "detail": "Carros brancos. Bandeira: €3,50 de dia / €6,50 aos domingos. FCO → centro: tarifa fixa €50.", "notes": "Pegar em pontos oficiais ou pelo app itTaxi. Evite táxis informais na saída do aeroporto." },
+          { "type": "generic", "title": "Uber", "detail": "Funciona em Roma (Uber Black e Comfort — não Uber X). Geralmente mais caro que táxi.", "price": "Variável" }
+        ]
+      }
+    ]
+  },
+
+  "florence": {
+    "sections": [
+      {
+        "title": "Chegando em Florença",
+        "icon": "🚆",
+        "items": [
+          {
+            "type": "route",
+            "from": "Roma Termini",
+            "to": "Firenze Santa Maria Novella",
+            "duration": "1h30 (Frecciarossa)",
+            "steps": [
+              { "mode": "train", "label": "Frecciarossa (Trenitalia) ou Italo", "detail": "Alta velocidade. Trenitalia: trenitalia.com | Italo: italotreno.it", "duration": "1h30", "price": "€25–60/pp" }
+            ],
+            "notes": "Comprar com antecedência para melhores preços. A estação SMN fica no centro de Florença — hotel Drom fica a ~18 min a pé ou 5 min de ônibus."
+          }
+        ]
+      },
+      {
+        "title": "Drom Florence → Centro",
+        "icon": "🗺️",
+        "items": [
+          {
+            "type": "route",
+            "from": "Drom Florence (Via dei Serragli 137)",
+            "to": "Piazza del Duomo",
+            "duration": "18 min a pé",
+            "steps": [
+              { "mode": "walk", "label": "Via dei Serragli → Ponte Santa Trinita → Via dei Tornabuoni → Duomo", "duration": "18 min" }
+            ],
+            "notes": "Rota encantadora cruzando o Arno pela Ponte Santa Trinita (século XVI). Aproveite para ver o Ponte Vecchio no caminho."
+          },
+          {
+            "type": "route",
+            "from": "Drom Florence",
+            "to": "Piazzale Michelangelo",
+            "duration": "25 min a pé",
+            "steps": [
+              { "mode": "walk", "label": "Suba pela Viale Giuseppe Poggi", "detail": "Há escadas panorâmicas ou a subida pela rua", "duration": "25 min" }
+            ],
+            "notes": "A vista mais famosa de Florença. Ideal ao pôr do sol. Ônibus 13 ou 12 também chegam lá."
+          }
+        ]
+      },
+      {
+        "title": "Transporte Urbano",
+        "icon": "🚌",
+        "items": [
+          { "type": "generic", "title": "Ônibus ATAF", "detail": "Linhas C1, C2, C3 servem o centro histórico (ZTL — zona de tráfego limitado). Bilhete: €1,70 (90 min).", "price": "€1,70" },
+          { "type": "tip", "text": "Florença é pequena e linda — o melhor transporte é a pé! O centro histórico inteiro cabe em 30 min de caminhada." },
+          { "type": "generic", "title": "Táxi", "detail": "App itTaxi ou paradas oficiais. Centro → Aeroporto FLR: ~€20-25 (15 min).", "price": "€20-25 ao aeroporto" },
+          { "type": "tip", "text": "ZTL (Zona a Traffico Limitato): carros particulares proibidos no centro histórico. Não tente entrar de carro!" }
+        ]
+      },
+      {
+        "title": "Excursão a Assis",
+        "icon": "🚆",
+        "items": [
+          {
+            "type": "route",
+            "from": "Firenze Santa Maria Novella",
+            "to": "Assisi",
+            "duration": "~2h15",
+            "steps": [
+              { "mode": "train", "label": "Trem Firenze SMN → Terontola-Cortona", "duration": "~1h15", "price": "€10-15/pp" },
+              { "mode": "train", "label": "Baldeação → trem local para Assisi", "duration": "~50 min" },
+              { "mode": "bus", "label": "Ônibus estação → centro de Assis", "duration": "~10 min", "price": "€1,30" }
+            ],
+            "notes": "Trem das 7:14 de SMN. Chegar em Assis ~9:30. Último trem de volta ~17-18h. Comprar com antecedência em trenitalia.com."
+          }
+        ]
+      }
+    ]
+  },
+
+  "intercity": {
+    "sections": [
+      {
+        "title": "Roma → Florença",
+        "icon": "🚆",
+        "items": [
+          {
+            "type": "route",
+            "from": "Roma Termini",
+            "to": "Firenze Santa Maria Novella",
+            "duration": "1h30",
+            "steps": [
+              { "mode": "train", "label": "Frecciarossa (Trenitalia) ou Italo NTV", "detail": "Alta velocidade, saídas frequentes", "duration": "1h30", "price": "€25–60/pp" }
+            ],
+            "notes": "Melhor opção para este trecho. Sem bagagem extra, direto de estação a estação. Comprar em trenitalia.com ou italotreno.it."
+          }
+        ]
+      },
+      {
+        "title": "Florença → Paris (Voo Vueling VY-5016)",
+        "icon": "✈️",
+        "items": [
+          {
+            "type": "route",
+            "from": "Drom Florence (Via dei Serragli 137)",
+            "to": "Paris Orly (ORY)",
+            "duration": "~5h total (incluindo aeroporto)",
+            "steps": [
+              { "mode": "taxi", "label": "Táxi hotel → Aeroporto Florença (FLR)", "detail": "Reservar com antecedência. Saída ~03:30", "duration": "~20 min", "price": "€20-30" },
+              { "mode": "flight", "label": "Vueling VY-5016 · FLR → ORY", "detail": "Check-in balcão 04:25 | Decolagem 07:25 | Chegada 09:15", "duration": "1h50", "price": "Já pago — loc. H1LTK" },
+              { "mode": "train", "label": "Orlyval + RER B → Paris (Antony → Saint-Michel)", "detail": "Ou táxi direto (~€35-45, 30 min)", "duration": "~35 min", "price": "€12,10/pp" }
+            ],
+            "notes": "Voo confirmado. Localizador: H1LTK. Bagagem despachada: 1 × 23kg por pessoa incluída. ATENÇÃO: Check-in às 04:25 — organizar táxi na noite anterior."
+          }
+        ]
+      },
+      {
+        "title": "Paris → Rio de Janeiro",
+        "icon": "✈️",
+        "items": [
+          {
+            "type": "route",
+            "from": "Simon's Boutique Hotel (Rue Riquet 69)",
+            "to": "Aeroporto CDG",
+            "duration": "~45 min de táxi",
+            "steps": [
+              { "mode": "taxi", "label": "Táxi hotel → CDG", "detail": "Reservar com antecedência. Hotel faz check-out às 11h. Voo ~10h.", "duration": "~45 min", "price": "€55-70" }
+            ],
+            "notes": "Check-out do Simon's às 11h. Voo de retorno: CDG → GIG. Chegar ao aeroporto com 3h de antecedência para voos internacionais."
+          }
+        ]
+      }
+    ]
+  },
+
+  "paris": {
+    "sections": [
+      {
+        "title": "Chegando de Paris Orly",
+        "icon": "✈️",
+        "items": [
+          {
+            "type": "route",
+            "from": "Paris Orly (ORY)",
+            "to": "Simon's Boutique Hotel (Rue Riquet, 75018)",
+            "duration": "~45-60 min",
+            "steps": [
+              { "mode": "train", "label": "Orlyval até Antony", "duration": "~8 min", "price": "incluído" },
+              { "mode": "train", "label": "RER B Antony → Gare du Nord", "duration": "~30 min", "price": "€12,10 total Orlyval+RERB" },
+              { "mode": "metro", "label": "Metrô Linha 5 → Stalingrad ou Ligne 7 → Riquet", "duration": "~10 min" }
+            ],
+            "notes": "Alternativa mais rápida: táxi direto do ORY → hotel (~€35-45, 30 min sem trânsito). Redes de transporte: navigo.fr"
+          }
+        ]
+      },
+      {
+        "title": "Metrô de Paris",
+        "icon": "🚇",
+        "items": [
+          {
+            "type": "metro",
+            "lines": [
+              {
+                "name": "Linha 7",
+                "color": "#F10079",
+                "description": "Passa pelo hotel (Riquet) e conecta a vários pontos turísticos",
+                "key_stations": ["Riquet (hotel)", "Gare de l'Est", "Châtelet", "Pont Neuf", "Jussieu", "Place d'Italie"]
+              },
+              {
+                "name": "RER B",
+                "color": "#5B8CC4",
+                "description": "Conecta CDG e Orly ao centro de Paris",
+                "key_stations": ["CDG Aéroport", "Gare du Nord", "Châtelet-Les Halles", "Luxembourg", "Antony (Orlyval)"]
+              },
+              {
+                "name": "RER A",
+                "color": "#E4222E",
+                "description": "Disneyland Paris (Marne-la-Vallée/Chessy)",
+                "key_stations": ["Nation", "Châtelet-Les Halles", "Gare de Lyon", "Marne-la-Vallée (Disney)"]
+              },
+              {
+                "name": "Linha 6",
+                "color": "#79BB92",
+                "description": "Linha panorâmica que passa pela Torre Eiffel",
+                "key_stations": ["Bir-Hakeim (Torre Eiffel)", "Trocadéro", "Denfert-Rochereau"]
+              }
+            ],
+            "ticket_info": "Bilhete simples: €2,15. Carnet (10 bilhetes): €17,35. Navigo Jour: €8,65 (ilimitado no dia). Navigo Semaine: disponível se precisar. Comprar no app Île-de-France Mobilités.",
+            "notes": "Paris tem 16 linhas de metrô. GPS recomendado: App 'Maps.me' ou Google Maps offline com o metrô baixado."
+          }
+        ]
+      },
+      {
+        "title": "Disneyland Paris (RER A)",
+        "icon": "🎢",
+        "items": [
+          {
+            "type": "route",
+            "from": "Riquet (Linha 7 / hotel)",
+            "to": "Marne-la-Vallée / Chessy (Disney)",
+            "duration": "~1h",
+            "steps": [
+              { "mode": "metro", "label": "Metrô Linha 7 → Châtelet-Les Halles", "duration": "~15 min" },
+              { "mode": "train", "label": "RER A (dir. Marne-la-Vallée/Chessy) → fim da linha", "duration": "~40 min", "price": "€8,10/pp ida" }
+            ],
+            "notes": "Saída final do RER A: Marne-la-Vallée/Chessy — porta do parque. Bilhete RER A até zona 5. DICA: Partir antes das 9h para evitar filas de entrada."
+          }
+        ]
+      },
+      {
+        "title": "Rotas turísticas principais",
+        "icon": "🗺️",
+        "items": [
+          {
+            "type": "route",
+            "from": "Hotel (Rue Riquet)",
+            "to": "Torre Eiffel",
+            "duration": "~30 min de metrô",
+            "steps": [
+              { "mode": "metro", "label": "Metrô Linha 7 → Châtelet → Linha 6 → Bir-Hakeim", "duration": "~25 min" },
+              { "mode": "walk", "label": "Bir-Hakeim → Torre Eiffel", "duration": "5 min" }
+            ]
+          },
+          {
+            "type": "route",
+            "from": "Hotel",
+            "to": "Sacré-Cœur (Montmartre)",
+            "duration": "~20 min",
+            "steps": [
+              { "mode": "metro", "label": "Linha 7 (dir. Mairie d'Ivry) → Opéra → Linha 2 → Anvers", "duration": "~20 min" },
+              { "mode": "walk", "label": "Anvers → Sacré-Cœur (subida)", "duration": "10 min ou funicular €2,15" }
+            ]
+          },
+          {
+            "type": "route",
+            "from": "Hotel",
+            "to": "Rue du Bac (Medalha Milagrosa)",
+            "duration": "~25 min",
+            "steps": [
+              { "mode": "metro", "label": "Linha 7 → Châtelet → Linha 4 → Sèvres-Babylone ou Línea 12 → Rue du Bac", "duration": "~25 min" }
+            ],
+            "notes": "A Chapelle de la Médaille Miraculeuse fica em 140 Rue du Bac, 75007. Linha 12 (parada Rue du Bac) é a mais direta."
+          }
+        ]
+      },
+      {
+        "title": "Táxi e Aplicativos",
+        "icon": "🚕",
+        "items": [
+          { "type": "generic", "title": "Uber Paris", "detail": "Funciona bem. Uber X disponível (diferente de Roma). Ideal para aeroporto ou à noite.", "notes": "App: Uber. G7 Taxi também funciona pelo app." },
+          { "type": "tip", "text": "Em Paris, o metrô é a forma mais eficiente de se locomover — funciona das 5h30 às 01h15 (02h15 nos fins de semana)." }
+        ]
+      }
+    ]
+  }
+}

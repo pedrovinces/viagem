@@ -1,0 +1,264 @@
+{
+  "rome": {
+    "intro": "Roma é a Cidade Eterna e o coração da Igreja Católica. Cada pedra desta cidade guarda séculos de fé — aqui São Pedro foi crucificado, São Paulo decapitado, e mártires inúmeros deram a vida por Cristo. Peregrinar por Roma é tocar as raízes vivas da Igreja.",
+    "sites": [
+      {
+        "name": "Basílica de São Pedro e Praça São Pedro",
+        "type": "Basílica Papal · Patrimônio Mundial",
+        "summary": "O maior templo cristão do mundo, erguido sobre o túmulo do Apóstolo Pedro. A cúpula de Michelangelo define o horizonte de Roma.",
+        "history": "No local onde São Pedro foi crucificado (cabeça para baixo, por humildade) e sepultado, o Imperador Constantino construiu a primeira basílica em 326 d.C. A estrutura atual, obra-prima do Renascimento e Barroco, foi erguida entre 1506 e 1626, com projetos de Bramante, Michelangelo, Maderno e Bernini. A magnífica cúpula de Michelangelo — 136 metros de altura — permanece insuperada. A Pietà de Michelangelo (1499), esculpida quando ele tinha apenas 24 anos, fica na primeira nave lateral direita.",
+        "spiritual": "São Pedro disse: 'Tu és o Cristo, o Filho de Deus vivo.' Cristo respondeu: 'E eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha Igreja.' (Mt 16,16-18). Estar aqui é tocar a fundação visível da Igreja de Cristo.",
+        "tags": ["Apóstolo Pedro", "Papa", "Renascimento", "Michelangelo"],
+        "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/St_Peter%27s_Square%2C_Vatican_City_-_April_2007.jpg/1280px-St_Peter%27s_Square%2C_Vatican_City_-_April_2007.jpg",
+        "practical": {
+          "Horário": "7h–19h (verão); 7h–18h30 (inverno)",
+          "Entrada": "Gratuita (cúpula: €8 a pé / €10 elevador)",
+          "Dress code": "Ombros e joelhos cobertos. Obrigatório.",
+          "Fila": "Chegar antes das 8h ou após as 16h para evitar filas"
+        },
+        "prayer": "São Pedro, pedra viva da Igreja, intercede por nós. Que nossa fé, como a tua, seja mais forte que nossas fraquezas.",
+        "coordinates": { "lat": 41.9022, "lng": 12.4553 }
+      },
+      {
+        "name": "Audiência Papal",
+        "type": "Evento Papal · Gratuito",
+        "summary": "Toda quarta-feira, o Papa recebe peregrinos de todo o mundo na Praça São Pedro ou no Aula Paulo VI. Uma experiência única de fé.",
+        "history": "Desde o século XIX, os papas realizam audiências regulares para abençoar peregrinos. Hoje, nas quartas-feiras, o Santo Padre faz uma catequese, saúda grupos em seus idiomas e abençoa os presentes e os objetos religiosos trazidos. A presença do Papa — o Vigário de Cristo na Terra — é um momento de graça especial.",
+        "spiritual": "Receber a bênção papal é receber a bênção do Sucessor de Pedro — uma graça espiritual que a Igreja oferece gratuitamente a todos os peregrinos.",
+        "tags": ["Papa", "Bênção", "Audiência", "Gratuito"],
+        "practical": {
+          "Quando": "Quartas-feiras às 9h (local varia: Praça SP ou Aula Paulo VI)",
+          "Bilhetes": "Gratuitos — Portão de Bronze (Col. Bernini, dir.), Ter 15–19h ou Qua 7h30",
+          "Chegada": "Chegar às 7h–7h30 para bons lugares",
+          "Objetos": "Trazer rosários, imagens e objetos para serem abençoados"
+        },
+        "prayer": "Santo Padre, que sua bênção nos acompanhe nesta viagem e em toda a nossa vida."
+      },
+      {
+        "name": "Necrópole Trionfale — Tumba de São Pedro",
+        "type": "Sítio Arqueológico · Ingresso reservado",
+        "summary": "Sob a Basílica de São Pedro jaz a necrópole romana onde os arqueólogos encontraram o que a tradição e a ciência identificam como o túmulo do Apóstolo Pedro.",
+        "history": "Em 1939, durante escavações ordenadas por Pio XII, arqueólogos descobriram uma necrópole romana do século I-III d.C. diretamente sob a Basílica. No centro — exatamente sob o altar-mor e a cúpula de Michelangelo — encontraram um nicho com ossadas identificadas pela Igreja como as de São Pedro. A inscrição em grego 'Petros eni' ('Pedro está aqui') foi encontrada próxima. É o único lugar no mundo onde você visita o túmulo de um Apóstolo de Cristo.",
+        "spiritual": "Você não está simplesmente visitando uma ruína histórica. Você está no local onde o pescador de Betsaida, escolhido por Cristo, descansa na esperança da ressurreição. Uma experiência incomparável.",
+        "tags": ["Tumba de Pedro", "Arqueologia", "Ingresso necessário", "Histórico"],
+        "special": true,
+        "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Necropolis_under_the_Vatican.jpg/1280px-Necropolis_under_the_Vatican.jpg",
+        "practical": {
+          "Confirmação": "AUYY-7VDB · 20/05 às 16:30",
+          "Duração": "~1h30 com guia",
+          "Idioma": "Guia em português (confirmado)",
+          "Local": "Entrada pelo Arco das Campanas, lado esquerdo da Praça São Pedro",
+          "Importante": "Não atrasar — visitas em grupo, sem atrasos permitidos"
+        },
+        "prayer": "Senhor, neste lugar sagrado onde repousa Teu apóstolo, renova em nós a fé que ele testemunhou até o martírio."
+      },
+      {
+        "name": "São João de Latrão + Scala Sancta",
+        "type": "Catedral do Papa · Basílica Papal",
+        "summary": "A catedral mais antiga do mundo cristão — a 'Mãe de todas as igrejas'. Ao lado, a Scala Sancta: os 28 degraus que Jesus subiu para ser julgado por Pilatos, trazidos de Jerusalém.",
+        "history": "São João de Latrão é a catedral do Bispo de Roma — o Papa. Construída por Constantino em 313 d.C., é anterior à própria Basílica de São Pedro. A fachada barroca atual é do século XVIII. A Scala Sancta (Escada Santa) foi trazida de Jerusalém por Santa Helena, mãe de Constantino, no século IV. Os peregrinos sobem os 28 degraus de joelhos, em silêncio e oração, ganhando indulgências. São Filipe Néri e Martinho Lutero — antes da Reforma — subiram esta escada.",
+        "spiritual": "Subir a Scala Sancta de joelhos é seguir literalmente os passos de Cristo em Seu caminho à Paixão. A indulgência plenária pode ser obtida com as disposições devidas.",
+        "tags": ["Catedral do Papa", "Basílica", "Scala Sancta", "Indulgência"],
+        "practical": {
+          "Horário Basílica": "7h–18h30",
+          "Horário Scala Sancta": "6h30–13h e 14h–19h",
+          "Entrada": "Gratuita (Basílica e Scala Sancta)",
+          "Como chegar": "Metrô Linha A → San Giovanni"
+        },
+        "prayer": "Jesus, ao subir esta escada de joelhos, unimos nossa oração à Tua Paixão. Que este gesto de humildade nos aproxime de Ti."
+      },
+      {
+        "name": "Santa Maria Maior",
+        "type": "Basílica Papal · Mariana",
+        "summary": "A maior basílica mariana do mundo, com os mosaicos mais antigos da Roma cristã (século V). Contém relíquias do presépio de Belém.",
+        "history": "Segundo a tradição, em agosto de 358 d.C., a Virgem Maria apareceu ao papa Libério e ao patrícioo João, pedindo que construíssem uma basílica no local onde caísse neve — raro em agosto em Roma. Na manhã seguinte, o Esquilino estava coberto de neve. A basílica foi construída e celebra a 'Madonnae della Neve' todo 5 de agosto (com pétalas brancas caindo da cúpula). Os mosaicos do arco triunfal e da nave são do século V.",
+        "spiritual": "A devoção mariana floresceu aqui por 17 séculos. Pedimos a intercessão de Nossa Senhora para nossa família, nosso amor, nossa jornada.",
+        "tags": ["Nossa Senhora", "Mosaicos", "Basílica", "Relíquias"],
+        "practical": {
+          "Horário": "7h–19h",
+          "Entrada": "Gratuita",
+          "Como chegar": "Metrô Linha A → Termini (10 min a pé)"
+        }
+      },
+      {
+        "name": "Cárcere Mamertino",
+        "type": "Prisão dos Apóstolos · Sítio Histórico",
+        "summary": "A prisão subterrânea onde São Pedro e São Paulo ficaram presos antes de seus martírios. A água que brotou milagrosamente batizou os guardas.",
+        "history": "O Cárcere Mamertino (Carcer Tullianus) é a mais antiga prisão de Roma, escavada na rocha do Capitolino no século VII a.C. Segundo a tradição cristã, São Pedro ficou preso aqui por 9 meses antes de sua crucificação, e São Paulo antes de sua decapitação. Uma fonte d'água teria brotado milagrosamente do chão rochoso para que Pedro batizasse seus carcereiros convertidos — os soldados Processo e Martiniano. A coluna de pedra onde Pedro teria sido acorrentado ainda está presente.",
+        "spiritual": "Descer a este calabouço escuro é compreender o preço da fé dos apóstolos. Pedro, que negara Cristo três vezes, morreu de cabeça para baixo por Ele.",
+        "tags": ["São Pedro", "São Paulo", "Martírio", "Primeira Igreja"],
+        "practical": {
+          "Horário": "9h–19h",
+          "Entrada": "€6/pp",
+          "Como chegar": "A pé do Fórum Romano (adjacente)"
+        }
+      }
+    ]
+  },
+
+  "florence": {
+    "intro": "Florença foi o berço do Renascimento e também um cenário de intensa vida espiritual. Aqui viveram São Zenóbio, Santa Maria Madalena de' Pazzi (cujo corpo incorrupto ainda está presente) e os grandes franciscanos que influenciaram toda a Europa.",
+    "sites": [
+      {
+        "name": "Basílica de Santa Croce",
+        "type": "Basílica Franciscana · Panteão da Itália",
+        "summary": "A maior basílica franciscana do mundo. Tumbas de Michelangelo, Galileu, Maquiavel. Afrescos de Giotto. Um poema em pedra à glória humana e divina.",
+        "history": "Fundada em 1294 pelos franciscanos, Santa Croce é o 'Panthéon' da Itália — contém as tumbas dos maiores gênios italianos: Michelangelo (cuja tumba foi projetada por Vasari), Galileu Galilei, Nicolau Maquiavel e Dante (cenotáfio). Os afrescos da Cappella Bardi e Cappella Peruzzi, pintados por Giotto di Bondone no século XIV, são marcos na história da arte — a primeira representação realista de figuras humanas na arte ocidental.",
+        "spiritual": "A beleza da arte franciscana aqui não é ornamento — é teologia. São Francisco dizia que toda criatura é irmã. A arte que embeleza os templos é oferenda a Deus.",
+        "tags": ["Franciscanos", "Arte", "Giotto", "Renascimento"],
+        "practical": {
+          "Horário": "9h30–17h30 (Sex: 14h–17h30, Dom: 14h–17h30)",
+          "Entrada": "€8/pp",
+          "Dress code": "Obrigatório",
+          "Como chegar": "A pé do Duomo (15 min)"
+        }
+      },
+      {
+        "name": "Duomo — Santa Maria del Fiore",
+        "type": "Catedral · Cúpula de Brunelleschi",
+        "summary": "A cúpula que desafiou o impossível. Filippo Brunelleschi resolveu em 1436 um problema que os arquitetos medievais julgavam insolúvel — e sua obra definiu o Renascimento.",
+        "history": "A Catedral de Santa Maria del Fiore foi iniciada em 1296, mas a cúpula permaneceu um projeto impossível por mais de um século. Filippo Brunelleschi venceu o concurso em 1418 com uma solução revolucionária: duas cúpulas concêntricas, autoproclamando-se contra a força gravitacional sem cimbramento externo. A construção durou 16 anos (1420-1436). Os afrescos interiores da cúpula (Juízo Final, de Vasari) foram pintados no século XVI. O batistério octogonal em frente, com suas famosas 'Portas do Paraíso' de Ghiberti, é anterior ao século XI.",
+        "spiritual": "Brunelleschi construiu a maior cúpula do mundo medieval para glorificar a Virgem Maria. A fé que move montanhas pode erguer cúpulas impossíveis.",
+        "tags": ["Brunelleschi", "Renascimento", "Batistério", "Nossa Senhora"],
+        "practical": {
+          "Horário": "Exterior: sempre aberto; Interior: 10h–17h (dom 13h30–16h45)",
+          "Entrada": "Catedral: gratuita; Cúpula: €30 (inclui tudo) — reservar online",
+          "Dress code": "Obrigatório para interior",
+          "Como chegar": "Centro — a pé de qualquer ponto"
+        }
+      },
+      {
+        "name": "Santa Maria Maddalena de' Pazzi",
+        "type": "Convento · Corpo Incorrupto",
+        "summary": "Convento carmelita com o corpo incorrupto de Santa Maria Madalena de' Pazzi — uma mística florentina do século XVI de extraordinária beleza espiritual.",
+        "history": "Catarina de' Pazzi (1566-1607), filha de uma nobre família florentina, entrou para o Carmelo aos 16 anos e tomou o nome de Maria Madalena. Após violenta doença, recebeu estigmas e experimentou visões místicas intensas. Morreu aos 41 anos. Seu corpo, examinado repetidamente ao longo dos séculos, não apresenta sinais normais de decomposição — permanece extraordinariamente preservado. Foi canonizada em 1669.",
+        "spiritual": "A incorruptibilidade do corpo de Santos é reconhecida pela Igreja como sinal da santidade que habitou aquela carne. Ver um corpo incorrupto é um convite a crer na ressurreição.",
+        "tags": ["Corpo incorrupto", "Mística", "Carmelitas", "Florença"],
+        "practical": {
+          "Horário": "9h–12h e 15h–18h (verificar horários locais)",
+          "Entrada": "Gratuita",
+          "Local": "Borgo Pinti, 58 — 15 min a pé do Duomo"
+        }
+      }
+    ]
+  },
+
+  "assisi": {
+    "intro": "Assis é talvez a cidade mais espiritualmente carregada da Itália. Aqui nasceu Francisco Bernardone — filho de rico comerciante que trocou a opulência pela pobreza radical em obediência ao Evangelho. E aqui, em 2025, a Igreja canonizou Carlo Acutis — o primeiro santo millennial.",
+    "sites": [
+      {
+        "name": "São Francisco de Assis — Basílica Superior e Inferior",
+        "type": "Basílica Papal · Patrimônio Mundial",
+        "summary": "O maior templo franciscano do mundo, erguido sobre o túmulo de São Francisco. Os afrescos de Giotto na Basílica Superior são a grande obra da pintura medieval italiana.",
+        "history": "Francisco Bernardone (1181-1226) nasceu em Assis filho de rico mercador. Após uma conversão dramática — em que ouviu Cristo falar-lhe do crucifixo de San Damiano ('Francisco, vai e repara Minha Igreja') — renunciou à herança, escolheu a pobreza absoluta e fundou a Ordem dos Frades Menores. Em 1224, recebeu os estigmas de Cristo no Monte Alverne — as chagas nas mãos, pés e costado. Morreu em 1226, cantando o Cântico das Criaturas. A basílica foi construída logo após sua canonização (1228-1253). Os 28 afrescos de Giotto sobre a vida de Francisco (Basílica Superior) revolucionaram a pintura ocidental.",
+        "spiritual": "Francisco não fundou um movimento de reforma — fundou uma forma de amar: 'Paz e Bem'. Sua pobreza não era miséria, era liberdade total. O 'Poverello' nos lembra que o amor não precisa de posses.",
+        "tags": ["São Francisco", "Estigmas", "Giotto", "Franciscanos"],
+        "special": false,
+        "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Basilica_of_Saint_Francis_of_Assisi.jpg/1280px-Basilica_of_Saint_Francis_of_Assisi.jpg",
+        "practical": {
+          "Horário": "Basílica Inferior: 6h–18h; Superior: 8h30–18h",
+          "Entrada": "Gratuita",
+          "Dress code": "Ombros e joelhos cobertos — imprescindível",
+          "Dica": "Chegar cedo (antes das 9h30) para ver afrescos de Giotto sem multidão"
+        },
+        "prayer": "Senhor, faze de mim um instrumento da Tua paz. Onde houver ódio, que eu leve o amor..."
+      },
+      {
+        "name": "Carlo Acutis — Santuário della Spogliazione",
+        "type": "Corpo do Santo · Canonizado 2025",
+        "summary": "Carlo Acutis (1991-2006) — o primeiro santo da era digital. Jovem milanês apaixonado pela Eucaristia, morreu de leucemia aos 15 anos. Seu corpo está exposto em Assis para veneração.",
+        "history": "Carlo Acutis nasceu em Londres em 1991 e cresceu em Milão. Desde criança, demonstrou profunda devoção à Eucaristia — ia à missa diariamente, rezava o terço, e usava sua habilidade em programação e web design para criar um site catalogando milagres eucarísticos ao redor do mundo. Dizia: 'A Eucaristia é minha autoestrada para o Céu.' Aos 15 anos, foi diagnosticado com leucemia. Morreu em 12 de outubro de 2006. Em seus últimos dias, disse: 'Ofereço todos os meus sofrimentos ao Senhor pela Igreja e para o Papa.' Foi beatificado em 2020 e canonizado em abril de 2025 pelo Papa Francisco — o primeiro santo canonizado nascido após 1981.",
+        "spiritual": "Carlo nos mostra que a santidade é possível na era das redes sociais, dos videogames e dos smartphones. Ser único às custas de não ser autêntico — essa era sua 'alergia'. Carlos nos convida a sermos autênticos para Deus.",
+        "tags": ["Primeiro santo millennial", "Eucaristia", "Jovem", "Corpo incorrupto"],
+        "special": true,
+        "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Carlo_Acutis.jpg/800px-Carlo_Acutis.jpg",
+        "practical": {
+          "Local": "Santuário della Spogliazione, Via San Francesco 2, Assis",
+          "Horário": "7h–20h (verificar na chegada)",
+          "Entrada": "Gratuita",
+          "Dica": "Chegar com tempo — há fila de peregrinos. Momento de oração e fé."
+        },
+        "prayer": "Carlo, intercede por todos os jovens deste mundo. Que possamos usar a tecnologia para encontrar Deus, não para nos perder."
+      },
+      {
+        "name": "Santa Clara de Assis",
+        "type": "Basílica · Fundadora das Clarissas",
+        "summary": "Amiga e discípula de São Francisco, Clara fundou a Ordem das Damas Pobres (Clarissas). Seu corpo, de beleza singular, jaz na basílica que leva seu nome.",
+        "history": "Clara Offreduccio (1194-1253) era filha de nobre família de Assis. Aos 18 anos, fugiu de casa à noite para encontrar Francisco e professar os votos de pobreza e consagração a Deus. Francisco a recebeu em Santa Maria degli Angeli, cortou seus cabelos e a enviou a um mosteiro beneditino. Fundou depois a comunidade de San Damiano — as 'Damas Pobres', depois chamadas Clarissas. Viveu 42 anos em clausura. Em 1252, doente, repeliu um ataque de inimigos elevando a Eucaristia — o inimigo fugiu. Foi canonizada dois anos após sua morte.",
+        "spiritual": "Clara mostrou que a contemplação é uma forma ativa de amor ao mundo. As irmãs clarissas, enclaustradas, sustentam a Igreja com suas orações.",
+        "tags": ["Santa Clara", "Clarissas", "Franciscanas", "Corpo incorrupto"],
+        "practical": {
+          "Horário": "6h30–12h e 14h–19h",
+          "Entrada": "Gratuita",
+          "Como chegar": "A pé do centro de Assis (5 min da Piazza del Comune)"
+        }
+      }
+    ]
+  },
+
+  "paris": {
+    "intro": "Paris é a Cidade da Luz — e a luz que mais brilha nesta cidade não vem dos seus belos lampadários, mas da fé que aqui floresceu ao longo dos séculos. Notre-Dame, o Sacré-Cœur, a Medalha Milagrosa e os Santos que aqui viveram fazem de Paris uma cidade de peregrinação.",
+    "sites": [
+      {
+        "name": "Chapelle de la Médaille Miraculeuse — Rue du Bac",
+        "type": "Santuário · Aparições Marianas · Corpo Incorrupto",
+        "summary": "O lugar onde Nossa Senhora apareceu a Santa Catarina Labouré (1830) e pediu que cunhassem a Medalha Milagrosa. O corpo incorrupto da santa está exposto.",
+        "history": "Em 27 de novembro de 1830, numa pequena chapel da Casa-Mãe das Filhas da Caridade (Rue du Bac, 140), a Virgem Maria apareceu à jovem noviça Catarina Labouré (1806-1876). Maria lhe mostrou uma imagem oval com as inscrições 'Ó Maria concebida sem pecado, rogai por nós que recorremos a vós' e pediu que fosse cunhada uma medalha com aquela imagem. A Medalha Milagrosa (originalmente chamada de Medalha da Imaculada Conceição) tornou-se um dos objetos de devoção mais difundidos do mundo. Catarina manteve em segredo durante 46 anos ter sido ela a vidente — revelando apenas em seu leito de morte. Seu corpo, examinado em 1933, encontrava-se extraordinariamente preservado. Foi canonizada em 1947.",
+        "spiritual": "Nossa Senhora pediu uma medalha simples — um sacramental de bolso. Quantas graças milagrosas foram atribuídas a ela ao longo de quase 200 anos! O simples gesto de carregá-la é uma oração.",
+        "tags": ["Medalha Milagrosa", "Aparições", "Nossa Senhora", "Corpo incorrupto"],
+        "special": true,
+        "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Chapel_of_Our_Lady_of_the_Miraculous_Medal.jpg/1024px-Chapel_of_Our_Lady_of_the_Miraculous_Medal.jpg",
+        "practical": {
+          "Endereço": "140 Rue du Bac, 75007 Paris",
+          "Horário": "7h45–13h e 14h–19h (dom 7h45–13h15)",
+          "Entrada": "Gratuita",
+          "Metrô": "Linha 12 → Rue du Bac (direto)",
+          "Dica": "Medalhas à venda na loja da parish. Moment muito especial de oração diante do corpo de Santa Catarina."
+        },
+        "prayer": "Ó Maria, concebida sem pecado, rogai por nós que recorremos a vós. Intercedei por nossas famílias, nossas vidas, nosso amor."
+      },
+      {
+        "name": "Sacré-Cœur de Montmartre",
+        "type": "Basílica · Adoração Perpétua",
+        "summary": "Erguida como voto nacional de reparação após a derrota na guerra Franco-Prussiana (1870). No Sacré-Cœur, a adoração perpétua ao Santíssimo Sacramento nunca parou desde 1885.",
+        "history": "Após a humilhante derrota da França para a Prússia em 1870 e os horrores da Comuna de Paris, dois devotos católicos — Alexandre Legentil e Hubert Rohault de Fleury — fizeram um voto: se a França fosse preservada, construiriam uma basílica dedicada ao Sagrado Coração de Jesus. A basílica romano-bizantina foi construída no ponto mais alto de Paris (Butte Montmartre, 130m) e consagrada em 1919. Desde 1885, sem interrupção — nem durante as duas guerras mundiais — a adoração ao Santíssimo Sacramento nunca cessou nesta basílica.",
+        "spiritual": "Enquanto a cidade dorme, monges e devotos adoram o Senhor presente na Eucaristia. A adoração perpétua é o pulso de Paris. Ir ao Sacré-Cœur à noite e se unir a esta oração silenciosa é uma das experiências espirituais mais profundas desta cidade.",
+        "tags": ["Sagrado Coração", "Adoração perpétua", "Montmartre", "Reparação"],
+        "practical": {
+          "Horário": "6h–22h30",
+          "Entrada": "Gratuita",
+          "Cúpula": "€7 (vista panorâmica de Paris)",
+          "Como chegar": "Metrô Linha 12 → Abbesses (depois escada ou funicular €2,15) ou Linha 2 → Anvers"
+        },
+        "prayer": "Sagrado Coração de Jesus, em Vós confio. Que este coração seja sempre um lar para o Senhor."
+      },
+      {
+        "name": "Notre-Dame de Paris",
+        "type": "Catedral · Reabertura 2024",
+        "summary": "A catedral mais famosa do mundo ressurgiu das cinzas do incêndio de 2019. Reabertura em dezembro de 2024 revela uma Notre-Dame mais bela do que antes.",
+        "history": "A construção de Notre-Dame começou em 1163, sob o bispo Maurice de Sully, e levou quase 200 anos para ser concluída. É um dos mais perfeitos exemplos do gótico francês — as três rosáceas (rosa da fachada ocidental, com 13m de diâmetro; e as duas laterais) são obras-primas de vitral medieval. O incêndio de 15 de abril de 2019 — transmitido ao vivo para bilhões de pessoas — destruiu a flecha e grande parte da cobertura, mas preservou a estrutura e as duas torres. Cinco anos de restauração, com mais de 250 empresas envolvidas, resultaram numa catedral renovada com novos vitrais contemporâneos do artista Guillaume Bardet e o órgão histórico (7800 tubos) totalmente restaurado.",
+        "spiritual": "Notre-Dame sobreviveu a guerras, revoluções, vandalismos e incêndio. Como a Igreja, foi atacada, ferida e ressurgiu. Entrar nesta catedral renovada é um ato de esperança.",
+        "tags": ["Gótico francês", "Reabertura 2024", "Restauração", "Rosácea"],
+        "practical": {
+          "Horário": "8h–19h (verificar — recém reaberta)",
+          "Entrada": "Gratuita (torres podem ter ingresso)",
+          "Reserva": "Recomendada — demanda enorme após reabertura",
+          "Como chegar": "RER B ou C → Saint-Michel Notre-Dame; Metrô 4 → Cité"
+        }
+      },
+      {
+        "name": "Igreja de São Sulpício",
+        "type": "Igreja Paroquial · Órgão Histórico",
+        "summary": "A segunda maior igreja de Paris, com um dos maiores órgãos do mundo. Interior opulento e sereno — um oásis de silêncio no coração de Saint-Germain.",
+        "history": "A Igreja de São Sulpício, no coração de Saint-Germain-des-Prés, foi construída entre 1646 e 1745. Sua fachada neoclássica é inspirada no Panthéon de Roma. O interior é famoso pelos afrescos de Eugène Delacroix na primeira chapel lateral (Luta de Jacó com o anjo, Heliodoro expulso do Templo), pintados no século XIX. O grande órgão, de 6.588 tubos, é considerado um dos maiores e mais importantes do mundo — os concertos de órgão aqui atraem músicos de todo o globo.",
+        "spiritual": "Um espaço de beleza austéra e paz. Ideal para uma oração silenciosa no meio da agitação de Paris.",
+        "tags": ["Saint-Germain", "Órgão", "Delacroix", "Silêncio"],
+        "practical": {
+          "Horário": "8h30–19h30",
+          "Entrada": "Gratuita",
+          "Como chegar": "Metrô 4 → Saint-Sulpice"
+        }
+      }
+    ]
+  }
+}

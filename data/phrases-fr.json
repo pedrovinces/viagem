@@ -1,0 +1,116 @@
+[
+  {
+    "category": "Cumprimentos",
+    "icon": "👋",
+    "phrases": [
+      { "pt": "Bom dia", "local": "Bonjour", "phonetic": "bon-ZHUR" },
+      { "pt": "Boa tarde / Boa noite", "local": "Bonsoir", "phonetic": "bon-SWAR" },
+      { "pt": "Olá (informal)", "local": "Salut", "phonetic": "sa-LU" },
+      { "pt": "Por favor", "local": "S'il vous plaît", "phonetic": "sil vu PLE" },
+      { "pt": "Obrigado / Obrigada", "local": "Merci", "phonetic": "mer-SI" },
+      { "pt": "Muito obrigado", "local": "Merci beaucoup", "phonetic": "mer-SI bo-KU" },
+      { "pt": "De nada", "local": "De rien", "phonetic": "de RJEN" },
+      { "pt": "Com licença", "local": "Excusez-moi", "phonetic": "eks-ku-ZE mwa" },
+      { "pt": "Me desculpe", "local": "Je suis désolé(e)", "phonetic": "zhe swi de-zo-LE" },
+      { "pt": "Sim", "local": "Oui", "phonetic": "wi" },
+      { "pt": "Não", "local": "Non", "phonetic": "nõ" },
+      { "pt": "Não entendo", "local": "Je ne comprends pas", "phonetic": "zhe ne kõ-prã PA" },
+      { "pt": "Fala português?", "local": "Vous parlez portugais?", "phonetic": "vu par-LE por-tu-GE" },
+      { "pt": "Fala inglês?", "local": "Vous parlez anglais?", "phonetic": "vu par-LE ã-GLE" },
+      { "pt": "Pode repetir mais devagar?", "local": "Pouvez-vous répéter plus lentement?", "phonetic": "pu-ve vu re-pe-TE plu lãt-MÃ" }
+    ]
+  },
+  {
+    "category": "Restaurante",
+    "icon": "🍽️",
+    "phrases": [
+      { "pt": "Uma mesa para dois", "local": "Une table pour deux", "phonetic": "un TAB-le pur DÖ" },
+      { "pt": "O cardápio, por favor", "local": "La carte, s'il vous plaît", "phonetic": "la KART sil vu PLE" },
+      { "pt": "Água mineral", "local": "Une eau minérale", "phonetic": "un o mi-ne-RAL" },
+      { "pt": "Uma taça de vinho tinto", "local": "Un verre de vin rouge", "phonetic": "ã VER de vã RUZH" },
+      { "pt": "Um café", "local": "Un café", "phonetic": "ã ka-FE" },
+      { "pt": "A conta, por favor", "local": "L'addition, s'il vous plaît", "phonetic": "la-di-SJÕ sil vu PLE" },
+      { "pt": "Está delicioso!", "local": "C'est délicieux!", "phonetic": "se de-li-SJÖ" },
+      { "pt": "O que você recomenda?", "local": "Qu'est-ce que vous recommandez?", "phonetic": "kes-ke vu re-ko-mã-DE" },
+      { "pt": "Sou alérgico a...", "local": "Je suis allergique à...", "phonetic": "zhe swi a-ler-ZHIK a" },
+      { "pt": "Sem lactose", "local": "Sans lactose", "phonetic": "sã lak-TOZ" },
+      { "pt": "Vegetariano", "local": "Végétarien", "phonetic": "ve-zhe-ta-RJẼ" },
+      { "pt": "Para viagem", "local": "À emporter", "phonetic": "a ã-por-TE" },
+      { "pt": "Onde é o banheiro?", "local": "Où sont les toilettes?", "phonetic": "u sõ le twa-LET" }
+    ]
+  },
+  {
+    "category": "Transporte",
+    "icon": "🚆",
+    "phrases": [
+      { "pt": "Onde é a entrada do metrô?", "local": "Où est l'entrée du métro?", "phonetic": "u e lã-TRE du me-TRO" },
+      { "pt": "Um bilhete para...", "local": "Un billet pour...", "phonetic": "ã bi-JE pur" },
+      { "pt": "Dois bilhetes, por favor", "local": "Deux billets, s'il vous plaît", "phonetic": "dö bi-JE sil vu PLE" },
+      { "pt": "Onde pegar o táxi?", "local": "Où puis-je prendre un taxi?", "phonetic": "u pwi-zhe PRÃ-dre ã tak-SI" },
+      { "pt": "Leve-me à Torre Eiffel", "local": "Conduisez-moi à la Tour Eiffel", "phonetic": "kõ-dwi-ZE mwa a la tur e-FEL" },
+      { "pt": "Leve-me a Notre-Dame", "local": "Conduisez-moi à Notre-Dame", "phonetic": "kõ-dwi-ZE mwa a no-tre-DAM" },
+      { "pt": "Qual linha do metrô?", "local": "Quelle ligne de métro?", "phonetic": "kel li-nje de me-TRO" },
+      { "pt": "Estou perdido/a", "local": "Je suis perdu(e)", "phonetic": "zhe swi per-DU" },
+      { "pt": "Como chego a...?", "local": "Comment aller à...?", "phonetic": "ko-MÃ a-LE a" },
+      { "pt": "Vire à direita", "local": "Tournez à droite", "phonetic": "tur-NE a DRWAT" },
+      { "pt": "Vire à esquerda", "local": "Tournez à gauche", "phonetic": "tur-NE a GOSH" },
+      { "pt": "Aeroporto de Orly", "local": "Aéroport d'Orly", "phonetic": "a-e-ro-por dor-LI" }
+    ]
+  },
+  {
+    "category": "Hotel",
+    "icon": "🏨",
+    "phrases": [
+      { "pt": "Tenho uma reserva", "local": "J'ai une réservation", "phonetic": "zhe un re-zer-va-SJÕ" },
+      { "pt": "Fazer check-in", "local": "Je voudrais faire le check-in", "phonetic": "zhe vu-DRE fer le tshek-in" },
+      { "pt": "A que horas é o check-out?", "local": "À quelle heure est le check-out?", "phonetic": "a kel ÖR e le tshek-ut" },
+      { "pt": "Posso deixar a bagagem?", "local": "Puis-je laisser mes bagages?", "phonetic": "pwi-zhe le-SE me ba-GAZH" },
+      { "pt": "A senha do Wi-Fi?", "local": "Quel est le mot de passe du Wi-Fi?", "phonetic": "kel e le mo de PAS du wai-fai" },
+      { "pt": "Preciso de mais toalhas", "local": "J'ai besoin de serviettes supplémentaires", "phonetic": "zhe be-ZWẼ de ser-VJET su-ple-mã-TER" },
+      { "pt": "O quarto está muito quente", "local": "La chambre est trop chaude", "phonetic": "la SHÃBR e tro SHOD" }
+    ]
+  },
+  {
+    "category": "Emergência",
+    "icon": "🚨",
+    "phrases": [
+      { "pt": "Ajuda!", "local": "Au secours!", "phonetic": "o se-KUR" },
+      { "pt": "Chame a polícia!", "local": "Appelez la police!", "phonetic": "a-pe-LE la po-LIS" },
+      { "pt": "Chame uma ambulância!", "local": "Appelez une ambulance!", "phonetic": "a-pe-LE un ã-bu-LÃS" },
+      { "pt": "Preciso de um médico", "local": "J'ai besoin d'un médecin", "phonetic": "zhe be-ZWẼ dã med-SẼ" },
+      { "pt": "Fui roubado/a", "local": "J'ai été volé(e)", "phonetic": "zhe e-TE vo-LE" },
+      { "pt": "Perdi minha carteira", "local": "J'ai perdu mon portefeuille", "phonetic": "zhe per-DU mõ por-te-FÖJ" },
+      { "pt": "Emergência: 112 / Polícia: 17", "local": "Urgence: 112 / Police: 17", "phonetic": "ur-ZHÃS: sã-duz / po-LIS: di-SET" },
+      { "pt": "Farmácia", "local": "Pharmacie", "phonetic": "far-ma-SI" }
+    ]
+  },
+  {
+    "category": "Compras",
+    "icon": "🛍️",
+    "phrases": [
+      { "pt": "Quanto custa?", "local": "Combien ça coûte?", "phonetic": "kõ-BJẼ sa KUT" },
+      { "pt": "É muito caro", "local": "C'est trop cher", "phonetic": "se tro SHER" },
+      { "pt": "Tem desconto?", "local": "Il y a une réduction?", "phonetic": "il ja un re-duk-SJÕ" },
+      { "pt": "Posso pagar com cartão?", "local": "Puis-je payer par carte?", "phonetic": "pwi-zhe pe-JE par KART" },
+      { "pt": "Onde fica o supermercado?", "local": "Où est le supermarché?", "phonetic": "u e le su-per-mar-SHE" },
+      { "pt": "Posso experimentar?", "local": "Puis-je essayer?", "phonetic": "pwi-zhe e-se-JE" },
+      { "pt": "Levo este", "local": "Je prends celui-ci", "phonetic": "zhe prã se-lwi-SI" },
+      { "pt": "Uma sacola, por favor", "local": "Un sac, s'il vous plaît", "phonetic": "ã SAK sil vu PLE" }
+    ]
+  },
+  {
+    "category": "Igreja & Fé",
+    "icon": "⛪",
+    "phrases": [
+      { "pt": "A que horas é a missa?", "local": "À quelle heure est la messe?", "phonetic": "a kel ÖR e la MES" },
+      { "pt": "Há missa em português?", "local": "Il y a une messe en portugais?", "phonetic": "il ja un MES ã por-tu-GE" },
+      { "pt": "Onde é a confissão?", "local": "Où est le confessionnal?", "phonetic": "u e le kõ-fe-sjo-NAL" },
+      { "pt": "Posso visitar a chapel?", "local": "Puis-je visiter la chapelle?", "phonetic": "pwi-zhe vi-zi-TE la sha-PEL" },
+      { "pt": "Onde fica a Medalha Milagrosa?", "local": "Où est la Médaille Miraculeuse?", "phonetic": "u e la me-DAJ mi-ra-ku-LÖZ" },
+      { "pt": "Deus te abençoe", "local": "Que Dieu vous bénisse", "phonetic": "ke djö vu be-NIS" },
+      { "pt": "É necessário cobrir os ombros?", "local": "Faut-il couvrir les épaules?", "phonetic": "fo-til ku-VRIR lez e-POL" },
+      { "pt": "Estou em oração", "local": "Je suis en prière", "phonetic": "zhe swi ã prje-RE" },
+      { "pt": "Obrigado pela bênção", "local": "Merci pour la bénédiction", "phonetic": "mer-SI pur la be-ne-dik-SJÕ" }
+    ]
+  }
+]

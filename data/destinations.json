@@ -1,0 +1,545 @@
+{
+  "cities": [
+    {
+      "id": "rome",
+      "name": "Roma",
+      "flag": "🇮🇹",
+      "color": "#C84B31",
+      "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/1280px-Colosseo_2020.jpg",
+      "tagline": "A Cidade Eterna — onde cada pedra guarda dois mil anos de história",
+      "destinations": [
+        {
+          "name": "Coliseu",
+          "type": "🏛️ Monumento",
+          "description": "O maior anfiteatro do mundo antigo, símbolo eterno de Roma e da grandeza do Império Romano.",
+          "long_description": "O Coliseu — Anfiteatro Flávio — foi inaugurado em 80 d.C. pelo imperador Tito e tinha capacidade para até 80.000 espectadores. Em suas areias aconteceram gladiadores, batalhas navais (o piso era inundado), caçadas de feras exóticas e execuções públicas. O monumento esteve em uso por quase 400 anos. Após a queda do Império, serviu de pedreira, habitação e fortaleza. Hoje é o monumento mais visitado da Itália. O travertino bege e o concreto romano (opus caementicium) resistiram vinte séculos. À noite, iluminado em laranja quente, é simplesmente mágico. Nas redondezas ficam o Arco de Constantino e o Monte Palatino — juntos formam o maior conjunto arqueológico do mundo ocidental.",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/800px-Colosseo_2020.jpg",
+          "photos": [
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/1200px-Colosseo_2020.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Colosseum_in_Rome-April_2007-1-_copie_2B.jpg/1200px-Colosseum_in_Rome-April_2007-1-_copie_2B.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Colosseum_interior_wide_angle.jpg/1200px-Colosseum_interior_wide_angle.jpg"
+          ],
+          "hours": "9h–19h (último acesso 18h). Fechado 1º jan e 25 dez",
+          "price": "€18 (inclui Fórum Romano e Palatino) — reserva antecipada recomendada",
+          "duration": "2–3 horas",
+          "address": "Piazza del Colosseo 1, Roma",
+          "must_book": true,
+          "tips": "Reserve online com antecedência para evitar filas de até 2h. O combo com Fórum Romano e Palatino vale muito — passe o dia inteiro nessa região. O Metrô Colosseo (Linha B) para exatamente na porta.",
+          "romantic": "Ver o Coliseu iluminado ao entardecer, com o Arco de Constantino ao fundo, é uma das imagens mais poderosas que vocês levarão para a vida.",
+          "coordinates": { "lat": 41.8902, "lng": 12.4922 }
+        },
+        {
+          "name": "Fórum Romano e Monte Palatino",
+          "type": "🏛️ Arqueologia",
+          "description": "O coração da Roma antiga: templos, palácios imperiais e a Sacra Via que Júlio César percorreu.",
+          "long_description": "O Fórum Romano foi por séculos o centro político, comercial e religioso de Roma — a praça pública mais importante do mundo antigo. Você caminhará literalmente sobre os mesmos paralelepípedos que Cícero, Augusto e os imperadores pisaram. Os templos de Vesta, de Saturno e o Arco de Tito ainda estão de pé. Subindo a Via Sacra chega-se ao Monte Palatino, a colina mais nobre de Roma, onde ficavam os palácios imperiais e, segundo a lenda, a cabana de Rômulo. A vista do Palatino sobre o Circo Máximo e o Fórum é de tirar o fôlego. O ingresso é conjunto com o Coliseu.",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Foro_Romano_-_Rom_-_Juli_2021.jpg/800px-Foro_Romano_-_Rom_-_Juli_2021.jpg",
+          "photos": [
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Foro_Romano_-_Rom_-_Juli_2021.jpg/1200px-Foro_Romano_-_Rom_-_Juli_2021.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Forum_Romanum_Palatino.jpg/1200px-Forum_Romanum_Palatino.jpg"
+          ],
+          "hours": "9h–19h (mesmos horários do Coliseu)",
+          "price": "Incluso no ingresso do Coliseu (€18)",
+          "duration": "2–3 horas",
+          "address": "Via Sacra, Roma",
+          "must_book": false,
+          "tips": "Leve água e chapéu — há pouca sombra. Comece pelo Palatino pela manhã para pegar a luz dourada, depois desça ao Fórum. O Arco de Tito retrata a destruição do Templo de Jerusalém em 70 d.C. — um detalhe histórico e bíblico profundo.",
+          "romantic": "Parar no Palatino ao fim da tarde, quando a luz dourada banha as ruínas do Fórum lá embaixo, é um dos momentos mais evocativos da viagem.",
+          "coordinates": { "lat": 41.8925, "lng": 12.4853 }
+        },
+        {
+          "name": "Basílica de São Pedro e Vaticano",
+          "type": "⛪ Fé & Arte",
+          "description": "O maior templo cristão do mundo e o coração espiritual do catolicismo — a tumba do Apóstolo Pedro.",
+          "long_description": "A Basílica de São Pedro foi construída sobre a tumba do Apóstolo, no local onde ele foi martirizado e sepultado. A atual basílica, obra-prima renascentista e barroca, foi construída entre 1506 e 1626 com projetos de Bramante, Rafael, Michelangelo (que desenhou a cúpula) e Bernini (que criou o baldaquino dourado e o colonato da praça). A nave tem 218 metros de comprimento. A Pietà de Michelangelo — esculpida quando ele tinha apenas 24 anos — fica logo à entrada, coberta por vidro desde 1972. Subir a cúpula (551 degraus, ou de elevador até o tambor) oferece a vista mais esplêndida de Roma. A praça com as colonatas de Bernini abraça os fiéis como dois braços abertos — como o próprio Bernini descreveu. Embaixo da basílica ficam as Grutas Vaticanas, onde estão enterrados os Papas, e ainda mais abaixo a Necrópole Vaticana com a tumba de São Pedro (visita separada com reserva).",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg/800px-Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg",
+          "photos": [
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg/1200px-Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Basilica_of_Saint_Peter%2C_Vatican%2C_Rome.jpg/1200px-Basilica_of_Saint_Peter%2C_Vatican%2C_Rome.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Pieta_di_Michelangelo.jpg/800px-Pieta_di_Michelangelo.jpg"
+          ],
+          "hours": "Basílica: 7h–19h (gratuita). Cúpula: 8h–18h (€8 a pé / €6 elevador+escada)",
+          "price": "Basílica: gratuita. Cúpula: €8. Museus + Sistina: €20 (reserva obrigatória)",
+          "duration": "3–4 horas (basílica + cúpula + praça)",
+          "address": "Piazza San Pietro, Città del Vaticano",
+          "must_book": true,
+          "tips": "Ombros e joelhos devem estar cobertos — o controle é rigoroso. Chegue cedo (antes das 8h) para ver a basílica quase vazia, um privilégio raro. A Audiência Papal (quartas, 9h30) acontece na praça ou no Salão Paulo VI — o ingresso é gratuito pelo site do Vaticano.",
+          "romantic": "Estar na Praça de São Pedro ao amanhecer, com a neblina ainda entre as colunas de Bernini e o silêncio que precede a Missa matinal, é uma experiência de fé e beleza que vocês não encontrarão em nenhum outro lugar da Terra.",
+          "coordinates": { "lat": 41.9022, "lng": 12.4539 }
+        },
+        {
+          "name": "Museus Vaticanos e Capela Sistina",
+          "type": "🎨 Museu & Arte",
+          "description": "O maior acervo artístico do mundo — e ao final, o teto pintado por Michelangelo que mudou a história da arte.",
+          "long_description": "Os Museus Vaticanos reúnem séculos de coleções papais: esculturas gregas e romanas (o Laocoonte e o Apolo do Belvedere são essenciais), afrescos renascentistas, mapas geográficos do século XVI e muito mais. O percurso padrão tem quase 7 km de galerias. O clímax é a Capela Sistina: Michelangelo pintou o teto entre 1508 e 1512 — sozinho, deitado em andaimes — com 300 figuras representando o Gênesis, da Criação ao Dilúvio. Vinte e três anos depois voltou para pintar o Juízo Final na parede do altar. As Stanze de Rafael (salas adjacentes) mostram A Escola de Atenas, considerado o mais perfeito afresco renascentista. A visita termina, literalmente, com o afresco mais famoso da humanidade sobre a cabeça.",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Sistina-Buonarroti.jpg/800px-Sistina-Buonarroti.jpg",
+          "photos": [
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Sistina-Buonarroti.jpg/1200px-Sistina-Buonarroti.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Vatican_Museum_Pio-Clementino_Laocoonte_2.jpg/800px-Vatican_Museum_Pio-Clementino_Laocoonte_2.jpg"
+          ],
+          "hours": "Seg–Sáb: 9h–18h (último acesso 16h). Fechado dom (exceto último dom do mês: gratuito, fila enorme)",
+          "price": "€20 online (€17 + €3 reserva). Fila sem reserva pode passar de 3h",
+          "duration": "3–5 horas",
+          "address": "Viale Vaticano, Città del Vaticano",
+          "must_book": true,
+          "tips": "Reserve SEMPRE com antecedência. O horário de abertura (9h) é o menos lotado. Na Sistina é proibido fotografar e falar alto — agentes de segurança monitoram constantemente. Se quiser ver a Sistina com tranquilidade, existe uma visita privada matinal antes da abertura ao público (cara, mas inesquecível).",
+          "romantic": "Sentar por alguns minutos em silêncio sob o teto da Sistina, olhar o toque dos dedos de Deus e Adão e deixar a grandeza daquele momento pousar sobre vocês dois — é uma das experiências mais transcendentes que um casal pode ter.",
+          "coordinates": { "lat": 41.9065, "lng": 12.4536 }
+        },
+        {
+          "name": "Fontana di Trevi",
+          "type": "🏛️ Monumento",
+          "description": "A maior e mais barroca das fontes de Roma — onde jogar uma moeda é um rito de passagem do amor.",
+          "long_description": "A Fontana di Trevi foi concluída em 1762 por Nicola Salvi, coroando o terminal do aqueduto romano Acqua Vergine (construído em 19 a.C. por Agrippa). Com 26 metros de altura e 49 de largura, é a maior fonte barroca do mundo. Neptuno, deus do mar, emerge ao centro em uma concha puxada por cavalos marinhos e tritons. A lenda diz que jogar uma moeda com a mão direita por sobre o ombro esquerdo garante o retorno a Roma. Quem joga duas moedas encontrará o amor; três, casará com um romano ou romana. A fonte recebe cerca de três mil moedas por dia — recolhidas regularmente e doadas à Caritas. Na cena mais famosa do cinema, Anita Ekberg dançou aqui em La Dolce Vita de Fellini.",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Fontana_di_Trevi%2C_Roma%2C_Italia_%282%29.jpg/800px-Fontana_di_Trevi%2C_Roma%2C_Italia_%282%29.jpg",
+          "photos": [
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Fontana_di_Trevi%2C_Roma%2C_Italia_%282%29.jpg/1200px-Fontana_di_Trevi%2C_Roma%2C_Italia_%282%29.jpg"
+          ],
+          "hours": "Aberta 24 horas",
+          "price": "Gratuito (nova taxa de acesso de €2 pode ser introduzida em 2026)",
+          "duration": "30–45 minutos",
+          "address": "Piazza di Trevi, Roma",
+          "must_book": false,
+          "tips": "Vá de manhã cedo (antes das 8h) ou à noite depois das 22h para encontrá-la menos lotada. De madrugada, com a iluminação sobre a pedra travertina, a fonte é ainda mais impressionante. Cuidado com os bolsistas — a multidão é intensa durante o dia.",
+          "romantic": "Jogar suas moedas juntos, mão sobre mão, é um dos rituais mais doces e cheios de significado que Roma oferece a um casal.",
+          "coordinates": { "lat": 41.9009, "lng": 12.4833 }
+        },
+        {
+          "name": "Panteão",
+          "type": "🏛️ Monumento",
+          "description": "O templo romano mais bem preservado do mundo — 2.000 anos de perfeição arquitetônica com um óculo aberto para o céu.",
+          "long_description": "O Panteão foi construído por Adriano entre 118 e 125 d.C., sobre as fundações de um templo anterior de Agripa. A frase da fachada — M·AGRIPPA·L·F·COS·TERTIVM·FECIT — homenageia o fundador original. O interior é uma esfera perfeita: o diâmetro da rotunda (43,3m) iguala exatamente a altura do teto até o óculo. Esse óculo circular de 8,7m de diâmetro é a única fonte de luz e ar — e a única abertura para o exterior. A cúpula permaneceu por 1.300 anos como a maior cúpula do mundo (superada apenas em 1436 por Brunelleschi, em Florença). O Panteão serviu de mausoléu: aqui estão enterrados Rafael e os primeiros reis da Itália unificada. Tornou-se uma igreja cristã em 609 d.C. — o que explica sua preservação impecável.",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Pantheon_Rome_2005may.jpg/800px-Pantheon_Rome_2005may.jpg",
+          "photos": [
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Pantheon_Rome_2005may.jpg/1200px-Pantheon_Rome_2005may.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Panth%C3%A9on_int%C3%A9rieur.jpg/800px-Panth%C3%A9on_int%C3%A9rieur.jpg"
+          ],
+          "hours": "Seg–Sáb 9h–19h, Dom 9h–18h",
+          "price": "€5 (reserva online recomendada para evitar filas)",
+          "duration": "45–60 minutos",
+          "address": "Piazza della Rotonda, Roma",
+          "must_book": false,
+          "tips": "Em dias de chuva, o espetáculo do Panteão é único: a água entra pelo óculo e drena por um sistema de ralo central romano que ainda funciona perfeitamente. Chegue às 9h na abertura para ter o interior quase para vocês.",
+          "romantic": "Ficar de pé sob o óculo, olhando para o feixe de luz que percorre lentamente o interior como um relógio de sol, é uma experiência de silêncio e beleza que leva qualquer casal ao mesmo estado de contemplação.",
+          "coordinates": { "lat": 41.8986, "lng": 12.4769 }
+        },
+        {
+          "name": "Trastevere",
+          "type": "🍽️ Bairro & Gastronomia",
+          "description": "O bairro mais autêntico e charmoso de Roma — ruelas de paralelepípedos, heras nas paredes, trattorias com mesas na calçada.",
+          "long_description": "Trastevere ('além do Tibre') é o único bairro de Roma que sobreviveu relativamente intacto desde a Idade Média. Suas ruelas estreitas, casas cor de ocre e terracota, igrejas silenciosas e trattorias com mesas na rua formam o cenário perfeito para uma noite romana. A Basílica de Santa Maria in Trastevere (séculos II–XII) tem mosaicos dourados que brilham como jóias à noite. A Piazza di Santa Maria in Trastevere, com sua fonte central e terrace de bares ao redor, é o coração do bairro. Em comparação com o centro turístico, aqui os preços são menores e os romanos de verdade ainda vivem e trabalham. Subindo a colina está o Jardim dos Laranjeiros, com a melhor vista panorâmica de Roma — e um terraço onde casais se beijam enquanto o sol se põe sobre os telhados.",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Trastevere_-_Rom_%28Italy%29_%2824464588484%29.jpg/800px-Trastevere_-_Rom_%28Italy%29_%2824464588484%29.jpg",
+          "photos": [
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Trastevere_-_Rom_%28Italy%29_%2824464588484%29.jpg/1200px-Trastevere_-_Rom_%28Italy%29_%2824464588484%29.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Piazza_Santa_Maria_in_Trastevere_2024.jpg/800px-Piazza_Santa_Maria_in_Trastevere_2024.jpg"
+          ],
+          "hours": "Bairro: sempre aberto. Basílica SM Trastevere: 7h30–21h",
+          "price": "Gratuito para passear. Jantares de €25–50/pessoa",
+          "duration": "2–4 horas (jantar incluso)",
+          "address": "Trastevere, Roma",
+          "must_book": false,
+          "tips": "Reserve mesa nos melhores restaurantes: Da Enzo al 29, Tonnarello ou Grazia & Graziella. Evite os restaurantes com cardápio em 5 idiomas — prefira os com cardápio escrito à mão em italiano. O Bonde 8 de Largo Torre Argentina chega direto ao bairro.",
+          "romantic": "Jantar em Trastevere numa noite de maio — com as janelas abertas e perfume de limão no ar — e depois caminhar de mãos dadas pelas ruelas iluminadas até a Basílica: esse é o romance romano por excelência.",
+          "coordinates": { "lat": 41.8896, "lng": 12.4698 }
+        },
+        {
+          "name": "Piazza Navona",
+          "type": "🏛️ Praça",
+          "description": "A mais bela praça barroca de Roma, com três fontes, incluindo a monumental Fontana dei Quattro Fiumi de Bernini.",
+          "long_description": "Piazza Navona ocupa exatamente o espaço do antigo Estádio de Domiciano (86 d.C.) — por isso tem a forma alongada e estreita de uma pista. No século XVII, Inocêncio X transformou-a na praça mais glamorosa de Roma. A obra-prima é a Fontana dei Quattro Fiumi de Bernini (1651): quatro gigantes esculpidos representam os maiores rios de quatro continentes conhecidos — Nilo, Ganges, Danúbio e Rio da Prata — e sustentam um obelisco egípcio de 16 metros. Há ainda outras duas fontes. A Igreja de Sant'Agnese in Agone (Borromini, rival de Bernini) fecha a praça a oeste. Artistas, músicos de rua e turistas enchem a praça durante todo o dia. Ao anoitecer, os bares ao redor abrem para aperitivos.",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Piazza_Navona_Roma.jpg/800px-Piazza_Navona_Roma.jpg",
+          "photos": [
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Piazza_Navona_Roma.jpg/1200px-Piazza_Navona_Roma.jpg"
+          ],
+          "hours": "Sempre aberta",
+          "price": "Gratuito",
+          "duration": "45 minutos",
+          "address": "Piazza Navona, Roma",
+          "must_book": false,
+          "tips": "Combine com uma visita ao Campo de' Fiori (500m) e ao Panteão (700m) — os três ficam no coração do centro histórico e são facilmente percorridos a pé em meio período.",
+          "romantic": "Tomar um gelato italiano sentado na borda da Fontana dei Quattro Fiumi ao entardecer, com o sol tingindo o travertino de dourado — Roma sabe como ser romântica.",
+          "coordinates": { "lat": 41.8992, "lng": 12.4731 }
+        }
+      ]
+    },
+    {
+      "id": "florence",
+      "name": "Florença",
+      "flag": "🇮🇹",
+      "color": "#D4943A",
+      "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Firenze_cupola_brunelleschi_da_campanile.JPG/1280px-Firenze_cupola_brunelleschi_da_campanile.JPG",
+      "tagline": "O berço do Renascimento — arte, fé e beleza à beira do Arno",
+      "destinations": [
+        {
+          "name": "Duomo — Cattedrale di Santa Maria del Fiore",
+          "type": "⛪ Fé & Arquitetura",
+          "description": "A cúpula de Brunelleschi — a maior proeza arquitetônica do Renascimento — domina o horizonte de Florença há 600 anos.",
+          "long_description": "A Catedral de Santa Maria del Fiore é o coração de Florença. Sua fachada neo-gótica em mármore branco, verde e rosa, concluída apenas em 1887, é um deslumbramento. Mas a razão pela qual ela define uma cidade inteira é a cúpula de Filippo Brunelleschi (1420–1436): com 45 metros de diâmetro interno, foi a maior cúpula do mundo por mais de um século e permanece até hoje a maior cúpula de alvenaria da história. Brunelleschi inventou técnicas e máquinas que não existiam — sem usar cimbre de madeira, construindo as duas cascas concêntricas em espinha de peixe para se sustentarem mutuamente durante a construção. Subir os 463 degraus até o lanternin é percorrer essa engenharia por dentro. O Campanile de Giotto (414 degraus) oferece a melhor vista da cúpula vista de fora. O Batistério São João, com seus portais de bronze de Ghiberti que Michelangelo chamou de 'Portas do Paraíso', fecha a Piazza del Duomo.",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Firenze_cupola_brunelleschi_da_campanile.JPG/800px-Firenze_cupola_brunelleschi_da_campanile.JPG",
+          "photos": [
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Firenze_cupola_brunelleschi_da_campanile.JPG/1200px-Firenze_cupola_brunelleschi_da_campanile.JPG",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Firenze_porta_ghiberti.jpg/800px-Firenze_porta_ghiberti.jpg"
+          ],
+          "hours": "Catedral: 10h15–16h45 (dom: 13h30–16h45). Cúpula: 8h30–19h. Campanile: 8h15–19h30",
+          "price": "Passe Brunelleschi €30 (inclui cúpula, campanile, batistério, museu e cripta) — obrigatório reservar online",
+          "duration": "3–4 horas (conjunto completo)",
+          "address": "Piazza del Duomo, Firenze",
+          "must_book": true,
+          "tips": "O Passe Brunelleschi é indispensável — não se entra na cúpula sem reserva. Reserve para o primeiro horário da manhã (8h30) para ver Florença acordando lá de cima. A catedral em si é gratuita para entrar, mas a fila pode ser longa.",
+          "romantic": "Estar no topo da cúpula de Brunelleschi ao amanhecer, com a névoa do Arno ainda cobrindo os telhados cor de telha e toda Florença se estendendo ao redor — é um momento que pertence só a vocês dois.",
+          "coordinates": { "lat": 43.7731, "lng": 11.2560 }
+        },
+        {
+          "name": "Galleria degli Uffizi",
+          "type": "🎨 Museu",
+          "description": "O museu de arte mais importante do mundo renascentista — Botticelli, Leonardo, Rafael, Caravaggio e Michelangelo sob o mesmo teto.",
+          "long_description": "Os Uffizi foram construídos por Giorgio Vasari em 1560 para abrigar os escritórios (uffici) dos magistrados de Cosimo I de' Medici. A família Médici foi a maior mecenas de arte da história — e toda aquela arte está aqui. As obras-primas são incontáveis: A Primavera (1478) e O Nascimento de Vênus (1485) de Botticelli, pintadas para Lorenzo de' Medici e consideradas as mais belas imagens alegóricas do Renascimento. A Anunciação de Leonardo da Vinci. A Madonna do Cardellino de Rafael. A Sacra Família (Tondo Doni) de Michelangelo. O Baco de Caravaggio. E dezenas de outras obras que em qualquer outro museu seriam as joias principais do acervo. O museu fica em um palazzo em ferradura às margens do Arno — a vista das janelas sobre a Ponte Vecchio é em si uma obra de arte.",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg/800px-Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg",
+          "photos": [
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg/1200px-Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Botticelli-primavera.jpg/1200px-Botticelli-primavera.jpg"
+          ],
+          "hours": "Ter–Dom: 8h15–18h30. Fechado segundas, 1º jan, 1º mai, 25 dez",
+          "price": "€20 (+ €4 de reserva online — imprescindível)",
+          "duration": "3–4 horas",
+          "address": "Piazzale degli Uffizi 6, Firenze",
+          "must_book": true,
+          "tips": "Reserve ingresso com semanas de antecedência. Chegue no horário exato — as filas de reserva andam rápido, mas a fila de espera pode ser de 2–3h. Foque nas salas de Botticelli (10 e 14) e de Leonardo (35) se o tempo for curto.",
+          "romantic": "Parar diante d'O Nascimento de Vênus — tão maior e mais luminoso do que qualquer reprodução sugere — e sentir juntos o peso de 600 anos de beleza sobre vocês, é uma das experiências mais íntimas que um museu pode oferecer.",
+          "coordinates": { "lat": 43.7678, "lng": 11.2553 }
+        },
+        {
+          "name": "Galleria dell'Accademia e o David",
+          "type": "🎨 Museu & Escultura",
+          "description": "O David de Michelangelo — a escultura mais perfeita já criada pelo homem — espera por vocês ao fundo de uma galeria especialmente projetada para ele.",
+          "long_description": "Michelangelo esculpiu o David entre 1501 e 1504 a partir de um bloco de mármore de Carrara que outros escultores haviam descartado como inutilizável ('O Gigante', como era chamado). O resultado, com 5,17 metros de altura, representa Davi no momento exato antes de arremessar a pedra em Golias — a tensão, a concentração, a determinação, tudo captado em mármore. Os ombros são propositalmente maiores do que a proporção real, pois a estátua foi originalmente concebida para ser instalada em um contrafonte da Catedral, a ser vista de baixo. A galeria que a abriga tem uma iluminação zenital natural que banha a estátua em luz suave. Ao redor da galeria estão também os famosos Prisioneiros — esculturas inacabadas de Michelangelo em que as figuras parecem emergir do mármore, como se a pedra ainda as aprisionasse.",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/%27David%27_by_Michelangelo_Fir_JBU002.jpg/800px-%27David%27_by_Michelangelo_Fir_JBU002.jpg",
+          "photos": [
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/%27David%27_by_Michelangelo_Fir_JBU002.jpg/1200px-%27David%27_by_Michelangelo_Fir_JBU002.jpg"
+          ],
+          "hours": "Ter–Dom: 8h15–18h30. Fechado segundas",
+          "price": "€16 (+ €4 reserva online — essencial)",
+          "duration": "1,5–2 horas",
+          "address": "Via Ricasoli 60, Firenze",
+          "must_book": true,
+          "tips": "Reserve com antecedência — as filas sem reserva podem chegar a 4 horas. Os Prisioneiros de Michelangelo (na entrada da galeria principal) são tão impactantes quanto o David para quem se interessa pela arte da escultura.",
+          "romantic": "Há algo profundamente comovente em estar sob o olhar do David — essa perfeição de um jovem no limiar de um ato de coragem. Um momento para segurar a mão de quem você ama.",
+          "coordinates": { "lat": 43.7767, "lng": 11.2588 }
+        },
+        {
+          "name": "Ponte Vecchio",
+          "type": "🌉 Monumento",
+          "description": "A ponte mais antiga e famosa de Florença — com joalherias nas paredes e o Arno correndo dourado ao entardecer.",
+          "long_description": "A Ponte Vecchio (Ponte Velha) é a única ponte histórica de Florença que sobreviveu à Segunda Guerra Mundial — por ordem expressa de Hitler, segundo a lenda. Construída em sua forma atual em 1345, sobre fundações muito mais antigas, ela foi sempre um espaço comercial: originalmente açougues e peixarias, substituídos no século XVI pelas joalherias que existem até hoje, por decreto de Fernando I (que não suportava o cheiro). Acima das lojas passa o Corridoio Vasariano, o passadiço secreto que Cosimo I construiu para ir do Palazzo Vecchio ao Palazzo Pitti sem precisar descer para a rua. O espetáculo mais belo é ao entardecer: o sol poente tinge o Arno de ouro e todos os pontos de observação da cidade se enchem de casais com câmeras.",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Ponte_Vecchio_at_dusk.jpg/800px-Ponte_Vecchio_at_dusk.jpg",
+          "photos": [
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Ponte_Vecchio_at_dusk.jpg/1200px-Ponte_Vecchio_at_dusk.jpg"
+          ],
+          "hours": "Sempre aberta",
+          "price": "Gratuito (joalherias: horários comerciais)",
+          "duration": "30 minutos",
+          "address": "Ponte Vecchio, Firenze",
+          "must_book": false,
+          "tips": "Ao lado da ponte, nos dois sentidos, há terraços sobre as margens do Arno. A hora do pôr do sol (19h em maio) é o momento perfeito. Evite ir de noite se quer ver as joias — as lojas fecham cedo.",
+          "romantic": "Ver o sol se pondo sobre o Arno com a Ponte Vecchio ao fundo, as joalherias douradas iluminadas, os casais apoiados nos parapeitos — Florença sabe exactamente o que está fazendo.",
+          "coordinates": { "lat": 43.7680, "lng": 11.2531 }
+        },
+        {
+          "name": "Piazzale Michelangelo",
+          "type": "🌅 Mirante",
+          "description": "A melhor vista panorâmica de toda Florença — o Arno, o Duomo, os telhados terracota e os montes toscanos ao fundo.",
+          "long_description": "O Piazzale Michelangelo (1869) é o mirante mais famoso de Florença, a 104 metros acima do nível do Arno. A praça tem uma réplica em bronze do David e, ao seu redor, a vista mais completa e emocionante da cidade: o Duomo com a cúpula de Brunelleschi, o Palazzo Vecchio com sua torre medieval, a Ponte Vecchio e as colinas toscanas ao fundo. Ao entardecer, dezenas de pessoas se reúnem aqui para ver o pôr do sol — é um dos espetáculos gratuitos mais bonitos da Itália. Subindo mais um pouco chega-se à Igreja de San Miniato al Monte, romântica basílica românica do século XI com um campanário e um cemitério de mármore vistas extraordinárias.",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/View_from_piazzale_michelangelo.jpg/800px-View_from_piazzale_michelangelo.jpg",
+          "photos": [
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/View_from_piazzale_michelangelo.jpg/1200px-View_from_piazzale_michelangelo.jpg"
+          ],
+          "hours": "Sempre aberto",
+          "price": "Gratuito",
+          "duration": "45–60 minutos",
+          "address": "Piazzale Michelangelo, Firenze",
+          "must_book": false,
+          "tips": "Chegue 30 minutos antes do pôr do sol (por volta das 19h em maio). O ônibus 13 do centro sobe até o piazzale. Subindo mais 10 minutos a pé, a Igreja de San Miniato al Monte é um tesouro escondido com uma das melhores vistas.",
+          "romantic": "Ver Florença se tingir de laranja e rosa ao entardecer do Piazzale, de mãos dadas, com toda aquela beleza renascentista aos pés de vocês — um dos momentos mais románticos que qualquer viagem pode oferecer.",
+          "coordinates": { "lat": 43.7629, "lng": 11.2648 }
+        },
+        {
+          "name": "Palazzo Pitti e Jardins de Boboli",
+          "type": "🏰 Palácio & Jardim",
+          "description": "O palácio mais monumental de Florença, residência dos Médici, com os maiores jardins renascentistas da Itália.",
+          "long_description": "O Palazzo Pitti é o maior palácio de Florença — uma fachada de 205 metros em bugnato rusticano, que abriga hoje cinco museus, incluindo a Galleria Palatina (Rafael, Tiziano, Caravaggio) e os apartamentos reais. Cosimo I comprou o palácio em 1549 e o transformou na residência oficial dos Grão-Duques da Toscana por quase 300 anos. Atrás do palácio se abrem os Jardins de Boboli (1549): terraços, fontes, esculturas, uma gruta maneirista com afrescos e estátuas de Buontalenti, ciprestes milenares e uma vista sobre Florença. No coração dos jardins fica o Anfiteatro onde os Médici faziam espetáculos e óperas — é considerado o berço do teatro moderno. Em maio, o jardim está em plena floração.",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Palazzo_Pitti_Firenze.jpg/800px-Palazzo_Pitti_Firenze.jpg",
+          "photos": [
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Palazzo_Pitti_Firenze.jpg/1200px-Palazzo_Pitti_Firenze.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Jardins_de_Boboli.jpg/800px-Jardins_de_Boboli.jpg"
+          ],
+          "hours": "Ter–Dom: 8h15–18h30. Jardins de Boboli: 8h15–19h30",
+          "price": "Passe museus: €22. Só Jardins de Boboli: €10",
+          "duration": "3–4 horas",
+          "address": "Piazza de' Pitti 1, Firenze",
+          "must_book": false,
+          "tips": "Combine com a visita à Ponte Vecchio — o palácio fica na margem oposta do Arno, a 5 minutos a pé. Os jardins valem a visita separada em qualquer estação, mas em maio com flores é excepcional.",
+          "romantic": "Caminhar pelos terraços de Boboli ao fim da tarde, entre esculturas e ciprestes, com a cidade dourada ao fundo — é como se passear num jardim de um conto de fadas.",
+          "coordinates": { "lat": 43.7648, "lng": 11.2501 }
+        },
+        {
+          "name": "Basílica de Santa Croce",
+          "type": "⛪ Fé & Arte",
+          "description": "O Panteão florentino — a maior igreja franciscana do mundo, com os túmulos de Michelangelo, Galileu e Maquiavel.",
+          "long_description": "A Basílica de Santa Croce é a principal igreja franciscana de Florença e um dos maiores monumentos góticos da Itália, construída em 1294. É chamada de 'Panteão dos Florentinos ilustres' porque abriga os túmulos ou cenotáfios dos maiores nomes da história florentina: Michelangelo Buonarroti (cujo túmulo foi desenhado por Vasari), Galileu Galilei (enterrado aqui depois de reconciliação com a Igreja), Niccolò Maquiavel, Ugo Foscolo, Luigi Cherubini e Rossini. As capelas laterais têm afrescos de Giotto (as Capelas Peruzzi e Bardi, c.1320), considerados a maior realização de Giotto — os mesmos afrescos que influenciaram Michelangelo, Rafael e toda a tradição da pintura ocidental. O claustro de Brunelleschi e a Cappella dei Pazzi (de Brunelleschi) são obras-primas da arquitetura renascentista.",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Santa_Croce_Firenze_-_Exterior.jpg/800px-Santa_Croce_Firenze_-_Exterior.jpg",
+          "photos": [
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Santa_Croce_Firenze_-_Exterior.jpg/1200px-Santa_Croce_Firenze_-_Exterior.jpg"
+          ],
+          "hours": "Seg–Sáb: 9h30–17h30. Dom: 14h–17h30",
+          "price": "€8",
+          "duration": "1,5–2 horas",
+          "address": "Piazza di Santa Croce 16, Firenze",
+          "must_book": false,
+          "tips": "A piazza em frente é linda e animada. Procure o couro florentino nas lojas ao redor — Santa Croce é o bairro tradicional do artesanato em couro. À noite, a praça tem bares com vista para a fachada iluminada.",
+          "romantic": "Parar diante do túmulo de Michelangelo — o maior artista que existiu — e pensar no que o amor pela beleza faz com a humanidade, é um momento de profundidade rara numa viagem a dois.",
+          "coordinates": { "lat": 43.7686, "lng": 11.2625 }
+        }
+      ]
+    },
+    {
+      "id": "assisi",
+      "name": "Assis",
+      "flag": "🇮🇹",
+      "color": "#8B7355",
+      "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Assisi_Panorama.jpg/1280px-Assisi_Panorama.jpg",
+      "tagline": "A cidade de São Francisco — paz, pedra e fé entre os montes da Úmbria",
+      "destinations": [
+        {
+          "name": "Basílica de São Francisco de Assis",
+          "type": "⛪ Fé & Arte",
+          "description": "Um dos maiores santuários do mundo cristão — a tumba do Poverello, com os afrescos de Giotto que fundaram a pintura ocidental.",
+          "long_description": "A Basílica de São Francisco de Assis é, junto com São Pedro no Vaticano, um dos destinos de peregrinação mais importantes do catolicismo. Construída logo após a morte de Francisco (1226), é na verdade composta de duas igrejas sobrepostas: a Igreja Inferior (mais antiga, escura e contemplativa) e a Igreja Superior (luminosa, gótica, coberta pelos afrescos de Giotto). Os 28 afrescos de Giotto na Igreja Superior (c.1295–1300) narram a vida de Francisco e são considerados o marco fundador da pintura ocidental moderna — antes de Giotto, os personagens eram figuras planas e hieráticas; Giotto deu a eles emoção, peso e humanidade. A Igreja Inferior abriga a tumba de Francisco na cripta — o momento de maior comoção espiritual de toda Assis. As paredes da Igreja Inferior têm afrescos de Cimabue e Simone Martini. Todo o conjunto é Patrimônio da Humanidade pela UNESCO desde 2000.",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Assisi_-_Basilica_di_San_Francesco.jpg/800px-Assisi_-_Basilica_di_San_Francesco.jpg",
+          "photos": [
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Assisi_-_Basilica_di_San_Francesco.jpg/1200px-Assisi_-_Basilica_di_San_Francesco.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Assisi-Giotto.jpg/800px-Assisi-Giotto.jpg"
+          ],
+          "hours": "Igreja Inferior e Cripta: 6h–18h. Igreja Superior: 8h30–18h",
+          "price": "Gratuito (área sagrada — silêncio e vestimenta adequada obrigatórios)",
+          "duration": "1,5–2 horas",
+          "address": "Piazza Inferiore di San Francesco, Assisi",
+          "must_book": false,
+          "tips": "Vista modesta obrigatória — joelhos e ombros cobertos. Baixe a voz ao entrar na cripta — é uma área de oração. Chegue cedo (8h30) para ver a Igreja Superior com menos pessoas. Os guias de áudio em português estão disponíveis na entrada.",
+          "romantic": "Ajoelhar juntos na cripta diante do túmulo de São Francisco — o santo da paz e da pobreza voluntária — é um ato de fé e amor que transcende as palavras.",
+          "coordinates": { "lat": 43.0742, "lng": 12.6055 }
+        },
+        {
+          "name": "Santuário della Spogliazione — Carlo Acutis",
+          "type": "✨ Peregrinação",
+          "description": "O corpo de Carlo Acutis, canonizado em 2025 — o primeiro santo da era digital, com 15 anos, que passou à juventude toda a beleza da Eucaristia.",
+          "long_description": "Carlo Acutis nasceu em Londres em 1991, filho de italianos, e morreu em Milão em 2006, de leucemia fulminante, com apenas 15 anos. Era um adolescente normal — gostava de videogames, computação e futebol — mas tinha uma devoção extraordinária à Eucaristia e uma alegria contagiante. Usou suas habilidades em programação para criar um site catalogando 136 milagres eucarísticos em todo o mundo, dizendo: 'A Eucaristia é minha autoestrada para o Céu'. Foi beatificado em 2020 e canonizado pelo Papa Francisco em 27 de abril de 2025 — o primeiro santo nascido no século XX, primeiro da era digital. Seu corpo, preservado e vestido com jeans e tênis Nike (sua roupa de todo dia), está exposto para veneração no Santuário della Spogliazione (o local onde Francisco se despiu das roupas do pai para entregar-se a Deus). A devoção ao novo santo já atrai multidões de jovens de todo o mundo.",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Carlo_Acutis.jpg/800px-Carlo_Acutis.jpg",
+          "photos": [
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Carlo_Acutis.jpg/1200px-Carlo_Acutis.jpg"
+          ],
+          "hours": "Todos os dias: 8h–19h",
+          "price": "Gratuito",
+          "duration": "30–45 minutos",
+          "address": "Via Vescovado, Assisi (próx. à Catedral de São Rufino)",
+          "must_book": false,
+          "tips": "A fila para venerar o corpo pode ser longa, mas anda rápido. Respeite o silêncio — é uma área de oração ativa. Uma oração a São Carlo Acutis pelo uso santificante da tecnologia é muito a propósito.",
+          "romantic": "Estarem juntos diante de Carlo Acutis — esse jovem que encontrou o infinito dentro do ordinário — é um lembrete de que o sagrado pode habitar qualquer vida, inclusive a de vocês dois.",
+          "coordinates": { "lat": 43.0714, "lng": 12.6172 }
+        },
+        {
+          "name": "Basílica de Santa Clara",
+          "type": "⛪ Fé",
+          "description": "A basílica rosa e branca que abriga o corpo incorrupto de Santa Clara — a amiga e seguidora de São Francisco, fundadora das Clarissas.",
+          "long_description": "Clara Offreduccio de Assis (1194–1253) foi a primeira mulher a escrever uma Regra Religiosa para mulheres na história da Igreja. Filha de família nobre, abandonou tudo aos 18 anos para seguir São Francisco, fundando a Ordem das Damas Pobres (depois chamadas Clarissas). Seu amor a Francisco era profundo — não romanticamente, mas na amizade e no ideal espiritual partilhado. A basílica em seu nome, construída em 1265, tem uma fachada simples de travertino rosa e branco que combina ao perfeito com a pedra de Assis. No interior, nas catacumbas, o corpo de Clara é exposto para veneração — semi-mumificado naturalmente. Também está exposto aqui o Crucifix de San Damiano: foi diante desse crucifixo que Francisco ouviu a voz de Cristo dizer 'Reconstrói a minha Igreja'. É uma das relíquias mais importantes do franciscanismo.",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Assisi-SantaChiara.jpg/800px-Assisi-SantaChiara.jpg",
+          "photos": [
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Assisi-SantaChiara.jpg/1200px-Assisi-SantaChiara.jpg"
+          ],
+          "hours": "6h30–12h e 14h–19h",
+          "price": "Gratuito",
+          "duration": "45 minutos",
+          "address": "Piazza Santa Chiara, Assisi",
+          "must_book": false,
+          "tips": "O Crucifixo de San Damiano está na Cappella do lado esquerdo da entrada — não perca. Vista adequada obrigatória. A piazza em frente oferece uma vista sobre o Vale Espolentino muito bonita.",
+          "romantic": "A história de Clara e Francisco é um dos mais belos exemplos de amizade espiritual da história — um amor que transcendeu o mundo. Estarem juntos aqui, num 12º aniversário de casamento, é uma bela reflexão sobre os diferentes modos como o amor se manifesta.",
+          "coordinates": { "lat": 43.0701, "lng": 12.6188 }
+        },
+        {
+          "name": "Centro Histórico de Assis",
+          "type": "🏘️ Cidade Medieval",
+          "description": "Uma cidadela medieval de pedra rosa, suspensa nas encostas do Monte Subasio — uma das cidades mais bem preservadas da Itália.",
+          "long_description": "Assis foi fundada pelos Úmbrios, conquistada pelos Romanos (o templo de Minerva da época romana ainda está de pé na Piazza del Comune), e tornou-se a cidade de Francisco e Clara no século XIII. O centro histórico — todo inscrito no Patrimônio Mundial — é um labirinto de ruelas em pedra cor de rosa escura, arcos medievais, fontes, e vistas inesperadas sobre o Vale Espolentino. A Piazza del Comune tem o Templo de Minerva (século I a.C., convertido em igreja no século XVII), o Palazzo dei Priori e a Torre del Popolo. A Rocca Maggiore, a fortaleza no alto da colina, oferece a vista mais ampla. O silêncio, a lentidão e o perfume das flores de maio tornam Assis um dos lugares mais serenos da Itália.",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Assisi_Panorama.jpg/800px-Assisi_Panorama.jpg",
+          "photos": [
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Assisi_Panorama.jpg/1200px-Assisi_Panorama.jpg"
+          ],
+          "hours": "Cidade sempre aberta. Rocca Maggiore: 10h–18h",
+          "price": "Gratuito para caminhar. Rocca Maggiore: €5",
+          "duration": "2–3 horas (além das basílicas)",
+          "address": "Centro Storico, Assisi",
+          "must_book": false,
+          "tips": "Almoce num dos restaurantes junto às muralhas — vista extraordinária. A Trattoria Pallotta (Via della Volta Pinta 2) e o Ristorante La Fortezza (Vicolo della Fortezza 2b) são os mais autênticos. O ônibus da estação para o centro passa na Piazza Matteotti.",
+          "romantic": "Caminhar de mãos dadas pelas ruelas de pedra de Assis ao meio-dia, com o sino da Basílica soando ao longe e o cheiro de flores de maio no ar fresco úmbrico, é algo que pertence só a este momento da vida de vocês.",
+          "coordinates": { "lat": 43.0707, "lng": 12.6152 }
+        }
+      ]
+    },
+    {
+      "id": "paris",
+      "name": "Paris",
+      "flag": "🇫🇷",
+      "color": "#4A6FA5",
+      "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Tour_Eiffel_Wikimedia_Commons.jpg/853px-Tour_Eiffel_Wikimedia_Commons.jpg",
+      "tagline": "A Cidade Luz — onde o amor tem endereço e a beleza é uma forma de vida",
+      "destinations": [
+        {
+          "name": "Torre Eiffel",
+          "type": "🗼 Monumento",
+          "description": "O símbolo mais reconhecível do mundo — 330 metros de ferro forjado que continuam, 135 anos depois, sendo a experiência mais inesquecível de Paris.",
+          "long_description": "A Torre Eiffel foi construída por Gustave Eiffel para a Exposição Universal de 1889, comemorando o centenário da Revolução Francesa. Tinha vida útil prevista de 20 anos — mas tornou-se o símbolo permanente de Paris e da França. Com 330 metros, foi a estrutura mais alta do mundo por 41 anos. Construída em 18 meses por 300 trabalhadores, usa 2,5 milhões de rebites e pesa 10.100 toneladas de ferro. A cada 7 anos é repintada à mão em três tons de marrom (mais escuro embaixo, mais claro em cima, para dar uniformidade visual). De noite, às horas cheias, 20.000 lâmpadas de LED piscam por 5 minutos — o espetáculo mais gratuito e generoso que Paris oferece. O terceiro andar (276 metros) tem o melhor panorama: numa noite limpa de maio, vê-se a mais de 70 km. Embaixo, nas margens do Sena (Champ de Mars), piqueniques ao entardecer são um ritual parisiense.",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Tour_Eiffel_Wikimedia_Commons.jpg/800px-Tour_Eiffel_Wikimedia_Commons.jpg",
+          "photos": [
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Tour_Eiffel_Wikimedia_Commons.jpg/1200px-Tour_Eiffel_Wikimedia_Commons.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Tour_eiffel_at_sunrise_from_the_trocadero.jpg/1200px-Tour_eiffel_at_sunrise_from_the_trocadero.jpg"
+          ],
+          "hours": "9h–23h45 (último acesso às caixas bilheteiras 22h45). Topo: até 23h",
+          "price": "€29,40 (elevador até o topo) / €11,30 (escadas ao 2º andar). Reserve online com bastante antecedência",
+          "duration": "2–3 horas",
+          "address": "Champ de Mars, 5 Avenue Anatole France, Paris",
+          "must_book": true,
+          "tips": "Reserve com semanas de antecedência — os ingressos esgotam muito antes, especialmente em maio. A vista do Trocadéro (do outro lado do Sena) é o melhor ângulo para fotos. O show de luzes às 22h é gratuito e observável de qualquer ponto da cidade.",
+          "romantic": "Paris criou a Tower Eiffel como declaração de amor à modernidade. Vocês vão subir nela num aniversário de 12 anos — não é possível que isso não seja mágico.",
+          "coordinates": { "lat": 48.8584, "lng": 2.2945 }
+        },
+        {
+          "name": "Notre-Dame de Paris",
+          "type": "⛪ Fé & Arquitetura",
+          "description": "A catedral gótica mais famosa do mundo — reconstruída com amor após o incêndio de 2019, reaberta em dezembro de 2024.",
+          "long_description": "Notre-Dame de Paris foi construída entre 1163 e 1345 — 182 anos de trabalho contínuo. Por 800 anos foi o coração espiritual e geográfico de Paris: o ponto zero da França (Kilomètre Zéro, marcado no chão da praça) a partir do qual todas as distâncias do país são medidas. O incêndio de 15 de abril de 2019 destruiu a flecha do século XIX e boa parte do telhado — mas o esqueleto gótico, a rosácea e o tesouro (incluindo a Coroa de Espinhos) sobreviveram. A restauração, supervisionada por centenas de artesãos usando técnicas medievais, foi concluída em tempo recorde: Notre-Dame foi reaberta em 7 de dezembro de 2024, com o Papa Francisco presente. As rosáceas originais do século XIII — milagrosamente poupadas — voltaram a lançar luz colorida sobre o interior como há oito séculos. A visita ao interior é agora ainda mais especial: o cheiro de madeira nova, os andaimes removidos, e a sensação de estar no renascimento de algo que pertence à humanidade.",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Cath%C3%A9drale_Notre-Dame_de_Paris%2C_20_March_2014.jpg/800px-Cath%C3%A9drale_Notre-Dame_de_Paris%2C_20_March_2014.jpg",
+          "photos": [
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Cath%C3%A9drale_Notre-Dame_de_Paris%2C_20_March_2014.jpg/1200px-Cath%C3%A9drale_Notre-Dame_de_Paris%2C_20_March_2014.jpg"
+          ],
+          "hours": "Seg–Sex: 8h–19h. Sáb–Dom: 8h–20h (torres e tesouro: horários variados)",
+          "price": "Interior: gratuito (reserva de entrada horária recomendada online). Torres: €13",
+          "duration": "1–2 horas",
+          "address": "6 Parvis Notre-Dame - Pl. Jean-Paul II, Paris",
+          "must_book": false,
+          "tips": "Reserve o horário de entrada online — mesmo sendo gratuito, o controle de acesso é por janelas de horário. A Sainte-Chapelle (a 5 minutos a pé, na Île de la Cité) tem as vitrais góticas mais deslumbrantes de Paris — não perca.",
+          "romantic": "Entrar em Notre-Dame recém-restaurada, ver a luz das rosáceas colorir o chão de pedra e rezar juntos naquele espaço que o mundo inteiro ajudou a reconstruir — é um momento que carrega história e graça.",
+          "coordinates": { "lat": 48.8530, "lng": 2.3499 }
+        },
+        {
+          "name": "Musée d'Orsay",
+          "type": "🎨 Museu",
+          "description": "O museu mais bonito de Paris — uma estação de trem transformada em palácio da arte impressionista, com Van Gogh, Monet, Renoir e Degas.",
+          "long_description": "O Musée d'Orsay, instalado desde 1986 na antiga Gare d'Orsay (1900), tem a mais importante coleção de pintura impressionista e pós-impressionista do mundo. As obras estão numa sequência que é, por si só, um curso de história da arte: o Realismo (Courbet, Millet), o Impressionismo (Monet, Renoir, Pissarro, Sisley), o Pós-impressionismo (Cézanne, Van Gogh, Gauguin, Seurat), o Simbolismo (Gustave Moreau) e os primórdios do Expressionismo. As obras-primas são incontáveis: A Dançarina de 14 Anos de Degas, Le Moulin de la Galette de Renoir, A Noite Estrelada (a versão do Orsay, não a de Nova York) de Van Gogh, L'Origine du Monde de Courbet. Os grandes relógios de vidro da antiga gare servem de janela para o Sena — com o Musée du Louvre do outro lado. O restaurante do museu (no primeiro andar, sob o teto dourado do restaurante original da Gare) é um dos mais bonitos de Paris.",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/800px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg",
+          "photos": [
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1200px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Musee_d_Orsay_from_Pont_Royal.jpg/1200px-Musee_d_Orsay_from_Pont_Royal.jpg"
+          ],
+          "hours": "Ter–Dom: 9h30–18h (qui até 21h45). Fechado segundas",
+          "price": "€16 (reserve online para evitar fila)",
+          "duration": "2,5–4 horas",
+          "address": "1 Rue de la Légion d'Honneur, Paris",
+          "must_book": false,
+          "tips": "Quinta-feira à noite (19h–21h45) é o horário mais tranquilo e cinematográfico. O Orsay é muito menor e mais íntimo que o Louvre — dá para ver o melhor em 2 horas. Combine com uma caminhada pelas margens do Sena até Notre-Dame.",
+          "romantic": "Ficar diante de Le Déjeuner des Canotiers de Renoir — aquele almoço ensolarado de domingo em que todos parecem levemente apaixonados — e sentir que a vida pode ser assim, ao menos por alguns dias.",
+          "coordinates": { "lat": 48.8600, "lng": 2.3266 }
+        },
+        {
+          "name": "Sacré-Cœur e Montmartre",
+          "type": "⛪ Fé & Bairro",
+          "description": "A basílica branca no alto de Paris — com adoração perpétua desde 1885 — e o bairro dos artistas que guardou a alma da cidade.",
+          "long_description": "A Basílica do Sagrado Coração de Jesus (Sacré-Cœur) foi construída por voto nacional após a derrota na Guerra Franco-Prussiana (1870–71) e a tragédia da Comuna de Paris — uma promessa de reparação e consagração da França ao Coração de Jesus. A construção começou em 1875 e a basílica foi consagrada em 1919. Desde então, a adoração eucarística perpétua não foi jamais interrompida — 24 horas por dia, há 140 anos, religiosos e leigos oram diante do Santíssimo. O campanário tem o sino mais pesado da França — o Savoyarde, com 19 toneladas. A vista da escadaria sobre Paris é a segunda mais alta da cidade. O bairro de Montmartre ao redor foi o epicentro da boemia artística europeia de 1880 a 1920: Picasso, Toulouse-Lautrec, Modigliani, Van Gogh e Renoir viveram e trabalharam aqui. A Place du Tertre tem pintores ao vivo; a Rue Lepic tem mercados e cafés autênticos.",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Sacre_Coeur_3_crop.jpg/800px-Sacre_Coeur_3_crop.jpg",
+          "photos": [
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Sacre_Coeur_3_crop.jpg/1200px-Sacre_Coeur_3_crop.jpg"
+          ],
+          "hours": "Basílica: 6h30–22h30. Cúpula: 9h30–19h (€8)",
+          "price": "Basílica: gratuita. Cúpula: €8",
+          "duration": "2–3 horas (basílica + Montmartre)",
+          "address": "35 Rue du Chevalier de la Barre, Paris",
+          "must_book": false,
+          "tips": "O Metrô Abbesses (linha 12) deixa vocês no coração de Montmartre — mais agradável do que descer em Anvers e subir as escadarias. Evite a Place du Tertre (muito turística e cara) e prefira as ruelas ao redor para encontrar o Montmartre verdadeiro.",
+          "romantic": "Sentar na escadaria do Sacré-Cœur ao entardecer, com Paris brilhando lá embaixo até onde os olhos alcançam, e saber que dentro daquela basílica branca alguém está orando agora mesmo, como há 140 anos — é um momento de paz profunda.",
+          "coordinates": { "lat": 48.8867, "lng": 2.3431 }
+        },
+        {
+          "name": "Rue du Bac — Medalha Milagrosa",
+          "type": "✨ Peregrinação",
+          "description": "A capelinha onde Nossa Senhora apareceu a Santa Catarina Labouré em 1830 — berço da Medalha Milagrosa, com o corpo incorrupto da santa.",
+          "long_description": "Em 27 de novembro de 1830, numa capelinha da Rue du Bac, Nossa Senhora apareceu a Catarina Labouré (uma jovem noviça vincenciana de 24 anos) e pediu que fosse cunhada uma medalha com sua imagem — prometendo graças especiais a quem a usasse com fé. Era a aparição que daria origem à Medalha Milagrosa, hoje distribuída em mais de um bilhão de exemplares no mundo. Catarina guardou o segredo por 46 anos, até pouco antes de morrer. Seu corpo, exumado em 1933, foi encontrado intacto — incorrupto — e está exposto numa urna de vidro no altar lateral da capelinha. Nossa Senhora apareceu aqui três vezes: as imagens do altar reproduzem a visão da Imaculada Conceição descrita por Catarina. A capelinha é singela, quente e silenciosa — um dos lugares de oração mais tocantes de Paris, muito diferente da monumentalidade de Notre-Dame ou do Sacré-Cœur.",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Paris_-_Chapelle_Notre-Dame_de_la_M%C3%A9daille_Miraculeuse.jpg/800px-Paris_-_Chapelle_Notre-Dame_de_la_M%C3%A9daille_Miraculeuse.jpg",
+          "photos": [
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Paris_-_Chapelle_Notre-Dame_de_la_M%C3%A9daille_Miraculeuse.jpg/1200px-Paris_-_Chapelle_Notre-Dame_de_la_M%C3%A9daille_Miraculeuse.jpg"
+          ],
+          "hours": "Seg–Dom: 7h45–13h e 14h30–19h",
+          "price": "Gratuito",
+          "duration": "45–60 minutos",
+          "address": "140 Rue du Bac, 75007 Paris",
+          "must_book": false,
+          "tips": "Há Missa diária às 12h45 (francês) e terça-feira às 18h15. Medalhas Milagrosas à venda na lojinha da entrada (leve como presente para a família). O bairro ao redor é o chique Saint-Germain-des-Prés — bom para um café ou almoço antes ou depois.",
+          "romantic": "Rezar juntos diante do corpo de Santa Catarina e da imagem de Nossa Senhora que ela descreveu, numa capelinha que não mudou em 200 anos — é o momento mais íntimo e espiritual que Paris tem para oferecer a um casal de fé.",
+          "coordinates": { "lat": 48.8516, "lng": 2.3236 }
+        },
+        {
+          "name": "Disneyland Paris",
+          "type": "🎢 Parque Temático",
+          "description": "Dois parques mágicos a 35 minutos do centro — para o dia em que vocês vão se lembrar de que o amor também é diversão e alegria.",
+          "long_description": "Disneyland Paris tem dois parques: Disneyland Park (o parque original, com o Castelo da Bela Adormecida no centro, as montanhas russas clássicas, as áreas temáticas baseadas nos filmes Disney) e Walt Disney Studios Park (atrações mais modernas, incluindo as de Marvel e Star Wars). O parque de Disneyland é especialmente bonito em maio: flores nos canteiros, temperaturas agradáveis, menor movimento do que no verão. O show noturno Disney Illuminations (com projeções mapeadas no castelo e fogos) é um dos espetáculos mais emocionantes do parque — e é o encerramento perfeito do dia. As atrações icônicas incluem Big Thunder Mountain, Space Mountain, Pirates of the Caribbean, Phantom Manor e Ratatouille.",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Disneyland_Paris_castle.jpg/800px-Disneyland_Paris_castle.jpg",
+          "photos": [
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Disneyland_Paris_castle.jpg/1200px-Disneyland_Paris_castle.jpg"
+          ],
+          "hours": "10h–22h (horários variam por temporada — confirmar no app Disney)",
+          "price": "Ingresso: já reservado (ABI-1153746, 28/05/2026)",
+          "duration": "Dia inteiro (10h–22h)",
+          "address": "Boulevard de Parc, Chessy (RER A, estação Marne-la-Vallée–Chessy)",
+          "must_book": true,
+          "tips": "Baixe o app Disneyland Paris antes de ir — mostra tempos de fila em tempo real e permite reservar atrações. Chegue antes da abertura (9h30) para entrar na frente. A área de Ratatouille (Walt Disney Studios) é imperdível. Jante no parque — mas reserve restaurante com antecedência pelo app.",
+          "romantic": "Há algo completamente desarmante em dois adultos se permitindo ser crianças por um dia inteiro — e o show de fogos e luzes no Castelo ao anoitecer é emocionante de um jeito que nenhuma catedral consegue.",
+          "coordinates": { "lat": 48.8722, "lng": 2.7759 }
+        },
+        {
+          "name": "Museu do Louvre",
+          "type": "🎨 Museu",
+          "description": "O maior museu do mundo — com a Mona Lisa, a Vênus de Milo e 35.000 obras numa antiga fortaleza medieval tornada palácio real.",
+          "long_description": "O Louvre tem 73.000 m² de espaço expositivo, 35.000 obras em exibição permanente e levaria 100 dias para ver tudo em 30 segundos por obra. A pirâmide de vidro de I. M. Pei (1989) é a entrada mais famosa do mundo. As obras indispensáveis: a Mona Lisa (Sala 711 — prepare-se para a multidão), a Grande Odalisca de Ingres, o Casamento em Caná de Veronese (a maior tela do mundo, na sala oposta à Mona Lisa), a Vitória de Samotrácia (escadaria Daru) e a Vênus de Milo. A ala de Antiguidades Egípcias, Gregas e Orientais são mundos à parte. O palácio em si — com seus tetos pintados, galerias douradas e jardins — é uma obra de arte antes das obras. O Jardim des Tuileries ao lado conecta o Louvre à Place de la Concorde num eixo monumental de 3 km.",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Mona_Lisa.jpg/400px-Mona_Lisa.jpg",
+          "photos": [
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Mona_Lisa.jpg/800px-Mona_Lisa.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/1_louvre_museum_wikimedia.jpg/1200px-1_louvre_museum_wikimedia.jpg"
+          ],
+          "hours": "9h–18h (qua e sex até 21h45). Fechado terças",
+          "price": "€22 (reserva online obrigatória — entradas sem reserva não garantidas)",
+          "duration": "3–6 horas (dependendo do fôlego)",
+          "address": "Rue de Rivoli, Paris",
+          "must_book": true,
+          "tips": "Entre pela pirâmide de vidro com reserva — evite a fila da entrada do Richelieu. Quarta ou sexta à noite é menos lotado. Foque em duas ou três alas e as conheça bem — tentar ver tudo em um dia resulta em esgotamento sem contemplação.",
+          "romantic": "Ficar em silêncio diante da Mona Lisa e perceber que nenhuma reprodução, nenhum livro e nenhum ecrã preparou vocês para o que é estar diante do original — essa lacuna entre o representado e o real é o coração da experiência artística.",
+          "coordinates": { "lat": 48.8606, "lng": 2.3376 }
+        },
+        {
+          "name": "Île de la Cité e Sainte-Chapelle",
+          "type": "🏛️ Monumento & Fé",
+          "description": "A ilha no coração de Paris onde a cidade nasceu — e a Sainte-Chapelle, uma caixa de luz com 15 metros de vitrais góticos do século XIII.",
+          "long_description": "A Île de la Cité é literalmente o berço de Paris: aqui os Parisiis (tribo gaulesa) fundaram a aldeia que os romanos chamaram de Lutetia e que se tornaria Paris. Hoje a ilha concentra Notre-Dame, a Sainte-Chapelle, a Conciergerie (antiga prisão real onde Maria Antonieta ficou antes da guilhotina) e o Palácio de Justiça. A Sainte-Chapelle (1248) foi construída pelo Rei Luís IX (São Luís) para abrigar relíquias da Paixão de Cristo, incluindo a Coroa de Espinhos. A câmara superior é completamente dominada por 15 vidraças de 15 metros de altura — 1.113 painéis de vitral que narram 1.131 cenas bíblicas desde o Gênesis até o Apocalipse. Quando o sol da tarde entra pelas vidraças, o interior parece feito de luz. É um dos grandes milagres da arquitetura gótica.",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Sainte-Chapelle_-_Upper_Level_Windows.jpg/800px-Sainte-Chapelle_-_Upper_Level_Windows.jpg",
+          "photos": [
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Sainte-Chapelle_-_Upper_Level_Windows.jpg/1200px-Sainte-Chapelle_-_Upper_Level_Windows.jpg"
+          ],
+          "hours": "9h–19h (abr–set). 9h–17h (out–mar)",
+          "price": "€13,50 (comprar online para evitar fila longa)",
+          "duration": "45–60 minutos",
+          "address": "8 Boulevard du Palais, Paris",
+          "must_book": false,
+          "tips": "Compre online — a fila de segurança pode ser longa mas anda rápido. A câmara inferior (azul e dourada, para os empregados reais) já é linda; a câmara superior é uma revelação absoluta. Combine com Notre-Dame (500m a pé).",
+          "romantic": "Entrar na câmara superior da Sainte-Chapelle e ser envolvido por aquele oceano de luz colorida — azul cobalto, vermelho vivo, dourado — é uma das experiências mais puras de beleza que Paris oferece. Não faltarão palavras, porque não serão necessárias.",
+          "coordinates": { "lat": 48.8554, "lng": 2.3450 }
+        }
+      ]
+    }
+  ]
+}

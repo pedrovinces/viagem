@@ -1,0 +1,50 @@
+{
+  "name": "12 Anos — Nossa Viagem",
+  "short_name": "Nossa Viagem",
+  "description": "Guia de viagem e diário de bordo — Roma, Florença, Assis e Paris. 12 anos de amor.",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#FAF3E0",
+  "theme_color": "#C84B31",
+  "lang": "pt-BR",
+  "categories": ["travel", "lifestyle"],
+  "icons": [
+    {
+      "src": "./assets/icons/icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/icons/icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/icons/icon-maskable.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Agenda de hoje",
+      "short_name": "Hoje",
+      "description": "Ver o programa do dia",
+      "url": "./#agenda",
+      "icons": [{ "src": "./assets/icons/icon-192.svg", "sizes": "192x192" }]
+    },
+    {
+      "name": "Mapa",
+      "short_name": "Mapa",
+      "description": "Ver mapa da viagem",
+      "url": "./#map",
+      "icons": [{ "src": "./assets/icons/icon-192.svg", "sizes": "192x192" }]
+    }
+  ]
+}

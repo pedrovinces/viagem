@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192">
+  <!-- Fundo -->
+  <rect width="192" height="192" rx="28" fill="#C84B31"/>
+
+  <!-- Gradiente de profundidade -->
+  <defs>
+    <radialGradient id="g1" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#E8633F" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#8B1A0A" stop-opacity="0.4"/>
+    </radialGradient>
+  </defs>
+  <rect width="192" height="192" rx="28" fill="url(#g1)"/>
+
+  <!-- Cruz dourada estilizada -->
+  <rect x="88" y="36" width="16" height="80" rx="4" fill="#D4943A"/>
+  <rect x="56" y="68" width="80" height="16" rx="4" fill="#D4943A"/>
+
+  <!-- Estrela ornamental abaixo da cruz -->
+  <text x="96" y="148" font-size="18" text-anchor="middle" fill="#FAF3E0" opacity="0.8" font-family="serif">✦</text>
+
+  <!-- Texto "NV" -->
+  <text x="96" y="172" font-size="10" text-anchor="middle" fill="#FAF3E0" opacity="0.6"
+    font-family="Georgia, serif" font-weight="400" letter-spacing="4">NOSSA VIAGEM</text>
+</svg>

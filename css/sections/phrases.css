@@ -1,0 +1,151 @@
+/* ============================================================
+   FRASES — Livro de frases IT / FR
+   ============================================================ */
+
+.phrases-lang-toggle {
+  display: flex;
+  gap: var(--s2);
+  padding: var(--s3) var(--s4);
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.lang-btn {
+  flex: 1;
+  padding: var(--s3);
+  border-radius: var(--r-md);
+  border: 1.5px solid var(--border);
+  font-weight: 700;
+  font-size: 0.85rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--s2);
+  transition: all var(--t-fast);
+  background: var(--surface);
+  color: var(--text2);
+  -webkit-tap-highlight-color: transparent;
+}
+.lang-btn.active {
+  background: var(--c-primary);
+  border-color: var(--c-primary);
+  color: #fff;
+}
+
+.phrases-search {
+  padding: var(--s3) var(--s4);
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 56px;
+  z-index: 10;
+}
+
+.phrases-search input {
+  width: 100%;
+  padding: var(--s2) var(--s4) var(--s2) 36px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--r-xl);
+  font-size: 0.9rem;
+  background: var(--bg2);
+  color: var(--text);
+  outline: none;
+  transition: border-color var(--t-fast);
+  font-family: var(--font-sans);
+}
+.phrases-search input:focus { border-color: var(--c-primary); }
+.phrases-search { position: relative; }
+.phrases-search::before {
+  content: '🔍';
+  position: absolute;
+  left: calc(var(--s4) + 10px);
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.85rem;
+  pointer-events: none;
+}
+
+.phrases-category {
+  margin-bottom: var(--s4);
+}
+
+.phrases-category-header {
+  display: flex;
+  align-items: center;
+  gap: var(--s3);
+  padding: var(--s4) var(--s4) var(--s3);
+}
+
+.phrases-category-icon { font-size: 1.4rem; }
+
+.phrases-category-title {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  color: var(--text);
+}
+
+.phrase-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--s3);
+  padding: var(--s3) var(--s4);
+  border-bottom: 1px solid var(--bg2);
+  cursor: pointer;
+  transition: background var(--t-fast);
+  -webkit-tap-highlight-color: transparent;
+}
+.phrase-item:last-child { border-bottom: none; }
+.phrase-item:hover { background: var(--bg2); }
+.phrase-item:active { background: var(--border); }
+
+.phrase-texts { flex: 1; min-width: 0; }
+
+.phrase-pt {
+  font-size: 0.85rem;
+  color: var(--text3);
+  margin-bottom: 2px;
+}
+
+.phrase-local {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  color: var(--text);
+  font-style: italic;
+}
+
+.phrase-phonetic {
+  font-size: 0.72rem;
+  color: var(--text3);
+  margin-top: 1px;
+  font-family: monospace;
+}
+
+.phrase-copy-btn {
+  padding: var(--s2);
+  border-radius: var(--r-sm);
+  font-size: 0.9rem;
+  color: var(--text3);
+  transition: all var(--t-fast);
+  flex-shrink: 0;
+  align-self: center;
+}
+.phrase-copy-btn:hover { color: var(--c-primary); background: var(--bg2); }
+.phrase-copy-btn.copied { color: var(--c-olive); }
+
+/* Divider de categoria */
+.phrases-category + .phrases-category {
+  border-top: 6px solid var(--bg2);
+}
+
+/* Resultados de busca vazios */
+.phrases-empty {
+  text-align: center;
+  padding: var(--s8) var(--s4);
+  color: var(--text3);
+  font-style: italic;
+  font-family: var(--font-serif);
+}

@@ -1,0 +1,553 @@
+/* ============================================================
+   AGENDA — Timeline dia a dia
+   ============================================================ */
+
+/* ----------------------------------------------------------
+   HERO DO DIA
+   ---------------------------------------------------------- */
+.agenda-hero {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+  background: var(--bg2);
+}
+
+.agenda-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: opacity var(--t-med);
+}
+
+.agenda-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(26, 16, 8, 0.4) 50%,
+    rgba(26, 16, 8, 0.85) 100%
+  );
+}
+
+.agenda-hero-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: var(--s4) var(--s5) var(--s4);
+  color: #fff;
+}
+
+.agenda-hero-eyebrow {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  opacity: 0.8;
+  margin-bottom: var(--s1);
+  display: flex;
+  align-items: center;
+  gap: var(--s2);
+}
+
+.agenda-hero-title {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.1;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+.agenda-hero-subtitle {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1rem;
+  opacity: 0.85;
+  margin-top: var(--s1);
+}
+
+/* ----------------------------------------------------------
+   DAY NAV (scroll horizontal)
+   ---------------------------------------------------------- */
+.day-nav-wrap {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.day-nav-scroll {
+  display: flex;
+  gap: var(--s2);
+  padding: var(--s3) var(--s4);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.day-nav-scroll::-webkit-scrollbar { display: none; }
+
+.day-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--s2) var(--s3);
+  border-radius: var(--r-md);
+  border: 1.5px solid var(--border);
+  min-width: 64px;
+  cursor: pointer;
+  transition: all var(--t-fast);
+  flex-shrink: 0;
+  background: var(--surface);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.day-tab:hover {
+  border-color: var(--c-primary);
+  background: var(--bg2);
+}
+
+.day-tab.active {
+  border-color: var(--c-primary);
+  background: var(--c-primary);
+  color: #fff;
+}
+
+.day-tab-wd {
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.day-tab-num {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 1px 0;
+}
+
+.day-tab-city {
+  font-size: 0.55rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+/* ----------------------------------------------------------
+   STATS DO DIA
+   ---------------------------------------------------------- */
+.day-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-bottom: 1px solid var(--border);
+}
+
+.day-stat {
+  padding: var(--s3) var(--s4);
+  border-right: 1px solid var(--border);
+  background: var(--surface);
+}
+.day-stat:last-child { border-right: none; }
+
+.day-stat-label {
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text3);
+  margin-bottom: 2px;
+}
+
+.day-stat-value {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  color: var(--text);
+  line-height: 1.1;
+}
+
+/* ----------------------------------------------------------
+   LAYOUT PRINCIPAL DO DIA
+   ---------------------------------------------------------- */
+.day-layout {
+  display: grid;
+  gap: 0;
+}
+
+@media (min-width: 768px) {
+  .day-layout {
+    grid-template-columns: 340px 1fr;
+    min-height: calc(100dvh - 280px);
+  }
+  .day-timeline-col {
+    border-right: 1px solid var(--border);
+    overflow-y: auto;
+    max-height: calc(100dvh - 280px);
+    position: sticky;
+    top: 0;
+  }
+  .day-detail-col {
+    overflow-y: auto;
+    max-height: calc(100dvh - 280px);
+  }
+}
+
+/* ----------------------------------------------------------
+   TIMELINE (coluna esquerda)
+   ---------------------------------------------------------- */
+.timeline-section-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text3);
+  padding: var(--s4) var(--s4) var(--s2);
+  display: flex;
+  align-items: center;
+  gap: var(--s2);
+}
+.timeline-section-label::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+.timeline-item {
+  display: flex;
+  gap: var(--s3);
+  padding: var(--s3) var(--s4);
+  cursor: pointer;
+  transition: background var(--t-fast);
+  border-left: 3px solid transparent;
+  -webkit-tap-highlight-color: transparent;
+}
+.timeline-item:hover { background: var(--bg2); }
+.timeline-item.active {
+  border-left-color: var(--c-primary);
+  background: var(--bg2);
+}
+
+.timeline-icon-wrap {
+  width: 34px;
+  height: 34px;
+  border-radius: var(--r-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  background: var(--bg2);
+}
+
+.timeline-item.active .timeline-icon-wrap {
+  background: var(--c-primary);
+}
+
+.timeline-body { flex: 1; min-width: 0; }
+
+.timeline-time {
+  font-size: 0.62rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text3);
+  line-height: 1;
+}
+
+.timeline-title {
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  color: var(--text);
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.timeline-sub {
+  font-size: 0.72rem;
+  color: var(--text3);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ----------------------------------------------------------
+   DETAIL PANEL (coluna direita / modal mobile)
+   ---------------------------------------------------------- */
+.detail-panel {
+  background: var(--surface);
+  height: 100%;
+}
+
+.detail-photo-wrap {
+  position: relative;
+  height: 240px;
+  overflow: hidden;
+  background: var(--bg2);
+}
+
+.detail-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity var(--t-med);
+}
+
+.detail-photo-gallery {
+  display: flex;
+  gap: var(--s2);
+  padding: var(--s2) var(--s4);
+  overflow-x: auto;
+  scrollbar-width: none;
+  border-bottom: 1px solid var(--border);
+}
+.detail-photo-gallery::-webkit-scrollbar { display: none; }
+
+.detail-photo-thumb {
+  width: 60px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: var(--r-sm);
+  border: 2px solid transparent;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: border-color var(--t-fast);
+}
+.detail-photo-thumb.active { border-color: var(--c-primary); }
+
+.detail-body { padding: var(--s5) var(--s4); }
+
+.detail-eyebrow {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--c-primary);
+  margin-bottom: var(--s2);
+}
+
+.detail-title {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  color: var(--text);
+  line-height: 1.1;
+  margin-bottom: var(--s2);
+}
+
+.detail-subtitle {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--text3);
+  margin-bottom: var(--s4);
+}
+
+.detail-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s2);
+  margin-bottom: var(--s4);
+}
+
+.detail-tag {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 3px var(--s2);
+  border-radius: var(--r-xl);
+  border: 1px solid var(--border);
+  color: var(--text3);
+  background: var(--bg2);
+}
+
+.detail-description {
+  font-size: 0.9rem;
+  color: var(--text2);
+  line-height: 1.75;
+  margin-bottom: var(--s5);
+}
+
+.detail-description p { margin-bottom: var(--s3); }
+.detail-description p:last-child { margin-bottom: 0; }
+
+/* Drop cap estilo editorial */
+.detail-description.drop-cap > p:first-child::first-letter {
+  font-family: var(--font-serif);
+  font-size: 3rem;
+  font-weight: 500;
+  float: left;
+  line-height: 0.8;
+  margin-right: 6px;
+  margin-top: 4px;
+  color: var(--c-primary);
+}
+
+.detail-tip {
+  background: linear-gradient(135deg, rgba(212, 148, 58, 0.08), rgba(212, 148, 58, 0.03));
+  border: 1px solid rgba(212, 148, 58, 0.3);
+  border-left: 3px solid var(--c-gold);
+  padding: var(--s3) var(--s4);
+  border-radius: 0 var(--r-sm) var(--r-sm) 0;
+  font-size: 0.85rem;
+  color: var(--text2);
+  margin-bottom: var(--s4);
+}
+
+.detail-tip-title {
+  font-weight: 700;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--c-gold);
+  margin-bottom: var(--s1);
+}
+
+.detail-romantic {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--c-primary);
+  text-align: center;
+  padding: var(--s4);
+  border-top: 1px dashed var(--border);
+  margin-top: var(--s4);
+}
+
+/* Info grid no detail */
+.detail-info-grid {
+  display: grid;
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  overflow: hidden;
+  margin-bottom: var(--s4);
+}
+
+.detail-info-cell {
+  background: var(--surface);
+  padding: var(--s3) var(--s4);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--s3);
+  font-size: 0.85rem;
+}
+.detail-info-cell-label { color: var(--text3); font-size: 0.78rem; flex-shrink: 0; }
+.detail-info-cell-value { color: var(--text); font-weight: 500; text-align: right; }
+
+/* Placeholder quando nenhum stop selecionado */
+.detail-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  min-height: 300px;
+  gap: var(--s3);
+  color: var(--text3);
+  padding: var(--s8);
+  text-align: center;
+}
+.detail-placeholder-icon { font-size: 3rem; opacity: 0.3; }
+.detail-placeholder-text { font-family: var(--font-serif); font-style: italic; font-size: 1rem; }
+
+/* ----------------------------------------------------------
+   TRANSPORT STEPS (dentro do detail de transfer/voo)
+   ---------------------------------------------------------- */
+.transport-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-bottom: var(--s4);
+}
+
+.transport-step {
+  display: flex;
+  gap: var(--s3);
+  position: relative;
+  padding-bottom: var(--s3);
+}
+
+.transport-step:last-child { padding-bottom: 0; }
+
+.transport-step-line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.transport-step-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--c-primary);
+  border: 2px solid var(--surface);
+  box-shadow: 0 0 0 2px var(--c-primary);
+  flex-shrink: 0;
+}
+
+.transport-step-connector {
+  width: 2px;
+  flex: 1;
+  background: var(--border);
+  min-height: 24px;
+  margin-top: 2px;
+}
+
+.transport-step:last-child .transport-step-connector { display: none; }
+
+.transport-step-body { flex: 1; padding-bottom: var(--s1); }
+
+.transport-step-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text3);
+}
+
+.transport-step-main {
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+.transport-step-detail {
+  font-size: 0.78rem;
+  color: var(--text3);
+}
+
+/* ----------------------------------------------------------
+   HOJE (highlight do dia atual)
+   ---------------------------------------------------------- */
+.day-tab.today {
+  border-color: var(--c-gold);
+}
+
+.day-tab.today.active {
+  background: var(--c-gold);
+  border-color: var(--c-gold);
+}
+
+.today-indicator {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--c-gold);
+  animation: pulse-dot 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.8); }
+}
