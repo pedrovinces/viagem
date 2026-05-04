@@ -52,6 +52,10 @@ async function navigate(section) {
   const navItem = document.querySelector(`.nav-item[data-section="${section}"]`);
   if (navItem) navItem.classList.add('active');
 
+  // Botão voltar: visível em todas as seções exceto agenda
+  const backBtn = document.getElementById('back-btn');
+  if (backBtn) backBtn.hidden = (section === 'agenda');
+
   // Atualizar header
   updateHeader(section);
 
@@ -94,6 +98,11 @@ document.addEventListener('DOMContentLoaded', () => {
         location.hash = section;
       }
     });
+  });
+
+  // Botão voltar → agenda
+  document.getElementById('back-btn')?.addEventListener('click', () => {
+    location.hash = 'agenda';
   });
 
   // Botão "Mais"

@@ -195,6 +195,25 @@ h1, h2, h3, h4 {
   padding-top: 2px;
 }
 
+.btn-back {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  color: var(--text2);
+  transition: var(--t-fast);
+  flex-shrink: 0;
+  margin-right: var(--s2);
+  -webkit-tap-highlight-color: transparent;
+}
+.btn-back:hover  { background: var(--border); color: var(--text); }
+.btn-back:active { transform: scale(0.93); }
+.btn-back[hidden] { display: none; }
+
 .btn-icon {
   width: 34px;
   height: 34px;
