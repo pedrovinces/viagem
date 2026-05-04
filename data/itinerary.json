@@ -1872,12 +1872,50 @@
         },
         {
           "id": "evt-903-hotel",
-          "type": "hotel",
+          "type": "flight",
           "time": "09:30",
-          "title": "Chegada a Paris — depósito de bagagem",
-          "detail": "Simon's Boutique Hotel · Check-in oficial às 15h",
+          "title": "Pouso em Paris Orly — Desembarque",
+          "detail": "Desembarque + retirada de bagagem · saída do aeroporto ~10h15",
           "hotel_ref": "htl-paris",
-          "notes": "Hotel em 69 Rue Riquet, 75018. Check-in oficial a partir das 15h. À chegada, guardar bagagem na recepção (hotel tem recepção com horário até meia-noite). Metró: Riquet (Linha 7) a ~2min a pé."
+          "notes": "Voo VY 5016 aterrissa às 09h30. Passar pelo controle de passaportes (UE/não-UE) e retirar bagagem: previsão ~40 min. Saída pelo hall de chegadas do terminal."
+        },
+        {
+          "id": "day9-orly-transfer",
+          "time": "10:15",
+          "type": "transfer",
+          "title": "Orly → Simon's Boutique Hotel (Rue Riquet)",
+          "detail": "3 opções — metrô direto, RER B ou táxi",
+          "notes": "Hotel: 69 Rue Riquet, 75018 Paris. Check-in oficial às 15h — deixar as malas na recepção e sair para explorar. A estação de metrô 'Riquet' (Linha 7) fica a 2 min do hotel.",
+          "steps": [
+            {
+              "desc": "🚇 Opção 1 — Metrô + Tram (mais barato, ~65 min): Tram T7 em Orly até Villejuif-Louis Aragon → Metrô Linha 7 (dir. La Courneuve) → estação Riquet (9 paradas)",
+              "duration": "~65 min",
+              "price": "€2,15/pp (bilhete t+ único)"
+            },
+            {
+              "desc": "🚆 Opção 2 — OrlyVal + RER B + Metrô (mais rápido, ~50 min): OrlyVal até Antony → RER B dir. CDG até Châtelet-Les Halles → Metrô Linha 7 dir. La Courneuve → estação Riquet",
+              "duration": "~50 min",
+              "price": "~€15/pp"
+            },
+            {
+              "desc": "🚕 Opção 3 — Táxi ou Uber (mais confortável com malas, ~40 min): pegar na fila de táxis na saída do terminal — cota fixa Orly→Paris Rive Droite",
+              "duration": "~35–45 min",
+              "price": "€35–55 (tarifa fixa Orly → 18º arr.)"
+            }
+          ],
+          "tips": "Saindo de madrugada desde Florença, a chegada será cansativa. Táxi ou Uber é o mais confortável com bagagens e após noite mal dormida. O hotel fica a 500m da Gare du Nord — referência fácil para o motorista.",
+          "coordinates": {
+            "lat": 48.8841,
+            "lng": 2.3599
+          }
+        },
+        {
+          "id": "day9-hotel-dropoff",
+          "time": "11:30",
+          "type": "hotel",
+          "title": "Simon's Boutique Hotel — Depósito de bagagem",
+          "detail": "Check-in oficial às 15h · deixar as malas e sair para explorar",
+          "notes": "Reserva 72070250949103 · Quarto conforto · Tel: +33 (1) 88 40 16 00. Taxa municipal: €5,53/pessoa/noite (paga na propriedade). Recepção aberta até meia-noite."
         },
         {
           "id": "evt-904-meal",
