@@ -80,19 +80,23 @@ function renderDayCard(day, idx, cityMap, data) {
 function renderEvent(evt, data) {
   const hasDetail = evt.notes || evt.history || evt.romantic || evt.tips;
   const typeLabel = getTypeLabel(evt.type);
+  const thumb = evt.photo
+    ? `<div class="event-thumb" style="background-image:url('${evt.photo}')"></div>`
+    : '';
 
   return `
-    <div class="event-item ${hasDetail ? 'event-clickable' : ''}" data-evt-id="${evt.id || ''}"
+    <div class="event-item ${hasDetail ? 'event-clickable' : ''} ${evt.photo ? 'event-has-thumb' : ''}" data-evt-id="${evt.id || ''}"
       ${hasDetail ? `onclick="openEventModal(${JSON.stringify(evt).replace(/"/g, '&quot;')})"` : ''}>
       <div class="event-time">${evt.time || ''}</div>
       <div class="event-dot"></div>
       <div class="event-body">
-        <div class="event-title">${typeLabel ? `<span style="font-family:var(--font-mono);font-size:8px;letter-spacing:.12em;text-transform:uppercase;color:var(--c-primary);margin-right:6px">${typeLabel}</span>` : ''}${evt.title}</div>
+        <div class="event-title">${typeLabel ? `<span class="event-type-label">${typeLabel}</span>` : ''}${evt.title}</div>
         ${evt.detail ? `<div class="event-detail">${evt.detail}</div>` : ''}
         ${evt.steps ? renderSteps(evt.steps) : ''}
         ${evt.restaurant_options ? renderRestaurantOptions(evt.restaurant_options) : ''}
       </div>
-      ${hasDetail ? `<div class="event-chevron">›</div>` : ''}
+      ${thumb}
+      ${!evt.photo && hasDetail ? `<div class="event-chevron">›</div>` : ''}
     </div>`;
 }
 
@@ -256,14 +260,22 @@ function buildEventModal(evt, hotel) {
   }
 
   const typeLabel = getTypeLabel(evt.type);
+  const heroImg = evt.photo
+    ? `<div class="event-modal-hero" style="background-image:url('${evt.photo}')">
+         <div class="event-modal-hero-overlay"></div>
+         <div class="event-modal-hero-content">
+           ${typeLabel ? `<div class="event-modal-type-badge">${typeLabel}</div>` : ''}
+           <h3 class="event-modal-title">${evt.title}</h3>
+           ${evt.time ? `<p class="event-modal-time-label">${evt.time}</p>` : ''}
+         </div>
+       </div>`
+    : `<div class="event-modal-header">
+         <div>
+           ${typeLabel ? `<div class="event-modal-time">${typeLabel}</div>` : ''}
+           <h3 class="event-modal-title">${evt.title}</h3>
+           ${evt.time ? `<p class="event-modal-time">${evt.time}</p>` : ''}
+         </div>
+       </div>`;
 
-  return `
-    <div class="event-modal-header">
-      <div>
-        ${typeLabel ? `<div class="event-modal-time">${typeLabel}</div>` : ''}
-        <h3 class="event-modal-title">${evt.title}</h3>
-        ${evt.time ? `<p class="event-modal-time">${evt.time}</p>` : ''}
-      </div>
-    </div>
-    ${sections.join('')}`;
+  return `${heroImg}${sections.join('')}`;
 }

@@ -321,12 +321,88 @@
   line-height: 1.4;
 }
 
+.event-type-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--c-primary);
+  margin-right: 6px;
+}
+
 .event-chevron {
   font-size: 0.85rem;
   color: var(--text3);
   align-self: start;
   padding-top: 2px;
   flex-shrink: 0;
+}
+
+/* Miniatura de foto no card */
+.event-thumb {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--r-md);
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;
+  align-self: center;
+  margin-left: var(--s2);
+  overflow: hidden;
+  opacity: 0.92;
+}
+
+.event-item.event-has-thumb {
+  grid-template-columns: 48px 1px 1fr 64px;
+}
+
+/* Hero do modal com foto */
+.event-modal-hero {
+  position: relative;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  margin: calc(-1 * var(--s6)) calc(-1 * var(--s5)) var(--s4);
+  flex-shrink: 0;
+  border-radius: var(--r-lg) var(--r-lg) 0 0;
+  overflow: hidden;
+}
+
+.event-modal-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(26,16,10,0.05) 0%, rgba(26,16,10,0.75) 100%);
+}
+
+.event-modal-hero-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: var(--s4);
+  color: #fdfaf3;
+}
+
+.event-modal-type-badge {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  opacity: 0.85;
+  margin-bottom: 4px;
+}
+
+.event-modal-hero-content .event-modal-title {
+  color: #fdfaf3;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+}
+
+.event-modal-time-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  opacity: 0.75;
+  margin-top: 4px;
 }
 
 /* Steps de transporte dentro do evento */

@@ -423,7 +423,8 @@
           "detail": "TAP Air Portugal · Código B7EN7A",
           "duration": "~3h",
           "flight_ref": "flt-lis-fco",
-          "notes": "Embarque em Lisboa. Chegada em Roma Fiumicino às 16:40."
+          "notes": "Embarque em Lisboa. Chegada em Roma Fiumicino às 16:40.",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/All_Nippon_Airways_Boeing_777-381ER_JA784A_OKJ_in_flight.jpg/330px-All_Nippon_Airways_Boeing_777-381ER_JA784A_OKJ_in_flight.jpg"
         },
         {
           "id": "evt-102-transfer",
@@ -648,7 +649,8 @@
           "coordinates": {
             "lat": 41.8902,
             "lng": 12.4922
-          }
+          },
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/330px-Colosseo_2020.jpg"
         },
         {
           "id": "evt-203-visit",
@@ -663,7 +665,8 @@
           "coordinates": {
             "lat": 41.8935,
             "lng": 12.4854
-          }
+          },
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Carcer_Tullianum_-_Interior_2.jpg/330px-Carcer_Tullianum_-_Interior_2.jpg"
         },
         {
           "id": "evt-204-transfer",
@@ -828,7 +831,8 @@
           "coordinates": {
             "lat": 41.9065,
             "lng": 12.4536
-          }
+          },
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Vatican_Museum_Spiral_Staircase_2012.jpg/330px-Vatican_Museum_Spiral_Staircase_2012.jpg"
         },
         {
           "id": "evt-304-visit",
@@ -841,7 +845,8 @@
           "coordinates": {
             "lat": 41.8986,
             "lng": 12.472
-          }
+          },
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Santa_Maria_della_Pace_-_Roma.jpg/330px-Santa_Maria_della_Pace_-_Roma.jpg"
         },
         {
           "id": "evt-305-ticket",
@@ -897,7 +902,8 @@
           "coordinates": {
             "lat": 41.8858,
             "lng": 12.5057
-          }
+          },
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/San_Giovanni_in_Laterano.jpg/330px-San_Giovanni_in_Laterano.jpg"
         },
         {
           "id": "evt-402-visit",
@@ -912,7 +918,8 @@
           "coordinates": {
             "lat": 41.8976,
             "lng": 12.4993
-          }
+          },
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Basilica_di_Santa_Maria_Maggiore_-_Roma.jpg/330px-Basilica_di_Santa_Maria_Maggiore_-_Roma.jpg"
         },
         {
           "id": "evt-403-meal",
@@ -961,7 +968,8 @@
           "coordinates": {
             "lat": 41.8582,
             "lng": 12.4767
-          }
+          },
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Basilica_di_San_Paolo_fuori_le_mura.jpg/330px-Basilica_di_San_Paolo_fuori_le_mura.jpg"
         },
         {
           "id": "evt-405-meal",
@@ -1092,7 +1100,8 @@
           "coordinates": {
             "lat": 43.7731,
             "lng": 11.255
-          }
+          },
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Firenze_-_Cattedrale_di_Santa_Maria_del_Fiore.jpg/330px-Firenze_-_Cattedrale_di_Santa_Maria_del_Fiore.jpg"
         },
         {
           "id": "evt-603-meal",
@@ -1145,7 +1154,8 @@
           "coordinates": {
             "lat": 43.7767,
             "lng": 11.2588
-          }
+          },
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/%27David%27_by_Michelangelo_Fir_JBU002.jpg/330px-%27David%27_by_Michelangelo_Fir_JBU002.jpg"
         },
         {
           "id": "evt-605-walk",
@@ -1234,7 +1244,8 @@
           "coordinates": {
             "lat": 43.0717,
             "lng": 12.6175
-          }
+          },
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Assisi_chiesa_san_damiano.jpg/330px-Assisi_chiesa_san_damiano.jpg"
         },
         {
           "id": "evt-704-mass",
@@ -1249,7 +1260,8 @@
           "coordinates": {
             "lat": 43.075,
             "lng": 12.6063
-          }
+          },
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Basilica_di_San_Francesco_d%27Assisi_-_Lower_Basilica_interior.jpg/330px-Basilica_di_San_Francesco_d%27Assisi_-_Lower_Basilica_interior.jpg"
         },
         {
           "id": "evt-705-visit",
@@ -1264,7 +1276,8 @@
           "coordinates": {
             "lat": 43.075,
             "lng": 12.6063
-          }
+          },
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Assisi_-_Basilica_di_San_Francesco.jpg/330px-Assisi_-_Basilica_di_San_Francesco.jpg"
         },
         {
           "id": "evt-706-meal",
@@ -1316,7 +1329,8 @@
           "coordinates": {
             "lat": 43.07,
             "lng": 12.6187
-          }
+          },
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Basilica_di_Santa_Chiara%2C_Assisi.jpg/330px-Basilica_di_Santa_Chiara%2C_Assisi.jpg"
         },
         {
           "id": "evt-708-walk",
@@ -1400,7 +1414,8 @@
           "coordinates": {
             "lat": 43.7678,
             "lng": 11.2556
-          }
+          },
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Uffizi.jpg/330px-Uffizi.jpg"
         },
         {
           "id": "evt-802-meal",
@@ -1449,7 +1464,8 @@
           "coordinates": {
             "lat": 43.764,
             "lng": 11.2497
-          }
+          },
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Palazzo_Pitti_September_2015-1.jpg/330px-Palazzo_Pitti_September_2015-1.jpg"
         },
         {
           "id": "evt-804-meal",
@@ -1559,7 +1575,8 @@
           "coordinates": {
             "lat": 48.853,
             "lng": 2.3499
-          }
+          },
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Notre-Dame_de_Paris%2C_4_October_2017.jpg/330px-Notre-Dame_de_Paris%2C_4_October_2017.jpg"
         },
         {
           "id": "evt-906-walk",
@@ -1612,7 +1629,8 @@
           "coordinates": {
             "lat": 48.86,
             "lng": 2.3266
-          }
+          },
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Mus%C3%A9e_d%27Orsay%2C_3_November_2014.jpg/330px-Mus%C3%A9e_d%27Orsay%2C_3_November_2014.jpg"
         },
         {
           "id": "evt-1002-meal",
@@ -1661,7 +1679,8 @@
           "coordinates": {
             "lat": 48.876,
             "lng": 2.3497
-          }
+          },
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Paris_-_%C3%89glise_Saint-Vincent-de-Paul_-_FA%C3%87ADE.jpg/330px-Paris_-_%C3%89glise_Saint-Vincent-de-Paul_-_FA%C3%87ADE.jpg"
         },
         {
           "id": "evt-1004-walk",
@@ -1770,7 +1789,8 @@
           "coordinates": {
             "lat": 50.8465,
             "lng": 4.3528
-          }
+          },
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Brussels_Grand_Place_2009.JPG/330px-Brussels_Grand_Place_2009.JPG"
         },
         {
           "id": "evt-1203-visit",
@@ -1780,7 +1800,8 @@
           "detail": "A primeira galeria comercial coberta da Europa (1847)",
           "duration": "30 min",
           "notes": "As Galeries Saint-Hubert são uma passagem elegante de vidro e ferro com chocolatiers, livrarias e restaurantes. Victor Hugo as frequentava.",
-          "romantic": "Uma galeria de séc. XIX onde o tempo passou devagar — e onde os chocolatiers belgas esperam com suas criações."
+          "romantic": "Uma galeria de séc. XIX onde o tempo passou devagar — e onde os chocolatiers belgas esperam com suas criações.",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Galerie_de_la_Reine_Brussels.jpg/330px-Galerie_de_la_Reine_Brussels.jpg"
         },
         {
           "id": "evt-1204-visit",
@@ -1794,7 +1815,8 @@
           "coordinates": {
             "lat": 50.8493,
             "lng": 4.3601
-          }
+          },
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Brussels_Cathedral_-_Brussels%2C_Belgium_-_panoramio.jpg/330px-Brussels_Cathedral_-_Brussels%2C_Belgium_-_panoramio.jpg"
         },
         {
           "id": "evt-1205-visit",
@@ -1804,7 +1826,8 @@
           "detail": "O símbolo de Bruxelas",
           "duration": "15 min",
           "notes": "A pequena estátua de bronze (61 cm) do menino urinando é um símbolo de irreverência e humor belga. Fica a poucos metros da Grand-Place. Costuma estar vestido em algum traje folclórico.",
-          "romantic": "Para rir juntos — o Manneken Pis é inescapavelmente divertido."
+          "romantic": "Para rir juntos — o Manneken Pis é inescapavelmente divertido.",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Manneken_Pis_2011.jpg/330px-Manneken_Pis_2011.jpg"
         },
         {
           "id": "evt-1206-meal",
@@ -1898,7 +1921,8 @@
           "coordinates": {
             "lat": 48.8539,
             "lng": 2.3235
-          }
+          },
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Chapel_of_Our_Lady_of_the_Miraculous_Medal_-_exterior.jpg/330px-Chapel_of_Our_Lady_of_the_Miraculous_Medal_-_exterior.jpg"
         },
         {
           "id": "evt-1303-visit",
@@ -1913,7 +1937,8 @@
           "coordinates": {
             "lat": 48.8867,
             "lng": 2.3431
-          }
+          },
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sacre_Coeur_Basilica%2C_Montmartre%2C_Paris_June_2010.jpg/330px-Sacre_Coeur_Basilica%2C_Montmartre%2C_Paris_June_2010.jpg"
         },
         {
           "id": "evt-1304-walk",
