@@ -235,16 +235,22 @@ function buildEventModal(evt, hotel) {
       </a>`);
   }
 
-  if (evt.restaurant_options && evt.restaurant_options.length > 0) {
-    const options = evt.restaurant_options.map(r => `
+  const rList = evt.restaurants || evt.restaurant_options;
+  if (rList && rList.length > 0) {
+    const options = rList.map(r => `
       <div class="modal-restaurant">
-        <strong>${r.name}</strong>${r.cuisine ? ` · <em>${r.cuisine}</em>` : ''}${r.price_range ? ` (${r.price_range})` : ''}
-        ${r.address ? `<div class="modal-restaurant-addr">${r.address}</div>` : ''}
-        ${r.notes ? `<div class="modal-restaurant-note">${r.notes}</div>` : ''}
+        <div class="modal-restaurant-label">${r.label || ''}</div>
+        <strong class="modal-restaurant-name">${r.name}</strong>
+        ${r.specialty || r.cuisine ? `<div class="modal-restaurant-specialty">${r.specialty || r.cuisine}</div>` : ''}
+        ${r.address ? `<div class="modal-restaurant-addr">📍 ${r.address}</div>` : ''}
+        <div class="modal-restaurant-meta">
+          ${r.price || r.price_range ? `<span class="modal-restaurant-price">${r.price || r.price_range}</span>` : ''}
+          ${r.tip || r.notes ? `<span class="modal-restaurant-tip">${r.tip || r.notes}</span>` : ''}
+        </div>
       </div>`).join('');
     sections.push(`
       <div class="modal-section">
-        <div class="modal-section-label">Onde Comer</div>
+        <div class="modal-section-label">🍴 Onde Comer</div>
         ${options}
       </div>`);
   }

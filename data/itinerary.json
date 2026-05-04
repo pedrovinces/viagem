@@ -2,12 +2,14 @@
   "trip": {
     "title": "Nossa Viagem — 12 Anos",
     "subtitle": "Uma nova lua de mel",
-    "couple": ["Pedro", "Clarice"],
+    "couple": [
+      "Pedro",
+      "Clarice"
+    ],
     "anniversary": 12,
     "year": 2026,
     "tagline": "Em cada pedra, uma oração. Em cada olhar, um lar."
   },
-
   "cities": [
     {
       "id": "rome",
@@ -17,7 +19,10 @@
       "language": "it",
       "currency": "EUR",
       "timezone": "Europe/Rome",
-      "coordinates": { "lat": 41.9028, "lng": 12.4964 },
+      "coordinates": {
+        "lat": 41.9028,
+        "lng": 12.4964
+      },
       "color": "#C84B31",
       "tagline": "A Cidade Eterna",
       "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/St_Peter%27s_Square%2C_Vatican_City_-_April_2007.jpg/1920px-St_Peter%27s_Square%2C_Vatican_City_-_April_2007.jpg"
@@ -30,7 +35,10 @@
       "language": "it",
       "currency": "EUR",
       "timezone": "Europe/Rome",
-      "coordinates": { "lat": 43.7696, "lng": 11.2558 },
+      "coordinates": {
+        "lat": 43.7696,
+        "lng": 11.2558
+      },
       "color": "#D4943A",
       "tagline": "O Berço do Renascimento",
       "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Firenze_-_Ponte_vecchio.jpg/1920px-Firenze_-_Ponte_vecchio.jpg"
@@ -43,7 +51,10 @@
       "language": "it",
       "currency": "EUR",
       "timezone": "Europe/Rome",
-      "coordinates": { "lat": 43.0706, "lng": 12.6190 },
+      "coordinates": {
+        "lat": 43.0706,
+        "lng": 12.619
+      },
       "color": "#8B7355",
       "tagline": "A Cidade do Poverello",
       "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/AssisiDec122023_03.jpg/1920px-AssisiDec122023_03.jpg"
@@ -56,13 +67,15 @@
       "language": "fr",
       "currency": "EUR",
       "timezone": "Europe/Paris",
-      "coordinates": { "lat": 48.8566, "lng": 2.3522 },
+      "coordinates": {
+        "lat": 48.8566,
+        "lng": 2.3522
+      },
       "color": "#4A6FA5",
       "tagline": "A Cidade da Luz",
       "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Tour_Eiffel_Wikimedia_Commons.jpg/1920px-Tour_Eiffel_Wikimedia_Commons.jpg"
     }
   ],
-
   "hotels": [
     {
       "id": "htl-rome",
@@ -79,7 +92,10 @@
       "checkout_time": "10:30",
       "city_tax": "EUR 3,50/pessoa/noite",
       "notes": "Sem recepção — contato obrigatório via WhatsApp com 48h de antecedência. Recepção abre 9h30–14h. Café da manhã servido em bar a 300m. Metro Linha A, parada Lepanto (7 min a pé). Duas reservas: #343201331100 (18–21/05) e #70401332300 (21–22/05).",
-      "coordinates": { "lat": 41.906954, "lng": 12.466827 }
+      "coordinates": {
+        "lat": 41.906954,
+        "lng": 12.466827
+      }
     },
     {
       "id": "htl-florence",
@@ -95,7 +111,10 @@
       "room": "Quarto casal clássico",
       "city_tax": "EUR 6,00/pessoa/noite",
       "notes": "Sem recepção — contato obrigatório via WhatsApp 24h antes. Os hóspedes são recebidos pelo anfitrião no momento da chegada. Check-in máximo até 13h (combinar horário tardio com propriedade). Bagagem: depósito com custo adicional. Wi-Fi gratuito.",
-      "coordinates": { "lat": 43.7665, "lng": 11.2448 }
+      "coordinates": {
+        "lat": 43.7665,
+        "lng": 11.2448
+      }
     },
     {
       "id": "htl-paris",
@@ -111,10 +130,12 @@
       "room": "Quarto conforto",
       "city_tax": "EUR 5,53/pessoa/noite",
       "notes": "Recepção com horário até meia-noite. Equipe recebe hóspedes na chegada. Pagamento da taxa municipal na propriedade (em EUR). Reserva não reembolsável.",
-      "coordinates": { "lat": 48.8841, "lng": 2.3599 }
+      "coordinates": {
+        "lat": 48.8841,
+        "lng": 2.3599
+      }
     }
   ],
-
   "flights": [
     {
       "id": "flt-gig-lis",
@@ -122,8 +143,18 @@
       "airline": "TAP Air Portugal",
       "confirmation": "B7EN7A",
       "date": "2026-05-17",
-      "departure": { "airport": "GIG", "city": "Rio de Janeiro", "terminal": "", "time": "20:30" },
-      "arrival": { "airport": "LIS", "city": "Lisboa", "terminal": "", "time": "07:40" },
+      "departure": {
+        "airport": "GIG",
+        "city": "Rio de Janeiro",
+        "terminal": "",
+        "time": "20:30"
+      },
+      "arrival": {
+        "airport": "LIS",
+        "city": "Lisboa",
+        "terminal": "",
+        "time": "07:40"
+      },
       "duration": "~9h10",
       "notes": "Chegada em Lisboa dia 18/05"
     },
@@ -133,8 +164,18 @@
       "airline": "TAP Air Portugal",
       "confirmation": "B7EN7A",
       "date": "2026-05-18",
-      "departure": { "airport": "LIS", "city": "Lisboa", "terminal": "", "time": "12:40" },
-      "arrival": { "airport": "FCO", "city": "Roma", "terminal": "", "time": "16:40" },
+      "departure": {
+        "airport": "LIS",
+        "city": "Lisboa",
+        "terminal": "",
+        "time": "12:40"
+      },
+      "arrival": {
+        "airport": "FCO",
+        "city": "Roma",
+        "terminal": "",
+        "time": "16:40"
+      },
       "duration": "~3h",
       "notes": "Leonardo Express FCO→Termini: €14/pp, a cada 15 min"
     },
@@ -146,8 +187,19 @@
       "confirmation": "H1LTK",
       "contract": "1003-0001471083",
       "date": "2026-05-26",
-      "departure": { "airport": "FLR", "city": "Florença", "terminal": "Balcão Vueling Airlines", "time": "07:25", "checkin_time": "04:25" },
-      "arrival": { "airport": "ORY", "city": "Paris Orly", "terminal": "", "time": "09:15" },
+      "departure": {
+        "airport": "FLR",
+        "city": "Florença",
+        "terminal": "Balcão Vueling Airlines",
+        "time": "07:25",
+        "checkin_time": "04:25"
+      },
+      "arrival": {
+        "airport": "ORY",
+        "city": "Paris Orly",
+        "terminal": "",
+        "time": "09:15"
+      },
       "duration": "~1h50",
       "cabin": "F (Econômica)",
       "baggage": "1 mala despachada × 23 kg por pessoa",
@@ -159,13 +211,22 @@
       "airline": "A confirmar",
       "confirmation": "",
       "date": "2026-05-31",
-      "departure": { "airport": "CDG", "city": "Paris", "terminal": "", "time": "10:00" },
-      "arrival": { "airport": "GIG", "city": "Rio de Janeiro", "terminal": "", "time": "" },
+      "departure": {
+        "airport": "CDG",
+        "city": "Paris",
+        "terminal": "",
+        "time": "10:00"
+      },
+      "arrival": {
+        "airport": "GIG",
+        "city": "Rio de Janeiro",
+        "terminal": "",
+        "time": ""
+      },
       "duration": "~11h",
       "notes": "Check-out do hotel antes do voo"
     }
   ],
-
   "tickets": [
     {
       "id": "tkt-necropolis",
@@ -178,7 +239,10 @@
       "currency": "EUR",
       "language": "Português",
       "notes": "Último horário disponível. Confirmar por e-mail pendente.",
-      "coordinates": { "lat": 41.9022, "lng": 12.4554 }
+      "coordinates": {
+        "lat": 41.9022,
+        "lng": 12.4554
+      }
     },
     {
       "id": "tkt-papal-audience",
@@ -190,7 +254,10 @@
       "price_per_person": 0,
       "currency": "EUR",
       "notes": "Retirar bilhetes na terça-feira das 15h às 19h, ou na manhã da audiência a partir das 07:30. Porta de Bronze = lado direito da colunata de Bernini.",
-      "coordinates": { "lat": 41.9022, "lng": 12.4578 }
+      "coordinates": {
+        "lat": 41.9022,
+        "lng": 12.4578
+      }
     },
     {
       "id": "tkt-disneyland",
@@ -205,10 +272,12 @@
       "price_per_person": 0,
       "currency": "EUR",
       "notes": "E-tickets no celular ou impressos em A4 vertical. Ir diretamente às catracas — sem fila de retirada. Não inclui acesso rápido (FastPass). Consultar horários em disneylandparis.com. Não reembolsável após 11/05/2026.",
-      "coordinates": { "lat": 48.8722, "lng": 2.7754 }
+      "coordinates": {
+        "lat": 48.8722,
+        "lng": 2.7754
+      }
     }
   ],
-
   "insurance": [
     {
       "insurer": "Generali Brasil Seguros S.A.",
@@ -223,22 +292,80 @@
       "notes": "Cobertura inclui: médica USD 500k, bagagem perdida USD 2,5k, cancelamento de voo USD 300, seguro notebook USD 1k. Em caso de emergência médica: acionar central antes de qualquer tratamento."
     }
   ],
-
   "contacts": [
-    { "label": "Emergência Europa", "number": "112", "type": "emergency", "desc": "Polícia, bombeiros, ambulância — número único" },
-    { "label": "Polícia (Itália)", "number": "113", "type": "emergency", "desc": "Carabinieri" },
-    { "label": "Polícia (França)", "number": "17", "type": "emergency", "desc": "Police nationale" },
-    { "label": "Seguro Viagem — Central 24h", "number": "+55 11 5039-9095", "type": "insurance", "desc": "Generali/Ciclic — WhatsApp 24h" },
-    { "label": "Seguro Viagem — SAC", "number": "0800 88 90 200", "type": "insurance", "desc": "Generali Brasil — SAC 24h" },
-    { "label": "CVC Assistência Viagem", "number": "+55 11 3003-2977", "type": "agency", "desc": "Atendimento 24h durante a viagem" },
-    { "label": "Embaixada Brasileira — Roma", "number": "+39 06 853881", "type": "embassy", "desc": "Via Aurelia Antica, 54" },
-    { "label": "Embaixada Brasileira — Paris", "number": "+33 1 45 61 63 00", "type": "embassy", "desc": "34, Cours Albert 1er" },
-    { "label": "co.sleep — Roma (anfitrião)", "number": "+39 329 413 9584", "type": "accommodation", "desc": "WhatsApp obrigatório antes do check-in" },
-    { "label": "co.sleep — Roma (fixo)", "number": "+39 06 6942 0902", "type": "accommodation", "desc": "Tel. fixo da propriedade" },
-    { "label": "Drom Florence — Florença", "number": "+39 335 617 8817", "type": "accommodation", "desc": "WhatsApp obrigatório antes do check-in" },
-    { "label": "Simon's Boutique Hotel — Paris", "number": "+33 1 88 40 16 00", "type": "accommodation", "desc": "Recepção até meia-noite" }
+    {
+      "label": "Emergência Europa",
+      "number": "112",
+      "type": "emergency",
+      "desc": "Polícia, bombeiros, ambulância — número único"
+    },
+    {
+      "label": "Polícia (Itália)",
+      "number": "113",
+      "type": "emergency",
+      "desc": "Carabinieri"
+    },
+    {
+      "label": "Polícia (França)",
+      "number": "17",
+      "type": "emergency",
+      "desc": "Police nationale"
+    },
+    {
+      "label": "Seguro Viagem — Central 24h",
+      "number": "+55 11 5039-9095",
+      "type": "insurance",
+      "desc": "Generali/Ciclic — WhatsApp 24h"
+    },
+    {
+      "label": "Seguro Viagem — SAC",
+      "number": "0800 88 90 200",
+      "type": "insurance",
+      "desc": "Generali Brasil — SAC 24h"
+    },
+    {
+      "label": "CVC Assistência Viagem",
+      "number": "+55 11 3003-2977",
+      "type": "agency",
+      "desc": "Atendimento 24h durante a viagem"
+    },
+    {
+      "label": "Embaixada Brasileira — Roma",
+      "number": "+39 06 853881",
+      "type": "embassy",
+      "desc": "Via Aurelia Antica, 54"
+    },
+    {
+      "label": "Embaixada Brasileira — Paris",
+      "number": "+33 1 45 61 63 00",
+      "type": "embassy",
+      "desc": "34, Cours Albert 1er"
+    },
+    {
+      "label": "co.sleep — Roma (anfitrião)",
+      "number": "+39 329 413 9584",
+      "type": "accommodation",
+      "desc": "WhatsApp obrigatório antes do check-in"
+    },
+    {
+      "label": "co.sleep — Roma (fixo)",
+      "number": "+39 06 6942 0902",
+      "type": "accommodation",
+      "desc": "Tel. fixo da propriedade"
+    },
+    {
+      "label": "Drom Florence — Florença",
+      "number": "+39 335 617 8817",
+      "type": "accommodation",
+      "desc": "WhatsApp obrigatório antes do check-in"
+    },
+    {
+      "label": "Simon's Boutique Hotel — Paris",
+      "number": "+33 1 88 40 16 00",
+      "type": "accommodation",
+      "desc": "Recepção até meia-noite"
+    }
   ],
-
   "days": [
     {
       "id": "day-00",
@@ -247,7 +374,10 @@
       "title": "Partida do Brasil",
       "subtitle": "O início de um sonho a dois",
       "summary": "Depois de meses de planejamento, chegou a hora de embarcar. O voo sai do Rio de Janeiro rumo a Lisboa, escala para Roma. Uma noite de expectativa e emoção no ar.",
-      "tags": ["voo", "partida"],
+      "tags": [
+        "voo",
+        "partida"
+      ],
       "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Aeroporto_Tom_Jobim_Rio_de_Janeiro_2.jpg/1920px-Aeroporto_Tom_Jobim_Rio_de_Janeiro_2.jpg",
       "events": [
         {
@@ -278,7 +408,11 @@
       "title": "Chegada em Roma",
       "subtitle": "A Cidade Eterna abre seus braços",
       "summary": "Após a escala em Lisboa, o avião pousa em Fiumicino às 16:40. O coração acelera. Roma espera — sua luz dourada de final de tarde, o cheiro de história nas ruas de paralelepípedo, o primeiro espresso italiano. Esta noite, a cidade é toda de vocês.",
-      "tags": ["chegada", "voo", "primeiro dia"],
+      "tags": [
+        "chegada",
+        "voo",
+        "primeiro dia"
+      ],
       "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/St_Peter%27s_Square%2C_Vatican_City_-_April_2007.jpg/1920px-St_Peter%27s_Square%2C_Vatican_City_-_April_2007.jpg",
       "events": [
         {
@@ -300,11 +434,31 @@
           "notes": "Leonardo Express: plataforma 23 do aeroporto → Termini. Comprar na máquina: €14/pp. A cada 15 minutos. Depois, Metrô Linha A direção Battistini: Termini → Lepanto (4 paradas). €1,50/pp. Do Lepanto: 7 min a pé até Via Boezio 6.",
           "romantic": "A primeira viagem de metrô juntos numa cidade estrangeira — cada parada é uma descoberta.",
           "steps": [
-            { "label": "Aeroporto FCO", "icon": "✈️", "detail": "Plataforma 23 — seguir placas 'Trenitalia Leonardo Express'" },
-            { "label": "Leonardo Express", "icon": "🚂", "detail": "€14/pp · saída a cada 15 min · duração ~32 min" },
-            { "label": "Termini", "icon": "🚇", "detail": "Metrô Linha A (dir. Battistini) · €1,50/pp" },
-            { "label": "Lepanto", "icon": "📍", "detail": "4 paradas de Termini · sair pela saída principal" },
-            { "label": "Via Boezio 6", "icon": "🏠", "detail": "7 min a pé · Airbnb co.sleep" }
+            {
+              "label": "Aeroporto FCO",
+              "icon": "✈️",
+              "detail": "Plataforma 23 — seguir placas 'Trenitalia Leonardo Express'"
+            },
+            {
+              "label": "Leonardo Express",
+              "icon": "🚂",
+              "detail": "€14/pp · saída a cada 15 min · duração ~32 min"
+            },
+            {
+              "label": "Termini",
+              "icon": "🚇",
+              "detail": "Metrô Linha A (dir. Battistini) · €1,50/pp"
+            },
+            {
+              "label": "Lepanto",
+              "icon": "📍",
+              "detail": "4 paradas de Termini · sair pela saída principal"
+            },
+            {
+              "label": "Via Boezio 6",
+              "icon": "🏠",
+              "detail": "7 min a pé · Airbnb co.sleep"
+            }
           ]
         },
         {
@@ -325,7 +479,10 @@
           "detail": "Metrô Linha A: Lepanto → Spagna (1 parada)",
           "notes": "Piazza di Spagna e a Escadaria de Trinità dei Monti → 15 min a pé até a Fontana di Trevi → Piazza Navona para jantar. Trevi é ainda mais linda à noite!",
           "romantic": "Jogue uma moeda na Fontana di Trevi — é a tradição para quem quer voltar a Roma. Joguem juntos.",
-          "coordinates": { "lat": 41.9009, "lng": 12.4833 }
+          "coordinates": {
+            "lat": 41.9009,
+            "lng": 12.4833
+          }
         },
         {
           "id": "evt-105-meal",
@@ -345,7 +502,12 @@
       "title": "Coliseu, Fórum Romano e Trastevere",
       "subtitle": "Da grandeza imperial à intimidade de um bairro eterno",
       "summary": "De manhã, mergulhem no coração da Roma antiga: o Coliseu imponente, o Fórum Romano onde o Império nasceu, e o Cárcere Mamertino onde São Pedro e São Paulo aguardaram o martírio. À noite, o bairro de Trastevere — com suas ruelas de paralelepípedo, heras nas paredes e o melhor jantar da cidade.",
-      "tags": ["história", "arqueologia", "religioso", "jantar romântico"],
+      "tags": [
+        "história",
+        "arqueologia",
+        "religioso",
+        "jantar romântico"
+      ],
       "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/1920px-Colosseo_2020.jpg",
       "events": [
         {
@@ -356,9 +518,21 @@
           "detail": "Linha A → Termini → Linha B → Colosseo · Chegar às 08:00",
           "notes": "Sair do Airbnb às 07:15 para chegar no ponto de encontro às 08:00 (15 min antes do tour das 08:15). Metrô Linha A (dir. Anagnina) até Termini (4 paradas). Trocar para Linha B (dir. Laurentina) até Colosseo (1 parada). €1,50/pp.",
           "steps": [
-            { "label": "Lepanto (Linha A)", "icon": "🚇", "detail": "Dir. Anagnina · 4 paradas até Termini" },
-            { "label": "Termini", "icon": "🔄", "detail": "Trocar para Linha B · dir. Laurentina" },
-            { "label": "Colosseo", "icon": "🏛️", "detail": "1 parada · saída já com vista do Coliseu" }
+            {
+              "label": "Lepanto (Linha A)",
+              "icon": "🚇",
+              "detail": "Dir. Anagnina · 4 paradas até Termini"
+            },
+            {
+              "label": "Termini",
+              "icon": "🔄",
+              "detail": "Trocar para Linha B · dir. Laurentina"
+            },
+            {
+              "label": "Colosseo",
+              "icon": "🏛️",
+              "detail": "1 parada · saída já com vista do Coliseu"
+            }
           ]
         },
         {
@@ -384,8 +558,14 @@
             "bring": "Documento de identidade ORIGINAL com foto (obrigatório — cópias/fotos não aceitas). Sapatos confortáveis. Bolsas grandes não permitidas.",
             "cancellation": "Sem possibilidade de reagendamento. Atraso = sem reembolso.",
             "passengers": [
-              { "name": "Pedro Pereira", "dob": "20/10/1987" },
-              { "name": "Clarice Ribeiro", "dob": "04/07/1986" }
+              {
+                "name": "Pedro Pereira",
+                "dob": "20/10/1987"
+              },
+              {
+                "name": "Clarice Ribeiro",
+                "dob": "04/07/1986"
+              }
             ]
           },
           "notes": "⚠️ CHEGAR ÀS 08:00 — ponto de encontro: Via delle Terme di Tito & Via Nicola Salvi (em frente ao Coliseu). Saída pontual às 08:15 — atraso = sem entrada e sem reembolso. Guia em inglês incluído. Voucher eletrônico: mostrar na tela do celular. Levar DOCUMENTO ORIGINAL com foto (passaporte ou RG) — cópias não aceitas. Sem bolsas grandes.",
@@ -398,7 +578,10 @@
               {
                 "order": 1,
                 "name": "Coliseu — Fachada Externa",
-                "coordinates": { "lat": 41.8902, "lng": 12.4922 },
+                "coordinates": {
+                  "lat": 41.8902,
+                  "lng": 12.4922
+                },
                 "duration": "15 min",
                 "what_to_see": "Observem as três ordens arquitetônicas sobrepostas: dórica (térreo), jônica (1º andar) e coríntia (2º andar) — uma lição de arquitetura romana em pedra. Os buracos na fachada mostram onde estavam as braçadeiras de bronze retiradas na Idade Média para outros usos.",
                 "history": "A construção durou apenas 10 anos (70–80 d.C.) por ordem dos imperadores Vespasiano e Tito. O nome 'Coliseu' vem do Colosso de Nero — uma estátua gigante que ficava ao lado e foi destruída. O nome oficial é Anfiteatro Flaviano."
@@ -406,7 +589,10 @@
               {
                 "order": 2,
                 "name": "Coliseu — Interior (Arena e Hipogeu)",
-                "coordinates": { "lat": 41.8902, "lng": 12.4924 },
+                "coordinates": {
+                  "lat": 41.8902,
+                  "lng": 12.4924
+                },
                 "duration": "45 min",
                 "what_to_see": "O piso da arena foi removido — hoje veem-se os túneis do hipogeu (subsolo) onde ficavam gladiadores, animais e maquinário cênico. Procurem a Cruz no centro: marca o local sacralizado pela morte de mártires cristãos. As arquibancadas (cavea) tinham uma hierarquia rígida: senadores na frente, plebeus no alto.",
                 "history": "Os jogos (ludi) duravam até 100 dias seguidos. Em um único dia de inauguração, 9.000 animais foram mortos. Os gladiadores vencedores raramente eram mortos — eram caros e populares. O 'polegar para baixo' é mito do cinema: o sinal de morte era a mão fechada.",
@@ -415,7 +601,10 @@
               {
                 "order": 3,
                 "name": "Arco de Constantino",
-                "coordinates": { "lat": 41.8896, "lng": 12.4908 },
+                "coordinates": {
+                  "lat": 41.8896,
+                  "lng": 12.4908
+                },
                 "duration": "10 min",
                 "what_to_see": "O maior arco triunfal de Roma (21m de altura), erguido em 315 d.C. para celebrar a vitória de Constantino na Batalha da Ponte Mílvia. Observem os relevos: os do centro são os mais antigos (reaproveitados de outros monumentos) e os frisos superiores são os próprios de Constantino — a diferença de estilo é notável.",
                 "history": "Constantino ganhou a batalha em 312 d.C. — logo depois tornou-se o primeiro imperador a se converter ao Cristianismo. O Edito de Milão (313 d.C.) garantiu liberdade religiosa em todo o Império. Este arco marca a virada: o fim da perseguição aos cristãos."
@@ -423,7 +612,10 @@
               {
                 "order": 4,
                 "name": "Via Sacra — Entrada do Fórum",
-                "coordinates": { "lat": 41.8921, "lng": 12.4875 },
+                "coordinates": {
+                  "lat": 41.8921,
+                  "lng": 12.4875
+                },
                 "duration": "10 min",
                 "what_to_see": "A Via Sacra era a rua mais importante da Roma antiga — por aqui passavam os desfiles triunfais dos generais vitoriosos. Está calçada com pedras originais de 2.000 anos. O Arco de Tito (81 d.C.) no alto marca a entrada: dentro dele, um relevo mostra os soldados romanos carregando a Menorá roubada do Templo de Jerusalém após a destruição em 70 d.C.",
                 "history": "O Arco de Tito foi o modelo para o Arco do Triunfo de Paris. A cena da Menorá faz deste arco o único monumento do mundo que retrata diretamente a destruição do Segundo Templo — um dos eventos mais marcantes da história bíblica."
@@ -431,7 +623,10 @@
               {
                 "order": 5,
                 "name": "Fórum Romano — Centro",
-                "coordinates": { "lat": 41.8925, "lng": 12.4853 },
+                "coordinates": {
+                  "lat": 41.8925,
+                  "lng": 12.4853
+                },
                 "duration": "45 min",
                 "what_to_see": "Os pontos essenciais: (a) Templo de Vesta — onde as Vestais mantinham o fogo eterno de Roma. (b) Casa das Vestais — as sacerdotisas que guardavam o fogo; viviam aqui em clausura, com imensos privilégios. (c) Templo de Saturno (8 colunas ainda de pé) — o mais antigo do Fórum, séc. V a.C. (d) Rôstra — o pódio de discursos, decorado com proas de navios capturados; aqui Cícero discursou e a cabeça de Júlio César foi exposta após o assassinato.",
                 "history": "O Fórum foi o coração de Roma por mais de 1.000 anos. Foi esvaziado na Idade Média — chamado 'Campo Vaccino' (campo de vacas) — e as escavações sistemáticas só começaram no século XIX. Muito ainda está enterrado sob o nível atual.",
@@ -440,14 +635,20 @@
               {
                 "order": 6,
                 "name": "Monte Palatino",
-                "coordinates": { "lat": 41.8893, "lng": 12.4887 },
+                "coordinates": {
+                  "lat": 41.8893,
+                  "lng": 12.4887
+                },
                 "duration": "45 min",
                 "what_to_see": "Subam até o topo para a melhor vista do Fórum Romano e do Circo Máximo. Procurem: (a) Casa de Augusto e de Lívia — com afrescos originais preservados (séc. I a.C.); (b) Estádio Palatino — jardim em forma de estádio dos palácios imperiais; (c) Vista sobre o Circo Máximo — onde corriam até 250.000 espectadores nas corridas de bigas.",
                 "history": "O Palatino é a mais nobre das sete colinas — onde segundo a lenda Rômulo fundou Roma em 753 a.C. e onde todos os imperadores tiveram seus palácios. A palavra 'palácio' vem de Palatino. Os jardins Farnesini (séc. XVI) cobrem parte dos palácios imperiais."
               }
             ]
           },
-          "coordinates": { "lat": 41.8902, "lng": 12.4922 }
+          "coordinates": {
+            "lat": 41.8902,
+            "lng": 12.4922
+          }
         },
         {
           "id": "evt-203-visit",
@@ -459,7 +660,10 @@
           "notes": "Fica ao lado do Fórum Romano. Ingressos podem ser combinados com o Coliseu. Entrada pela Via Sacra.",
           "history": "A prisão mais antiga de Roma (séc. VII a.C.) foi onde São Pedro e São Paulo estiveram encarcerados antes do martírio. Segundo a tradição, Pedro batizou seus guardas com a água de uma fonte que brotou milagrosamente. A Igreja San Giuseppe dei Falegnami está construída sobre ela.",
           "romantic": "Tocar as paredes onde os apóstolos rezaram é uma emoção que une dois cristãos como vocês.",
-          "coordinates": { "lat": 41.8935, "lng": 12.4854 }
+          "coordinates": {
+            "lat": 41.8935,
+            "lng": 12.4854
+          }
         },
         {
           "id": "evt-204-transfer",
@@ -489,7 +693,10 @@
           "detail": "O bairro mais romano de Roma",
           "notes": "Passeiem pelas ruelas sem pressa. Visitem a Basílica de Santa Maria in Trastevere (séc. IV) — uma das mais antigas de Roma, com mosaicos de ouro do séc. XII. Tomem um gelato, sentem numa escadaria.",
           "romantic": "Trastevere tem uma magia especial — heras nas paredes antigas, luz dourada, gatos nos degraus. É o bairro feito para passear de mãos dadas.",
-          "coordinates": { "lat": 41.8896, "lng": 12.4697 }
+          "coordinates": {
+            "lat": 41.8896,
+            "lng": 12.4697
+          }
         },
         {
           "id": "evt-206-meal",
@@ -568,7 +775,13 @@
       "title": "Vaticano",
       "subtitle": "O coração da Cristandade",
       "summary": "O dia mais esperado da viagem romana. Começa com a Audiência Papal — um momento de fé imensurável — e continua pelos Museus Vaticanos com a Sistina, e culmina na visita à Necrópole Trionfale, onde o túmulo de São Pedro repousa há dois milênios. Uma jornada espiritual que transformará vocês.",
-      "tags": ["vaticano", "papa", "museus", "espiritual", "reserva"],
+      "tags": [
+        "vaticano",
+        "papa",
+        "museus",
+        "espiritual",
+        "reserva"
+      ],
       "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg/1920px-Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg",
       "events": [
         {
@@ -580,7 +793,10 @@
           "notes": "Os bilhetes gratuitos da Audiência são retirados no Portão de Bronze (lado direito da colunata de Bernini). Abrem às 07:30 no dia da audiência. Os bilhetes também podem ser retirados na terça-feira anterior entre 15h-19h.",
           "romantic": "Caminhar até São Pedro de manhã cedo, com a praça quase vazia, é uma experiência única.",
           "route": "Via Boezio → Via Cola di Rienzo → Piazza del Risorgimento → Praça São Pedro (Portão de Bronze)",
-          "coordinates": { "lat": 41.9031, "lng": 12.4558 }
+          "coordinates": {
+            "lat": 41.9031,
+            "lng": 12.4558
+          }
         },
         {
           "id": "evt-302-mass",
@@ -593,7 +809,10 @@
           "notes": "Chegue cedo para garantir um bom lugar. Roupas adequadas: ombros e joelhos cobertos. A audiência inclui saudação em vários idiomas — o Papa geralmente menciona o Brasil em português!",
           "history": "As Audiências Papais gerais acontecem às quartas-feiras na Praça São Pedro (ou no Salão Paulo VI no inverno). São um momento de encontro do sucessor de Pedro com os fiéis do mundo inteiro — uma tradição desde o séc. XIX.",
           "romantic": "Estar juntos, como casal, diante do sucessor de São Pedro no dia do 12º aniversário — um momento de graça que Deus colocou nesta viagem.",
-          "coordinates": { "lat": 41.9022, "lng": 12.4578 }
+          "coordinates": {
+            "lat": 41.9022,
+            "lng": 12.4578
+          }
         },
         {
           "id": "evt-303-visit",
@@ -606,7 +825,10 @@
           "history": "Os Museus Vaticanos foram fundados por Júlio II no séc. XVI e contêm uma das maiores coleções de arte do mundo. A Capela Sistina, pintada por Michelangelo entre 1508-1512, é considerada a obra de arte mais contemplada da humanidade.",
           "romantic": "Erguer os olhos para a Criação de Adão, pintada por Michelangelo deitado andaimes há 500 anos, é uma experiência de beleza que une arte e fé.",
           "tips": "A Sistina proíbe fotos — relaxem e simplesmente olhem. O silêncio pedido não é cumprido, mas a beleza atordoa de qualquer forma.",
-          "coordinates": { "lat": 41.9065, "lng": 12.4536 }
+          "coordinates": {
+            "lat": 41.9065,
+            "lng": 12.4536
+          }
         },
         {
           "id": "evt-304-visit",
@@ -616,7 +838,10 @@
           "detail": "Igreja do Opus Dei — próxima à Piazza Navona",
           "duration": "30 min",
           "notes": "Uma pequena joia do Renascimento romano, com a famosa galeria de Bramante (pátio). Fica a poucos minutos da Piazza Navona. Afrescos de Rafael na primeira capela.",
-          "coordinates": { "lat": 41.8986, "lng": 12.4720 }
+          "coordinates": {
+            "lat": 41.8986,
+            "lng": 12.472
+          }
         },
         {
           "id": "evt-305-ticket",
@@ -629,7 +854,10 @@
           "notes": "Código: AUYY-7VDB. Apresentar na entrada da Fabbrica di San Pietro (ao lado da Basílica). Guia em português incluído. Grupo pequeno. Câmeras permitidas (sem flash). CONFIRMAÇÃO POR E-MAIL PENDENTE.",
           "history": "A Necrópole Trionfale é uma cidade subterrânea dos mortos do séc. I ao IV d.C., descoberta em escavações de 1939-1949. No seu coração está o Tropaion de Pedro — o memorial erguido pelos primeiros cristãos sobre a tumba do apóstolo mártir. As escavações confirmaram com alta probabilidade que ali jazem os ossos de São Pedro.",
           "romantic": "Descer sob São Pedro para estar diante da tumba do príncipe dos apóstolos — onde Pedro repousa desde o ano 67 d.C. — é um momento de profundidade espiritual raro.",
-          "coordinates": { "lat": 41.9022, "lng": 12.4554 }
+          "coordinates": {
+            "lat": 41.9022,
+            "lng": 12.4554
+          }
         },
         {
           "id": "evt-306-meal",
@@ -649,7 +877,12 @@
       "title": "As Quatro Basílicas Maiores",
       "subtitle": "A peregrinação dos séculos",
       "summary": "O último dia pleno em Roma é dedicado às basílicas maiores — um itinerário de peregrinação traçado desde a Idade Média. São João de Latrão, a Catedral do Papa. Santa Maria Maior, com seus mosaicos de ouro. São Paulo Extramuros, sobre o túmulo do Apóstolo das Nações. Uma despedida de Roma digna de dois peregrinos apaixonados.",
-      "tags": ["basílicas", "peregrinação", "espiritual", "despedida de Roma"],
+      "tags": [
+        "basílicas",
+        "peregrinação",
+        "espiritual",
+        "despedida de Roma"
+      ],
       "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Basilica_di_Santa_Maria_Maggiore_-_Roma.jpg/1920px-Basilica_di_Santa_Maria_Maggiore_-_Roma.jpg",
       "events": [
         {
@@ -661,7 +894,10 @@
           "duration": "2h",
           "notes": "São João de Latrão é a Catedral de Roma — a catedral do Papa como Bispo de Roma, portanto a mais importante da Cristandade (não São Pedro!). Inaugurada em 324 d.C. por Constantino. A Scala Sancta (Escada Santa) fica num edifício separado ao lado: 28 degraus de mármore trazidos de Jerusalém por Santa Helena, pelos quais Jesus subiu ao tribunal de Pilatos. Os fiéis sobem de joelhos.",
           "romantic": "Subir de joelhos a Scala Sancta lado a lado, em oração — um ato de fé que os apóstolos e os papas fizeram por séculos.",
-          "coordinates": { "lat": 41.8858, "lng": 12.5057 }
+          "coordinates": {
+            "lat": 41.8858,
+            "lng": 12.5057
+          }
         },
         {
           "id": "evt-402-visit",
@@ -673,15 +909,44 @@
           "notes": "Uma das quatro Basílicas Maiores de Roma, construída em 432 d.C. Contém os mosaicos paleocristãos mais bem preservados de Roma. Guarda relíquias do berço de Jesus (Presepe di Betlemme). A tumba de São Jerônimo está na cripta.",
           "history": "Segundo a tradição, a basílica foi construída no local onde a Virgem Maria apareceu ao Papa Libério em 352 d.C., pedindo uma igreja. Na manhã de 5 de agosto, no auge do verão romano, neve cobriu o local — o milagre da neve.",
           "romantic": "Os mosaicos dourados do séc. V que decoram a nave principal são entre os mais belos do mundo. Contemplem em silêncio.",
-          "coordinates": { "lat": 41.8976, "lng": 12.4993 }
+          "coordinates": {
+            "lat": 41.8976,
+            "lng": 12.4993
+          }
         },
         {
           "id": "evt-403-meal",
           "type": "meal",
           "time": "13:00",
           "title": "Almoço — Região de Termini",
-          "detail": "Muitas opções ao redor da estação",
-          "notes": "A região de Termini tem ótimas opções acessíveis. Recomendação: Trattoria Da Oreste ou qualquer trattoria familiar nas ruas laterais. Evitem os restaurantes diretamente na praça (turísticos e caros)."
+          "detail": "Após manhã nas basílicas — região do Laterano e Termini",
+          "notes": "A região entre São João de Latrão e Santa Maria Maior tem ótimas opções. Evitem restaurantes diretamente em frente a Termini (turísticos). Desçam uma rua lateral.",
+          "restaurants": [
+            {
+              "label": "💰 Econômico",
+              "name": "Supplì Roma",
+              "address": "Via Natale del Grande 24 (Trastevere) · ou filiais próximas a Termini",
+              "specialty": "Supplì al telefono (bolinho de arroz com ragù e mozzarella) · pizza al taglio",
+              "price": "€4–8 pp",
+              "tip": "O melhor street food romano. Rápido, fila anda depressa."
+            },
+            {
+              "label": "🍽️ Tradicional",
+              "name": "Trattoria Monti",
+              "address": "Via di San Vito 13a (a 5 min de Santa Maria Maggiore)",
+              "specialty": "Cucina marchigiana — vincisgrassi, uova con tartufo, abbacchio alla cacciatora",
+              "price": "€25–35 pp",
+              "tip": "Uma das melhores trattorias de Roma. RESERVAR com antecedência — sempre cheio."
+            },
+            {
+              "label": "⭐ Gourmet",
+              "name": "Agata e Romeo",
+              "address": "Via Carlo Alberto 45 (junto a Santa Maria Maggiore)",
+              "specialty": "Alta cozinha romana — menu degustação com ingredientes de mercado do dia",
+              "price": "€70–90 pp",
+              "tip": "Referência em Roma há décadas. Chef Agata Parisella. Reserva obrigatória."
+            }
+          ]
         },
         {
           "id": "evt-404-visit",
@@ -693,7 +958,10 @@
           "notes": "A segunda maior basílica de Roma, após São Pedro. Foi destruída por incêndio em 1823 e completamente reconstruída. Guarda a tumba de São Paulo, confirmada por escavações em 2009. O claustro do séc. XIII é um dos mais belos de Roma.",
           "history": "São Paulo foi decapitado em 67 d.C. (o mesmo ano do martírio de Pedro) no local chamado Aquas Salvias (hoje Abbazia delle Tre Fontane). Seu corpo foi sepultado na Via Ostia, onde está a basílica. A inscrição 'PAULO APOSTOLO MART.' sobre o altar-mor marca o túmulo.",
           "romantic": "Estar sobre o túmulo de Paulo e imaginar o Apóstolo das Nações que percorreu o Mediterrâneo para levar o Evangelho — incluindo ao Brasil, dois mil anos depois.",
-          "coordinates": { "lat": 41.8582, "lng": 12.4767 }
+          "coordinates": {
+            "lat": 41.8582,
+            "lng": 12.4767
+          }
         },
         {
           "id": "evt-405-meal",
@@ -713,7 +981,11 @@
       "title": "Roma → Florença · Chegada",
       "subtitle": "Do mármore eterno ao ouro do Renascimento",
       "summary": "Cedo, de Roma a Florença — de trem ou avião. A cidade de Dante, Michelangelo e dos Médici recebe vocês no final da tarde. Uma caminhada leve pelo Duomo, a Ponte Vecchio e um pôr do sol inesquecível no Piazzale Michelangelo.",
-      "tags": ["transferência", "chegada", "pôr do sol"],
+      "tags": [
+        "transferência",
+        "chegada",
+        "pôr do sol"
+      ],
       "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Firenze_-_Ponte_vecchio.jpg/1920px-Firenze_-_Ponte_vecchio.jpg",
       "events": [
         {
@@ -750,7 +1022,10 @@
           "detail": "A pé — Florença é uma cidade para andar",
           "notes": "Duomo (exterior) → Piazza della Repubblica → Uffizi (fachada) → Lungarno (margem do Arno) → Ponte Vecchio.",
           "romantic": "Caminhem pela Ponte Vecchio — a ponte mais antiga de Florença (1345), com suas joalherias no meio do rio. A vista do Arno ao entardecer é extraordinária.",
-          "coordinates": { "lat": 43.7680, "lng": 11.2531 }
+          "coordinates": {
+            "lat": 43.768,
+            "lng": 11.2531
+          }
         },
         {
           "id": "evt-505-viewpoint",
@@ -760,7 +1035,10 @@
           "detail": "15 min a pé (subida) ou ônibus 13",
           "notes": "O Piazzale Michelangelo oferece a mais famosa vista panorâmica de Florença — o Duomo, as torres medievais e o Arno brilhando ao entardecer. Chegar 30 min antes do pôr do sol para garantir lugar.",
           "romantic": "O pôr do sol no Piazzale Michelangelo sobre Florença é uma das cenas mais românticas da Itália. Não percam por nada.",
-          "coordinates": { "lat": 43.7629, "lng": 11.2650 }
+          "coordinates": {
+            "lat": 43.7629,
+            "lng": 11.265
+          }
         },
         {
           "id": "evt-506-meal",
@@ -780,7 +1058,13 @@
       "title": "Florença — Arte e Fé",
       "subtitle": "Missa, o David, e as belezas da cidade de Dante",
       "summary": "Domingo em Florença começa com Missa — uma das experiências mais bonitas é assistir à Missa italiana numa das antigas igrejas. Depois, a Galleria dell'Accademia para o encontro com o David de Michelangelo, o Batistério e um passeio pelo mercado central.",
-      "tags": ["domingo", "missa", "arte", "David", "Duomo"],
+      "tags": [
+        "domingo",
+        "missa",
+        "arte",
+        "David",
+        "Duomo"
+      ],
       "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/%27David%27_by_Michelangelo_Fir_JBU002.jpg/1920px-%27David%27_by_Michelangelo_Fir_JBU002.jpg",
       "events": [
         {
@@ -792,7 +1076,10 @@
           "notes": "Opções: Catedral de Santa Maria del Fiore — Missa em italiano normalmente às 10h ou 11h. Chegar 30 min antes. Trajes adequados obrigatórios. Alternativa mais íntima: Igreja Santo Spirito (Oltrarno) — comunidade mais local, menos turística.",
           "history": "A Catedral de Santa Maria del Fiore foi construída entre 1296 e 1461. Sua cúpula de Brunelleschi (1436), com 45m de diâmetro, foi a maior do mundo por séculos. O sino da catedral ecoa pelos séculos de história cristã florentina.",
           "romantic": "Participar da Missa na língua de Dante, numa catedral de 700 anos, como casal em peregrinação.",
-          "coordinates": { "lat": 43.7731, "lng": 11.2559 }
+          "coordinates": {
+            "lat": 43.7731,
+            "lng": 11.2559
+          }
         },
         {
           "id": "evt-602-visit",
@@ -802,16 +1089,48 @@
           "detail": "Praça central de Florença",
           "duration": "1h",
           "notes": "Após a Missa, aproveite para caminhar ao redor do Duomo. O Batistério de São João (séc. IV-VIII), com suas famosas Portas do Paraíso de Ghiberti (1452), fica na praça. Michelangelo disse que eram dignas de ser as portas do Paraíso.",
-          "coordinates": { "lat": 43.7731, "lng": 11.2550 }
+          "coordinates": {
+            "lat": 43.7731,
+            "lng": 11.255
+          }
         },
         {
           "id": "evt-603-meal",
           "type": "meal",
           "time": "13:00",
           "title": "Almoço — Mercado Central de Florença",
-          "detail": "Mercato Centrale · Via dell'Ariento",
-          "notes": "O Mercato Centrale (1874) tem no andar superior um food court excelente com comida toscana. Lampredotto (prato tradicional florentino), porchetta, trufas, queijos. Ótimo custo-benefício.",
-          "coordinates": { "lat": 43.7773, "lng": 11.2527 }
+          "detail": "Mercato Centrale · Via dell'Ariento (San Lorenzo)",
+          "notes": "O Mercato Centrale (piso superior) é uma experiência gastronômica completa — não uma simples praça de alimentação. Cada bancada tem um especialista. No piso térreo há o mercado tradicional.",
+          "coordinates": {
+            "lat": 43.7773,
+            "lng": 11.2527
+          },
+          "restaurants": [
+            {
+              "label": "💰 Econômico",
+              "name": "Trattoria Mario",
+              "address": "Via Rosina 2 (atrás do Mercato Centrale)",
+              "specialty": "Ribollita, pappardelle al cinghiale, bistecca fiorentina (compartilhar)",
+              "price": "€12–18 pp",
+              "tip": "Aberto desde 1953. Mesas compartilhadas com florentinos de verdade. Sem reserva — chegar cedo. Fecha às 15h30."
+            },
+            {
+              "label": "🍽️ Tradicional",
+              "name": "Mercato Centrale — Piso Superior",
+              "address": "Piazza del Mercato Centrale (entrada pela Via dell'Ariento)",
+              "specialty": "Lampredotto (prato típico florentino), pasta fresca, fiorentina grelhada na hora, gelato",
+              "price": "€15–25 pp",
+              "tip": "Cada bancada é um chef diferente. Provem o lampredotto — o prato mais autêntico de Florença."
+            },
+            {
+              "label": "⭐ Gourmet",
+              "name": "Buca Mario",
+              "address": "Piazza degli Ottaviani 16 (10 min a pé)",
+              "specialty": "Bistecca alla Fiorentina, pappa al pomodoro, ribollita, cantuccini com Vin Santo",
+              "price": "€45–65 pp",
+              "tip": "O restaurante mais antigo de Florença (1886). Ambiente de cantina histórica. Reservar."
+            }
+          ]
         },
         {
           "id": "evt-604-visit",
@@ -823,7 +1142,10 @@
           "notes": "O David (1501-1504) é a mais famosa escultura do mundo. Mede 5,17m. Ver ao vivo é uma experiência completamente diferente de qualquer foto. RESERVAR COM ANTECEDÊNCIA — sem reserva, a fila pode ser de 2-3h.",
           "history": "Michelangelo tinha 26 anos quando começou o David. A escultura foi feita de um único bloco de mármore de Carrara que outros escultores haviam abandonado. Michelangelo disse que simplesmente 'removeu o mármore que sobrava'.",
           "romantic": "Ficar face a face com o David é um momento que não cabe em palavras. Contemplem em silêncio.",
-          "coordinates": { "lat": 43.7767, "lng": 11.2588 }
+          "coordinates": {
+            "lat": 43.7767,
+            "lng": 11.2588
+          }
         },
         {
           "id": "evt-605-walk",
@@ -851,7 +1173,12 @@
       "title": "Excursão a Assis — Carlo Acutis e São Francisco",
       "subtitle": "O dia mais sagrado da viagem",
       "summary": "Um dia inteiro dedicado à cidade mais santa da Itália. Assis, a cidade de São Francisco, de Santa Clara e do jovem beato Carlo Acutis — canonizado em 2025. Uma peregrinação que toca o coração de quem vai com fé.",
-      "tags": ["peregrinação", "São Francisco", "Carlo Acutis", "excursão"],
+      "tags": [
+        "peregrinação",
+        "São Francisco",
+        "Carlo Acutis",
+        "excursão"
+      ],
       "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/AssisiDec122023_03.jpg/1920px-AssisiDec122023_03.jpg",
       "events": [
         {
@@ -869,8 +1196,14 @@
             "arrival": "Assisi · 10:41",
             "via": "Arezzo → Terontola-Cortona → Assisi",
             "tickets": [
-              { "passenger": "Pedro Vinces", "code": "2822856720" },
-              { "passenger": "Clarice Maria Ribeiro", "code": "2822856710" }
+              {
+                "passenger": "Pedro Vinces",
+                "code": "2822856720"
+              },
+              {
+                "passenger": "Clarice Maria Ribeiro",
+                "code": "2822856710"
+              }
             ],
             "price_per_person": "€25,80",
             "receipt": "1914345848"
@@ -898,7 +1231,10 @@
           "history": "Carlo Acutis (Londres, 1991 — Milão, 2006) era um adolescente apaixonado por informática, videogames (Halo e Street Fighter eram seus favoritos) e pelo Juventus. Mas ia à Missa todos os dias desde os 7 anos e se confessava semanalmente. Criou o site miracolieucaristici.org catalogando 136 milagres eucarísticos em todo o mundo — usando suas habilidades de programador a serviço de Deus. Quando soube que tinha leucemia, disse: 'Ofereço meu sofrimento ao Papa e à Igreja.' Morreu em 12 de outubro de 2006, com 15 anos. Pediu para ser enterrado em Assis. Beatificado em 2020, canonizado pelo Papa Francisco em 27 de abril de 2025 — o primeiro santo nascido no século XX, o primeiro da era digital. Suas palavras: 'Todos nascem originais, mas muitos morrem como fotocópias.' E também: 'A tristeza vem de olhar para si mesmo; a alegria, de olhar para Deus.'",
           "tips": "Pergunte aos frades sobre o painel de milagres atribuídos à sua intercessão após a beatificação — é impressionante. O santuário também é o local onde São Francisco se despiu das roupas do pai diante do Bispo de Assis (c. 1206) — o gesto que marcou o início de sua conversão.",
           "romantic": "Estar diante de Carlo — um jovem de 15 anos que viveu o ordinário de modo extraordinário — é um lembrete de que a santidade não exige vidas excepcionais. Exige amor ordinário vivido com extraordinária fidelidade.",
-          "coordinates": { "lat": 43.0717, "lng": 12.6175 }
+          "coordinates": {
+            "lat": 43.0717,
+            "lng": 12.6175
+          }
         },
         {
           "id": "evt-704-mass",
@@ -910,7 +1246,10 @@
           "notes": "A Missa Dominical das 12h é celebrada pelos frades do Sacro Convento na Basílica de São Francisco — geralmente na Basílica Superior (exceto em dias de grande movimento, quando é na Inferior). A Missa é em italiano, mas a liturgia eucarística é universal — Pedro e Clarice acompanharão sem dificuldade. Se desejarem Missa em português, pergunte aos frades na entrada se há alguma célébração em português naquele domingo (grupos de peregrinos brasileiros frequentemente têm Missa própria). Chegar às 11:45 para garantir lugar — a basílica enche rapidamente no domingo.",
           "tips": "É comum que peregrinos brasileiros estejam presentes — não hesite em se aproximar de grupos do Brasil. O Sacro Convento mantém um contato para reserva de Missa para grupos: sacroconvento.it",
           "romantic": "Celebrar a Eucaristia na basílica que guarda o túmulo de São Francisco — o homem que mais amou a pobreza de Cristo — é um dos momentos de fé mais densos que qualquer peregrinação pode oferecer. Especialmente num domingo, em família.",
-          "coordinates": { "lat": 43.0750, "lng": 12.6063 }
+          "coordinates": {
+            "lat": 43.075,
+            "lng": 12.6063
+          }
         },
         {
           "id": "evt-705-visit",
@@ -922,17 +1261,46 @@
           "notes": "Após a Missa, permanecer na basílica para a visita: BASÍLICA SUPERIOR — os 28 afrescos de Giotto narram a vida de São Francisco em sequência (da renúncia às riquezas aos estigmas). Observe o afresco nº 6 (Francisco diante do Sultão) e o nº 16 (Francisco pregando para os pássaros). BASÍLICA INFERIOR — desça pela escada lateral à esquerda. É mais íntima, escura e contemplativa. Os afrescos de Cimabue (mestre de Giotto) e Simone Martini cobrem as capelas. A CRIPTA — acesse pela nave central da Basílica Inferior: o túmulo de São Francisco fica abaixo do altar-mor, numa câmara de pedra pura. Nos quatro cantos da cripta estão sepultados seus companheiros mais próximos: Frei Leão, Frei Ângelo, Frei Masseo e Frei Rufino. Silêncio absoluto.",
           "history": "São Francisco (1181-1226) nasceu rico — filho de Pietro di Bernardone, um comerciante de tecidos próspero. Depois de uma experiência mística diante do crucifixo de San Damiano, renunciou à herança do pai publicamente e adotou a pobreza radical. Fundou a Ordem dos Frades Menores em 1209 com aprovação oral do Papa Inocêncio III. Em 1224, no Monte La Verna, recebeu os estigmas — as chagas de Cristo impressas em seu próprio corpo. Compôs o 'Cântico das Criaturas' em 1225 — o primeiro grande poema em língua italiana. Morreu cantando em 3 de outubro de 1226. Canonizado dois anos depois, em 1228.",
           "romantic": "Ajoelhar-se juntos sobre a pedra da cripta onde repousa o Poverello — o homem que ensinou o mundo a amar sem possuir — é uma experiência de silêncio que vale toda a viagem.",
-          "coordinates": { "lat": 43.0750, "lng": 12.6063 }
+          "coordinates": {
+            "lat": 43.075,
+            "lng": 12.6063
+          }
         },
         {
           "id": "evt-706-meal",
           "type": "restaurant",
           "time": "13:45",
           "title": "Almoço em Assis",
-          "detail": "RESERVAR com antecedência — domingo é o dia mais cheio",
+          "detail": "Centro histórico de Assis — domingo com restaurantes movimentados",
           "duration": "1h",
-          "notes": "Restaurantes recomendados próximos à Basílica de São Francisco: Trattoria Pallotta (Via della Volta Pinta 2 — tradicional umbra desde 1982, especialidade em strangozzi al tartufo), La Fortezza (Vicolo della Fortezza 2b — terraço com vista incrível sobre o Vale Espolentino), Trattoria degli Umbri (Piazza del Comune — ambiente familiar, preços honestos). Pratos típicos da Úmbria: strangozzi (massa local), cinghiale (javali), tartufo nero di Norcia (trufas pretas). Vinho: Sagrantino di Montefalco ou Trebbiano Spoletino (branco).",
-          "romantic": "Um almoço simples com vinho da Úmbria, à sombra de uma viela medieval, depois de ter rezado na tumba de São Francisco — o ordinário que se torna extraordinário."
+          "notes": "Domingo em Assis é o dia mais cheio do ano — italianos de toda a Úmbria vêm em família. RESERVAR com antecedência é essencial. Especialidade local: strangozzi (massa úmbrica), torta al testo, tartufo nero di Norcia.",
+          "romantic": "Um almoço simples com vinho da Úmbria, à sombra de uma viela medieval, depois de ter rezado na tumba de São Francisco — o ordinário que se torna extraordinário.",
+          "restaurants": [
+            {
+              "label": "💰 Econômico",
+              "name": "Osteria Piazzetta dell'Erba",
+              "address": "Via San Gabriele dell'Addolorata 15 (centro, perto da Piazza del Comune)",
+              "specialty": "Strangozzi al tartufo, zuppa di farro, porchetta, bruschetta com azeite úmbrico",
+              "price": "€14–20 pp",
+              "tip": "Pequena, autêntica, sem frescura. A escolha dos peregrinos que conhecem Assis."
+            },
+            {
+              "label": "🍽️ Tradicional",
+              "name": "Trattoria Pallotta",
+              "address": "Via della Volta Pinta 2 (arco medieval — difícil de achar, vale a pena)",
+              "specialty": "Torta al testo con prosciutto e stracchino, piccione in salmì, strangozzi umbri",
+              "price": "€22–30 pp",
+              "tip": "A mais tradicional de Assis. Sob um arco medieval do século XIII. RESERVAR antes de viajar."
+            },
+            {
+              "label": "⭐ Gourmet",
+              "name": "Ristorante La Fortezza",
+              "address": "Vicolo della Fortezza 2b (junto à Rocca Maggiore)",
+              "specialty": "Tartufo nero de Norcia em tudo — ovos, pasta, carnes. Vinho sagrantino di Montefalco",
+              "price": "€35–50 pp",
+              "tip": "Vista panorâmica da Úmbria da varanda. O mais elegante de Assis. Reservar com dias de antecedência."
+            }
+          ]
         },
         {
           "id": "evt-707-visit",
@@ -945,7 +1313,10 @@
           "history": "Santa Clara (Assis, 1194 — 1253) tinha 18 anos quando fugiu de casa, à meia-noite, para se encontrar com Francisco e receber o hábito da penitência. Em 1240, quando os sarracenos a serviço do Imperador Frederico II cercaram Assis, Clara — doente, incapaz de andar — ordenou que a levassem à muralha com o Santíssimo Sacramento. Os sarracenos recuaram sem disparar uma flecha. É um dos episódios mais impressionantes de toda a hagiografia medieval. Suas últimas palavras: 'Vai em paz, pois terás uma boa escolta.' Morreu em 11 de agosto de 1253. Canonizada dois anos depois pelo Papa Alexandre IV.",
           "tips": "A basílica fecha das 12h às 14h para as religiosas. Como a visita está marcada para 14h45, estará aberta. Vista modesta obrigatória — joelhos e ombros cobertos.",
           "romantic": "Clara e Francisco nunca se casaram — mas viveram uma das mais belas amizades espirituais da história da Igreja. Uma amizade que escolheu, livremente, o amor mais alto. Estarem aqui num aniversário de casamento é uma reflexão sobre os modos diferentes com que o amor pode ser absoluto.",
-          "coordinates": { "lat": 43.0700, "lng": 12.6187 }
+          "coordinates": {
+            "lat": 43.07,
+            "lng": 12.6187
+          }
         },
         {
           "id": "evt-708-walk",
@@ -955,7 +1326,10 @@
           "detail": "Templo de Minerva · Via San Francesco · Compras",
           "duration": "45 min",
           "notes": "Da Basílica de Santa Clara, suba a Via Santa Chiara até a Piazza del Comune (5 min). Pontos de interesse: 1) TEMPLO DE MINERVA (séc. I a.C.) — perfeitamente preservado, hoje a Igreja de Santa Maria sopra Minerva. O único templo romano antigo ainda de pé no coração de uma cidade italiana viva. Goethe disse que era o único edifício da Antiguidade clássica que o impressionou como era esperado. 2) TORRE DEL POPOLO — o campanário medieval ao lado (séc. XIII). 3) A Via San Francesco — principal rua de Assis, ladeada de lojas de artigos religiosos, azeite, cerâmica e trufas. COMPRAS RECOMENDADAS: medalha de São Francisco em prata (€5–15), terço franciscano de madeira de oliveira (€8–20), azeite extra-virgem umbro (€10–15), trufas negras de Norcia embaladas (€12–25). Guarde as notas fiscais para o controle aduaneiro.",
-          "coordinates": { "lat": 43.0705, "lng": 12.6150 }
+          "coordinates": {
+            "lat": 43.0705,
+            "lng": 12.615
+          }
         },
         {
           "id": "evt-709-bus",
@@ -981,8 +1355,14 @@
             "arrival": "Firenze S. M. Novella · 19:52",
             "via": "Terontola-Cortona → Arezzo → Firenze SMN",
             "tickets": [
-              { "passenger": "Pedro Vinces", "code": "2822856722" },
-              { "passenger": "Clarice Maria Ribeiro", "code": "2822856714" }
+              {
+                "passenger": "Pedro Vinces",
+                "code": "2822856722"
+              },
+              {
+                "passenger": "Clarice Maria Ribeiro",
+                "code": "2822856714"
+              }
             ],
             "price_per_person": "€25,80",
             "receipt": "1914345850",
@@ -1000,7 +1380,12 @@
       "title": "Uffizi, Palazzo Pitti e Boboli",
       "subtitle": "A grande coleção da humanidade",
       "summary": "Dia mais tranquilo após a imersão de Assis. A Galleria degli Uffizi — um dos maiores museus do mundo — ocupa a manhã. À tarde, o Palazzo Pitti com os Jardins de Boboli, para um passeio descontraído e romântico entre as fontes e as esculturas.",
-      "tags": ["museus", "arte", "jardins", "despedida de Florença"],
+      "tags": [
+        "museus",
+        "arte",
+        "jardins",
+        "despedida de Florença"
+      ],
       "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Uffizi.jpg/1920px-Uffizi.jpg",
       "events": [
         {
@@ -1012,16 +1397,45 @@
           "duration": "2-3h",
           "notes": "Os Uffizi contêm a mais importante coleção de arte do Renascimento. Destaques: Botticelli (A Primavera e o Nascimento de Vênus), Leonardo da Vinci, Michelangelo, Rafael, Tiziano, Caravaggio. COMPRAR ONLINE — sem reserva, fila de 2-4h.",
           "romantic": "Ver ao vivo o Nascimento de Vênus de Botticelli — uma das pinturas mais belas da humanidade — ao lado de quem amamos.",
-          "coordinates": { "lat": 43.7678, "lng": 11.2556 }
+          "coordinates": {
+            "lat": 43.7678,
+            "lng": 11.2556
+          }
         },
         {
           "id": "evt-802-meal",
           "type": "meal",
           "time": "13:00",
           "title": "Almoço às margens do Arno",
-          "detail": "Lungarno Acciaiuoli — beira do rio",
-          "notes": "A região do Lungarno (margem do Arno) tem ótimos restaurantes com vista para o rio e a Ponte Vecchio. Uma mesa ao ar livre à beira d'água é o cenário perfeito.",
-          "romantic": "Almoçar com o Arno brilhando à luz do meio-dia e a Ponte Vecchio ao fundo — Florença sendo generosa."
+          "detail": "Lungarno Acciaiuoli — beira do Arno, a passos dos Uffizi",
+          "notes": "Os restaurantes junto ao Arno têm vistas extraordinárias. Após os Uffizi, a zona de Ponte Vecchio concentra opções para todos os bolsos.",
+          "romantic": "Almoçar com o Arno brilhando à luz do meio-dia e a Ponte Vecchio ao fundo — Florença sendo generosa.",
+          "restaurants": [
+            {
+              "label": "💰 Econômico",
+              "name": "Ino — Gastronomia e Cucina",
+              "address": "Via dei Georgofili 3r (saída lateral dos Uffizi)",
+              "specialty": "Panini gourmet com ingredientes toscanos — lardo di Colonnata, pecorino, finocchiona",
+              "price": "€8–12 pp",
+              "tip": "Literalmente a 30 metros da saída dos Uffizi. Almoço rápido mas de qualidade excepcional."
+            },
+            {
+              "label": "🍽️ Tradicional",
+              "name": "Buca dell'Orafo",
+              "address": "Vicolo de' Girolami 28 (junto a Ponte Vecchio)",
+              "specialty": "Bistecca fiorentina, ribollita, pappa al pomodoro, fegatini di pollo alla Toscana",
+              "price": "€30–45 pp",
+              "tip": "Clássico florentino desde 1947. Vista para o Arno. Frequentado por Zeffirelli e outros artistas."
+            },
+            {
+              "label": "⭐ Gourmet",
+              "name": "Ora d'Aria",
+              "address": "Via dei Georgofili 11r (Uffizi)",
+              "specialty": "Menu degustação toscano contemporâneo — 1 estrela Michelin. Releitura da bistecca e do cinghiale",
+              "price": "€75–110 pp",
+              "tip": "O melhor restaurante perto dos Uffizi. Marco Stabile no comando. Reserva obrigatória com semanas de antecedência."
+            }
+          ]
         },
         {
           "id": "evt-803-visit",
@@ -1032,7 +1446,10 @@
           "duration": "2h",
           "notes": "O Palazzo Pitti foi a residência dos Médici e depois dos reis da Itália. Os Jardins de Boboli (1549) são um dos mais belos exemplos de jardim italiano do mundo — terraços, grutas artificiais, estátuas, fontes e vistas da cidade. Ótimo para um passeio lento ao entardecer.",
           "romantic": "Os Jardins de Boboli ao fim da tarde, com a luz dourada sobre as estátuas e a vista de Florença — um cenário de conto de fadas.",
-          "coordinates": { "lat": 43.7640, "lng": 11.2497 }
+          "coordinates": {
+            "lat": 43.764,
+            "lng": 11.2497
+          }
         },
         {
           "id": "evt-804-meal",
@@ -1052,7 +1469,12 @@
       "title": "Florença → Paris · Notre-Dame",
       "subtitle": "Da Toscana à Cidade da Luz",
       "summary": "Madrugada de partida — o voo Vueling sai às 07:25, então o aeroporto pede presença às 04:25. Uma manhã de transição entre a beleza da Toscana e a elegância de Paris. A chegada a Orly às 9h deixa a tarde inteira para a primeira imersão na Cidade da Luz — Notre-Dame ressurgida das cinzas e o encanto da Île de la Cité.",
-      "tags": ["chegada", "Notre-Dame", "Île de la Cité", "voo Vueling"],
+      "tags": [
+        "chegada",
+        "Notre-Dame",
+        "Île de la Cité",
+        "voo Vueling"
+      ],
       "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Notre-Dame_de_Paris_2013-07-24.jpg/1920px-Notre-Dame_de_Paris_2013-07-24.jpg",
       "events": [
         {
@@ -1095,8 +1517,34 @@
           "type": "meal",
           "time": "13:30",
           "title": "Almoço leve",
-          "detail": "Brasserie ou café parisiense",
-          "notes": "Primeiro almoço parisiense. Uma brasserie clássica com Croque-Monsieur ou Quiche Lorraine e uma coupe de champagne para celebrar a chegada."
+          "detail": "Île de la Cité · Quartier Latin — primeiras horas em Paris",
+          "notes": "A área ao redor de Notre-Dame tem muitas opções turísticas e caras. Caminhem 5 minutos para o Quartier Latin (margem esquerda) para melhor qualidade e preço.",
+          "restaurants": [
+            {
+              "label": "💰 Econômico",
+              "name": "Crêperie Josselin",
+              "address": "Rue du Montparnasse 67 (15 min a pé pelo boulevard)",
+              "specialty": "Galettes bretonnes salgadas (jambon-fromage, champignons) e crêpes doces com caramelo",
+              "price": "€10–16 pp",
+              "tip": "A melhor crêperie tradicional de Paris. Cidra bretã gelada para acompanhar."
+            },
+            {
+              "label": "🍽️ Tradicional",
+              "name": "Brasserie Balzar",
+              "address": "Rue des Écoles 49 (Quartier Latin)",
+              "specialty": "Steak-frites, sole meunière, choucroute alsaciana, crème brûlée",
+              "price": "€28–40 pp",
+              "tip": "Brasserie parisiense clássica desde 1898. Garçons de avental branco, espelhos art-déco. A Paris que imaginavam encontrar."
+            },
+            {
+              "label": "⭐ Gourmet",
+              "name": "La Tour d'Argent",
+              "address": "Quai de la Tournelle 15 (vista para Notre-Dame)",
+              "specialty": "Canard à la presse (pato numerado — tradição desde 1890), menu degustação histórico",
+              "price": "€180–250 pp",
+              "tip": "Vista direta para Notre-Dame. O restaurante mais histórico de Paris (fundado em 1582). Para uma ocasião verdadeiramente especial — reservar com meses de antecedência."
+            }
+          ]
         },
         {
           "id": "evt-905-visit",
@@ -1108,7 +1556,10 @@
           "notes": "Notre-Dame reabriu ao público em dezembro de 2024, após 5 anos de restauração. A interior está mais bela do que nunca. RESERVAR INGRESSO ONLINE — a procura é enorme após a reabertura.",
           "history": "Construída entre 1163 e 1345, Notre-Dame é o mais célebre exemplo do gótico francês. O incêndio de 15 de abril de 2019 chocou o mundo — a flecha colapsou ao vivo na TV. Cinco anos de restauração resultaram numa catedral renovada, com o orgão histórico (7.800 tubos) totalmente restaurado.",
           "romantic": "Entrar em Notre-Dame restaurada — uma catedral que parecia perdida e ressurgiu — é uma metáfora bela para o amor que resiste ao tempo.",
-          "coordinates": { "lat": 48.8530, "lng": 2.3499 }
+          "coordinates": {
+            "lat": 48.853,
+            "lng": 2.3499
+          }
         },
         {
           "id": "evt-906-walk",
@@ -1118,7 +1569,10 @@
           "detail": "A ilha de origem de Paris",
           "notes": "Caminhem pela Île de la Cité — a ilha onde Paris nasceu. O Pont Neuf (1607, apesar do nome 'novo') é a ponte mais antiga de Paris. Vista para o Sena e para as margens arborizadas.",
           "romantic": "Paris nasceu nessa pequena ilha no meio do Sena. Estar aqui é tocar a origem da cidade.",
-          "coordinates": { "lat": 48.8560, "lng": 2.3460 }
+          "coordinates": {
+            "lat": 48.856,
+            "lng": 2.346
+          }
         },
         {
           "id": "evt-907-meal",
@@ -1138,7 +1592,12 @@
       "title": "Musée d'Orsay e Saint-Vincent-de-Paul",
       "subtitle": "Arte impressionista e devoção sutil",
       "summary": "Manhã no Musée d'Orsay — a maior coleção de arte impressionista do mundo, numa antiga estação de trem. À tarde, um passeio pelo bairro de Saint-Germain e visita à Igreja de São Vicente de Paulo, com seus relicários extraordinários.",
-      "tags": ["museu", "impressionismo", "arte", "devoção"],
+      "tags": [
+        "museu",
+        "impressionismo",
+        "arte",
+        "devoção"
+      ],
       "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Mus%C3%A9e_d%27Orsay%2C_3_November_2014.jpg/1920px-Mus%C3%A9e_d%27Orsay%2C_3_November_2014.jpg",
       "events": [
         {
@@ -1150,15 +1609,44 @@
           "duration": "3h",
           "notes": "O Musée d'Orsay, instalado na magnífica Gare d'Orsay (1900), tem a maior coleção de pintura impressionista do mundo: Monet, Renoir, Degas, Van Gogh, Cézanne, Gauguin. Mais 'humano' e acessível do que o Louvre. Aberto às 9h30.",
           "romantic": "As Nymphéas de Monet, As Pastoras de Millet, A Dança em Moulin de la Galette de Renoir — o impressionismo é a arte de capturar um momento. Como uma fotografia de alma.",
-          "coordinates": { "lat": 48.8600, "lng": 2.3266 }
+          "coordinates": {
+            "lat": 48.86,
+            "lng": 2.3266
+          }
         },
         {
           "id": "evt-1002-meal",
           "type": "meal",
           "time": "13:00",
           "title": "Almoço em Saint-Germain-des-Prés",
-          "detail": "O bairro mais elegante de Paris",
-          "notes": "Saint-Germain é o bairro dos cafés de Sartre e Simone de Beauvoir, das galerias de arte e das livrarias. Café de Flore e Les Deux Magots são os mais famosos (mas cobram pela história). Muitas bistros excelentes nas ruas laterais."
+          "detail": "Saint-Germain-des-Prés — o bairro literário e gastronômico de Paris",
+          "notes": "Saint-Germain concentra alguns dos cafés mais famosos do mundo (Sartre, Beauvoir e Hemingway frequentavam o Café de Flore e Les Deux Magots). É um bairro para comer BEM, não apenas bonito.",
+          "restaurants": [
+            {
+              "label": "💰 Econômico",
+              "name": "Breizh Café",
+              "address": "Rue de l'Odéon 1 (Saint-Germain)",
+              "specialty": "Galettes bretonnas de trigo sarraceno com ingredientes premium (andouille, camembert, cidra Breton)",
+              "price": "€14–22 pp",
+              "tip": "As melhores galettes de Paris. Fila comum — chegar antes do meio-dia ou após as 14h."
+            },
+            {
+              "label": "🍽️ Tradicional",
+              "name": "Café de Flore",
+              "address": "Boulevard Saint-Germain 172",
+              "specialty": "Croque-monsieur, salade Niçoise, oeufs brouillés, crème caramel. Petit déjeuner legendário",
+              "price": "€25–35 pp",
+              "tip": "Frequentado por Sartre, Beauvoir, Picasso e Hemingway. Não é só café — é patrimônio cultural. Sentem-se na varanda."
+            },
+            {
+              "label": "⭐ Gourmet",
+              "name": "Le Comptoir du Relais",
+              "address": "Carrefour de l'Odéon 9",
+              "specialty": "Bistrô moderno do chef Yves Camdeborde — terrines, pied de cochon, côte de boeuf, soufflé",
+              "price": "€40–60 pp (almoço), menu €60+ (jantar)",
+              "tip": "Um dos bistrôs mais aclamados de Paris. Almoço tem cardápio mais informal e acessível. Reservar."
+            }
+          ]
         },
         {
           "id": "evt-1003-visit",
@@ -1170,7 +1658,10 @@
           "notes": "Esta bela igreja neoclássica (1824-1844) guarda um tesouro: o corpo incorrupto de São Vicente de Paulo (1581-1660), fundador das Filhas da Caridade e patrono das obras de caridade. Seu corpo está num relicário riquíssimo atrás do altar.",
           "history": "São Vicente de Paulo nasceu em 1581 na Gasconha e morreu em 1660 em Paris. Fundou as Missões Lazaristas e as Filhas da Caridade — transformou a caridade cristã em organização sistemática. Canonizado em 1737.",
           "romantic": "A visita às relíquias de um dos maiores santos da caridade do mundo é um convite a se perguntar: 'Como podemos amar melhor?'",
-          "coordinates": { "lat": 48.8760, "lng": 2.3497 }
+          "coordinates": {
+            "lat": 48.876,
+            "lng": 2.3497
+          }
         },
         {
           "id": "evt-1004-walk",
@@ -1199,7 +1690,11 @@
       "title": "Disneyland Paris",
       "subtitle": "Um dia de encantamento puro",
       "summary": "Um dia inteiro no Disneyland Paris — uma pausa mágica no meio da peregrinação. Dois adultos que decidem ser crianças por um dia, juntos.",
-      "tags": ["Disneyland", "diversão", "dia especial"],
+      "tags": [
+        "Disneyland",
+        "diversão",
+        "dia especial"
+      ],
       "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Disneyland_Paris_castle.jpg/1920px-Disneyland_Paris_castle.jpg",
       "events": [
         {
@@ -1246,7 +1741,12 @@
       "title": "Bruxelas — Um dia na Bélgica",
       "subtitle": "Grand-Place, chocolates e a catedral",
       "summary": "Uma excursão de um dia à capital da Bélgica — a apenas 1h25 de trem de Paris. Grand-Place, considerada a praça mais bela do mundo, a catedral de São Miguel, gaufres belgas e chocolates para trazer de lembrança.",
-      "tags": ["excursão", "Bruxelas", "Bélgica", "trem"],
+      "tags": [
+        "excursão",
+        "Bruxelas",
+        "Bélgica",
+        "trem"
+      ],
       "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Brussels_Grand_Place_2009.JPG/1920px-Brussels_Grand_Place_2009.JPG",
       "events": [
         {
@@ -1267,7 +1767,10 @@
           "duration": "1h",
           "notes": "A Grand-Place de Bruxelas (séc. XIII-XVII) é Patrimônio da Humanidade pela UNESCO. Rodeada por guildhalls medievais douradas e o Hotel de Ville gótico. Victor Hugo e Baudelaire viveram aqui. No verão, o Tapete de Flores (cada dois anos) cobre a praça.",
           "romantic": "A Grand-Place ao sol da manhã, antes da multidão chegar — uma cena de beleza absoluta.",
-          "coordinates": { "lat": 50.8465, "lng": 4.3528 }
+          "coordinates": {
+            "lat": 50.8465,
+            "lng": 4.3528
+          }
         },
         {
           "id": "evt-1203-visit",
@@ -1288,7 +1791,10 @@
           "duration": "45 min",
           "notes": "Catedral gótica (séc. XIII-XV), dedicada aos padroeiros de Bruxelas: São Miguel Arcanjo e Santa Gudula. Belas vitrais do séc. XVI. A cripta guarda um ossário medieval.",
           "history": "Santa Gudula (650-712) era uma nobre que se levantava às 3h da manhã para rezar Matinas. A lenda diz que Satanás tentava apagar sua lanterna na caminhada para a igreja — ela a reacendia com sua fé.",
-          "coordinates": { "lat": 50.8493, "lng": 4.3601 }
+          "coordinates": {
+            "lat": 50.8493,
+            "lng": 4.3601
+          }
         },
         {
           "id": "evt-1205-visit",
@@ -1305,9 +1811,35 @@
           "type": "meal",
           "time": "13:00",
           "title": "Almoço belga",
-          "detail": "Moules-frites, Waterzooi ou Carbonnade Flamande",
-          "notes": "Pratos típicos belgas: Moules-frites (mexilhões com batatas fritas — as melhores do mundo), Waterzooi (cozido de frango ou peixe em creme), Carbonnade Flamande (carne na cerveja escura). Cerveja belga para acompanhar.",
-          "romantic": "Os mexilhões belgas com cerveja Trappist — uma das experiências gastronômicas mais autênticas da Europa."
+          "detail": "Grand-Place e arredores — coração gastronômico de Bruxelas",
+          "notes": "Bruxelas tem culinária belga excepcional — muito além do chocolate. Moules-frites, stoemp, waterzooi, carbonnade flamande e waffle liégeois são obrigatórios. A rua Rue des Bouchers (próxima à Grand-Place) é turística mas com bons restaurantes.",
+          "romantic": "Os mexilhões belgas com cerveja Trappist — uma das experiências gastronômicas mais autênticas da Europa.",
+          "restaurants": [
+            {
+              "label": "💰 Econômico",
+              "name": "Friterie Tabora",
+              "address": "Rue de Tabora (junto às Galeries Saint-Hubert)",
+              "specialty": "Frites belgas dupla-fritura com stoofvlees (guisado de carne com cerveja) ou andalouse",
+              "price": "€5–8 pp",
+              "tip": "As melhores frites de Bruxelas. Coma com molho andalouse (maionese belga com pimentão) — não ketchup."
+            },
+            {
+              "label": "🍽️ Tradicional",
+              "name": "Chez Léon",
+              "address": "Rue des Bouchers 18 (a 100m da Grand-Place)",
+              "specialty": "Moules-frites (mexilhões em várias marinadas), carbonnade flamande, waterzooi de frango",
+              "price": "€22–35 pp",
+              "tip": "Instituição de Bruxelas desde 1893. Panela de mexilhões para dois — experiência obrigatória na Bélgica."
+            },
+            {
+              "label": "⭐ Gourmet",
+              "name": "La Roue d'Or",
+              "address": "Rue des Chapeliers 26 (Grand-Place)",
+              "specialty": "Cozinha belga elevada — vol-au-vent à la Reine, anguille au vert, lapin à la gueuze (cerveja belga)",
+              "price": "€35–55 pp",
+              "tip": "Arte-nouveau interior. A cerveja gueuze (espontânea, azeda) com coelho braseado é o prato emblemático belga."
+            }
+          ]
         },
         {
           "id": "evt-1207-shopping",
@@ -1336,7 +1868,12 @@
       "title": "Fé em Paris: Rue du Bac, Sacré-Cœur e Torre Eiffel",
       "subtitle": "A Medalha Milagrosa e a Cidade da Luz",
       "summary": "O dia mais espiritual em Paris. De manhã, a Capelinha da Rue du Bac — onde Nossa Senhora apareceu e onde repousa o corpo de Santa Catarina Labouré. Depois, Sacré-Cœur no alto de Montmartre. À tarde, a Torre Eiffel. À noite, jantar de despedida.",
-      "tags": ["Medalha Milagrosa", "Sacré-Cœur", "Torre Eiffel", "jantar de despedida"],
+      "tags": [
+        "Medalha Milagrosa",
+        "Sacré-Cœur",
+        "Torre Eiffel",
+        "jantar de despedida"
+      ],
       "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Tour_Eiffel_Wikimedia_Commons.jpg/1920px-Tour_Eiffel_Wikimedia_Commons.jpg",
       "events": [
         {
@@ -1358,7 +1895,10 @@
           "notes": "A Chapel of Our Lady of the Miraculous Medal (Chapelle Notre-Dame de la Médaille Miraculeuse) é o local das aparições de Nossa Senhora a Santa Catarina Labouré em 1830. O corpo incorrupto da santa está exposto numa urna de vidro ao lado do altar. A Medalha Milagrosa é vendida na loja adjacente.",
           "history": "Entre 1830 e 1831, a jovem noviça Catarina Labouré teve três aparições de Nossa Senhora, que pediu a cunhagem de uma medalha com sua imagem — a chamada Medalha da Imaculada Conceição, ou Milagrosa. Catarina guardou segredo até a morte (1876). Seu corpo, exposto desde 1933, está incorrupto há quase 150 anos.",
           "romantic": "Comprar juntos as Medalhas Milagrosas — um presente para carregarem pelo resto da vida, como memória desta viagem e desta fé.",
-          "coordinates": { "lat": 48.8539, "lng": 2.3235 }
+          "coordinates": {
+            "lat": 48.8539,
+            "lng": 2.3235
+          }
         },
         {
           "id": "evt-1303-visit",
@@ -1370,7 +1910,10 @@
           "notes": "O Sacré-Cœur foi construído como ato de expiação nacional após a guerra Franco-Prussiana (1870-71). A adoração perpétua ao Santíssimo Sacramento é ininterrupta desde 1885 — 24h por dia, 7 dias por semana, há mais de 130 anos. A vista de Paris do topo da escadaria é de tirar o fôlego.",
           "history": "A cúpula branca do Sacré-Cœur domina o horizonte de Paris desde 1914. A diocese se comprometeu a manter adoração perpétua enquanto a basílica existir — um voto cumprido por gerações de religiosas e fiéis.",
           "romantic": "O Sacré-Cœur no alto de Montmartre — vista de Paris aos pés, o coração de Cristo no centro. Sentem nos degraus, contemplem a cidade.",
-          "coordinates": { "lat": 48.8867, "lng": 2.3431 }
+          "coordinates": {
+            "lat": 48.8867,
+            "lng": 2.3431
+          }
         },
         {
           "id": "evt-1304-walk",
@@ -1390,7 +1933,10 @@
           "duration": "2h",
           "notes": "A Torre Eiffel (1889) é o monumento mais visitado do mundo. RESERVAR COM ANTECEDÊNCIA — sem reserva, fila de 2-4h. Recomendação: subir ao 2º andar (fila menor que o topo, mas vista igualmente magnífica). Depois do pôr do sol, os LED piscam por 5 min a cada hora — chegue para ver.",
           "romantic": "A Torre Eiffel ao entardecer — o símbolo de Paris, o símbolo do amor, o símbolo desta viagem.",
-          "coordinates": { "lat": 48.8584, "lng": 2.2945 }
+          "coordinates": {
+            "lat": 48.8584,
+            "lng": 2.2945
+          }
         },
         {
           "id": "evt-1306-meal",
@@ -1410,7 +1956,11 @@
       "title": "Retorno ao Brasil",
       "subtitle": "Levando Paris e a graça de Deus no coração",
       "summary": "O último amanhecer europeu. Uma última xícara de café parisiense. E depois, o voo de volta — carregando não apenas as malas, mas a memória de pedras milenares, arte que transcende o tempo, a fé que une, e o amor que cresceu.",
-      "tags": ["retorno", "voo", "despedida"],
+      "tags": [
+        "retorno",
+        "voo",
+        "despedida"
+      ],
       "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Tour_Eiffel_Wikimedia_Commons.jpg/1920px-Tour_Eiffel_Wikimedia_Commons.jpg",
       "events": [
         {

@@ -445,18 +445,60 @@
 }
 
 .modal-restaurant {
-  font-size: 0.88rem;
-  color: var(--text2);
   padding: var(--s2) 0;
   border-bottom: 1px solid var(--border);
-  line-height: 1.4;
+  line-height: 1.5;
 }
 .modal-restaurant:last-child { border-bottom: none; }
+
+.modal-restaurant-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-terracotta, #C84B31);
+  margin-bottom: 2px;
+}
+
+.modal-restaurant-name {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text1);
+  margin-bottom: 2px;
+}
+
+.modal-restaurant-specialty {
+  font-size: 0.82rem;
+  color: var(--text2);
+  font-style: italic;
+  margin-bottom: 4px;
+}
+
 .modal-restaurant-addr {
   font-size: 0.78rem;
   color: var(--text3);
-  margin-top: 2px;
+  margin-bottom: 4px;
 }
+
+.modal-restaurant-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.modal-restaurant-price {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text2);
+}
+
+.modal-restaurant-tip {
+  font-size: 0.78rem;
+  color: var(--text3);
+  font-style: italic;
+}
+
 .modal-restaurant-note {
   font-size: 0.78rem;
   color: var(--text3);
