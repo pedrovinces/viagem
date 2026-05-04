@@ -255,10 +255,11 @@ function buildEventModal(evt, hotel) {
   }
 
   if (evt.reading) {
+    const readingParas = evt.reading.split(/\n\n+/).map(p => `<p>${p.trim()}</p>`).join('');
     sections.push(`
       <div class="modal-reading">
         <div class="modal-reading-label">📖 Leitura · Para o caminho</div>
-        <p>${evt.reading}</p>
+        ${readingParas}
       </div>`);
   }
 
