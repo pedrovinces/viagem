@@ -1461,90 +1461,124 @@
       "id": "day-08",
       "date": "2026-05-25",
       "city": "florence",
-      "title": "Uffizi, Palazzo Pitti e Boboli",
-      "subtitle": "A grande coleção da humanidade",
-      "summary": "Dia mais tranquilo após a imersão de Assis. A Galleria degli Uffizi — um dos maiores museus do mundo — ocupa a manhã. À tarde, o Palazzo Pitti com os Jardins de Boboli, para um passeio descontraído e romântico entre as fontes e as esculturas.",
+      "title": "Cinque Terre — As Cinco Aldeias da Ligúria",
+      "subtitle": "De trem e barco pelas aldeias mais coloridas da Itália",
+      "summary": "Um dos dias mais especiais da viagem: acordar antes do sol para partir de trem rumo às cinco aldeias de pedra colorida da Ligúria — Levanto, Monterosso, Vernazza, Manarola e Riomaggiore. Passear de barco ao longo da costa, comer focaccia ligure recém-assada, beber vinho das vinhas verticais e mergulhar no mar mediterrâneo em maio.",
       "tags": [
-        "museus",
-        "arte",
-        "jardins",
-        "despedida de Florença"
+        "CINQUE TERRE",
+        "COSTA LÍGURE",
+        "DIA INTEIRO",
+        "BARCO",
+        "STREET FOOD"
       ],
-      "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Uffizi.jpg/800px-Uffizi.jpg",
+      "hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Vernazza_Cinque_Terre.jpg/800px-Vernazza_Cinque_Terre.jpg",
       "events": [
         {
-          "id": "evt-801-visit",
-          "type": "museum",
-          "time": "09:00",
-          "title": "Galleria degli Uffizi",
-          "detail": "RESERVAR INGRESSO ONLINE — obrigatório",
-          "duration": "2-3h",
-          "notes": "Os Uffizi contêm a mais importante coleção de arte do Renascimento. Destaques: Botticelli (A Primavera e o Nascimento de Vênus), Leonardo da Vinci, Michelangelo, Rafael, Tiziano, Caravaggio. COMPRAR ONLINE — sem reserva, fila de 2-4h.",
-          "romantic": "Ver ao vivo o Nascimento de Vênus de Botticelli — uma das pinturas mais belas da humanidade — ao lado de quem amamos.",
-          "coordinates": {
-            "lat": 43.7678,
-            "lng": 11.2556
-          },
-          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Uffizi.jpg/330px-Uffizi.jpg"
-        },
-        {
-          "id": "evt-802-meal",
-          "type": "meal",
-          "time": "13:00",
-          "title": "Almoço às margens do Arno",
-          "detail": "Lungarno Acciaiuoli — beira do Arno, a passos dos Uffizi",
-          "notes": "Os restaurantes junto ao Arno têm vistas extraordinárias. Após os Uffizi, a zona de Ponte Vecchio concentra opções para todos os bolsos.",
-          "romantic": "Almoçar com o Arno brilhando à luz do meio-dia e a Ponte Vecchio ao fundo — Florença sendo generosa.",
-          "restaurants": [
+          "id": "evt-801-transfer",
+          "type": "walk",
+          "time": "06:30",
+          "title": "Walk até Santa Maria Novella (Ponto de Encontro)",
+          "detail": "Salone Biglietti — Sightseeing Experience Visitor Center dentro da estação SMN",
+          "steps": [
             {
-              "label": "💰 Econômico",
-              "name": "Ino — Gastronomia e Cucina",
-              "address": "Via dei Georgofili 3r (saída lateral dos Uffizi)",
-              "specialty": "Panini gourmet com ingredientes toscanos — lardo di Colonnata, pecorino, finocchiona",
-              "price": "€8–12 pp",
-              "tip": "Literalmente a 30 metros da saída dos Uffizi. Almoço rápido mas de qualidade excepcional."
+              "icon": "⏰",
+              "text": "Acordar às 06:00 — dia longo pela frente"
             },
             {
-              "label": "🍽️ Tradicional",
-              "name": "Buca dell'Orafo",
-              "address": "Vicolo de' Girolami 28 (junto a Ponte Vecchio)",
-              "specialty": "Bistecca fiorentina, ribollita, pappa al pomodoro, fegatini di pollo alla Toscana",
-              "price": "€30–45 pp",
-              "tip": "Clássico florentino desde 1947. Vista para o Arno. Frequentado por Zeffirelli e outros artistas."
+              "icon": "🚶",
+              "text": "5 min a pé do hotel até a Estação Santa Maria Novella"
             },
             {
-              "label": "⭐ Gourmet",
-              "name": "Ora d'Aria",
-              "address": "Via dei Georgofili 11r (Uffizi)",
-              "specialty": "Menu degustação toscano contemporâneo — 1 estrela Michelin. Releitura da bistecca e do cinghiale",
-              "price": "€75–110 pp",
-              "tip": "O melhor restaurante perto dos Uffizi. Marco Stabile no comando. Reserva obrigatória com semanas de antecedência."
+              "icon": "📍",
+              "text": "Procurar 'Sightseeing Experience Visitor Center' no Salone Biglietti"
+            },
+            {
+              "icon": "✅",
+              "text": "Chegar às 06:30 (20 min antes da partida às 06:50)"
             }
           ]
         },
         {
-          "id": "evt-803-visit",
+          "id": "evt-802-tour",
           "type": "visit",
-          "time": "15:00",
-          "title": "Palazzo Pitti e Jardins de Boboli",
-          "detail": "Palácio dos Médici e jardins renascentistas",
-          "duration": "2h",
-          "notes": "O Palazzo Pitti foi a residência dos Médici e depois dos reis da Itália. Os Jardins de Boboli (1549) são um dos mais belos exemplos de jardim italiano do mundo — terraços, grutas artificiais, estátuas, fontes e vistas da cidade. Ótimo para um passeio lento ao entardecer.",
-          "romantic": "Os Jardins de Boboli ao fim da tarde, com a luz dourada sobre as estátuas e a vista de Florença — um cenário de conto de fadas.",
-          "coordinates": {
-            "lat": 43.764,
-            "lng": 11.2497
+          "time": "06:50",
+          "title": "Cinque Terre — Tour de Dia Inteiro",
+          "detail": "Sightseeing Experience · Ref. 207-16101982 · Inglês · 13 horas",
+          "notes": "O tour começa com transfer de ônibus de Florença até Levanto (~2,5h), a aldeia de entrada das Cinque Terre, de onde começa a aventura de trem saltando de vila em vila.\n\n🏘️ AS CINCO ALDEIAS:\n• Levanto — ponto de entrada, praia extensa, menos turística\n• Monterosso al Mare — a maior, com praia de areia, limonadas e anchovas\n• Vernazza — a mais fotogênica, porto natural semicircular com casas coloridas empilhadas\n• Manarola — vinhas em terraços verticais, Nessun Dorma com vista inesquecível\n• Riomaggiore — a mais ao sul, ruelas íngremes e o símbolo das Cinque Terre\n\n⛵ BARCO PANORÂMICO: passeio ao longo da costa com vista de todas as aldeias pelo mar — as fotografias mais bonitas da viagem.\n\n🍕 STREET FOOD INCLUÍDO: focaccia ligure tradicional (assada em forno a lenha) + gelato caseiro com ingredientes locais.\n\n⚠️ PONTUALIDADE CRÍTICA: zero tolerância a atraso em qualquer ponto do tour. Nenhum reembolso por chegada tardia. Não há tempo de espera para clientes atrasados.",
+          "booking": {
+            "operator": "Sightseeing Experience (SIGHTSEEING EXPERIENCE S.R.L.)",
+            "reference": "207-16101982",
+            "internal_code": "EXP-DEF-20260504195450-WOTOYQ",
+            "external_order": "ABI-1171459",
+            "option": "Tour com transporte, ingresso e comida de rua (Inglês)",
+            "language": "Inglês (guia multilíngue)",
+            "date": "25/05/2026",
+            "time": "06:50",
+            "duration": "13 horas (retorno ~19:50)",
+            "meeting_point": "Sightseeing Experience Visitor Center · Salone Biglietti · Estação Santa Maria Novella, Florença",
+            "meeting_time": "06:30 (20 min antes da partida)",
+            "end_point": "Santa Maria Novella — mesmo ponto de partida",
+            "phone_emergency": "+39 055 961237 / +39 324 811 4807",
+            "voucher_type": "Impresso ou eletrônico — mostrar na tela do celular",
+            "includes": "Ônibus com host multilíngue, Wi-Fi no ônibus, passagens de trem entre as aldeias, ferry boat panorâmico pela costa, degustação de street food (focaccia ligure + gelato caseiro)",
+            "not_includes": "Transfer de/para o hotel",
+            "mandatory": "PONTUALIDADE ABSOLUTA em cada ponto do tour. Nenhum reembolso por atraso. Não há tempo de espera.",
+            "cancellation": "Cancelamento gratuito até 24/05/2026. Após: R$ 1.772,02",
+            "passengers": [
+              {
+                "name": "Pedro Pereira",
+                "dob": "20/10/1987"
+              },
+              {
+                "name": "Clarice Ribeiro",
+                "dob": "04/07/1986"
+              }
+            ]
           },
-          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Palazzo_Pitti_September_2015-1.jpg/330px-Palazzo_Pitti_September_2015-1.jpg"
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Vernazza_Cinque_Terre.jpg/330px-Vernazza_Cinque_Terre.jpg"
         },
         {
-          "id": "evt-804-meal",
-          "type": "restaurant",
-          "time": "20:30",
-          "title": "Jantar de despedida de Florença",
-          "detail": "Um jantar especial — com vinho toscano",
-          "notes": "Última noite em Florença. Escolham um restaurante especial. Sugestão: Buca Mario (Via dello Studio 27 — o mais antigo de Florença, 1886), ou qualquer trattoria no Oltrarno. Vinho: Chianti Classico ou Brunello di Montalcino.",
-          "romantic": "Uma taça de Brunello de despedida. Florença foi generosa — carregam agora uma cidade no coração."
+          "id": "evt-803-meal",
+          "type": "meal",
+          "time": "12:00",
+          "title": "Almoço Livre nas Aldeias (tempo livre do tour)",
+          "detail": "Vernazza ou Monterosso — as melhores opções gastronômicas das Cinque Terre",
+          "notes": "O tour tem paradas com tempo livre em cada aldeia. Aproveitem a parada em Vernazza ou Monterosso para almoçar. O street food (focaccia + gelato) já está incluso no tour — o almoço é por conta própria.",
+          "restaurants": [
+            {
+              "label": "💰 Econômico",
+              "name": "Focacceria / Baracchina (Monterosso)",
+              "address": "Qualquer barraca nas ruelas de Monterosso al Mare",
+              "specialty": "Trofie al pesto genovese (R$ 8–10), farinata di ceci, focaccia con formaggio",
+              "price": "€8–12 pp",
+              "tip": "O pesto genovese das Cinque Terre é diferente de qualquer outro — feito com manjericão local cultivado nas encostas. Peçam as trofie (massa espiral ligure) ao pesto."
+            },
+            {
+              "label": "🍽️ Tradicional",
+              "name": "Ristorante Belvedere",
+              "address": "Via Fegina 38, Monterosso al Mare (beira-mar)",
+              "specialty": "Frutos do mar ligures — anchovas em conserva, seppie (lulas), branzino grelhado, vinho Sciacchetrà",
+              "price": "€28–40 pp",
+              "tip": "As anchovas de Monterosso são as mais famosas da Itália. Peçam as acciughe al limone (anchovas frescas com limão) como entrada."
+            },
+            {
+              "label": "⭐ Gourmet",
+              "name": "Ristorante Belforte",
+              "address": "Via Guidoni 42, Vernazza (torre medieval com vista para o porto)",
+              "specialty": "Menu degustação ligure — polvo, gamberi, scampi, linguine al nero di seppia. Mesa na torre",
+              "price": "€50–70 pp",
+              "tip": "A mesa na torre medieval de Vernazza é uma das mais românticas da Itália. Vista de 360° para o porto e o Mediterrâneo. RESERVAR com muitos dias de antecedência."
+            }
+          ]
+        },
+        {
+          "id": "evt-804-return",
+          "type": "transfer",
+          "time": "19:50",
+          "title": "Retorno a Florença — Santa Maria Novella",
+          "detail": "Ônibus de Levanto → Florença SMN · Chegada ~19:50",
+          "notes": "Após o retorno a SMN, o dia já terá sido longo (13h). Jantar leve perto do hotel ou delivery — guardem energia para a partida de amanhã para Paris (09:00 de 26/05). Preparar as malas esta noite.",
+          "romantic": "Voltarão com os pés cansados, a pele com cheiro de mar e os olhos cheios de cores que não existem em mais nenhum lugar do mundo. As Cinque Terre ficam para sempre."
         }
       ]
     },
