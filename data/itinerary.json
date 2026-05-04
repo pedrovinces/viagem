@@ -1918,6 +1918,38 @@
           "notes": "Reserva 72070250949103 · Quarto conforto · Tel: +33 (1) 88 40 16 00. Taxa municipal: €5,53/pessoa/noite (paga na propriedade). Recepção aberta até meia-noite."
         },
         {
+          "id": "day9-hotel-to-centre",
+          "time": "12:30",
+          "type": "transfer",
+          "title": "Hotel → Quartier Latin · Notre-Dame · Île de la Cité",
+          "detail": "Rue Riquet (18º) → Saint-Michel (5º) · ~35 min",
+          "notes": "Este transfer leva vocês ao coração histórico de Paris. Daqui, todas as atrações do dia ficam a menos de 10 min a pé: almoço, Notre-Dame, Île de la Cité e Pont Neuf.",
+          "steps": [
+            {
+              "desc": "🚶 Caminhar 2 min da Rue Riquet até a estação de metrô Riquet (Linha 7) — literalmente ao lado do hotel",
+              "duration": "~2 min"
+            },
+            {
+              "desc": "🚇 Metrô Linha 7 (dir. Villejuif-Louis Aragon) → Châtelet (10 paradas: Stalingrad, Jaurès, Colonel Fabien, Belleville, Goncourt, République, Temple, Arts et Métiers, Rambuteau, Châtelet)",
+              "duration": "~18 min",
+              "price": "€2,15/pp (bilhete t+)"
+            },
+            {
+              "desc": "🔄 Baldeação em Châtelet: seguir sinalizações para Linha 4 (dir. Montrouge) → Saint-Michel – Notre-Dame (2 paradas: Cité, Saint-Michel)",
+              "duration": "~7 min (incluindo caminhada na baldeação)"
+            },
+            {
+              "desc": "🚶 Saída 'Boulevard Saint-Michel / Quai Saint-Michel': 3 min a pé até o Quartier Latin. Notre-Dame fica a mais 4 min caminhando pela margem do Sena.",
+              "duration": "~3 min"
+            }
+          ],
+          "tips": "Um único bilhete t+ (€2,15/pp) cobre toda a viagem Metrô 7 + Linha 4. Comprar 2 bilhetes na máquina da estação Riquet antes de embarcar. Após o almoço, Notre-Dame, Île de la Cité e Pont Neuf ficam todos a poucos minutos a pé — não será necessário mais transporte até o jantar.",
+          "coordinates": {
+            "lat": 48.8532,
+            "lng": 2.3467
+          }
+        },
+        {
           "id": "evt-904-meal",
           "type": "meal",
           "time": "13:30",
@@ -1965,7 +1997,8 @@
             "lat": 48.853,
             "lng": 2.3499
           },
-          "photo": "./assets/images/events/evt_notre_dame.jpg"
+          "photo": "./assets/images/events/evt_notre_dame.jpg",
+          "transit": "🚶 5 min a pé do Quartier Latin: seguir o Quai Saint-Michel em direção à Île de la Cité. Notre-Dame avista-se ao longe — impossível perder."
         },
         {
           "id": "evt-906-walk",
@@ -1978,7 +2011,8 @@
           "coordinates": {
             "lat": 48.856,
             "lng": 2.346
-          }
+          },
+          "transit": "🚶 Saindo de Notre-Dame: virar à esquerda pela Rue du Cloître Notre-Dame, depois Rue de la Cité → Square du Vert-Galant (extremidade ocidental da ilha) → Pont Neuf à vista. ~6 min a pé. Pont Neuf fica na ponta da ilha — vista panorâmica para o Sena nos dois sentidos."
         },
         {
           "id": "evt-907-meal",
@@ -2032,6 +2066,33 @@
       ],
       "hero": "./assets/images/heroes/day10_orsay.jpg",
       "events": [
+        {
+          "id": "day10-orsay-transfer",
+          "time": "08:45",
+          "type": "metro",
+          "title": "Hotel → Musée d'Orsay",
+          "detail": "Rue Riquet → Estação Musée d'Orsay · ~35 min",
+          "steps": [
+            {
+              "desc": "🚶 Caminhar da Rue Riquet até a estação Stalingrad (Metrô Linhas 2, 5 e 7)",
+              "duration": "8 min"
+            },
+            {
+              "desc": "🚇 Metrô Linha 7 (dir. Villejuif-Louis Aragon) → Châtelet (10 paradas)",
+              "duration": "~18 min",
+              "price": "€2,15/pp (bilhete t+)"
+            },
+            {
+              "desc": "🚆 RER C (dir. Versailles-Rive-Gauche) → estação Musée d'Orsay (2 paradas)",
+              "duration": "~8 min"
+            },
+            {
+              "desc": "🏛️ Saída do RER: a entrada do museu fica a 1 min a pé (Quai Anatole France)",
+              "duration": "1 min"
+            }
+          ],
+          "tips": "Comprar o bilhete t+ na máquina de Stalingrad — o mesmo bilhete cobre Metrô + RER C dentro de Paris (zonas 1–2). Chegar às 09h25 para entrar na abertura e evitar fila."
+        },
         {
           "id": "evt-1001-visit",
           "type": "museum",

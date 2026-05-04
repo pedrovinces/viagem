@@ -1,4 +1,4 @@
-const CACHE = 'nossa-viagem-v15';
+const CACHE = 'nossa-viagem-v16';
 
 const PRECACHE = [
   './',
