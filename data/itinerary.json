@@ -351,10 +351,10 @@
         {
           "id": "evt-201-metro",
           "type": "metro",
-          "time": "09:00",
+          "time": "07:15",
           "title": "Hotel → Coliseu (Metrô)",
-          "detail": "Linha A → Termini → Linha B → Colosseo",
-          "notes": "Do Airbnb, Metrô Linha A (dir. Anagnina) até Termini (4 paradas). Trocar para Linha B (dir. Laurentina) até Colosseo (1 parada). €1,50/pp.",
+          "detail": "Linha A → Termini → Linha B → Colosseo · Chegar às 08:00",
+          "notes": "Sair do Airbnb às 07:15 para chegar no ponto de encontro às 08:00 (15 min antes do tour das 08:15). Metrô Linha A (dir. Anagnina) até Termini (4 paradas). Trocar para Linha B (dir. Laurentina) até Colosseo (1 parada). €1,50/pp.",
           "steps": [
             { "label": "Lepanto (Linha A)", "icon": "🚇", "detail": "Dir. Anagnina · 4 paradas até Termini" },
             { "label": "Termini", "icon": "🔄", "detail": "Trocar para Linha B · dir. Laurentina" },
@@ -364,14 +364,89 @@
         {
           "id": "evt-202-visit",
           "type": "visit",
-          "time": "09:30",
+          "time": "08:15",
           "title": "Coliseu, Fórum Romano e Monte Palatino",
-          "detail": "Ingresso combinado — reservar online",
-          "duration": "3-4h",
-          "notes": "O ingresso combinado (Coliseu + Fórum + Palatino) é fortemente recomendado — comprar online evita filas. Contratar guia de áudio ou guia presencial para aproveitar melhor.",
-          "romantic": "Imaginem os gladiadores, os aplausos de 50.000 romanos. Dois séculos de história sob seus pés.",
+          "detail": "Tour a pé guiado (inglês) — Carrani Tours · Ref. 207-16099874",
+          "duration": "3h",
+          "booking": {
+            "operator": "Carrani Tours",
+            "reference": "207-16099874",
+            "external_order": "ABI-1171151",
+            "phone": "+39 064 742 501 (6h30–20h)",
+            "whatsapp": "+39 348 811 20 27 (apenas WhatsApp)",
+            "language": "Inglês",
+            "meeting_point": "Via delle Terme di Tito & Via Nicola Salvi, 00184, Roma (em frente ao Coliseu)",
+            "meeting_time": "08:00 (chegar 15 min antes)",
+            "departure_time": "08:15",
+            "voucher_type": "Eletrônico ou impresso — mostrar na tela do celular",
+            "includes": "Guia profissional, Entrada para o Coliseu, Fórum Romano e Monte Palatino",
+            "not_includes": "Transfer de/para o hotel",
+            "bring": "Documento de identidade ORIGINAL com foto (obrigatório — cópias/fotos não aceitas). Sapatos confortáveis. Bolsas grandes não permitidas.",
+            "cancellation": "Sem possibilidade de reagendamento. Atraso = sem reembolso.",
+            "passengers": [
+              { "name": "Pedro Pereira", "dob": "20/10/1987" },
+              { "name": "Clarice Ribeiro", "dob": "04/07/1986" }
+            ]
+          },
+          "notes": "⚠️ CHEGAR ÀS 08:00 — ponto de encontro: Via delle Terme di Tito & Via Nicola Salvi (em frente ao Coliseu). Saída pontual às 08:15 — atraso = sem entrada e sem reembolso. Guia em inglês incluído. Voucher eletrônico: mostrar na tela do celular. Levar DOCUMENTO ORIGINAL com foto (passaporte ou RG) — cópias não aceitas. Sem bolsas grandes.",
+          "romantic": "Caminhar pelo mesmo chão que Júlio César, Marco Aurélio e São Paulo pisaram — com 2.000 anos de história ao redor e a pessoa que você ama ao lado — é uma das experiências mais profundas que a vida oferece.",
           "history": "Inaugurado em 80 d.C. pelo imperador Tito, o Coliseu (Anfiteatro Flaviano) comportava até 80.000 espectadores. Já o Fórum Romano foi o centro político, religioso e comercial da Roma antiga por mais de 1.000 anos.",
-          "tips": "O Monte Palatino oferece uma vista deslumbrante do Fórum. Levem água — não há fontes no percurso.",
+          "tips": "Levem água (não há fontes no percurso). Chapéu e protetor solar — área aberta e quente em maio. O melhor ângulo do Coliseu por fora é a esquina sul, com o Arco de Constantino.",
+          "guide": {
+            "intro": "Este roteiro cobre o maior complexo arqueológico do mundo ocidental. Sigam a sequência abaixo com o livro-guia — cada ponto tem uma história que vale a parada.",
+            "stops": [
+              {
+                "order": 1,
+                "name": "Coliseu — Fachada Externa",
+                "coordinates": { "lat": 41.8902, "lng": 12.4922 },
+                "duration": "15 min",
+                "what_to_see": "Observem as três ordens arquitetônicas sobrepostas: dórica (térreo), jônica (1º andar) e coríntia (2º andar) — uma lição de arquitetura romana em pedra. Os buracos na fachada mostram onde estavam as braçadeiras de bronze retiradas na Idade Média para outros usos.",
+                "history": "A construção durou apenas 10 anos (70–80 d.C.) por ordem dos imperadores Vespasiano e Tito. O nome 'Coliseu' vem do Colosso de Nero — uma estátua gigante que ficava ao lado e foi destruída. O nome oficial é Anfiteatro Flaviano."
+              },
+              {
+                "order": 2,
+                "name": "Coliseu — Interior (Arena e Hipogeu)",
+                "coordinates": { "lat": 41.8902, "lng": 12.4924 },
+                "duration": "45 min",
+                "what_to_see": "O piso da arena foi removido — hoje veem-se os túneis do hipogeu (subsolo) onde ficavam gladiadores, animais e maquinário cênico. Procurem a Cruz no centro: marca o local sacralizado pela morte de mártires cristãos. As arquibancadas (cavea) tinham uma hierarquia rígida: senadores na frente, plebeus no alto.",
+                "history": "Os jogos (ludi) duravam até 100 dias seguidos. Em um único dia de inauguração, 9.000 animais foram mortos. Os gladiadores vencedores raramente eram mortos — eram caros e populares. O 'polegar para baixo' é mito do cinema: o sinal de morte era a mão fechada.",
+                "tips": "Subam ao 3º nível se disponível — a vista aérea da arena e do Fórum Romano ao fundo é incomparável."
+              },
+              {
+                "order": 3,
+                "name": "Arco de Constantino",
+                "coordinates": { "lat": 41.8896, "lng": 12.4908 },
+                "duration": "10 min",
+                "what_to_see": "O maior arco triunfal de Roma (21m de altura), erguido em 315 d.C. para celebrar a vitória de Constantino na Batalha da Ponte Mílvia. Observem os relevos: os do centro são os mais antigos (reaproveitados de outros monumentos) e os frisos superiores são os próprios de Constantino — a diferença de estilo é notável.",
+                "history": "Constantino ganhou a batalha em 312 d.C. — logo depois tornou-se o primeiro imperador a se converter ao Cristianismo. O Edito de Milão (313 d.C.) garantiu liberdade religiosa em todo o Império. Este arco marca a virada: o fim da perseguição aos cristãos."
+              },
+              {
+                "order": 4,
+                "name": "Via Sacra — Entrada do Fórum",
+                "coordinates": { "lat": 41.8921, "lng": 12.4875 },
+                "duration": "10 min",
+                "what_to_see": "A Via Sacra era a rua mais importante da Roma antiga — por aqui passavam os desfiles triunfais dos generais vitoriosos. Está calçada com pedras originais de 2.000 anos. O Arco de Tito (81 d.C.) no alto marca a entrada: dentro dele, um relevo mostra os soldados romanos carregando a Menorá roubada do Templo de Jerusalém após a destruição em 70 d.C.",
+                "history": "O Arco de Tito foi o modelo para o Arco do Triunfo de Paris. A cena da Menorá faz deste arco o único monumento do mundo que retrata diretamente a destruição do Segundo Templo — um dos eventos mais marcantes da história bíblica."
+              },
+              {
+                "order": 5,
+                "name": "Fórum Romano — Centro",
+                "coordinates": { "lat": 41.8925, "lng": 12.4853 },
+                "duration": "45 min",
+                "what_to_see": "Os pontos essenciais: (a) Templo de Vesta — onde as Vestais mantinham o fogo eterno de Roma. (b) Casa das Vestais — as sacerdotisas que guardavam o fogo; viviam aqui em clausura, com imensos privilégios. (c) Templo de Saturno (8 colunas ainda de pé) — o mais antigo do Fórum, séc. V a.C. (d) Rôstra — o pódio de discursos, decorado com proas de navios capturados; aqui Cícero discursou e a cabeça de Júlio César foi exposta após o assassinato.",
+                "history": "O Fórum foi o coração de Roma por mais de 1.000 anos. Foi esvaziado na Idade Média — chamado 'Campo Vaccino' (campo de vacas) — e as escavações sistemáticas só começaram no século XIX. Muito ainda está enterrado sob o nível atual.",
+                "tips": "Parem alguns minutos e fechem os olhos: onde hoje são ruínas havia templos dourados, multidões barulhentas, mercadores, senadores de toga. A imaginação é o melhor guia aqui."
+              },
+              {
+                "order": 6,
+                "name": "Monte Palatino",
+                "coordinates": { "lat": 41.8893, "lng": 12.4887 },
+                "duration": "45 min",
+                "what_to_see": "Subam até o topo para a melhor vista do Fórum Romano e do Circo Máximo. Procurem: (a) Casa de Augusto e de Lívia — com afrescos originais preservados (séc. I a.C.); (b) Estádio Palatino — jardim em forma de estádio dos palácios imperiais; (c) Vista sobre o Circo Máximo — onde corriam até 250.000 espectadores nas corridas de bigas.",
+                "history": "O Palatino é a mais nobre das sete colinas — onde segundo a lenda Rômulo fundou Roma em 753 a.C. e onde todos os imperadores tiveram seus palácios. A palavra 'palácio' vem de Palatino. Os jardins Farnesini (séc. XVI) cobrem parte dos palácios imperiais."
+              }
+            ]
+          },
           "coordinates": { "lat": 41.8902, "lng": 12.4922 }
         },
         {
