@@ -362,29 +362,46 @@
           "name": "Basílica de São Francisco de Assis",
           "type": "⛪ Fé & Arte",
           "description": "Um dos maiores santuários do mundo cristão — a tumba do Poverello, com os afrescos de Giotto que fundaram a pintura ocidental.",
-          "long_description": "A Basílica de São Francisco de Assis é, junto com São Pedro no Vaticano, um dos destinos de peregrinação mais importantes do catolicismo. Construída logo após a morte de Francisco (1226), é na verdade composta de duas igrejas sobrepostas: a Igreja Inferior (mais antiga, escura e contemplativa) e a Igreja Superior (luminosa, gótica, coberta pelos afrescos de Giotto). Os 28 afrescos de Giotto na Igreja Superior (c.1295–1300) narram a vida de Francisco e são considerados o marco fundador da pintura ocidental moderna — antes de Giotto, os personagens eram figuras planas e hieráticas; Giotto deu a eles emoção, peso e humanidade. A Igreja Inferior abriga a tumba de Francisco na cripta — o momento de maior comoção espiritual de toda Assis. As paredes da Igreja Inferior têm afrescos de Cimabue e Simone Martini. Todo o conjunto é Patrimônio da Humanidade pela UNESCO desde 2000.",
+          "long_description": "A Basílica de São Francisco é composta de duas igrejas sobrepostas, construídas entre 1228 e 1253 sobre a colina chamada Collis Inferni (Colina do Inferno) — que Francisco pediu para ser chamada Collis Paradisi (Colina do Paraíso). A BASÍLICA SUPERIOR é luminosa e gótica: os 28 afrescos de Giotto (c.1295–1300) narram a vida de Francisco em sequência ao longo das duas naves laterais e da nave central. Antes de Giotto, a pintura medieval representava figuras hieráticas e planas; Giotto introduziu expressão, peso e humanidade — inaugurando o caminho que levaria ao Renascimento. Não perca: afresco nº 6 (Francisco diante do Sultão al-Kamil, Egito, 1219 — um dos primeiros diálogos inter-religiosos da história), nº 15 (Francisco pregando às aves) e nº 19 (Francisco recebendo os estigmas no Monte La Verna). A BASÍLICA INFERIOR é mais antiga, íntima e escura — iluminada por velas. Afrescos de Cimabue (mestre de Giotto), Simone Martini e Pietro Lorenzetti cobrem as capelas. A CRIPTA, descoberta em 1818, está abaixo do altar-mor: a tumba de Francisco em pedra nua, cercada pelos caixões de seus quatro companheiros mais próximos (Frei Leão, Frei Ângelo, Frei Masseo e Frei Rufino). Francisco foi canonizado apenas dois anos após a morte — rapidez excepcional. O TAU (a letra T em forma de cruz) era seu símbolo predileto, visto por toda Assis: ele o desenhava nas cartas e o carregava como assinatura espiritual. Todo o complexo — basílica, convento, sacristia e tesouro — é Patrimônio da Humanidade pela UNESCO desde 2000.",
+          "curiosities": [
+            "Francisco nunca foi padre ordenado — era diácono. Sua humildade o impedia de aceitar o sacerdócio.",
+            "Em 1219, Francisco viajou ao Egito e se encontrou pessoalmente com o Sultão Malik al-Kamil — durante as Cruzadas. O sultão o recebeu com cortesia e Francisco saiu sem ser preso. Um episódio sem igual na história medieval.",
+            "O 'Cântico das Criaturas' (1225), composto por Francisco quando estava quase cego, é o primeiro poema de vulto escrito em língua italiana — antes mesmo de Dante.",
+            "Francisco pediu para ser enterrado na Colina do Inferno — o lugar onde os criminosos eram executados — como ato final de humildade.",
+            "A Missa Dominical das 12h é celebrada pelos frades do Sacro Convento na basílica todos os domingos. Em ocasiões especiais, pode haver celebração em português — perguntar na portaria do convento."
+          ],
           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Assisi_San_Francesco_BW_2.JPG/330px-Assisi_San_Francesco_BW_2.JPG",
           "photos": [
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Assisi_San_Francesco_BW_2.JPG/330px-Assisi_San_Francesco_BW_2.JPG",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Assisi_San_Francesco_BW_2.JPG/330px-Assisi_San_Francesco_BW_2.JPG"
           ],
-          "hours": "Igreja Inferior e Cripta: 6h–18h. Igreja Superior: 8h30–18h",
-          "price": "Gratuito (área sagrada — silêncio e vestimenta adequada obrigatórios)",
+          "hours": "Basílica Inferior e Cripta: 6h–18h. Basílica Superior: 8h30–18h. Missa Dominical: 12h",
+          "price": "Gratuito — silêncio e vestimenta modesta obrigatórios (joelhos e ombros cobertos)",
           "duration": "1,5–2 horas",
           "address": "Piazza Inferiore di San Francesco, Assisi",
           "must_book": false,
-          "tips": "Vista modesta obrigatória — joelhos e ombros cobertos. Baixe a voz ao entrar na cripta — é uma área de oração. Chegue cedo (8h30) para ver a Igreja Superior com menos pessoas. Os guias de áudio em português estão disponíveis na entrada.",
-          "romantic": "Ajoelhar juntos na cripta diante do túmulo de São Francisco — o santo da paz e da pobreza voluntária — é um ato de fé e amor que transcende as palavras.",
+          "tips": "Entre sempre pela Basílica Inferior (acesso direto à cripta). Suba depois à Superior pelos corredores internos. Guia de áudio em português disponível na entrada (€5). Missa Dominical das 12h é aberta a todos — chegar às 11h45 para garantir lugar.",
+          "romantic": "Ajoelhar juntos na cripta de pedra onde repousa Francisco — o homem que escolheu nada possuir para poder tudo amar — é um dos momentos mais densos de fé e silêncio que qualquer peregrinação pode oferecer.",
+          "transport": "Subindo a Via San Francesco a partir da Piazza del Comune (10 min a pé). Da Basílica de Santa Clara: siga Via San Francesco para baixo, ~10 min. Da Piazza Matteotti: desça pela Via Fortini, ~12 min.",
           "coordinates": {
             "lat": 43.0742,
             "lng": 12.6055
           }
         },
         {
-          "name": "Santuário della Spogliazione — Carlo Acutis",
+          "name": "Santuário della Spogliazione — São Carlo Acutis",
           "type": "✨ Peregrinação",
-          "description": "O corpo de Carlo Acutis, canonizado em 2025 — o primeiro santo da era digital, com 15 anos, que passou à juventude toda a beleza da Eucaristia.",
-          "long_description": "Carlo Acutis nasceu em Londres em 1991, filho de italianos, e morreu em Milão em 2006, de leucemia fulminante, com apenas 15 anos. Era um adolescente normal — gostava de videogames, computação e futebol — mas tinha uma devoção extraordinária à Eucaristia e uma alegria contagiante. Usou suas habilidades em programação para criar um site catalogando 136 milagres eucarísticos em todo o mundo, dizendo: 'A Eucaristia é minha autoestrada para o Céu'. Foi beatificado em 2020 e canonizado pelo Papa Francisco em 27 de abril de 2025 — o primeiro santo nascido no século XX, primeiro da era digital. Seu corpo, preservado e vestido com jeans e tênis Nike (sua roupa de todo dia), está exposto para veneração no Santuário della Spogliazione (o local onde Francisco se despiu das roupas do pai para entregar-se a Deus). A devoção ao novo santo já atrai multidões de jovens de todo o mundo.",
+          "description": "O corpo do primeiro santo da era digital, canonizado em 2025 — um adolescente de 15 anos que usou a internet para evangelizar e a Eucaristia como bússola da vida.",
+          "long_description": "O Santuário della Spogliazione ocupa o lugar onde São Francisco, por volta de 1206, tirou as roupas diante do Bispo de Assis, devolveu tudo ao pai e declarou: 'De agora em diante só direi: Pai Nosso que estais nos Céus.' Foi o gesto de conversão radical que mudou a história do catolicismo. Hoje, este mesmo espaço abriga o corpo de Carlo Acutis — escolha que os frades fizeram deliberadamente: o lugar da spogliazione (despojamento) de Francisco acolhe o jovem que despojou o século digital de sua vaidade para colocá-lo a serviço de Deus. Carlo nasceu em Londres em 1991, filho de Antônio Acutis e Antônia Salzano, italianos. Cresceu em Milão. Era um adolescente completamente normal: apaixonado por videogames (Halo e Street Fighter), futebol (torcedor do Juventus), computação e animais — especialmente seu cachorro Briciola. Mas ia à Missa todos os dias desde os 7 anos, se confessava semanalmente e passava horas em adoração eucarística. Usou suas habilidades de programação para criar o site miracolieucaristici.org — catalogando 136 milagres eucarísticos documentados em 8 países, com fotos e fichas completas. Dizia: 'A Eucaristia é minha autoestrada para o Céu.' Em outubro de 2006, foi diagnosticado com leucemia fulminante. Ofereceu seu sofrimento 'ao Papa e à Igreja'. Morreu em 12 de outubro de 2006, com 15 anos, 1 mês e 12 dias. Pediu para ser enterrado em Assis. Seu corpo repousa numa urna de cristal iluminada, vestido com as roupas de todo dia: jeans escuro, tênis Nike branco e moletom vermelho. Foi beatificado em 2020 e canonizado pelo Papa Francisco em 27 de abril de 2025 — o primeiro santo nascido no século XX, o primeiro da era digital. A fila para venerá-lo atrai peregrinos do mundo inteiro.",
+          "curiosities": [
+            "'Todos nascem originais, mas muitos morrem como fotocópias' — frase de Carlo Acutis, extraordinariamente atual.",
+            "'A tristeza vem de olhar para si mesmo; a alegria vem de olhar para Deus.'",
+            "Carlo tinha um painel em seu quarto catalogando santos jovens. Dizia que queria 'ser santo como eles'.",
+            "Ele sabia de memória o Catecismo da Igreja Católica e explicava a fé aos colegas de escola com naturalidade.",
+            "Seu site de milagres eucarísticos (miracolieucaristici.org) ainda está online e ativo — visite.",
+            "O milagre aprovado para sua canonização ocorreu em 2013, no Brasil: uma criança de Florianópolis (SC) foi curada de uma anomalia pancreática após a família rezar a sua intercessão.",
+            "Carlo é considerado padroeiro da internet, dos jovens e dos estudantes de informática."
+          ],
           "photo": "https://upload.wikimedia.org/wikipedia/en/c/c8/Carlo_Acutis_%28born_1991%29.jpg",
           "photos": [
             "https://upload.wikimedia.org/wikipedia/en/c/c8/Carlo_Acutis_%28born_1991%29.jpg",
@@ -393,10 +410,11 @@
           "hours": "Todos os dias: 8h–19h",
           "price": "Gratuito",
           "duration": "30–45 minutos",
-          "address": "Via Vescovado, Assisi (próx. à Catedral de São Rufino)",
+          "address": "Via Vescovado 3, Assisi (a 5 min a pé da Piazza Matteotti)",
           "must_book": false,
-          "tips": "A fila para venerar o corpo pode ser longa, mas anda rápido. Respeite o silêncio — é uma área de oração ativa. Uma oração a São Carlo Acutis pelo uso santificante da tecnologia é muito a propósito.",
-          "romantic": "Estarem juntos diante de Carlo Acutis — esse jovem que encontrou o infinito dentro do ordinário — é um lembrete de que o sagrado pode habitar qualquer vida, inclusive a de vocês dois.",
+          "tips": "Ir cedo (antes das 11h) para filas menores. A urna é pequena — a fila avança devagar mas com respeito. Há painéis explicativos sobre sua vida em italiano e inglês. A loja do santuário vende imagens, medalhas e livros sobre Carlo — incluindo a biografia oficial de sua mãe.",
+          "romantic": "Estarem juntos diante de Carlo — um adolescente que viveu o ordinário da vida com extraordinária fidelidade — é um lembrete de que o sagrado não exige vidas extraordinárias. Exige amor fiel no dia a dia. Exatamente o que vocês dois constroem há 12 anos.",
+          "transport": "Da Piazza Matteotti (saída do ônibus): 5 min a pé pela Via Porta Perlici e Via Vescovado. Da Basílica de Santa Clara: 7 min subindo a Via Santa Chiara e virando na Via Vescovado.",
           "coordinates": {
             "lat": 43.0714,
             "lng": 12.6172
@@ -405,20 +423,27 @@
         {
           "name": "Basílica de Santa Clara",
           "type": "⛪ Fé",
-          "description": "A basílica rosa e branca que abriga o corpo incorrupto de Santa Clara — a amiga e seguidora de São Francisco, fundadora das Clarissas.",
-          "long_description": "Clara Offreduccio de Assis (1194–1253) foi a primeira mulher a escrever uma Regra Religiosa para mulheres na história da Igreja. Filha de família nobre, abandonou tudo aos 18 anos para seguir São Francisco, fundando a Ordem das Damas Pobres (depois chamadas Clarissas). Seu amor a Francisco era profundo — não romanticamente, mas na amizade e no ideal espiritual partilhado. A basílica em seu nome, construída em 1265, tem uma fachada simples de travertino rosa e branco que combina ao perfeito com a pedra de Assis. No interior, nas catacumbas, o corpo de Clara é exposto para veneração — semi-mumificado naturalmente. Também está exposto aqui o Crucifix de San Damiano: foi diante desse crucifixo que Francisco ouviu a voz de Cristo dizer 'Reconstrói a minha Igreja'. É uma das relíquias mais importantes do franciscanismo.",
+          "description": "A basílica rosa e branca que abriga o corpo venerável de Santa Clara e o Crucifixo de San Damiano — a voz de Cristo que mudou Francisco e, com ele, a história da Igreja.",
+          "long_description": "Clara Offreduccio (Assis, 1194 — 1253) nasceu em família nobre e foi prometida em casamento desde criança. Na noite de Domingo de Ramos de 1212, aos 18 anos, fugiu de casa pela porta dos mortos, acompanhada de sua irmã Catarina, e foi ao encontro de Francisco na Porziuncola. Francisco cortou seus cabelos com as próprias mãos — o gesto da consagração — e a acolheu na vida religiosa. Fundou a Ordem das Damas Pobres, que se tornaria as Clarissas. Sua 'Regra de Vida', escrita em 1253, foi a primeira regra religiosa da história escrita por uma mulher e aprovada pela Igreja. A basílica construída em sua honra (1265) tem fachada de travertino rosa e branco — cor que reflete a pedra do Monte Subasio. O CORPO DE SANTA CLARA está na cripta, em urna de cristal: o rosto e as mãos cobertos por uma máscara de cera esculpida a partir do original, pois o corpo escureceu com os séculos — mas é autêntico. O CRUCIFIXO DE SAN DAMIANO — exposto na Cappella del Crocifisso, primeira à direita ao entrar — é o original (séc. XII) diante do qual Francisco, por volta de 1205, ouviu a voz de Cristo: 'Francisco, vai e repara minha Igreja que, como vês, está em ruínas.' Este crucifixo acompanhou Clara durante toda a vida — ela o contemplava diariamente. Entre as relíquias também estão: mechão de cabelo de Clara (cortado por Francisco), seu hábito original e uma ampola com o leite de Nossa Senhora (segundo a tradição, apareceu a Clara numa visão).",
+          "curiosities": [
+            "Em 1240, os sarracenos a serviço do Imperador Frederico II sitiaram Assis. Clara, gravemente doente e incapaz de andar, pediu para ser carregada à muralha com o Santíssimo Sacramento numa custódia. Os mercenários saracenos, ao se aproximar, fugiram em pânico. O episódio é documentado e é o motivo pelo qual Clara é padroeira da televisão — uma visão, uma imagem que repele o mal.",
+            "Suas últimas palavras, em 11 de agosto de 1253, foram direcionadas à própria alma: 'Vai em paz, pois terás uma boa escolta.' O Papa Inocêncio IV estava presente em seu leito de morte.",
+            "Clara foi canonizada apenas dois anos após a morte — em 1255, pelo Papa Alexandre IV.",
+            "A Ordem das Clarissas tem hoje mais de 20.000 freiras em todo o mundo — incluindo dezenas de mosteiros no Brasil."
+          ],
           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Santa_Chiara_Assisi2.jpg/330px-Santa_Chiara_Assisi2.jpg",
           "photos": [
             "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Santa_Chiara_Assisi2.jpg/330px-Santa_Chiara_Assisi2.jpg",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Santa_Chiara_Assisi2.jpg/330px-Santa_Chiara_Assisi2.jpg"
           ],
-          "hours": "6h30–12h e 14h–19h",
-          "price": "Gratuito",
+          "hours": "6h30–12h e 14h–19h (fecha ao meio-dia)",
+          "price": "Gratuito — vestimenta modesta obrigatória",
           "duration": "45 minutos",
           "address": "Piazza Santa Chiara, Assisi",
           "must_book": false,
-          "tips": "O Crucifixo de San Damiano está na Cappella do lado esquerdo da entrada — não perca. Vista adequada obrigatória. A piazza em frente oferece uma vista sobre o Vale Espolentino muito bonita.",
-          "romantic": "A história de Clara e Francisco é um dos mais belos exemplos de amizade espiritual da história — um amor que transcendeu o mundo. Estarem juntos aqui, num 12º aniversário de casamento, é uma bela reflexão sobre os diferentes modos como o amor se manifesta.",
+          "tips": "A Cappella del Crocifisso (Crucifixo de San Damiano) fica à direita logo na entrada — não esqueça. A cripta com o corpo de Clara fica acessível pela escada ao lado do altar-mor. A Piazza Santa Chiara em frente oferece uma das melhores vistas do Vale Espolentino.",
+          "romantic": "Clara e Francisco nunca se casaram — mas viveram uma das amizades mais profundas e transformadoras da história da Igreja. Uma amizade que escolheu, livremente, o amor mais alto. Estarem juntos neste lugar, no aniversário de 12 anos, é uma reflexão silenciosa sobre o que significa amar com fidelidade.",
+          "transport": "Da Piazza Matteotti (ônibus): desça a Via Santa Chiara por 3 min. Do Santuário Carlo Acutis: desça a Via Vescovado e vire na Via Santa Chiara, ~7 min. Da Basílica de São Francisco: siga Via San Francesco até a Piazza del Comune e depois a Via Santa Chiara, ~12 min.",
           "coordinates": {
             "lat": 43.0701,
             "lng": 12.6188
@@ -427,20 +452,32 @@
         {
           "name": "Centro Histórico de Assis",
           "type": "🏘️ Cidade Medieval",
-          "description": "Uma cidadela medieval de pedra rosa, suspensa nas encostas do Monte Subasio — uma das cidades mais bem preservadas da Itália.",
-          "long_description": "Assis foi fundada pelos Úmbrios, conquistada pelos Romanos (o templo de Minerva da época romana ainda está de pé na Piazza del Comune), e tornou-se a cidade de Francisco e Clara no século XIII. O centro histórico — todo inscrito no Patrimônio Mundial — é um labirinto de ruelas em pedra cor de rosa escura, arcos medievais, fontes, e vistas inesperadas sobre o Vale Espolentino. A Piazza del Comune tem o Templo de Minerva (século I a.C., convertido em igreja no século XVII), o Palazzo dei Priori e a Torre del Popolo. A Rocca Maggiore, a fortaleza no alto da colina, oferece a vista mais ampla. O silêncio, a lentidão e o perfume das flores de maio tornam Assis um dos lugares mais serenos da Itália.",
+          "description": "Uma cidadela medieval de pedra rosa, suspensa nas encostas do Monte Subasio — Património Mundial da UNESCO e uma das cidades mais bem preservadas da Itália.",
+          "long_description": "Assis tem 3.000 anos de história contínua. Fundada pelos Úmbrios, depois conquistada pelos Romanos que a chamaram de Asisium — e o Templo de Minerva que eles ergueram no século I a.C. ainda está de pé na Piazza del Comune, intacto, a única fachada de templo romano completa da Úmbria. Francisco Bernardone nasceu aqui em 1181/1182 e cresceu nessas ruelas: filho de um rico comerciante de tecidos, brinCava nos mesmos degraus de pedra onde peregrinos hoje param a rezar.\n\nO centro histórico inscrito no Patrimônio Mundial (1000 a.C.–séc. XIII) é um labirinto de ruelas em pedra cor-de-rosa escura — a típica pedra de Monte Subasio, cor quente única na Úmbria. Os arcos medievais cruzam as ruelas a quatro metros do chão, criando corredores de sombra e luz que fotografias nunca captam de verdade. Fontes medievais espalham-se pelos ângulos inesperados; em maio, gerânios vermelhos brotam de cada janela.\n\nA Piazza del Comune é o coração civil: de um lado o Templo de Minerva (convertido em Igreja de Santa Maria sopra Minerva no séc. XVII, mas com seis colunas coríntias originais de 2.000 anos), de outro o Palazzo dei Priori (séc. XIV) e a Torre del Popolo, cujo sino bate as horas com um som que ecoa pelo vale há 700 anos. A Rocca Maggiore, a fortaleza no alto da colina, oferece a vista mais ampla de toda a Úmbria — um tapete verde-dourado de oliveiras e vinhas que se estende até os Apeninos.\n\nO que torna Assis incomparável não é nenhum monumento específico, mas a atmosfera total: uma cidade que não foi construída para turistas, que ainda é habitada como sempre foi, que tem padarias abertas onde o pão cheira a lenha, e onde é possível ouvir o sino da Basílica tocando ao longe enquanto se come torta al testo (a focaccia úmbrica) numa trattoria de teto baixo com vista para o vale.",
           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/AssisiDec122023_03.jpg/330px-AssisiDec122023_03.jpg",
           "photos": [
             "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/AssisiDec122023_03.jpg/330px-AssisiDec122023_03.jpg",
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/AssisiDec122023_03.jpg/330px-AssisiDec122023_03.jpg"
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Assisi_Piazza_del_Comune_BW_2.JPG/330px-Assisi_Piazza_del_Comune_BW_2.JPG"
           ],
-          "hours": "Cidade sempre aberta. Rocca Maggiore: 10h–18h",
-          "price": "Gratuito para caminhar. Rocca Maggiore: €5",
-          "duration": "2–3 horas (além das basílicas)",
-          "address": "Centro Storico, Assisi",
+          "hours": "Cidade sempre aberta. Rocca Maggiore: 10h–18h. Templo de Minerva (Igreja): 7h15–19h",
+          "price": "Gratuito para caminhar. Rocca Maggiore: €5. Templo de Minerva: gratuito",
+          "duration": "1,5–2 horas (caminhada livre além das basílicas)",
+          "address": "Piazza del Comune, Assisi PG",
           "must_book": false,
-          "tips": "Almoce num dos restaurantes junto às muralhas — vista extraordinária. A Trattoria Pallotta (Via della Volta Pinta 2) e o Ristorante La Fortezza (Vicolo della Fortezza 2b) são os mais autênticos. O ônibus da estação para o centro passa na Piazza Matteotti.",
-          "romantic": "Caminhar de mãos dadas pelas ruelas de pedra de Assis ao meio-dia, com o sino da Basílica soando ao longe e o cheiro de flores de maio no ar fresco úmbrico, é algo que pertence só a este momento da vida de vocês.",
+          "tips": "A Trattoria Pallotta (Via della Volta Pinta 2) e o Ristorante La Fortezza (Vicolo della Fortezza 2b) são os restaurantes mais autênticos de Assis — peça a torta al testo com prosciutto e o strangozzi ao trufado. Chegando da Basílica São Francisco, a rota natural para a Piazza del Comune é descer a Via S. Francesco (a rua principal de peregrinos, cheia de ateliês e lojas de artesanato).",
+          "romantic": "No caminho entre as basílicas e a piazza, entrar numa ruela sem saber onde termina. Em Assis, cada curva abre outra vista sobre o vale úmbrico — e em maio o ar cheira a flores silvestres. É um dos poucos lugares onde dois peregrinos podem se sentir completamente sós no meio de uma cidade.",
+          "curiosities": [
+            "O Templo de Minerva na Piazza del Comune tem 2.000 anos — é mais antigo do que a maioria das igrejas cristãs do mundo, e Francisco cresceu vendo-o todos os dias.",
+            "A pedra cor-de-rosa de Assis (Pietra di Monte Subasio) é única na Úmbria. A mesma pedra usada nas basílicas, nas ruelas e nas casas medievais — por isso toda a cidade tem uma tonalidade quente e coerente.",
+            "Goethe visitou Assis em 1786 durante sua viagem à Itália e ignorou completamente as basílicas — foi direto ao Templo de Minerva, que o impressionou mais do que qualquer coisa que vira em Roma.",
+            "A Rocca Maggiore foi destruída e reconstruída três vezes. O jovem Francisco foi mantido como prisioneiro de guerra numa torre desta fortaleza por um ano, após uma batalha entre Assis e Perugia (1202–1203). Foi essa prisão que iniciou sua conversão.",
+            "Em 1253, Santa Clara escreveu do seu leito de morte a 'Forma de Vida' das Clarissas — e o Papa Inocêncio IV foi pessoalmente ao convento de San Damiano assinar a aprovação. Foi a primeira regra religiosa escrita por uma mulher a ser aprovada pela Igreja Católica."
+          ],
+          "transport": {
+            "from_station": "Ônibus Linha C (ou D) da Stazione FS → Piazza Matteotti (~10 min, €1,30). De Piazza Matteotti, a Piazza del Comune fica a 5 min a pé descendo a Via Portica.",
+            "walking": "De Piazza del Comune → Basílica São Francisco: 8 min descendo a Via S. Francesco. De Piazza del Comune → Basílica Santa Clara: 5 min subindo a Via S. Chiara.",
+            "to_station": "De Piazza del Comune → Piazza Matteotti: 5 min a pé. Ônibus Linha C de Piazza Matteotti → Estação FS (~10 min). Táxi da piazza: €8–10."
+          },
           "coordinates": {
             "lat": 43.0707,
             "lng": 12.6152
