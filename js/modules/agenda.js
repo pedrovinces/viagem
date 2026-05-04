@@ -93,6 +93,7 @@ function renderEvent(evt, data) {
         <div class="event-title">${typeLabel ? `<span class="event-type-label">${typeLabel}</span>` : ''}${evt.title}</div>
         ${evt.detail ? `<div class="event-detail">${evt.detail}</div>` : ''}
         ${evt.restaurant_options ? renderRestaurantOptions(evt.restaurant_options) : ''}
+        ${(evt.trivia || evt.reading) ? `<div class="event-curiosity-badge">${evt.trivia ? '<span class="ecb-trivia">✦ Você sabia?</span>' : ''}${evt.reading ? '<span class="ecb-reading">📖 Leitura</span>' : ''}</div>` : ''}
       </div>
       ${thumb}
       ${!evt.photo && hasDetail ? `<div class="event-chevron">›</div>` : ''}
