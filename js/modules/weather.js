@@ -58,22 +58,20 @@ function detectCurrentCity() {
 
 function renderSkeleton() {
   section.innerHTML = `
-    <div class="weather-section">
-      <div class="weather-city-tabs">
-        ${Object.entries(CITY_COORDS).map(([id, c]) => `
-          <button class="weather-city-tab ${id === currentCity ? 'active' : ''}"
-            data-city="${id}" style="--city-color:${window.cityColor ? window.cityColor(id) : '#C84B31'}">
-            ${c.name}
-          </button>`).join('')}
-      </div>
-      <div id="weather-content">
-        <div class="weather-loading">🌤️ Carregando clima...</div>
-      </div>
+    <div class="weather-city-selector">
+      ${Object.entries(CITY_COORDS).map(([id, c]) => `
+        <button class="weather-city-btn ${id === currentCity ? 'active' : ''}"
+          data-city="${id}">
+          ${c.name}
+        </button>`).join('')}
+    </div>
+    <div id="weather-content">
+      <div class="weather-loading">🌤️ Carregando clima...</div>
     </div>`;
 
-  section.querySelectorAll('.weather-city-tab').forEach(btn => {
+  section.querySelectorAll('.weather-city-btn').forEach(btn => {
     btn.addEventListener('click', () => {
-      section.querySelectorAll('.weather-city-tab').forEach(b => b.classList.remove('active'));
+      section.querySelectorAll('.weather-city-btn').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       currentCity = btn.dataset.city;
       loadWeather(currentCity);
@@ -135,40 +133,50 @@ function renderWeather(json, cityId, fromCache) {
   }), { min: 99, max: -99 });
 
   content.innerHTML = `
-    <div class="weather-current" style="background:linear-gradient(135deg,${cityColor}cc,${cityColor}88)">
-      <div class="weather-current-top">
+    <div class="weather-current-card" style="background:linear-gradient(135deg,${cityColor}dd,${cityColor}99)">
+      <div class="weather-city-name">${cityName}</div>
+      <div class="weather-main">
         <div>
-          <div class="weather-city-name">${cityName}</div>
-          <div class="weather-wmo-desc">${WMO_DESC[wmo] || 'Indefinido'}</div>
+          <div class="weather-temp">${Math.round(cur.temperature_2m)}<span class="weather-temp-unit">°C</span></div>
         </div>
-        <div class="weather-icon-big">${WMO_ICONS[wmo] || '🌤️'}</div>
+        <div class="weather-icon">${WMO_ICONS[wmo] || '🌤️'}</div>
       </div>
-      <div class="weather-temp-main">${Math.round(cur.temperature_2m)}°C</div>
-      <div class="weather-current-meta">
-        <span>💧 ${cur.relative_humidity_2m}%</span>
-        <span>💨 ${Math.round(cur.wind_speed_10m)} km/h</span>
-        <span>🌡️ Sensação ${Math.round(cur.apparent_temperature)}°C</span>
+      <div class="weather-desc">${WMO_DESC[wmo] || 'Indefinido'}</div>
+      <div class="weather-details">
+        <div class="weather-detail-item">
+          <div class="weather-detail-label">Umidade</div>
+          <div class="weather-detail-value">${cur.relative_humidity_2m}%</div>
+        </div>
+        <div class="weather-detail-item">
+          <div class="weather-detail-label">Vento</div>
+          <div class="weather-detail-value">${Math.round(cur.wind_speed_10m)} km/h</div>
+        </div>
+        <div class="weather-detail-item">
+          <div class="weather-detail-label">Sensação</div>
+          <div class="weather-detail-value">${Math.round(cur.apparent_temperature)}°C</div>
+        </div>
       </div>
-      ${fromCache ? `<div class="weather-cache-note">Dados em cache</div>` : ''}
+      ${fromCache ? `<div class="weather-updated">Dados em cache</div>` : ''}
     </div>
 
-    <div class="weather-forecast">
+    <div class="forecast-title">Previsão 7 dias</div>
+    <div class="forecast-list">
       ${forecast.map((d, i) => {
         const date = new Date(d.date + 'T00:00:00');
         const label = i === 0 ? 'Hoje' : date.toLocaleDateString('pt-BR', { weekday: 'short' });
         const barPct = (d.max - tempRange.min) / (tempRange.max - tempRange.min + 1) * 100;
         return `
-          <div class="forecast-row">
+          <div class="forecast-item">
             <span class="forecast-day">${label}</span>
             <span class="forecast-icon">${WMO_ICONS[d.wmo] || '🌤️'}</span>
-            <div class="forecast-bars">
+            <div class="forecast-temps">
               <span class="forecast-min">${d.min}°</span>
-              <div class="forecast-bar-track">
+              <div class="forecast-bar-wrap">
                 <div class="forecast-bar-fill" style="width:${barPct}%;background:${cityColor}"></div>
               </div>
               <span class="forecast-max">${d.max}°</span>
             </div>
-            ${d.rain > 0 ? `<span class="forecast-rain">💧${d.rain}mm</span>` : ''}
+            ${d.rain > 0 ? `<span class="forecast-rain">💧 ${d.rain}mm</span>` : '<span></span>'}
           </div>`;
       }).join('')}
     </div>`;

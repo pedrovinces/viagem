@@ -31,22 +31,22 @@ function renderShell() {
 
   section.innerHTML = `
     <div class="religion-hero">
-      <div class="religion-hero-cross">✝</div>
-      <h2 class="religion-hero-title">Fé & Espiritualidade</h2>
-      <p class="religion-hero-sub">Uma peregrinação de amor e oração</p>
+      <div class="religion-hero-eyebrow">Guia Espiritual</div>
+      <h2 class="religion-hero-title">Fé &amp; Espiritualidade</h2>
+      <p class="religion-hero-subtitle">Uma peregrinação de amor e oração</p>
     </div>
-    <div class="religion-tabs">
+    <div class="religion-city-nav">
       ${cities.map(c => `
-        <button class="religion-tab ${c.id === activeCity ? 'active' : ''}"
+        <button class="religion-city-tab ${c.id === activeCity ? 'active' : ''}"
           data-city="${c.id}" style="--city-color:${c.color}">
           ${c.name}
         </button>`).join('')}
     </div>
     <div id="religion-body" class="religion-body"></div>`;
 
-  section.querySelectorAll('.religion-tab').forEach(btn => {
+  section.querySelectorAll('.religion-city-tab').forEach(btn => {
     btn.addEventListener('click', () => {
-      section.querySelectorAll('.religion-tab').forEach(b => b.classList.remove('active'));
+      section.querySelectorAll('.religion-city-tab').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       activeCity = btn.dataset.city;
       renderReligion(activeCity);
@@ -65,18 +65,11 @@ function renderReligion(cityId) {
 
   body.innerHTML = `
     <div class="religion-city-intro">
-      <p class="drop-cap">${cityData.intro || ''}</p>
+      <p>${cityData.intro || ''}</p>
     </div>
     <div class="religion-sites">
       ${sites}
     </div>`;
-
-  // Bind expandable cards
-  body.querySelectorAll('.religion-card[data-expandable]').forEach(card => {
-    card.addEventListener('click', () => {
-      card.classList.toggle('expanded');
-    });
-  });
 }
 
 function renderSite(site, cityId) {
@@ -84,50 +77,44 @@ function renderSite(site, cityId) {
   const color = cityColors[cityId] || '#C84B31';
   const isSpecial = site.special;
 
-  return `
-    <div class="religion-card ${isSpecial ? 'religion-card--special' : ''}" data-expandable="true"
-      style="${isSpecial ? `background:linear-gradient(135deg,#1a1008,#2d1a08);color:#FAF3E0` : ''}">
-      ${site.photo ? `<img class="religion-card-photo" src="${site.photo}" alt="${site.name}" loading="lazy">` : ''}
-      <div class="religion-card-body">
-        <div class="religion-card-type" style="color:${isSpecial ? '#D4943A' : color}">${site.type || ''}</div>
-        <h3 class="religion-card-name" style="${isSpecial ? 'color:#FAF3E0' : ''}">${site.name}</h3>
+  const cardClass = isSpecial ? 'religion-site-card carlo-acutis-card' : 'religion-site-card';
 
-        ${site.tags ? `<div class="religion-tags">
-          ${site.tags.map(t => `<span class="religion-tag">${t}</span>`).join('')}
+  return `
+    <div class="${cardClass}">
+      ${site.photo ? `<img class="religion-site-photo" src="${site.photo}" alt="${site.name}" loading="lazy">` : ''}
+      <div class="religion-site-body">
+        <div class="religion-site-type">${site.type || ''}</div>
+        <h3 class="religion-site-title ${isSpecial ? 'carlo-acutis-title' : ''}">${site.name}</h3>
+
+        ${site.tags ? `<div class="religion-site-tags">
+          ${site.tags.map(t => `<span class="religion-site-tag">${t}</span>`).join('')}
         </div>` : ''}
 
-        <p class="religion-card-summary">${site.summary || ''}</p>
+        ${site.summary ? `<div class="religion-text"><p>${site.summary}</p></div>` : ''}
 
-        <div class="religion-card-expand-content">
-          ${site.history ? `
-            <div class="religion-text-block">
-              <p class="drop-cap">${site.history}</p>
-            </div>` : ''}
+        ${site.history ? `
+          <div class="religion-text">
+            <p>${site.history}</p>
+          </div>` : ''}
 
-          ${site.spiritual ? `
-            <blockquote class="religion-quote">
-              ${site.spiritual}
-            </blockquote>` : ''}
+        ${site.spiritual ? `
+          <blockquote class="religion-quote">${site.spiritual}</blockquote>` : ''}
 
-          ${site.practical ? `
-            <div class="religion-practical">
-              <div class="religion-practical-title">ℹ️ Informações práticas</div>
-              ${Object.entries(site.practical).map(([k, v]) =>
-                `<div class="religion-practical-row">
-                  <span>${k}</span><span>${v}</span>
-                </div>`).join('')}
-            </div>` : ''}
+        ${site.practical ? `
+          <div class="religion-info-box">
+            <div class="religion-info-box-title">ℹ️ Informações práticas</div>
+            ${Object.entries(site.practical).map(([k, v]) =>
+              `<div class="religion-practical-row">
+                <span class="religion-practical-key">${k}</span>
+                <span class="religion-practical-val">${v}</span>
+              </div>`).join('')}
+          </div>` : ''}
 
-          ${site.prayer ? `
-            <div class="religion-prayer">
-              <div class="religion-prayer-label">🙏 Oração sugerida</div>
-              <p class="religion-prayer-text">${site.prayer}</p>
-            </div>` : ''}
-        </div>
-
-        <div class="religion-card-toggle">
-          <span class="religion-toggle-label">Ver mais ↓</span>
-        </div>
+        ${site.prayer ? `
+          <div class="religion-prayer-box">
+            <div class="religion-prayer-label">🙏 Oração sugerida</div>
+            <p class="religion-prayer-text">${site.prayer}</p>
+          </div>` : ''}
       </div>
     </div>`;
 }

@@ -231,3 +231,15 @@
   font-style: italic;
   font-size: 1rem;
 }
+
+/* ----------------------------------------------------------
+   LOADING
+   ---------------------------------------------------------- */
+.weather-loading {
+  text-align: center;
+  padding: var(--s8) var(--s4);
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--text3);
+  letter-spacing: 0.1em;
+}

@@ -286,3 +286,82 @@
   font-size: 0.95rem;
   color: #d4ab4f;
 }
+
+/* ----------------------------------------------------------
+   INTRO DA CIDADE
+   ---------------------------------------------------------- */
+.religion-city-intro {
+  padding: var(--s5) var(--s5) var(--s4);
+  border-bottom: 1px solid var(--border);
+}
+.religion-city-intro p {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--text2);
+  line-height: 1.75;
+}
+
+/* ----------------------------------------------------------
+   LISTA DE SITES
+   ---------------------------------------------------------- */
+.religion-sites {
+  padding-bottom: var(--s8);
+}
+
+/* ----------------------------------------------------------
+   CARD STICKY NAV
+   ---------------------------------------------------------- */
+.religion-city-nav { position: sticky; top: 0; z-index: 10; }
+
+/* ----------------------------------------------------------
+   INFORMAÇÕES PRÁTICAS (linhas dentro do info-box)
+   ---------------------------------------------------------- */
+.religion-practical-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--s3);
+  padding: var(--s2) var(--s4);
+  border-bottom: 1px solid var(--border);
+  font-size: 0.82rem;
+}
+.religion-practical-row:last-child { border-bottom: none; }
+.religion-practical-key {
+  color: var(--text3);
+  font-family: var(--font-mono);
+  font-size: 8px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+.religion-practical-val {
+  color: var(--text);
+  text-align: right;
+}
+
+/* ----------------------------------------------------------
+   ORAÇÃO SUGERIDA
+   ---------------------------------------------------------- */
+.religion-prayer-box {
+  margin: var(--s4) 0 0;
+  background: rgba(139,30,30,0.04);
+  border: 1px solid rgba(139,30,30,0.12);
+  border-radius: var(--r-md);
+  padding: var(--s4) var(--s4);
+}
+.religion-prayer-label {
+  font-family: var(--font-mono);
+  font-size: 8.5px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--c-primary);
+  margin-bottom: var(--s3);
+}
+.religion-prayer-text {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 0.9rem;
+  color: var(--text2);
+  line-height: 1.7;
+}
