@@ -78,7 +78,7 @@ function renderDayCard(day, idx, cityMap, data) {
 }
 
 function renderEvent(evt, data) {
-  const hasDetail = evt.notes || evt.history || evt.romantic || evt.tips || evt.steps || evt.transit || evt.booking;
+  const hasDetail = evt.notes || evt.history || evt.romantic || evt.tips || evt.steps || evt.transit || evt.booking || evt.trivia || evt.reading;
   const typeLabel = getTypeLabel(evt.type);
   const thumb = evt.photo
     ? `<div class="event-thumb" style="background-image:url('${evt.photo}')"></div>`

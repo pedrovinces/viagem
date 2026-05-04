@@ -149,8 +149,7 @@ function closeModal() {
 // ---- TEMA ----
 function initTheme() {
   const saved = localStorage.getItem('theme');
-  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const theme = saved || (prefersDark ? 'dark' : 'light');
+  const theme = saved || 'light';
   applyTheme(theme);
 
   document.getElementById('theme-toggle')?.addEventListener('click', toggleTheme);
