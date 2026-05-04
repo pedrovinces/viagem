@@ -78,7 +78,7 @@ function renderDayCard(day, idx, cityMap, data) {
 }
 
 function renderEvent(evt, data) {
-  const hasDetail = evt.notes || evt.history || evt.romantic || evt.tips;
+  const hasDetail = evt.notes || evt.history || evt.romantic || evt.tips || evt.steps || evt.transit || evt.booking;
   const typeLabel = getTypeLabel(evt.type);
   const thumb = evt.photo
     ? `<div class="event-thumb" style="background-image:url('${evt.photo}')"></div>`
@@ -92,7 +92,6 @@ function renderEvent(evt, data) {
       <div class="event-body">
         <div class="event-title">${typeLabel ? `<span class="event-type-label">${typeLabel}</span>` : ''}${evt.title}</div>
         ${evt.detail ? `<div class="event-detail">${evt.detail}</div>` : ''}
-        ${evt.steps ? renderSteps(evt.steps) : ''}
         ${evt.restaurant_options ? renderRestaurantOptions(evt.restaurant_options) : ''}
       </div>
       ${thumb}
@@ -186,6 +185,33 @@ function buildEventModal(evt, hotel) {
 
   if (evt.detail) {
     sections.push(`<p class="modal-detail">${evt.detail}</p>`);
+  }
+
+  if (evt.steps && evt.steps.length > 0) {
+    const stepsHtml = evt.steps.map(s => `
+      <div class="transport-step">
+        <div class="transport-step-line">
+          <div class="transport-step-dot"></div>
+          <div class="transport-step-connector"></div>
+        </div>
+        <div class="transport-step-body">
+          <div class="transport-step-main">${s.desc}</div>
+          ${s.duration || s.price ? `<div class="transport-step-detail">${[s.duration, s.price].filter(Boolean).join(' · ')}</div>` : ''}
+        </div>
+      </div>`).join('');
+    sections.push(`
+      <div class="modal-section">
+        <div class="modal-section-label">🗺 Itinerário</div>
+        <div class="transport-steps">${stepsHtml}</div>
+      </div>`);
+  }
+
+  if (evt.transit) {
+    sections.push(`
+      <div class="modal-section">
+        <div class="modal-section-label">🚶 Como chegar</div>
+        <p>${evt.transit}</p>
+      </div>`);
   }
 
   if (evt.notes) {
