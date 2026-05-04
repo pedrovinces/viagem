@@ -1,5 +1,5 @@
 /* ============================================================
-   MAPA — Leaflet + controles customizados
+   MAPA — Leaflet + controles customizados · Editorial
    ============================================================ */
 
 #section-map {
@@ -10,13 +10,13 @@
 }
 #section-map.active {
   display: flex;
-  animation: fadeIn var(--t-med);
+  animation: fadeInSection var(--t-med);
 }
 
 .map-header {
-  background: var(--surface);
+  background: var(--bg);
   border-bottom: 1px solid var(--border);
-  padding: var(--s3) var(--s4);
+  padding: var(--s3) var(--s5);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -34,68 +34,71 @@
 .map-city-filters::-webkit-scrollbar { display: none; }
 
 .map-filter-btn {
-  padding: var(--s2) var(--s3);
+  padding: 5px var(--s3);
   border-radius: var(--r-xl);
-  border: 1.5px solid var(--border);
-  font-size: 0.72rem;
-  font-weight: 700;
+  border: 1px solid var(--border);
+  font-family: var(--font-mono);
+  font-size: 8.5px;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
   white-space: nowrap;
   cursor: pointer;
   transition: all var(--t-fast);
   color: var(--text3);
-  background: var(--surface);
+  background: var(--bg);
   -webkit-tap-highlight-color: transparent;
 }
 .map-filter-btn.active {
-  color: #fff;
-  border-color: transparent;
+  background: var(--c-primary);
+  border-color: var(--c-primary);
+  color: var(--bg);
 }
-.map-filter-btn[data-filter="all"].active    { background: var(--c-primary); }
-.map-filter-btn[data-filter="rome"].active   { background: var(--c-rome); }
-.map-filter-btn[data-filter="florence"].active { background: var(--c-florence); }
-.map-filter-btn[data-filter="assisi"].active { background: var(--c-assisi); }
-.map-filter-btn[data-filter="paris"].active  { background: var(--c-paris); }
 
 #leaflet-map {
   flex: 1;
   z-index: 1;
+  background: var(--bg2);
 }
 
-/* Popup customizado */
+/* Leaflet customizado */
+.leaflet-container {
+  background: var(--bg2);
+  font-family: var(--font-sans);
+}
+
 .leaflet-popup-content-wrapper {
   border-radius: var(--r-md) !important;
   box-shadow: 0 4px 20px var(--shadow-md) !important;
   border: 1px solid var(--border) !important;
   padding: 0 !important;
   overflow: hidden;
+  background: var(--bg) !important;
+  color: var(--text) !important;
 }
-
 .leaflet-popup-content {
   margin: 0 !important;
-  min-width: 200px;
+  min-width: 180px;
 }
-
-.map-popup {
+.leaflet-popup-tip { background: var(--bg) !important; }
+.leaflet-popup-close-button { color: var(--text3) !important; }
+.leaflet-control-zoom a {
+  background: var(--bg) !important;
+  color: var(--text) !important;
+  border-color: var(--border) !important;
   font-family: var(--font-sans);
 }
+
+.map-popup { font-family: var(--font-sans); }
 
 .map-popup-header {
   padding: var(--s3) var(--s4) var(--s2);
   border-bottom: 1px solid var(--border);
-  display: flex;
-  align-items: center;
-  gap: var(--s2);
 }
-
-.map-popup-icon { font-size: 1.2rem; }
 
 .map-popup-title {
   font-family: var(--font-serif);
-  font-size: 1rem;
+  font-size: 0.95rem;
   color: var(--text);
-  font-weight: 500;
 }
 
 .map-popup-body {
@@ -103,7 +106,10 @@
 }
 
 .map-popup-meta {
-  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 8px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
   color: var(--text3);
   margin-bottom: var(--s2);
 }
@@ -111,15 +117,15 @@
 .map-popup-link {
   display: inline-flex;
   align-items: center;
-  gap: 4px;
-  font-size: 0.75rem;
-  font-weight: 700;
-  color: var(--c-primary);
+  gap: 3px;
+  font-family: var(--font-mono);
+  font-size: 8px;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  color: var(--c-primary);
 }
 
-/* Marcadores customizados */
+/* Marcadores */
 .custom-marker {
   display: flex;
   align-items: center;
@@ -132,9 +138,31 @@
 
 .custom-marker-inner {
   transform: rotate(45deg);
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1;
 }
+
+/* Pin estilo reference */
+.pin {
+  background: transparent !important;
+  border: none !important;
+}
+.pin-inner {
+  width: 28px;
+  height: 28px;
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+  border: 2px solid #fdfaf3;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: 12px;
+  color: #fdfaf3;
+}
+.pin-inner span { transform: rotate(45deg); }
 
 /* Linha de rota */
 .route-line {
@@ -145,23 +173,23 @@
   to { stroke-dashoffset: -1000; }
 }
 
-/* Controle de localização customizado */
+/* Botão localização */
 .map-locate-btn {
   position: absolute;
   bottom: calc(var(--s4) + var(--nav-h) + var(--safe-b));
   right: var(--s4);
   z-index: 10;
-  background: var(--surface);
+  background: var(--bg);
   border: 1px solid var(--border);
   border-radius: var(--r-md);
-  width: 40px;
-  height: 40px;
+  width: 38px;
+  height: 38px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1rem;
+  color: var(--text3);
   box-shadow: 0 2px 8px var(--shadow);
   cursor: pointer;
   transition: var(--t-fast);
 }
-.map-locate-btn:hover { background: var(--bg2); }
+.map-locate-btn:hover { background: var(--bg2); color: var(--c-primary); }

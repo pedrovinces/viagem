@@ -1,5 +1,5 @@
 /* ============================================================
-   AGENDA.JS — Timeline dia a dia
+   AGENDA.JS — Timeline dia a dia · Estilo editorial
    ============================================================ */
 
 const section = document.getElementById('section-agenda');
@@ -23,9 +23,9 @@ function renderAgenda(days, cities, data) {
           const city = cityMap[d.city] || {};
           const date = new Date(d.date + 'T00:00:00');
           const dayNum = date.getDate();
-          const mon = date.toLocaleDateString('pt-BR', { month: 'short' });
-          return `<button class="agenda-tab" data-day="${i}" role="tab"
-            style="--city-color:${city.color || '#C84B31'}"
+          const mon = date.toLocaleDateString('pt-BR', { month: 'short' }).replace('.', '');
+          const isToday = d.date === new Date().toISOString().slice(0, 10);
+          return `<button class="agenda-tab${isToday ? ' today' : ''}" data-day="${i}" role="tab"
             aria-selected="false">
             <span class="tab-day">${dayNum}</span>
             <span class="tab-mon">${mon}</span>
@@ -38,8 +38,9 @@ function renderAgenda(days, cities, data) {
 
   return `
     <div class="agenda-header">
-      <h2 class="agenda-title">Diário de Bordo</h2>
-      <p class="agenda-subtitle">Pedro & Clarice · 12 Anos</p>
+      <div class="agenda-mono-label">I · Roteiro</div>
+      <h2 class="agenda-title">Diário di Bordo</h2>
+      <p class="agenda-subtitle">Pedro &amp; Clarice · 12 Anos · Maio MMXXVI</p>
     </div>
     ${tabs}
     <div class="agenda-days" id="agenda-days">
@@ -50,45 +51,43 @@ function renderAgenda(days, cities, data) {
 function renderDayCard(day, idx, cityMap, data) {
   const city = cityMap[day.city] || {};
   const dateStr = window.formatDate ? window.formatDate(day.date) : day.date;
-  const cityColor = city.color || '#C84B31';
 
   const events = (day.events || []).map(evt => renderEvent(evt, data)).join('');
 
+  const heroStyle = day.hero ? `background-image:url('${day.hero}')` : '';
+
   return `
-    <article class="day-card" id="day-card-${idx}" data-day="${idx}" data-date="${day.date}"
-      style="--city-color:${cityColor}">
-      <div class="day-card-header" style="background-image:url('${day.hero || ''}')">
+    <article class="day-card" id="day-card-${idx}" data-day="${idx}" data-date="${day.date}">
+      <div class="day-card-header" style="${heroStyle}">
         <div class="day-card-header-overlay"></div>
         <div class="day-card-header-content">
-          <div class="day-city-badge" style="background:${cityColor}">
-            ${city.flag || ''} ${city.name || ''}
-          </div>
+          <div class="day-city-badge">${city.name || ''}</div>
           <h3 class="day-title">${day.title}</h3>
-          <p class="day-subtitle">${day.subtitle || ''}</p>
+          ${day.subtitle ? `<p class="day-subtitle">${day.subtitle}</p>` : ''}
           <p class="day-date-label">${dateStr}</p>
         </div>
       </div>
-      <div class="day-summary">
-        <p class="day-summary-text">${day.summary || ''}</p>
+      ${day.summary ? `<div class="day-summary">
+        <p class="day-summary-text">${day.summary}</p>
         ${(day.tags || []).map(t => `<span class="day-tag">${t}</span>`).join('')}
-      </div>
+      </div>` : ''}
       <div class="day-events">
-        ${events}
+        ${events || '<div style="padding:16px 20px;color:var(--text3);font-size:0.82rem">Dia de descanso ou viagem.</div>'}
       </div>
     </article>`;
 }
 
 function renderEvent(evt, data) {
-  const icon = window.eventIcon ? window.eventIcon(evt.type) : '📍';
   const hasDetail = evt.notes || evt.history || evt.romantic || evt.tips;
+  const typeLabel = getTypeLabel(evt.type);
 
   return `
-    <div class="event-item ${hasDetail ? 'event-clickable' : ''}" data-evt-id="${evt.id}"
+    <div class="event-item ${hasDetail ? 'event-clickable' : ''}" data-evt-id="${evt.id || ''}"
       ${hasDetail ? `onclick="openEventModal(${JSON.stringify(evt).replace(/"/g, '&quot;')})"` : ''}>
       <div class="event-time">${evt.time || ''}</div>
       <div class="event-dot"></div>
       <div class="event-body">
-        <div class="event-title">${icon} ${evt.title}</div>
+        <div class="event-title">${typeLabel ? `<span style="font-family:var(--font-mono);font-size:8px;letter-spacing:.12em;text-transform:uppercase;color:var(--c-primary);margin-right:6px">${typeLabel}</span>` : ''}${evt.title}</div>
         ${evt.detail ? `<div class="event-detail">${evt.detail}</div>` : ''}
         ${evt.steps ? renderSteps(evt.steps) : ''}
         ${evt.restaurant_options ? renderRestaurantOptions(evt.restaurant_options) : ''}
@@ -97,10 +96,37 @@ function renderEvent(evt, data) {
     </div>`;
 }
 
+function getTypeLabel(type) {
+  const labels = {
+    flight:   'Voo',
+    hotel:    'Hotel',
+    transfer: 'Transfer',
+    metro:    'Metrô',
+    walk:     'A pé',
+    visit:    'Visita',
+    church:   'Igreja',
+    museum:   'Museu',
+    meal:     'Refeição',
+    restaurant: 'Restaurante',
+    ticket:   'Ingresso',
+    mass:     'Missa',
+    tomb:     'Túmulo',
+    'free-time': 'Tempo livre',
+    shopping: 'Compras',
+    viewpoint: 'Vista',
+    garden:   'Jardim',
+    excursion: 'Excursão',
+    train:    'Trem',
+    bus:      'Ônibus',
+    taxi:     'Táxi',
+  };
+  return labels[type] || '';
+}
+
 function renderSteps(steps) {
   return `<div class="event-steps">
     ${steps.map(s => `<div class="event-step">
-      <span class="event-step-icon">${window.eventIcon ? window.eventIcon(s.mode || 'default') : '→'}</span>
+      <span class="event-step-icon" style="color:var(--text3)">→</span>
       <span class="event-step-text">${s.desc}</span>
       ${s.duration ? `<span class="event-step-duration">${s.duration}</span>` : ''}
       ${s.price ? `<span class="event-step-price">${s.price}</span>` : ''}
@@ -110,22 +136,18 @@ function renderSteps(steps) {
 
 function renderRestaurantOptions(options) {
   return `<div class="event-restaurant-options">
-    <div class="event-section-label">Sugestões de restaurante</div>
+    <div class="event-section-label">Sugestões</div>
     ${options.slice(0, 2).map(r => `<div class="event-restaurant">
-      <strong>${r.name}</strong>
-      ${r.cuisine ? ` · <em>${r.cuisine}</em>` : ''}
-      ${r.price_range ? ` · ${r.price_range}` : ''}
+      <strong>${r.name}</strong>${r.cuisine ? ` · <em>${r.cuisine}</em>` : ''}${r.price_range ? ` · ${r.price_range}` : ''}
     </div>`).join('')}
   </div>`;
 }
 
 function bindEvents(data) {
-  // Tab navigation
   section.querySelectorAll('.agenda-tab').forEach((tab, idx) => {
     tab.addEventListener('click', () => activateDay(idx));
   });
 
-  // Global modal opener
   window.openEventModal = (evt) => {
     const hotels = Object.fromEntries((data.hotels || []).map(h => [h.id, h]));
     const hotel = evt.hotel_ref ? hotels[evt.hotel_ref] : null;
@@ -136,7 +158,7 @@ function bindEvents(data) {
 
 function activateDay(idx) {
   section.querySelectorAll('.agenda-tab').forEach((t, i) => {
-    t.setAttribute('aria-selected', i === idx);
+    t.setAttribute('aria-selected', i === idx ? 'true' : 'false');
   });
   const card = section.querySelector(`#day-card-${idx}`);
   if (card) card.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -156,7 +178,6 @@ function scrollToCurrentDay(days) {
 }
 
 function buildEventModal(evt, hotel) {
-  const icon = window.eventIcon ? window.eventIcon(evt.type) : '📍';
   const sections = [];
 
   if (evt.detail) {
@@ -166,16 +187,16 @@ function buildEventModal(evt, hotel) {
   if (evt.notes) {
     sections.push(`
       <div class="modal-section">
-        <div class="modal-section-label">ℹ️ Informações</div>
+        <div class="modal-section-label">Informações</div>
         <p>${evt.notes}</p>
       </div>`);
   }
 
   if (evt.history) {
     sections.push(`
-      <div class="modal-section modal-section--history">
-        <div class="modal-section-label">📖 História</div>
-        <p class="drop-cap">${evt.history}</p>
+      <div class="modal-section modal-section--history drop-cap">
+        <div class="modal-section-label">História</div>
+        <p>${evt.history}</p>
       </div>`);
   }
 
@@ -189,19 +210,19 @@ function buildEventModal(evt, hotel) {
   if (evt.tips) {
     sections.push(`
       <div class="modal-section">
-        <div class="modal-section-label">💡 Dicas</div>
+        <div class="modal-section-label">Dicas</div>
         <p>${evt.tips}</p>
       </div>`);
   }
 
   if (hotel) {
     sections.push(`
-      <div class="modal-section modal-section--hotel">
-        <div class="modal-section-label">🏨 Hospedagem</div>
-        <strong>${hotel.name}</strong><br>
-        ${hotel.address}<br>
-        ${hotel.phone_1 ? `Tel: ${hotel.phone_1}<br>` : ''}
-        Check-in: ${hotel.checkin_time} · Check-out: ${hotel.checkout_time}
+      <div class="modal-section">
+        <div class="modal-section-label">Hospedagem</div>
+        <p style="font-family:var(--font-serif);font-size:1rem;margin-bottom:6px">${hotel.name}</p>
+        <p style="font-size:0.82rem;color:var(--text3)">${hotel.address}</p>
+        ${hotel.phone_1 ? `<p style="font-size:0.82rem;color:var(--text3)">Tel: ${hotel.phone_1}</p>` : ''}
+        <p style="font-family:var(--font-mono);font-size:8.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--text3);margin-top:6px">Check-in ${hotel.checkin_time} · Check-out ${hotel.checkout_time}</p>
         ${hotel.notes ? `<p class="hotel-modal-notes">${hotel.notes}</p>` : ''}
       </div>`);
   }
@@ -210,30 +231,30 @@ function buildEventModal(evt, hotel) {
     const { lat, lng } = evt.coordinates;
     sections.push(`
       <a class="modal-maps-btn" href="https://maps.google.com/?q=${lat},${lng}" target="_blank" rel="noopener">
-        🗺️ Ver no Google Maps
+        Ver no Google Maps →
       </a>`);
   }
 
   if (evt.restaurant_options && evt.restaurant_options.length > 0) {
     const options = evt.restaurant_options.map(r => `
       <div class="modal-restaurant">
-        <strong>${r.name}</strong>
-        ${r.cuisine ? ` · <em>${r.cuisine}</em>` : ''}
-        ${r.price_range ? ` (${r.price_range})` : ''}
+        <strong>${r.name}</strong>${r.cuisine ? ` · <em>${r.cuisine}</em>` : ''}${r.price_range ? ` (${r.price_range})` : ''}
         ${r.address ? `<div class="modal-restaurant-addr">${r.address}</div>` : ''}
         ${r.notes ? `<div class="modal-restaurant-note">${r.notes}</div>` : ''}
       </div>`).join('');
     sections.push(`
       <div class="modal-section">
-        <div class="modal-section-label">🍽️ Onde Comer</div>
+        <div class="modal-section-label">Onde Comer</div>
         ${options}
       </div>`);
   }
 
+  const typeLabel = getTypeLabel(evt.type);
+
   return `
     <div class="event-modal-header">
-      <span class="event-modal-icon">${icon}</span>
       <div>
+        ${typeLabel ? `<div class="event-modal-time">${typeLabel}</div>` : ''}
         <h3 class="event-modal-title">${evt.title}</h3>
         ${evt.time ? `<p class="event-modal-time">${evt.time}</p>` : ''}
       </div>

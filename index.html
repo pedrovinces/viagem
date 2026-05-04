@@ -4,18 +4,40 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="description" content="Guia de viagem — Roma, Florença, Assis e Paris. 12 anos de amor." />
-  <meta name="theme-color" content="#C84B31" />
+  <meta name="theme-color" content="#8b1e1e" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="Nossa Viagem" />
 
   <link rel="manifest" href="./manifest.json" />
   <link rel="apple-touch-icon" href="./assets/icons/icon-192.svg" />
 
-  <!-- Google Fonts -->
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Fraunces', 'Georgia', 'serif'],
+            sans: ['Geist', 'system-ui', 'sans-serif'],
+            mono: ['Geist Mono', 'monospace'],
+          },
+          colors: {
+            cream: { 50: '#fdfaf3', 100: '#f8f1e0', 200: '#f0e3c3', 300: '#e3d09a' },
+            ink: { DEFAULT: '#1a1410', soft: '#3d322a', muted: '#6b5c4f' },
+            papal: { DEFAULT: '#8b1e1e', dark: '#5e1414', light: '#b85048' },
+            gold: { DEFAULT: '#a8842c', light: '#d4ab4f', dark: '#7a5f1f' },
+          },
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts: Fraunces + Geist + Geist Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,500&family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
   <!-- Leaflet CSS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
@@ -38,23 +60,44 @@
 <body>
   <div id="app">
 
-    <!-- HEADER -->
+    <!-- HEADER EDITORIAL -->
     <header class="app-header">
-      <div class="header-left">
-        <span class="header-logo">✦</span>
-        <div class="header-titles">
-          <h1 class="header-title">Nossa Viagem</h1>
-          <span class="header-subtitle" id="current-city-label">12 Anos de Amor</span>
-        </div>
+      <div class="header-editorial">
+        <div class="header-mono-label">Pedro &amp; Clarice · Lua de Mel</div>
+        <h1 class="header-display-title">Nossa <em>Viagem</em></h1>
+        <div class="header-mono-sub">12 Anos · Maio MMXXVI</div>
       </div>
       <div class="header-actions">
-        <span class="header-city-flag" id="current-city-flag"></span>
         <button class="btn-icon" id="theme-toggle" aria-label="Alternar tema" title="Alternar tema">
-          <span class="icon-sun">☀️</span>
-          <span class="icon-moon">🌙</span>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
         </button>
       </div>
     </header>
+
+    <!-- QUICK STATS GRID -->
+    <div class="header-stats-grid">
+      <div class="stat-cell">
+        <div class="stat-label">Período</div>
+        <div class="stat-value">17—31 Mai</div>
+        <div class="stat-sub">15 dias · 2026</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-label">Cidades</div>
+        <div class="stat-value">Roma · FLR</div>
+        <div class="stat-sub">Assis · Paris</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-label">Voo saída</div>
+        <div class="stat-value">17 Mai</div>
+        <div class="stat-sub">GRU → FCO</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-label">Voo volta</div>
+        <div class="stat-value">31 Mai</div>
+        <div class="stat-sub">CDG → GRU</div>
+      </div>
+    </div>
 
     <!-- MAIN CONTENT -->
     <main class="app-main" id="app-main">
@@ -125,26 +168,46 @@
 
     </main>
 
-    <!-- BOTTOM NAVIGATION -->
+    <!-- BOTTOM NAVIGATION — SVG icons, sem emoji -->
     <nav class="bottom-nav" role="navigation" aria-label="Navegação principal">
       <a href="#agenda" class="nav-item active" data-section="agenda" aria-label="Agenda">
-        <span class="nav-icon">📅</span>
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+          <line x1="16" y1="2" x2="16" y2="6"/>
+          <line x1="8" y1="2" x2="8" y2="6"/>
+          <line x1="3" y1="10" x2="21" y2="10"/>
+        </svg>
         <span class="nav-label">Agenda</span>
       </a>
       <a href="#map" class="nav-item" data-section="map" aria-label="Mapa">
-        <span class="nav-icon">🗺️</span>
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/>
+          <line x1="9" y1="3" x2="9" y2="18"/>
+          <line x1="15" y1="6" x2="15" y2="21"/>
+        </svg>
         <span class="nav-label">Mapa</span>
       </a>
       <a href="#transport" class="nav-item" data-section="transport" aria-label="Transporte">
-        <span class="nav-icon">🚆</span>
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+          <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/>
+          <line x1="12" y1="12" x2="12" y2="16"/>
+          <line x1="10" y1="14" x2="14" y2="14"/>
+        </svg>
         <span class="nav-label">Transporte</span>
       </a>
       <a href="#phrases" class="nav-item" data-section="phrases" aria-label="Frases">
-        <span class="nav-icon">🗣️</span>
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8z"/>
+        </svg>
         <span class="nav-label">Frases</span>
       </a>
       <button class="nav-item nav-more-btn" id="more-btn" aria-label="Mais opções" aria-expanded="false">
-        <span class="nav-icon">☰</span>
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="5" r="1" fill="currentColor"/>
+          <circle cx="12" cy="12" r="1" fill="currentColor"/>
+          <circle cx="12" cy="19" r="1" fill="currentColor"/>
+        </svg>
         <span class="nav-label">Mais</span>
       </button>
     </nav>
@@ -154,31 +217,49 @@
       <div class="more-drawer-backdrop" id="drawer-backdrop"></div>
       <div class="more-drawer-panel">
         <div class="more-drawer-handle"></div>
-        <h2 class="more-drawer-title">Mais opções</h2>
+        <div class="more-drawer-mono-label">Mais seções</div>
         <div class="more-drawer-grid">
           <a href="#weather" class="drawer-item" data-section="weather">
-            <span class="drawer-item-icon">🌤️</span>
+            <svg class="drawer-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>
+            </svg>
             <span class="drawer-item-label">Clima</span>
           </a>
           <a href="#religion" class="drawer-item" data-section="religion">
-            <span class="drawer-item-icon">✝️</span>
-            <span class="drawer-item-label">Fé &amp; Espiritualidade</span>
+            <svg class="drawer-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="12" y1="3" x2="12" y2="21"/>
+              <line x1="7" y1="9" x2="17" y2="9"/>
+            </svg>
+            <span class="drawer-item-label">Fé</span>
           </a>
           <a href="#destinations" class="drawer-item" data-section="destinations">
-            <span class="drawer-item-icon">🏛️</span>
+            <svg class="drawer-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+              <polyline points="9 22 9 12 15 12 15 22"/>
+            </svg>
             <span class="drawer-item-label">Destinos</span>
           </a>
           <a href="#documents" class="drawer-item" data-section="documents">
-            <span class="drawer-item-icon">📋</span>
+            <svg class="drawer-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <line x1="16" y1="13" x2="8" y2="13"/>
+              <line x1="16" y1="17" x2="8" y2="17"/>
+              <polyline points="10 9 9 9 8 9"/>
+            </svg>
             <span class="drawer-item-label">Documentos</span>
           </a>
           <button class="drawer-item" id="drawer-theme-toggle">
-            <span class="drawer-item-icon theme-icon-day">☀️</span>
-            <span class="drawer-item-icon theme-icon-night" style="display:none">🌙</span>
+            <svg class="drawer-item-icon theme-icon-day" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+            </svg>
+            <svg class="drawer-item-icon theme-icon-night" style="display:none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
             <span class="drawer-item-label">Tema</span>
           </button>
         </div>
-        <p class="more-drawer-footer">✦ Com amor, em cada passo ✦</p>
+        <p class="more-drawer-footer">Pedro &amp; Clarice · XII Anni</p>
       </div>
     </div>
 
@@ -186,7 +267,11 @@
     <div id="event-modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
       <div class="modal-backdrop" id="modal-backdrop"></div>
       <div class="modal-panel">
-        <button class="modal-close" id="modal-close" aria-label="Fechar">✕</button>
+        <button class="modal-close" id="modal-close" aria-label="Fechar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" width="16" height="16">
+            <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
         <div class="modal-content" id="modal-content"><!-- preenchido por JS --></div>
       </div>
     </div>
@@ -200,7 +285,9 @@
     <!-- PROMPT DE INSTALAÇÃO -->
     <div id="install-prompt" class="install-prompt hidden">
       <div class="install-prompt-content">
-        <span class="install-prompt-icon">📲</span>
+        <svg class="install-prompt-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" width="28" height="28">
+          <path d="M12 2v13M5 10l7 7 7-7"/><path d="M5 21h14"/>
+        </svg>
         <div>
           <strong>Instalar no celular</strong>
           <p>Acesse offline durante a viagem</p>

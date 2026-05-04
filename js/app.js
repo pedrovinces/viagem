@@ -72,18 +72,7 @@ async function navigate(section) {
 }
 
 function updateHeader(section) {
-  const labels = {
-    agenda:       'Diário de Bordo',
-    map:          'Mapa da Viagem',
-    transport:    'Transporte',
-    phrases:      'Frases Úteis',
-    weather:      'Clima',
-    religion:     'Fé & Espiritualidade',
-    destinations: 'Destinos',
-    documents:    'Documentos',
-  };
-  const el = document.getElementById('current-city-label');
-  if (el) el.textContent = labels[section] || '12 Anos de Amor';
+  // Header is now editorial/static — no dynamic label needed
 }
 
 // ---- Listeners de navegação ----
@@ -174,7 +163,7 @@ function initTheme() {
 function applyTheme(theme) {
   document.documentElement.setAttribute('data-theme', theme);
   document.querySelector('meta[name="theme-color"]')
-    ?.setAttribute('content', theme === 'dark' ? '#2C1810' : '#C84B31');
+    ?.setAttribute('content', theme === 'dark' ? '#1a1410' : '#8b1e1e');
 
   // Ícone no drawer
   const dayIcon  = document.querySelector('.theme-icon-day');
@@ -202,8 +191,8 @@ window.formatDateShort = function(dateStr) {
 };
 
 window.cityColor = function(cityId) {
-  const colors = { rome: '#C84B31', florence: '#D4943A', assisi: '#8B7355', paris: '#4A6FA5' };
-  return colors[cityId] || '#C84B31';
+  const colors = { rome: '#8b1e1e', florence: '#8b1e1e', assisi: '#6b5c4f', paris: '#8b1e1e' };
+  return colors[cityId] || '#8b1e1e';
 };
 
 window.cityName = function(cityId) {

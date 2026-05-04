@@ -1,35 +1,52 @@
 /* ============================================================
-   NOSSA VIAGEM — Tema Escuro
-   Cores quentes escurecidas, mantendo o clima mediterrâneo
+   NOSSA VIAGEM — Dark Mode
+   Paleta ink escura, cream como acentos
    ============================================================ */
 
 [data-theme="dark"] {
-  --bg:      #1A1008;
-  --bg2:     #261608;
-  --surface: #2C1810;
-  --surface2:#341E12;
-  --border:  #4D2E1A;
-  --text:    #FAF3E0;
-  --text2:   #D4B896;
-  --text3:   #9C7A60;
-  --shadow:     rgba(0, 0, 0, 0.4);
-  --shadow-md:  rgba(0, 0, 0, 0.6);
+  --bg:       #1a1410;
+  --bg2:      #231a13;
+  --surface:  #2a1f17;
+  --border:   rgba(253,250,243,0.10);
+
+  --text:     #fdfaf3;
+  --text2:    #e3d09a;
+  --text3:    #8a7060;
+
+  --shadow:    rgba(0,0,0,0.4);
+  --shadow-md: rgba(0,0,0,0.6);
 }
 
-/* Ajustes específicos no dark mode */
-[data-theme="dark"] .app-header {
-  background: var(--surface);
-  border-bottom-color: var(--border);
+/* Ajustes de superfícies */
+[data-theme="dark"] .app-header,
+[data-theme="dark"] .header-stats-grid,
+[data-theme="dark"] .stat-cell {
+  background: var(--bg);
+  border-color: var(--border);
 }
 
 [data-theme="dark"] .bottom-nav {
-  background: var(--surface);
+  background: rgba(26,20,16,0.96);
   border-top-color: var(--border);
 }
 
 [data-theme="dark"] .more-drawer-panel,
 [data-theme="dark"] .modal-panel {
-  background: var(--surface);
+  background: var(--bg);
+  border-color: var(--border);
+}
+
+[data-theme="dark"] .modal-panel::before {
+  background: var(--border);
+}
+
+[data-theme="dark"] .modal-close {
+  background: var(--bg2);
+  border-color: var(--border);
+}
+
+[data-theme="dark"] .more-drawer-handle {
+  background: var(--border);
 }
 
 [data-theme="dark"] .drawer-item {
@@ -38,11 +55,7 @@
   color: var(--text2);
 }
 
-[data-theme="dark"] .card {
-  background: var(--surface);
-  border-color: var(--border);
-}
-
+[data-theme="dark"] .card,
 [data-theme="dark"] .info-card {
   background: var(--surface);
   border-color: var(--border);
@@ -50,44 +63,43 @@
 
 [data-theme="dark"] .info-card-header {
   background: var(--bg2);
-  border-bottom-color: var(--border);
+  border-color: var(--border);
 }
 
 [data-theme="dark"] .event-card {
-  background: var(--surface);
-  border-color: var(--border);
+  background: transparent;
+  border-color: transparent;
+}
+[data-theme="dark"] .event-card:hover {
+  background: var(--bg2);
 }
 
 [data-theme="dark"] .accordion-item {
   border-color: var(--border);
 }
-
 [data-theme="dark"] .accordion-trigger {
   background: var(--surface);
 }
-
 [data-theme="dark"] .accordion-trigger:hover {
   background: var(--bg2);
 }
-
 [data-theme="dark"] .accordion-content {
-  background: var(--surface2);
+  background: var(--bg);
+  border-color: var(--border);
 }
 
 [data-theme="dark"] .section-header {
-  background: var(--surface);
-  border-bottom-color: var(--border);
+  background: var(--bg);
+  border-color: var(--border);
 }
 
 [data-theme="dark"] .city-pills {
-  background: var(--surface);
-  border-bottom-color: var(--border);
-}
-
-[data-theme="dark"] .city-pill {
-  background: var(--surface);
+  background: var(--bg);
   border-color: var(--border);
-  color: var(--text3);
+}
+[data-theme="dark"] .city-pill {
+  background: var(--bg);
+  border-color: var(--border);
 }
 
 [data-theme="dark"] .modal-tip {
@@ -96,17 +108,32 @@
 
 [data-theme="dark"] .btn-icon {
   background: var(--bg2);
-  color: var(--text);
+  border-color: var(--border);
+  color: var(--text2);
 }
 
-[data-theme="dark"] .icon-sun { display: inline; }
+[data-theme="dark"] .update-banner {
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+[data-theme="dark"] .install-prompt {
+  background: var(--surface);
+  border-color: var(--border);
+}
+
+[data-theme="dark"] .header-stats-grid {
+  background: var(--border);
+}
+
+/* Theme icon toggle */
+[data-theme="dark"] .icon-sun  { display: block; }
 [data-theme="dark"] .icon-moon { display: none; }
+[data-theme="light"] .icon-sun  { display: none; }
+[data-theme="light"] .icon-moon { display: block; }
 
-/* Ícone do tema: light=moon, dark=sun */
-[data-theme="light"] .icon-sun { display: none; }
-[data-theme="light"] .icon-moon { display: inline; }
-
-/* Leaflet em dark mode */
+/* Leaflet dark */
 [data-theme="dark"] .leaflet-popup-content-wrapper {
   background: var(--surface);
   color: var(--text);
@@ -121,15 +148,109 @@
   border-bottom-color: var(--border);
 }
 
-/* Update banner dark */
-[data-theme="dark"] .update-banner {
-  background: var(--surface);
-  color: var(--text);
-  border: 1px solid var(--border);
+/* Agenda dark */
+[data-theme="dark"] .day-nav-wrap,
+[data-theme="dark"] .agenda-header {
+  background: var(--bg);
+  border-color: var(--border);
+}
+[data-theme="dark"] .day-tab {
+  background: var(--bg);
+  border-color: var(--border);
+  color: var(--text3);
+}
+[data-theme="dark"] .day-tab.active {
+  background: var(--c-primary);
+  border-color: var(--c-primary);
+  color: var(--bg);
+}
+[data-theme="dark"] .day-stats {
+  border-color: var(--border);
+}
+[data-theme="dark"] .day-stat {
+  background: var(--bg);
+  border-color: var(--border);
+}
+[data-theme="dark"] .timeline-item:hover {
+  background: var(--bg2);
+}
+[data-theme="dark"] .timeline-item.active {
+  background: var(--bg2);
 }
 
-/* Install prompt dark */
-[data-theme="dark"] .install-prompt {
+/* Transport dark */
+[data-theme="dark"] .transport-mode-card {
   background: var(--surface);
+  border-color: var(--border);
+}
+[data-theme="dark"] .transport-mode-header {
+  background: var(--bg2);
+  border-color: var(--border);
+}
+[data-theme="dark"] .intercity-route {
+  background: var(--surface);
+  border-color: var(--border);
+}
+
+/* Phrases dark */
+[data-theme="dark"] .phrases-lang-toggle {
+  background: var(--bg);
+  border-color: var(--border);
+}
+[data-theme="dark"] .lang-btn {
+  background: var(--bg2);
+  border-color: var(--border);
+  color: var(--text2);
+}
+[data-theme="dark"] .phrase-item:hover {
+  background: var(--bg2);
+}
+
+/* Weather dark */
+[data-theme="dark"] .forecast-list {
+  background: var(--surface);
+  border-color: var(--border);
+}
+
+/* Documents dark */
+[data-theme="dark"] .flight-card,
+[data-theme="dark"] .hotel-card,
+[data-theme="dark"] .ticket-card {
+  background: var(--surface);
+  border-color: var(--border);
+}
+[data-theme="dark"] .hotel-card-header,
+[data-theme="dark"] .flight-footer {
+  background: var(--bg2);
+  border-color: var(--border);
+}
+[data-theme="dark"] .emergency-card {
+  background: rgba(139,30,30,0.12);
+  border-color: rgba(139,30,30,0.25);
+}
+[data-theme="dark"] .emergency-number { color: #f87171; }
+[data-theme="dark"] .emergency-label  { color: #fca5a5; }
+
+/* Religion dark */
+[data-theme="dark"] .religion-site-card {
+  background: var(--surface);
+  border-color: var(--border);
+}
+[data-theme="dark"] .religion-info-box {
+  background: var(--bg2);
+  border-color: var(--border);
+}
+[data-theme="dark"] .religion-info-box-title {
+  background: var(--surface);
+  border-color: var(--border);
+}
+
+/* Destinations dark */
+[data-theme="dark"] .destination-card {
+  background: var(--surface);
+  border-color: var(--border);
+}
+[data-theme="dark"] .dest-modal-info {
+  background: var(--bg2);
   border-color: var(--border);
 }

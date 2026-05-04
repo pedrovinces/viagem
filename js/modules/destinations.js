@@ -1,5 +1,6 @@
 /* ============================================================
    DESTINATIONS.JS — Guia de atrações por cidade
+   Estilo editorial Fraunces/Geist
    ============================================================ */
 
 const section = document.getElementById('section-destinations');
@@ -21,7 +22,13 @@ export async function init(data) {
 
 function render(data) {
   const cities = data.cities || [];
-  section.innerHTML = cities.map(renderCity).join('');
+  section.innerHTML = `
+    <div class="section-header">
+      <div class="section-mono-label">IV · Destinos</div>
+      <h2 class="section-title">Cidades &amp; atrações</h2>
+      <p class="section-subtitle">Roma · Florença · Assis · Paris</p>
+    </div>
+    ${cities.map(renderCity).join('')}`;
 
   section.querySelectorAll('.destination-card').forEach(card => {
     card.addEventListener('click', () => {
@@ -34,14 +41,14 @@ function render(data) {
 }
 
 function renderCity(city, cityIdx) {
-  const cards = (city.destinations || []).map((d, i) => renderCard(d, i, cityIdx, city.color)).join('');
+  const cards = (city.destinations || []).map((d, i) => renderCard(d, i, cityIdx)).join('');
   return `
     <div class="destinations-city-section">
-      <div class="destinations-city-banner" style="min-height:180px">
-        <img src="${city.hero}" alt="${city.name}" loading="lazy">
+      <div class="destinations-city-banner">
+        ${city.hero ? `<img src="${city.hero}" alt="${city.name}" loading="lazy">` : ''}
         <div class="destinations-city-banner-content">
-          <div class="destinations-city-name">${city.flag} ${city.name}</div>
-          <div class="destinations-city-tagline">${city.tagline}</div>
+          <div class="destinations-city-mono">${romanNumeral(cityIdx + 1)} · ${city.tagline || ''}</div>
+          <div class="destinations-city-name">${city.name}</div>
         </div>
       </div>
       <div class="destination-cards">
@@ -50,15 +57,19 @@ function renderCity(city, cityIdx) {
     </div>`;
 }
 
-function renderCard(dest, idx, cityIdx, cityColor) {
+function romanNumeral(n) {
+  const r = ['I','II','III','IV','V'];
+  return r[n - 1] || n;
+}
+
+function renderCard(dest, idx, cityIdx) {
   const meta = [];
-  if (dest.duration) meta.push(`⏱️ ${dest.duration}`);
-  if (dest.price)    meta.push(`💶 ${dest.price}`);
-  if (dest.must_book) meta.push(`🎟️ Reserva necessária`);
+  if (dest.duration) meta.push(dest.duration);
+  if (dest.price)    meta.push(dest.price);
+  if (dest.must_book) meta.push('Reserva necessária');
 
   return `
-    <div class="destination-card" data-dest-idx="${idx}" data-city-idx="${cityIdx}"
-      style="--city-color:${cityColor}">
+    <div class="destination-card" data-dest-idx="${idx}" data-city-idx="${cityIdx}">
       ${dest.photo ? `<img class="destination-card-img" src="${dest.photo}" alt="${dest.name}" loading="lazy">` : ''}
       <div class="destination-card-body">
         <div class="destination-card-type">${dest.type || ''}</div>
@@ -75,14 +86,14 @@ function openDestModal(dest) {
   const gallery = (dest.photos || [dest.photo]).filter(Boolean);
   const galleryHtml = gallery.length > 0 ? `
     <div class="destination-gallery">
-      ${gallery.map((url, i) => `<img src="${url}" alt="" loading="lazy" style="${i===0?'grid-column:span 3':''}">`).join('')}
+      ${gallery.map((url, i) => `<img src="${url}" alt="" loading="lazy">`).join('')}
     </div>` : '';
 
   const info = [];
-  if (dest.hours)   info.push(['🕐 Horário', dest.hours]);
-  if (dest.price)   info.push(['💶 Preço', dest.price]);
-  if (dest.duration) info.push(['⏱️ Duração', dest.duration]);
-  if (dest.address) info.push(['📍 Endereço', dest.address]);
+  if (dest.hours)    info.push(['Horário', dest.hours]);
+  if (dest.price)    info.push(['Preço', dest.price]);
+  if (dest.duration) info.push(['Duração', dest.duration]);
+  if (dest.address)  info.push(['Endereço', dest.address]);
 
   const infoHtml = info.length ? `
     <div class="dest-modal-info">
@@ -91,14 +102,14 @@ function openDestModal(dest) {
 
   const html = `
     ${galleryHtml}
+    <div class="dest-modal-type">${dest.type || ''}</div>
     <h3 class="dest-modal-name">${dest.name}</h3>
-    <p class="dest-modal-type">${dest.type || ''}</p>
     ${infoHtml}
     <div class="dest-modal-desc">
-      <p class="drop-cap">${dest.long_description || dest.description}</p>
+      <p>${dest.long_description || dest.description}</p>
     </div>
     ${dest.tips ? `<div class="dest-modal-tips">
-      <div class="dest-tips-label">💡 Dicas</div>
+      <div class="dest-tips-label">Dicas</div>
       <p>${dest.tips}</p>
     </div>` : ''}
     ${dest.romantic ? `<div class="dest-modal-romantic">
@@ -106,7 +117,7 @@ function openDestModal(dest) {
     </div>` : ''}
     ${dest.coordinates ? `
       <a class="modal-maps-btn" href="https://maps.google.com/?q=${dest.coordinates.lat},${dest.coordinates.lng}"
-        target="_blank" rel="noopener">🗺️ Ver no Google Maps</a>` : ''}`;
+        target="_blank" rel="noopener">Ver no Google Maps →</a>` : ''}`;
 
   window.App.openModal(html);
 }

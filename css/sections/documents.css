@@ -1,22 +1,34 @@
 /* ============================================================
-   DOCUMENTOS — Voos, hotéis, tickets, emergência
+   DOCUMENTOS — Voos, hotéis, tickets, emergência · Editorial
    ============================================================ */
 
-.documents-section { padding: var(--s4); }
+.documents-section { padding: var(--s4) var(--s5); }
 
 .documents-section-title {
   font-family: var(--font-serif);
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: 300;
+  font-style: italic;
   color: var(--text);
   margin-bottom: var(--s4);
   padding-bottom: var(--s3);
   border-bottom: 1px solid var(--border);
   display: flex;
-  align-items: center;
+  align-items: baseline;
   gap: var(--s3);
 }
 
-/* Card de voo */
+.documents-section-mono {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--c-primary);
+}
+
+/* ----------------------------------------------------------
+   VOO
+   ---------------------------------------------------------- */
 .flight-card {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -26,33 +38,35 @@
 }
 
 .flight-card-header {
-  background: linear-gradient(135deg, #1a1008, #3d2015);
-  color: #FAF3E0;
+  background: var(--text);
+  color: var(--bg);
   padding: var(--s4) var(--s5);
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
 .flight-airline {
-  font-size: 0.65rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
+  font-family: var(--font-mono);
+  font-size: 8.5px;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
-  opacity: 0.7;
+  color: rgba(253,250,243,0.55);
 }
 
 .flight-number {
   font-family: var(--font-serif);
-  font-size: 1.3rem;
-  font-weight: 400;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-top: 2px;
 }
 
 .flight-class {
-  font-size: 0.65rem;
-  font-weight: 700;
+  font-family: var(--font-mono);
+  font-size: 8.5px;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  opacity: 0.7;
+  color: rgba(253,250,243,0.55);
   text-align: right;
 }
 
@@ -64,27 +78,37 @@
   border-bottom: 1px solid var(--border);
 }
 
-.flight-endpoint {
-  flex: 1;
-}
+.flight-endpoint { flex: 1; }
 
 .flight-airport-code {
   font-family: var(--font-serif);
-  font-size: 2rem;
+  font-size: 1.8rem;
+  font-weight: 300;
   color: var(--text);
   line-height: 1;
 }
 
 .flight-airport-name {
-  font-size: 0.7rem;
+  font-family: var(--font-mono);
+  font-size: 8.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
   color: var(--text3);
   margin-top: 2px;
 }
 
 .flight-time {
   font-family: var(--font-serif);
-  font-size: 1rem;
+  font-size: 0.95rem;
   color: var(--text2);
+  margin-top: 2px;
+}
+
+.flight-checkin {
+  font-family: var(--font-mono);
+  font-size: 8px;
+  color: var(--text3);
+  margin-top: 2px;
 }
 
 .flight-center {
@@ -96,115 +120,28 @@
 }
 
 .flight-duration {
-  font-size: 0.65rem;
-  font-weight: 700;
-  color: var(--text3);
+  font-family: var(--font-mono);
+  font-size: 8.5px;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+  color: var(--text3);
 }
 
 .flight-arrow {
-  font-size: 0.7rem;
-  color: var(--c-primary);
   display: flex;
   align-items: center;
   gap: 2px;
+  color: var(--c-primary);
+  font-size: 0.7rem;
 }
 
 .flight-line {
-  width: 60px;
+  width: 24px;
   height: 1px;
   background: var(--border);
 }
 
-/* Hotel card */
-.hotel-card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--r-md);
-  overflow: hidden;
-  margin-bottom: var(--s4);
-}
-
-.hotel-card-header {
-  padding: var(--s4);
-  border-bottom: 1px solid var(--border);
-  display: flex;
-  align-items: center;
-  gap: var(--s3);
-  background: var(--bg2);
-}
-
-.hotel-icon { font-size: 1.4rem; }
-
-.hotel-name {
-  font-family: var(--font-serif);
-  font-size: 1.1rem;
-  color: var(--text);
-  flex: 1;
-}
-
-.hotel-city-badge { flex-shrink: 0; }
-
-/* Ticket card */
-.ticket-card {
-  background: var(--surface);
-  border: 2px dashed var(--border);
-  border-radius: var(--r-md);
-  padding: var(--s4);
-  margin-bottom: var(--s4);
-  position: relative;
-}
-
-.ticket-card::before {
-  content: '🎟️';
-  position: absolute;
-  top: var(--s4);
-  right: var(--s4);
-  font-size: 1.5rem;
-  opacity: 0.2;
-}
-
-.ticket-card-title {
-  font-family: var(--font-serif);
-  font-size: 1.1rem;
-  margin-bottom: var(--s3);
-}
-
-.ticket-code {
-  font-family: monospace;
-  font-size: 1.1rem;
-  letter-spacing: 0.15em;
-  color: var(--c-primary);
-  font-weight: 700;
-  background: var(--bg2);
-  padding: var(--s2) var(--s3);
-  border-radius: var(--r-sm);
-  display: inline-block;
-  margin-bottom: var(--s3);
-}
-
-/* ----------------------------------------------------------
-   CLASSES AUXILIARES DE INFO ROWS (alias semântico)
-   ---------------------------------------------------------- */
-.info-card-rows { padding: 0; }
-
-.info-label {
-  color: var(--text3);
-  min-width: 90px;
-  flex-shrink: 0;
-  font-size: 0.8rem;
-}
-.info-value {
-  color: var(--text);
-  font-weight: 500;
-  word-break: break-word;
-  font-size: 0.85rem;
-}
-
-/* ----------------------------------------------------------
-   RODAPÉ DE CARDS DE VOO / HOTEL
-   ---------------------------------------------------------- */
+/* Footer do voo */
 .flight-footer {
   padding: var(--s3) var(--s5);
   border-top: 1px solid var(--border);
@@ -216,77 +153,167 @@
   display: flex;
   align-items: center;
   gap: var(--s2);
-  margin-bottom: var(--s1);
+  margin-bottom: 2px;
 }
-.flight-notes { font-style: italic; color: var(--text3); }
-.flight-checkin { font-size: 0.72rem; color: var(--text3); margin-top: 2px; }
+.flight-notes { font-style: italic; color: var(--text3); font-size: 0.78rem; }
+
+/* ----------------------------------------------------------
+   HOTEL
+   ---------------------------------------------------------- */
+.hotel-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  overflow: hidden;
+  margin-bottom: var(--s4);
+}
+
+.hotel-card-header {
+  padding: var(--s4) var(--s5);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: flex-start;
+  gap: var(--s3);
+  background: var(--bg2);
+}
+
+.hotel-icon { color: var(--text3); flex-shrink: 0; padding-top: 2px; }
+
+.hotel-name {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  color: var(--text);
+  flex: 1;
+  line-height: 1.25;
+}
+
+.hotel-city-badge { flex-shrink: 0; }
 
 .hotel-notes {
-  padding: var(--s3) var(--s4);
-  font-size: 0.82rem;
+  padding: var(--s3) var(--s5);
+  font-size: 0.8rem;
   color: var(--text3);
   font-style: italic;
   border-top: 1px solid var(--border);
   background: var(--bg2);
 }
 
-.ticket-desc {
-  font-size: 0.82rem;
-  color: var(--text2);
-  margin-top: var(--s3);
-  line-height: 1.6;
+/* ----------------------------------------------------------
+   INFO ROWS (dentro de cards)
+   ---------------------------------------------------------- */
+.info-card-rows { padding: 0; }
+
+.info-row {
+  display: flex;
+  padding: var(--s3) var(--s5);
+  border-bottom: 1px solid var(--border);
+  gap: var(--s3);
+  align-items: flex-start;
+  font-size: 0.85rem;
 }
-.ticket-notes {
-  margin-top: var(--s3);
-  font-size: 0.78rem;
+.info-row:last-child { border-bottom: none; }
+
+.info-label {
+  font-family: var(--font-mono);
+  font-size: 8.5px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
   color: var(--text3);
-  font-style: italic;
+  min-width: 90px;
+  flex-shrink: 0;
+  padding-top: 2px;
+}
+
+.info-value {
+  color: var(--text);
+  word-break: break-word;
+  line-height: 1.4;
 }
 
 /* ----------------------------------------------------------
-   GRUPOS DE CONTATOS
+   TICKET CARD
+   ---------------------------------------------------------- */
+.ticket-card {
+  background: var(--surface);
+  border: 1px dashed var(--border);
+  border-radius: var(--r-md);
+  overflow: hidden;
+  margin-bottom: var(--s4);
+}
+
+.ticket-card-title {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-weight: 300;
+  padding: var(--s4) var(--s5) 0;
+}
+
+.ticket-code {
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+  letter-spacing: 0.15em;
+  color: var(--c-primary);
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  padding: var(--s2) var(--s3);
+  border-radius: var(--r-sm);
+  display: inline-block;
+  margin: var(--s2) var(--s5) var(--s3);
+}
+
+.ticket-desc {
+  padding: 0 var(--s5);
+  font-size: 0.82rem;
+  color: var(--text2);
+  margin-bottom: var(--s3);
+  line-height: 1.6;
+}
+
+.ticket-notes {
+  padding: var(--s3) var(--s5);
+  font-size: 0.78rem;
+  color: var(--text3);
+  font-style: italic;
+  border-top: 1px solid var(--border);
+}
+
+/* ----------------------------------------------------------
+   CONTATOS / EMERGÊNCIA
    ---------------------------------------------------------- */
 .contacts-group { margin-bottom: var(--s5); }
 
 .contacts-group-label {
-  font-size: 0.65rem;
-  font-weight: 700;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 0.25em;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
   color: var(--text3);
   margin-bottom: var(--s3);
   padding-bottom: var(--s2);
   border-bottom: 1px solid var(--border);
 }
 
-/* Emergency contacts */
 .emergency-card {
-  background: #FEF2F2;
-  border: 1px solid #FCA5A5;
+  background: var(--surface);
+  border: 1px solid rgba(139,30,30,0.2);
   border-radius: var(--r-md);
-  padding: var(--s4);
+  padding: var(--s4) var(--s5);
   margin-bottom: var(--s3);
-}
-
-[data-theme="dark"] .emergency-card {
-  background: rgba(200, 30, 30, 0.1);
-  border-color: rgba(200, 30, 30, 0.3);
 }
 
 .emergency-number {
   font-family: var(--font-serif);
-  font-size: 1.8rem;
-  color: #DC2626;
-  font-weight: 400;
+  font-size: 1.7rem;
+  font-weight: 300;
+  color: var(--c-primary);
+  display: block;
+  margin-top: 2px;
 }
 
 .emergency-label {
-  font-size: 0.75rem;
-  font-weight: 700;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: #991B1B;
+  color: var(--text3);
 }
-
-[data-theme="dark"] .emergency-number { color: #F87171; }
-[data-theme="dark"] .emergency-label  { color: #FCA5A5; }

@@ -1,14 +1,18 @@
 /* ============================================================
-   FÉ — Guia Religioso Católico
+   FÉ — Guia Religioso Católico · Estilo editorial refinado
    ============================================================ */
 
+/* ----------------------------------------------------------
+   HERO ESCURO
+   ---------------------------------------------------------- */
 .religion-hero {
-  background: linear-gradient(135deg, #1a1008 0%, #3d2015 50%, #1a1008 100%);
-  color: #FAF3E0;
-  padding: var(--s8) var(--s5);
+  background: var(--c-ink, #1a1410);
+  color: #fdfaf3;
+  padding: var(--s8) var(--s5) var(--s6);
   text-align: center;
   position: relative;
   overflow: hidden;
+  border-bottom: 1px solid rgba(253,250,243,0.08);
 }
 
 .religion-hero::before {
@@ -17,26 +21,28 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 15rem;
+  font-size: 12rem;
   opacity: 0.04;
-  color: var(--c-gold);
+  color: #d4ab4f;
   pointer-events: none;
   line-height: 1;
+  font-family: var(--font-serif);
 }
 
 .religion-hero-eyebrow {
-  font-size: 0.65rem;
-  font-weight: 700;
-  letter-spacing: 0.2em;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 0.35em;
   text-transform: uppercase;
-  color: var(--c-gold);
+  color: #d4ab4f;
   margin-bottom: var(--s3);
 }
 
 .religion-hero-title {
   font-family: var(--font-serif);
   font-size: 2rem;
-  font-weight: 400;
+  font-weight: 300;
+  font-style: italic;
   line-height: 1.1;
   margin-bottom: var(--s3);
 }
@@ -44,20 +50,20 @@
 .religion-hero-subtitle {
   font-family: var(--font-serif);
   font-style: italic;
-  font-size: 1rem;
-  opacity: 0.7;
+  font-size: 0.95rem;
+  color: rgba(253,250,243,0.6);
 }
 
 /* ----------------------------------------------------------
-   CITY TAB (pilar da seção)
+   CITY NAV
    ---------------------------------------------------------- */
 .religion-city-nav {
   display: flex;
   gap: var(--s2);
-  padding: var(--s3) var(--s4);
+  padding: var(--s3) var(--s5);
   overflow-x: auto;
   scrollbar-width: none;
-  background: var(--surface);
+  background: var(--bg);
   border-bottom: 1px solid var(--border);
   position: sticky;
   top: 0;
@@ -66,17 +72,17 @@
 .religion-city-nav::-webkit-scrollbar { display: none; }
 
 .religion-city-tab {
-  padding: var(--s2) var(--s3);
+  padding: 5px var(--s3);
   border-radius: var(--r-xl);
-  border: 1.5px solid var(--border);
-  font-size: 0.75rem;
-  font-weight: 700;
+  border: 1px solid var(--border);
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
   cursor: pointer;
   white-space: nowrap;
   transition: all var(--t-fast);
-  background: var(--surface);
+  background: var(--bg);
   color: var(--text3);
   -webkit-tap-highlight-color: transparent;
   display: flex;
@@ -85,40 +91,38 @@
 }
 
 .religion-city-tab.active {
-  color: #fff;
-  border-color: transparent;
+  background: var(--c-primary);
+  border-color: var(--c-primary);
+  color: var(--bg);
 }
-.religion-city-tab[data-city="rome"].active    { background: var(--c-rome); }
-.religion-city-tab[data-city="florence"].active { background: var(--c-florence); }
-.religion-city-tab[data-city="assisi"].active  { background: var(--c-assisi); }
-.religion-city-tab[data-city="paris"].active   { background: var(--c-paris); }
 
 /* ----------------------------------------------------------
-   SITE CARD (local religioso)
+   SITE CARD
    ---------------------------------------------------------- */
 .religion-site-card {
-  margin: var(--s4) var(--s4) 0;
+  margin: var(--s4) var(--s5) 0;
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: var(--r-lg);
+  border-radius: var(--r-md);
   overflow: hidden;
 }
 
 .religion-site-photo {
   width: 100%;
-  height: 200px;
+  height: 180px;
   object-fit: cover;
   display: block;
+  background: var(--bg2);
 }
 
 .religion-site-body {
-  padding: var(--s5) var(--s4);
+  padding: var(--s5) var(--s5);
 }
 
 .religion-site-type {
-  font-size: 0.62rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 0.25em;
   text-transform: uppercase;
   color: var(--c-gold);
   margin-bottom: var(--s2);
@@ -129,9 +133,10 @@
 
 .religion-site-title {
   font-family: var(--font-serif);
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+  font-weight: 300;
   color: var(--text);
-  line-height: 1.15;
+  line-height: 1.2;
   margin-bottom: var(--s3);
 }
 
@@ -143,33 +148,31 @@
 }
 
 .religion-site-tag {
-  font-size: 0.62rem;
-  padding: 2px 8px;
+  font-family: var(--font-mono);
+  font-size: 8px;
+  letter-spacing: 0.12em;
+  padding: 2px 7px;
   border-radius: var(--r-xl);
   border: 1px solid var(--border);
   color: var(--text3);
-  background: var(--bg2);
-  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
 }
 
 /* ----------------------------------------------------------
-   TEXTO ESPIRITUAL (conteúdo aprofundado)
+   TEXTO ESPIRITUAL
    ---------------------------------------------------------- */
 .religion-text {
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   color: var(--text2);
   line-height: 1.8;
 }
 .religion-text p { margin-bottom: var(--s3); }
 .religion-text p:last-child { margin-bottom: 0; }
 
-/* Drop cap nos textos religiosos */
 .religion-text.drop-cap > p:first-child::first-letter {
   font-family: var(--font-serif);
-  font-size: 2.8rem;
-  font-weight: 500;
+  font-size: 2.6rem;
+  font-weight: 400;
   float: left;
   line-height: 0.85;
   margin-right: 6px;
@@ -177,30 +180,30 @@
   color: var(--c-gold);
 }
 
-/* Citação bíblica / papal */
+/* Citação */
 .religion-quote {
-  border-left: 3px solid var(--c-gold);
-  background: linear-gradient(90deg, rgba(212, 148, 58, 0.06), transparent);
+  border-left: 2px solid var(--c-gold);
+  background: rgba(168,132,44,0.04);
   padding: var(--s4) var(--s5);
   margin: var(--s4) 0;
   font-family: var(--font-serif);
   font-style: italic;
-  font-size: 1.05rem;
+  font-size: 1rem;
   color: var(--text2);
   border-radius: 0 var(--r-sm) var(--r-sm) 0;
 }
 .religion-quote cite {
   display: block;
   font-style: normal;
-  font-size: 0.75rem;
-  font-weight: 700;
+  font-family: var(--font-mono);
+  font-size: 8.5px;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
   color: var(--c-gold);
   margin-top: var(--s2);
 }
 
-/* Info box (horários, ingresso, vestes) */
+/* Info box */
 .religion-info-box {
   background: var(--bg2);
   border: 1px solid var(--border);
@@ -209,71 +212,77 @@
   margin: var(--s4) 0;
 }
 .religion-info-box-title {
-  font-size: 0.65rem;
-  font-weight: 700;
+  font-family: var(--font-mono);
+  font-size: 8.5px;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
   color: var(--text3);
   padding: var(--s2) var(--s4);
   border-bottom: 1px solid var(--border);
   background: var(--surface);
 }
 
-/* Carlo Acutis highlight */
+/* ----------------------------------------------------------
+   CARLO ACUTIS HIGHLIGHT — dark editorial
+   ---------------------------------------------------------- */
 .carlo-acutis-card {
-  background: linear-gradient(135deg, #1a1008, #2d1a0a);
-  color: #FAF3E0;
-  border-radius: var(--r-lg);
+  background: #1a1410;
+  color: #fdfaf3;
+  border-radius: var(--r-md);
   padding: var(--s6) var(--s5);
-  margin: var(--s4);
+  margin: var(--s4) var(--s5);
   position: relative;
   overflow: hidden;
+  border: 1px solid rgba(253,250,243,0.08);
 }
 
 .carlo-acutis-card::before {
-  content: '☁️';
+  content: '☁';
   position: absolute;
   top: var(--s4);
-  right: var(--s4);
-  font-size: 3rem;
-  opacity: 0.2;
+  right: var(--s5);
+  font-size: 2.5rem;
+  opacity: 0.1;
+  font-family: var(--font-serif);
 }
 
 .carlo-acutis-eyebrow {
-  font-size: 0.62rem;
-  font-weight: 700;
-  letter-spacing: 0.15em;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 0.3em;
   text-transform: uppercase;
-  color: var(--c-gold);
+  color: #d4ab4f;
   margin-bottom: var(--s2);
 }
 
 .carlo-acutis-title {
   font-family: var(--font-serif);
-  font-size: 1.6rem;
-  margin-bottom: var(--s3);
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: var(--s2);
 }
 
 .carlo-acutis-years {
-  font-size: 0.75rem;
-  opacity: 0.7;
+  font-family: var(--font-mono);
+  font-size: 8.5px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(253,250,243,0.5);
   margin-bottom: var(--s4);
-  font-weight: 700;
-  letter-spacing: 0.08em;
 }
 
 .carlo-acutis-text {
-  font-size: 0.88rem;
-  opacity: 0.85;
+  font-size: 0.85rem;
+  color: rgba(253,250,243,0.75);
   line-height: 1.7;
   margin-bottom: var(--s4);
 }
 
 .carlo-acutis-quote {
-  border-top: 1px solid rgba(255,255,255,0.15);
+  border-top: 1px solid rgba(253,250,243,0.12);
   padding-top: var(--s4);
   font-family: var(--font-serif);
   font-style: italic;
-  font-size: 1rem;
-  color: var(--c-gold);
+  font-size: 0.95rem;
+  color: #d4ab4f;
 }
