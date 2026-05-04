@@ -638,9 +638,11 @@
 }
 
 .modal-reading {
-  background: var(--c-ink, #1a1410);
-  border-radius: var(--r-md);
-  padding: var(--s5);
+  background: var(--bg2, #f8f1e0);
+  border: 1px solid rgba(168,132,44,0.18);
+  border-left: 3px solid var(--c-ink, #1a1410);
+  border-radius: 0 var(--r-sm) var(--r-sm) 0;
+  padding: var(--s4);
   margin-bottom: var(--s5);
 }
 
@@ -649,25 +651,21 @@
   font-size: 10px;
   letter-spacing: 0.25em;
   text-transform: uppercase;
-  color: var(--c-gold-light, #d4ab4f);
+  color: var(--c-ink, #1a1410);
   margin-bottom: var(--s3);
   display: flex;
   align-items: center;
   gap: 6px;
+  opacity: 0.7;
 }
 
 .modal-reading p {
   font-size: 0.88rem;
-  color: rgba(253, 250, 243, 0.88);
+  color: var(--text2);
   line-height: 1.75;
   margin-bottom: var(--s3);
 }
 .modal-reading p:last-child { margin-bottom: 0; }
-
-/* Dark mode reading block */
-[data-theme="dark"] .modal-reading {
-  background: rgba(255,255,255,0.06);
-}
 
 /* ----------------------------------------------------------
    TRANSPORT STEPS (detail)
