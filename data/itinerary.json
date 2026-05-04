@@ -2556,63 +2556,19 @@
           "photo": "./assets/images/events/evt_sacre_coeur.jpg"
         },
         {
-          "id": "day13-lunch-montmartre",
-          "time": "12:30",
-          "type": "meal",
-          "title": "Almoço em Montmartre",
-          "detail": "Culinária francesa tradicional no bairro dos artistas",
-          "notes": "Montmartre tem boa oferta de bistrôs com qualidade acima da média turística. Evitar os lugares com cardápio em 10 idiomas na escadaria do Sacré-Cœur — descer um pouco pelo bairro para melhor custo-benefício.",
-          "romantic": "Almoçar em Montmartre — onde Renoir, Picasso e Toulouse-Lautrec se inspiravam — é ser parte da história da arte e do amor.",
-          "restaurants": [
-            {
-              "label": "💰 Econômico",
-              "name": "Le Consulat",
-              "address": "18 Rue Norvins, Montmartre (2 min do Sacré-Cœur)",
-              "specialty": "Bistrô parisiense histórico (1900) — steak-frites, entrecôte, moules marinières, tarte tatin. Terrasse animada na ruinha mais fotogênica de Montmartre",
-              "price": "€18–25 pp",
-              "tip": "Um dos bistrôs mais antigos do bairro. Fachada com flores, calçada de paralelepípedo. Chegar cedo para pegar mesa na terrasse."
-            },
-            {
-              "label": "🍽️ Tradicional",
-              "name": "Le Moulin de la Galette",
-              "address": "83 Rue Lepic, Montmartre",
-              "specialty": "No mesmo local onde Renoir pintou 'Bal du Moulin de la Galette' (1876) — pintadera à bretonne, confit de canard, soufflé au Grand Marnier",
-              "price": "€35–50 pp",
-              "tip": "Almoçar onde Renoir pintou talvez o quadro mais alegre do impressionismo. O moinho original ainda está lá. Reservar com antecedência."
-            },
-            {
-              "label": "⭐ Gourmet",
-              "name": "La Table d'Eugène",
-              "address": "18 Rue Eugène Sue, Montmartre",
-              "specialty": "1 estrela Michelin. Menu do dia ao almoço com culinária francesa criativa — mise en bouche, prato principal, sobremesa. Relação qualidade/preço excepcional ao almoço",
-              "price": "€45–65 pp (menu almoço)",
-              "tip": "A estrela Michelin mais acessível de Paris ao almoço (jantar sai bem mais caro). Reservar com semanas de antecedência — poucos lugares."
-            }
-          ]
-        },
-        {
-          "id": "evt-1304-walk",
-          "type": "walk",
-          "time": "14:30",
-          "title": "Montmartre — Bairro dos Artistas",
-          "detail": "Passeio pelas ruelas da colina",
-          "notes": "Montmartre é o bairro boêmio onde viveram Picasso, Modigliani, Toulouse-Lautrec, Renoir. Place du Tertre tem artistas de rua. Viela da rue Lepic e a Moulin Rouge são imperdíveis.",
-          "romantic": "Montmartre foi inspiração para gerações de artistas que tentavam capturar Paris em telas. Vocês não precisam capturar — apenas viver."
-        },
-        {
-          "id": "day13-montmartre-to-eiffel",
-          "time": "16:45",
+          "id": "day13-sacrecoeur-to-eiffel",
+          "time": "12:15",
           "type": "transfer",
-          "title": "Montmartre → Torre Eiffel",
-          "detail": "Abbesses → Charles de Gaulle-Étoile → Bir-Hakeim · ~40 min",
-          "notes": "Saindo às 16:45 chegam à Torre Eiffel às ~17:25 — na hora certa para o pôr do sol e o show de luzes das 18h.",
+          "title": "Sacré-Cœur → Torre Eiffel",
+          "detail": "Anvers (L.2) → Ch. de Gaulle-Étoile → Bir-Hakeim (L.6) · ~40 min",
+          "notes": "Chegar à Torre Eiffel por volta das 12:55 — retirar o bilhete de elevador no balcão Madame Brasserie pelo menos 45 min antes do almoço. Levar o voucher impresso e passaporte.",
           "steps": [
             {
-              "desc": "🚶 Descer de Sacré-Cœur até a estação Anvers (Metrô Linha 2) — ~10 min a pé descendo as escadarias",
+              "desc": "🚶 Descer de Sacré-Cœur até a estação Anvers (Metrô Linha 2) — ~10 min a pé pelas escadarias",
               "duration": "~10 min"
             },
             {
-              "desc": "🚇 Metrô Linha 2 (dir. Porte Dauphine) → Charles de Gaulle-Étoile (8 paradas: Pigalle, Blanche, Place de Clichy, Rome, Villiers, Monceau, Courcelles, Ternes, Charles de Gaulle-Étoile)",
+              "desc": "🚇 Metrô Linha 2 (dir. Porte Dauphine) → Charles de Gaulle-Étoile (9 paradas: Pigalle, Blanche, Place de Clichy, Rome, Villiers, Monceau, Courcelles, Ternes, Charles de Gaulle-Étoile)",
               "duration": "~15 min",
               "price": "€2,15/pp (bilhete t+)"
             },
@@ -2621,28 +2577,70 @@
               "duration": "~8 min"
             },
             {
-              "desc": "🚶 Saída Bir-Hakeim: a Torre Eiffel está à vista, 5 min a pé pelo Champ de Mars",
+              "desc": "🚶 Saída Bir-Hakeim: 5 min a pé até a Torre Eiffel — Entrada 1 (sul), seguir placa do logotipo Madame Brasserie para pular a fila de segurança",
               "duration": "~5 min"
             }
           ],
-          "tips": "Alternativa mais simples: Uber ou taxi de Montmartre direto à Torre Eiffel (~20 min, €14–20). Recomendado se estiverem cansados após o dia todo a pé.",
+          "tips": "Alternativa mais simples: Uber/taxi de Montmartre direto (~20 min, €15–20) — recomendado se estiverem cansados após o passeio a pé.",
           "coordinates": {
             "lat": 48.8584,
             "lng": 2.2945
           }
         },
         {
-          "id": "evt-1305-visit",
-          "type": "viewpoint",
-          "time": "17:30",
-          "title": "Torre Eiffel",
-          "detail": "RESERVAR ONLINE — pelo menos 2 semanas antes",
-          "duration": "2h",
-          "notes": "A Torre Eiffel (1889) é o monumento mais visitado do mundo. RESERVAR COM ANTECEDÊNCIA — sem reserva, fila de 2-4h. Recomendação: subir ao 2º andar (fila menor que o topo, mas vista igualmente magnífica). Depois do pôr do sol, os LED piscam por 5 min a cada hora — chegue para ver.",
-          "romantic": "A Torre Eiffel ao entardecer — o símbolo de Paris, o símbolo do amor, o símbolo desta viagem.",
+          "id": "day13-madame-brasserie",
+          "time": "13:00",
+          "type": "meal",
+          "title": "Almoço — Madame Brasserie · 1º andar da Torre Eiffel",
+          "detail": "Menu Madame com bebidas · Chef Thierry Marx · Ref. 197-14228190",
+          "duration": "1h30",
+          "booking": {
+            "operator": "TudoAzul / Hotelbeds",
+            "reference": "197-14228190",
+            "restaurant": "Madame Brasserie",
+            "floor": "1º andar da Torre Eiffel",
+            "address": "5 Av. Anatole France, Paris (Entrada 1 — sul)",
+            "menu": "Menu Madame: entrada + prato principal + sobremesa. Bebidas incluídas: champanhe, vinho, água filtrada e café",
+            "chef": "Thierry Marx",
+            "pax": 2,
+            "duration": "1h30",
+            "includes": "Bilhete de elevador acesso prioritário ao 1º andar. Almoço 3 pratos. Bebidas.",
+            "excludes": "Acesso ao 2º e 3º andares. Fotos.",
+            "emergency": "+33 0 172 761 846",
+            "passports": "Pedro: FZ486289 · Clarice: FZ044782",
+            "voucher": "Impresso obrigatório — trazer no dia"
+          },
+          "notes": "⚠️ Retirar o bilhete de elevador 45 min antes no balcão de boas-vindas da Madame Brasserie (entre os pilares norte e leste, próximo ao caixa eletrônico). Usar a Entrada 1 (sul) para pular a fila de segurança — haverá placa com o logotipo. Haverá um segundo controle de segurança antes do elevador. Mesas atribuídas com antecedência — não é possível escolher no local. Verificar horário exato no e-mail de confirmação da TudoAzul.",
+          "romantic": "Almoçar a 57 metros de altura com Paris toda aos seus pés — o símbolo do amor, a cidade do amor, juntos há 12 anos. Um brinde com champanhe sobre os telhados de Paris.",
           "coordinates": {
             "lat": 48.8584,
             "lng": 2.2945
+          }
+        },
+        {
+          "id": "day13-champ-de-mars",
+          "time": "14:30",
+          "type": "walk",
+          "title": "Passeio pelo Champ de Mars e beira do Sena",
+          "detail": "A Torre Eiffel vista do jardim — a perspectiva mais clássica de Paris",
+          "notes": "O Champ de Mars é o gramado que se estende ao longo da Torre Eiffel até o École Militaire. Local perfeito para uma caminhada tranquila após o almoço. Em direção ao Sena, o Quai Branly tem vistas da Torre pelo rio.",
+          "romantic": "Depois do almoço no alto da Torre, caminhem pelo Champ de Mars e olhem para cima — agora a perspectiva é o contrário. O mesmo monumento, dois pontos de vista, a mesma felicidade.",
+          "coordinates": {
+            "lat": 48.856,
+            "lng": 2.298
+          }
+        },
+        {
+          "id": "day13-missa-eiffel",
+          "time": "18:00",
+          "type": "mass",
+          "title": "Santa Missa — Saint-François-Xavier ou Saint-Pierre du Gros-Caillou",
+          "detail": "7º arrondissement · a pé da Torre Eiffel · ~10 min",
+          "notes": "Duas opções de Missa vespertina de sábado a poucos minutos a pé da Torre Eiffel:\n\n• Saint-François-Xavier — Place du Président Mithouard, 75007 (15 min a pé da Torre). Missa aos sábados às 18h. Igreja neogótica imponente, paróquia ativa.\n\n• Saint-Pierre du Gros-Caillou — 92 Rue Saint-Dominique, 75007 (10 min a pé da Torre, dir. ao nordeste). Missa de véspera aos sábados às 18h30. Igreja de bairro acolhedora, perto da Rue Cler.\n\nConfirmar horários em: paris.catholique.fr",
+          "romantic": "Encerrar o último dia pleno em Paris com Missa — a bênção sobre esta viagem e sobre estes 12 anos.",
+          "coordinates": {
+            "lat": 48.8514,
+            "lng": 2.3066
           }
         },
         {
