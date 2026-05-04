@@ -141,43 +141,52 @@
       "id": "flt-gig-lis",
       "leg": "GIG → LIS",
       "airline": "TAP Air Portugal",
+      "flight_number": "TP 72",
+      "aircraft": "Airbus A330 NEO",
       "confirmation": "B7EN7A",
       "date": "2026-05-17",
       "departure": {
         "airport": "GIG",
         "city": "Rio de Janeiro",
-        "terminal": "",
-        "time": "20:30"
+        "terminal": "2",
+        "time": "20:10"
       },
       "arrival": {
         "airport": "LIS",
         "city": "Lisboa",
-        "terminal": "",
-        "time": "07:40"
+        "terminal": "1",
+        "time": "09:55"
       },
-      "duration": "~9h10",
-      "notes": "Chegada em Lisboa dia 18/05"
+      "duration": "9h45",
+      "connection": {
+        "airport": "LIS",
+        "duration": "2h45",
+        "notes": "Mudança de avião — Terminal 1"
+      },
+      "notes": "Embarque em GIG Terminal 2 às 20:10. Chegada em Lisboa dia 18/05 às 09:55. Conexão de 2h45 min no Terminal 1 de Lisboa."
     },
     {
       "id": "flt-lis-fco",
       "leg": "LIS → FCO",
       "airline": "TAP Air Portugal",
+      "flight_number": "TP 834",
+      "aircraft": "Airbus A320-200",
       "confirmation": "B7EN7A",
       "date": "2026-05-18",
       "departure": {
         "airport": "LIS",
         "city": "Lisboa",
-        "terminal": "",
+        "terminal": "1",
         "time": "12:40"
       },
       "arrival": {
         "airport": "FCO",
         "city": "Roma",
-        "terminal": "",
+        "terminal": "1",
         "time": "16:40"
       },
-      "duration": "~3h",
-      "notes": "Leonardo Express FCO→Termini: €14/pp, a cada 15 min"
+      "duration": "3h00",
+      "notes": "Leonardo Express FCO→Termini: €14/pp, a cada 15 min. Desembarque Terminal 1 de Fiumicino."
     },
     {
       "id": "flt-florence-paris",
@@ -383,21 +392,21 @@
         {
           "id": "evt-000-flight",
           "type": "flight",
-          "time": "18:00",
+          "time": "17:10",
           "title": "Chegada ao aeroporto GIG",
-          "detail": "Recomendado chegar 3h antes",
-          "notes": "Check-in online já realizado. Bagagem despachada.",
+          "detail": "Terminal 2 · Recomendado chegar 3h antes da decolagem",
+          "notes": "Check-in online já realizado. Bagagem despachada. Terminal 2 do Galeão.",
           "romantic": "O primeiro passo de uma jornada construída juntos há 12 anos."
         },
         {
           "id": "evt-001-flight",
           "type": "flight",
-          "time": "20:30",
-          "title": "Voo GIG → LIS",
-          "detail": "TAP Air Portugal · Código B7EN7A",
-          "duration": "~9h10",
+          "time": "20:10",
+          "title": "Voo GIG → LIS (TP 72)",
+          "detail": "TAP Air Portugal · Código B7EN7A · A330 NEO",
+          "duration": "9h45",
           "flight_ref": "flt-gig-lis",
-          "notes": "Embarque em GIG às 20:30. Chegada em Lisboa dia 18 cedo."
+          "notes": "Embarque em GIG Terminal 2 às 20:10. Chegada em Lisboa Terminal 1 dia 18/05 às 09:55. Conexão de 2h45 min — mesmo terminal. Wi-Fi e cabine silenciosa a bordo."
         }
       ]
     },
@@ -419,11 +428,11 @@
           "id": "evt-101-flight",
           "type": "flight",
           "time": "12:40",
-          "title": "Voo LIS → FCO",
-          "detail": "TAP Air Portugal · Código B7EN7A",
-          "duration": "~3h",
+          "title": "Voo LIS → FCO (TP 834)",
+          "detail": "TAP Air Portugal · Código B7EN7A · A320-200",
+          "duration": "3h00",
           "flight_ref": "flt-lis-fco",
-          "notes": "Embarque em Lisboa. Chegada em Roma Fiumicino às 16:40.",
+          "notes": "Embarque em Lisboa Terminal 1 às 12:40. Chegada em Roma Fiumicino Terminal 1 às 16:40.",
           "photo": "./assets/images/events/evt_airplane.jpg"
         },
         {
