@@ -245,6 +245,22 @@ function buildEventModal(evt, hotel) {
       </div>`);
   }
 
+  if (evt.trivia) {
+    sections.push(`
+      <div class="modal-trivia">
+        <div class="modal-trivia-label">Lo sapevi · Você sabia?</div>
+        <p>${evt.trivia}</p>
+      </div>`);
+  }
+
+  if (evt.reading) {
+    sections.push(`
+      <div class="modal-reading">
+        <div class="modal-reading-label">📖 Leitura · Para o caminho</div>
+        <p>${evt.reading}</p>
+      </div>`);
+  }
+
   if (hotel) {
     sections.push(`
       <div class="modal-section">

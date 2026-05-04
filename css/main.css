@@ -68,7 +68,7 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 html {
-  font-size: 17px;
+  font-size: 16px;
   -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth;
 }
@@ -166,8 +166,8 @@ h1, h2, h3, h4 {
 
 .header-display-title {
   font-family: var(--font-serif);
-  font-size: 1.45rem;
-  font-weight: 300;
+  font-size: 1.65rem;
+  font-weight: 400;
   color: var(--text);
   line-height: 1;
   margin-top: 2px;

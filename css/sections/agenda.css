@@ -22,8 +22,8 @@
 
 .agenda-title {
   font-family: var(--font-serif);
-  font-size: 1.8rem;
-  font-weight: 300;
+  font-size: 2.5rem;
+  font-weight: 400;
   font-style: italic;
   color: var(--text);
   line-height: 1;
@@ -164,8 +164,8 @@
 
 .day-title {
   font-family: var(--font-serif);
-  font-size: 1.35rem;
-  font-weight: 300;
+  font-size: 1.6rem;
+  font-weight: 500;
   line-height: 1.15;
   text-shadow: 0 1px 4px rgba(0,0,0,0.3);
 }
@@ -309,7 +309,8 @@
 
 .event-title {
   font-family: var(--font-serif);
-  font-size: 0.95rem;
+  font-size: 1rem;
+  font-weight: 500;
   color: var(--text);
   line-height: 1.3;
   margin-bottom: 2px;
@@ -440,8 +441,8 @@
 
 .event-modal-title {
   font-family: var(--font-serif);
-  font-size: 1.4rem;
-  font-weight: 300;
+  font-size: 1.65rem;
+  font-weight: 400;
   color: var(--text);
   line-height: 1.2;
 }
@@ -606,6 +607,66 @@
 @keyframes pulse-dot {
   0%, 100% { opacity: 1; transform: scale(1); }
   50% { opacity: 0.5; transform: scale(0.8); }
+}
+
+/* ----------------------------------------------------------
+   CURIOSIDADES — Você sabia? + Leitura Para o caminho
+   ---------------------------------------------------------- */
+.modal-trivia {
+  background: rgba(168, 132, 44, 0.06);
+  border-left: 3px solid var(--c-gold);
+  border-radius: 0 var(--r-sm) var(--r-sm) 0;
+  padding: var(--s4);
+  margin-bottom: var(--s5);
+}
+
+.modal-trivia-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--c-gold);
+  margin-bottom: var(--s2);
+  font-style: italic;
+}
+
+.modal-trivia p {
+  font-size: 0.88rem;
+  color: var(--text2);
+  line-height: 1.7;
+  font-style: italic;
+}
+
+.modal-reading {
+  background: var(--c-ink, #1a1410);
+  border-radius: var(--r-md);
+  padding: var(--s5);
+  margin-bottom: var(--s5);
+}
+
+.modal-reading-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--c-gold-light, #d4ab4f);
+  margin-bottom: var(--s3);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.modal-reading p {
+  font-size: 0.88rem;
+  color: rgba(253, 250, 243, 0.88);
+  line-height: 1.75;
+  margin-bottom: var(--s3);
+}
+.modal-reading p:last-child { margin-bottom: 0; }
+
+/* Dark mode reading block */
+[data-theme="dark"] .modal-reading {
+  background: rgba(255,255,255,0.06);
 }
 
 /* ----------------------------------------------------------

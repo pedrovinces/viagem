@@ -105,14 +105,82 @@ function renderPhrases() {
       });
     });
   });
+
+  // Bind play buttons (TTS)
+  body.querySelectorAll('.play-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const text = btn.dataset.text;
+      const lang = btn.dataset.lang;
+      speakPhrase(text, lang, btn);
+    });
+  });
+}
+
+let currentUtterance = null;
+let currentPlayBtn = null;
+
+function speakPhrase(text, lang, btn) {
+  if (!window.speechSynthesis) return;
+
+  // Se este botão já está tocando, para
+  if (currentPlayBtn === btn && window.speechSynthesis.speaking) {
+    window.speechSynthesis.cancel();
+    return;
+  }
+
+  // Para qualquer outro que esteja tocando
+  if (window.speechSynthesis.speaking) {
+    window.speechSynthesis.cancel();
+  }
+  if (currentPlayBtn) {
+    currentPlayBtn.classList.remove('is-playing');
+  }
+
+  const utterance = new SpeechSynthesisUtterance(text);
+  utterance.lang = lang;
+  utterance.rate = 0.85;
+  utterance.pitch = 1;
+
+  // Escolhe a melhor voz disponível para o idioma
+  const voices = window.speechSynthesis.getVoices();
+  const preferred = voices.find(v => v.lang === lang && !v.localService) ||
+                    voices.find(v => v.lang.startsWith(lang.slice(0, 2))) ||
+                    null;
+  if (preferred) utterance.voice = preferred;
+
+  utterance.onstart = () => {
+    btn.classList.add('is-playing');
+    currentPlayBtn = btn;
+  };
+  utterance.onend = () => {
+    btn.classList.remove('is-playing');
+    currentPlayBtn = null;
+  };
+  utterance.onerror = () => {
+    btn.classList.remove('is-playing');
+    currentPlayBtn = null;
+  };
+
+  currentUtterance = utterance;
+  window.speechSynthesis.speak(utterance);
 }
 
 function renderPhrase(p) {
+  const lang = currentLang === 'it' ? 'it-IT' : 'fr-FR';
+  const safeLocal = p.local.replace(/"/g, '&quot;');
   return `
     <div class="phrase-item">
-      <div class="phrase-pt">${p.pt}</div>
-      <div class="phrase-local">${p.local}</div>
-      ${p.phonetic ? `<div class="phrase-phonetic">[${p.phonetic}]</div>` : ''}
-      <button class="phrase-copy-btn" data-text="${p.local}" title="Copiar">⎘</button>
+      <div class="phrase-texts">
+        <div class="phrase-pt">${p.pt}</div>
+        <div class="phrase-local-row">
+          <span class="phrase-local">${p.local}</span>
+          <button class="play-btn" data-text="${safeLocal}" data-lang="${lang}" title="Ouvir pronúncia" aria-label="Ouvir ${p.pt}">
+            <svg viewBox="0 0 10 10" fill="currentColor" aria-hidden="true"><polygon points="2,1 9,5 2,9"/></svg>
+          </button>
+        </div>
+        ${p.phonetic ? `<div class="phrase-phonetic">[${p.phonetic}]</div>` : ''}
+      </div>
+      <button class="phrase-copy-btn" data-text="${safeLocal}" title="Copiar">⎘</button>
     </div>`;
 }
