@@ -436,29 +436,22 @@
           "romantic": "A primeira viagem de metrô juntos numa cidade estrangeira — cada parada é uma descoberta.",
           "steps": [
             {
-              "label": "Aeroporto FCO",
-              "icon": "✈️",
-              "detail": "Plataforma 23 — seguir placas 'Trenitalia Leonardo Express'"
+              "desc": "✈️ Aeroporto FCO — seguir placas 'Trenitalia Leonardo Express' até a Plataforma 23",
+              "duration": "10 min"
             },
             {
-              "label": "Leonardo Express",
-              "icon": "🚂",
-              "detail": "€14/pp · saída a cada 15 min · duração ~32 min"
+              "desc": "🚂 Leonardo Express FCO → Roma Termini",
+              "duration": "~32 min",
+              "price": "€14/pp (máquina na plataforma)"
             },
             {
-              "label": "Termini",
-              "icon": "🚇",
-              "detail": "Metrô Linha A (dir. Battistini) · €1,50/pp"
+              "desc": "🚇 Metrô Linha A em Termini (dir. Battistini) → estação Lepanto (4 paradas)",
+              "duration": "~12 min",
+              "price": "€1,50/pp"
             },
             {
-              "label": "Lepanto",
-              "icon": "📍",
-              "detail": "4 paradas de Termini · sair pela saída principal"
-            },
-            {
-              "label": "Via Boezio 6",
-              "icon": "🏠",
-              "detail": "7 min a pé · Airbnb co.sleep"
+              "desc": "🚶 Saída Lepanto → Via Boezio 6 (co.sleep Airbnb) a pé",
+              "duration": "7 min"
             }
           ]
         },
