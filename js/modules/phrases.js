@@ -27,15 +27,13 @@ export async function init(data) {
 
 function renderShell() {
   section.innerHTML = `
-    <div class="phrases-header">
-      <div class="phrases-lang-toggle">
-        <button class="lang-btn active" data-lang="it">🇮🇹 Italiano</button>
-        <button class="lang-btn" data-lang="fr">🇫🇷 Francês</button>
-      </div>
-      <div class="phrases-search-wrap">
-        <input type="search" id="phrases-search" class="phrases-search"
-          placeholder="Buscar frases..." autocomplete="off" autocorrect="off">
-      </div>
+    <div class="phrases-lang-toggle">
+      <button class="lang-btn active" data-lang="it">🇮🇹 Italiano</button>
+      <button class="lang-btn" data-lang="fr">🇫🇷 Francês</button>
+    </div>
+    <div class="phrases-search">
+      <input type="search" id="phrases-search"
+        placeholder="Buscar frases..." autocomplete="off" autocorrect="off" spellcheck="false">
     </div>
     <div id="phrases-body" class="phrases-body"></div>`;
 
@@ -83,11 +81,11 @@ function renderPhrases() {
   }
 
   body.innerHTML = filtered.map(cat => `
-    <div class="phrase-category">
-      <div class="phrase-category-header">
-        <span class="phrase-category-icon">${cat.icon || '💬'}</span>
-        <span class="phrase-category-name">${cat.category}</span>
-        <span class="phrase-category-count">${cat.phrases.length}</span>
+    <div class="phrases-category">
+      <div class="phrases-category-header">
+        <span class="phrases-category-icon">${cat.icon || '💬'}</span>
+        <span class="phrases-category-title">${cat.category}</span>
+        <span class="phrases-category-count">${cat.phrases.length}</span>
       </div>
       <div class="phrase-list">
         ${cat.phrases.map(p => renderPhrase(p)).join('')}
