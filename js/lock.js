@@ -1,9 +1,37 @@
-const LOCK_KEY = 'nv_unlocked';
-const PWD_HASH = 'b73a63ed9a729595333238dcf806c7799b0102bce0ded2e696f9ca3257b2466d';
+/* ============================================================
+   LOCK.JS — Tela de senha com PBKDF2 + rate limiting
+   ============================================================
+   Para gerar um novo hash da sua senha, abra o console do
+   browser e execute:
+     generateLockHash('suasenha').then(h => console.log(h))
+   Cole o resultado como valor de PWD_HASH abaixo.
+   ============================================================ */
 
-async function sha256(str) {
-  const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(str));
-  return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, '0')).join('');
+const LOCK_KEY  = 'nv_unlocked';
+const SALT      = 'nv-nossa-viagem-2026';
+// Hash PBKDF2(100 000 iter, SHA-256) — use generateLockHash() para regen
+const PWD_HASH  = 'ac4b6ee7c6239921fa1db34b6d454c81ac8bf861f554252d10e87adfb3d20ea1';
+
+const MAX_ATTEMPTS  = 5;
+const LOCKOUT_MS    = 30_000; // 30 s
+let   attempts      = 0;
+let   lockedUntil   = 0;
+
+// Exposta globalmente para facilitar geração de novo hash no console
+window.generateLockHash = pbkdf2Hash;
+
+async function pbkdf2Hash(str) {
+  const enc  = new TextEncoder();
+  const key  = await crypto.subtle.importKey(
+    'raw', enc.encode(str), 'PBKDF2', false, ['deriveBits']
+  );
+  const bits = await crypto.subtle.deriveBits(
+    { name: 'PBKDF2', salt: enc.encode(SALT), iterations: 100_000, hash: 'SHA-256' },
+    key, 256
+  );
+  return Array.from(new Uint8Array(bits))
+    .map(b => b.toString(16).padStart(2, '0'))
+    .join('');
 }
 
 function buildLockScreen() {
@@ -31,7 +59,7 @@ function buildLockScreen() {
 }
 
 async function tryUnlock(password) {
-  const hash = await sha256(password);
+  const hash = await pbkdf2Hash(password);
   return hash === PWD_HASH;
 }
 
@@ -41,36 +69,70 @@ function removeLock(screen) {
 }
 
 export async function initLock() {
+  // Restaurar visibilidade do body (oculto pelo pré-check inline no HTML)
+  document.body.style.visibility = '';
+
   if (sessionStorage.getItem(LOCK_KEY) === '1') return;
 
   const screen = buildLockScreen();
   document.body.appendChild(screen);
-
-  // Prevent scroll/interaction on the app behind
   document.body.style.overflow = 'hidden';
 
-  const form = screen.querySelector('#lock-form');
+  const form  = screen.querySelector('#lock-form');
   const input = screen.querySelector('#lock-input');
   const error = screen.querySelector('#lock-error');
 
-  // Focus after paint
   requestAnimationFrame(() => input.focus());
 
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
+
+    // Rate-limiting: bloquear após MAX_ATTEMPTS erros consecutivos
+    if (Date.now() < lockedUntil) {
+      const secs = Math.ceil((lockedUntil - Date.now()) / 1000);
+      error.textContent = `Muitas tentativas. Aguarde ${secs}s.`;
+      return;
+    }
+
     const ok = await tryUnlock(input.value.trim());
+
     if (ok) {
+      attempts = 0;
       sessionStorage.setItem(LOCK_KEY, '1');
       document.body.style.overflow = '';
       removeLock(screen);
     } else {
-      error.textContent = 'Senha incorreta';
+      attempts++;
       input.value = '';
       input.focus();
-      screen.querySelector('.lock-card').classList.add('lock-shake');
-      screen.querySelector('.lock-card').addEventListener('animationend', () => {
-        screen.querySelector('.lock-card').classList.remove('lock-shake');
-      }, { once: true });
+
+      const card = screen.querySelector('.lock-card');
+      card.classList.add('lock-shake');
+      card.addEventListener('animationend', () => card.classList.remove('lock-shake'), { once: true });
+
+      if (attempts >= MAX_ATTEMPTS) {
+        lockedUntil = Date.now() + LOCKOUT_MS;
+        attempts    = 0;
+        error.textContent = `Muitas tentativas. Tente novamente em 30s.`;
+        input.disabled = true;
+        setTimeout(() => {
+          input.disabled = false;
+          error.textContent = '';
+          input.focus();
+        }, LOCKOUT_MS);
+      } else {
+        error.textContent = `Senha incorreta (${MAX_ATTEMPTS - attempts} tentativa${MAX_ATTEMPTS - attempts !== 1 ? 's' : ''} restante${MAX_ATTEMPTS - attempts !== 1 ? 's' : ''})`;
+      }
     }
   });
+}
+
+/** Verifica se o lock está ativo (sessionStorage limpo) e reinicia se necessário. */
+export function checkLock() {
+  if (sessionStorage.getItem(LOCK_KEY) !== '1') {
+    // sessionStorage foi limpo (ex: DevTools) — reinicia o lock
+    initLock();
+    return false;
+  }
+  return true;
 }

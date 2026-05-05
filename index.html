@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="description" content="Guia de viagem — Roma, Florença, Assis e Paris. 12 anos de amor." />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://unpkg.com 'unsafe-inline'; style-src 'self' https://fonts.googleapis.com https://unpkg.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob: https://*.tile.openstreetmap.org; connect-src 'self' https://api.open-meteo.com; frame-ancestors 'none';" />
   <meta name="theme-color" content="#8b1e1e" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -19,7 +20,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,500&family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
   <!-- Leaflet CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha384-sHL9NAb7lN7rfvG5lfHpm643Xkcjzp4jFvuavGOndn6pjVqS6ny56CAt3nsEVT4H"
+    crossorigin="anonymous" />
 
   <!-- App CSS -->
   <link rel="stylesheet" href="./css/main.css" />
@@ -39,62 +42,12 @@
 </head>
 <body>
 
-  <!-- LOCK SCREEN -->
-  <div id="lock-screen">
-    <div class="lock-card">
-      <div class="lock-ornament">✦</div>
-      <h1 class="lock-title">Nossa <em>Viagem</em></h1>
-      <p class="lock-sub">Pedro &amp; Clarice · Maio MMXXVI</p>
-      <form id="lock-form" autocomplete="off">
-        <input
-          id="lock-input"
-          type="password"
-          placeholder="senha"
-          autocomplete="current-password"
-          spellcheck="false"
-        />
-        <button type="submit">Entrar</button>
-        <p id="lock-error" aria-live="polite"></p>
-      </form>
-    </div>
-  </div>
+  <!-- Lock screen criado dinamicamente por js/lock.js -->
   <script>
-    // Verificação síncrona — evita flash de conteúdo se já desbloqueado
-    if (sessionStorage.getItem('nv_unlocked') === '1') {
-      document.getElementById('lock-screen').remove();
-    } else {
+    // Pré-check síncrono: oculta app até o módulo de lock verificar
+    if (sessionStorage.getItem('nv_unlocked') !== '1') {
       document.body.style.overflow = 'hidden';
-    }
-  </script>
-  <script type="module">
-    const HASH = 'b73a63ed9a729595333238dcf806c7799b0102bce0ded2e696f9ca3257b2466d';
-    async function sha256(str) {
-      const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(str));
-      return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2, '0')).join('');
-    }
-    const screen = document.getElementById('lock-screen');
-    const form   = document.getElementById('lock-form');
-    const input  = document.getElementById('lock-input');
-    const error  = document.getElementById('lock-error');
-    if (form && screen) {
-      requestAnimationFrame(() => input.focus());
-      form.addEventListener('submit', async (e) => {
-        e.preventDefault();
-        const ok = await sha256(input.value.trim()) === HASH;
-        if (ok) {
-          sessionStorage.setItem('nv_unlocked', '1');
-          document.body.style.overflow = '';
-          screen.classList.add('lock-fade-out');
-          screen.addEventListener('transitionend', () => screen.remove(), { once: true });
-        } else {
-          error.textContent = 'Senha incorreta';
-          input.value = '';
-          input.focus();
-          const card = screen.querySelector('.lock-card');
-          card.classList.add('lock-shake');
-          card.addEventListener('animationend', () => card.classList.remove('lock-shake'), { once: true });
-        }
-      });
+      document.body.style.visibility = 'hidden';
     }
   </script>
 
@@ -314,7 +267,9 @@
   </div><!-- #app -->
 
   <!-- Leaflet JS -->
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha384-cxOPjt7s7Iz04uaHJceBmS+qpjv2JkIHNVcuOrM+YHwZOmJGBXI00mdUXEq65HTH"
+    crossorigin="anonymous"></script>
 
   <!-- App JS -->
   <script src="./js/pwa.js"></script>

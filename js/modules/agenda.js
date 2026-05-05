@@ -84,9 +84,9 @@ function renderEvent(evt, data) {
     ? `<div class="event-thumb" style="background-image:url('${evt.photo}')"></div>`
     : '';
 
+  // Usar data-evt-id em vez de onclick inline com JSON serializado
   return `
-    <div class="event-item ${hasDetail ? 'event-clickable' : ''} ${evt.photo ? 'event-has-thumb' : ''}" data-evt-id="${evt.id || ''}"
-      ${hasDetail ? `onclick="openEventModal(${JSON.stringify(evt).replace(/"/g, '&quot;')})"` : ''}>
+    <div class="event-item ${hasDetail ? 'event-clickable' : ''} ${evt.photo ? 'event-has-thumb' : ''}" data-evt-id="${evt.id || ''}">
       <div class="event-time">${evt.time || ''}</div>
       <div class="event-dot"></div>
       <div class="event-body">
@@ -152,12 +152,27 @@ function bindEvents(data) {
     tab.addEventListener('click', () => activateDay(idx));
   });
 
+  // Mapa id→evento em memória (evita serializar objeto no DOM via onclick inline)
+  const evtMap = {};
+  (data.days || []).forEach(d => (d.events || []).forEach(e => {
+    if (e.id) evtMap[e.id] = e;
+  }));
+
+  const hotels = Object.fromEntries((data.hotels || []).map(h => [h.id, h]));
+
   window.openEventModal = (evt) => {
-    const hotels = Object.fromEntries((data.hotels || []).map(h => [h.id, h]));
     const hotel = evt.hotel_ref ? hotels[evt.hotel_ref] : null;
     const html = buildEventModal(evt, hotel);
     window.App.openModal(html);
   };
+
+  // Event delegation: nenhum dado sensível fica no HTML
+  section.addEventListener('click', e => {
+    const item = e.target.closest('.event-clickable');
+    if (!item) return;
+    const evt = evtMap[item.dataset.evtId];
+    if (evt) window.openEventModal(evt);
+  });
 
   observeCards();
 }

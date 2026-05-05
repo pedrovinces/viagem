@@ -2,6 +2,8 @@
    APP.JS — Roteador principal, tema, módulos
    ============================================================ */
 
+import { initLock, checkLock } from './lock.js';
+
 // ---- Importação lazy dos módulos ----
 const MODULES = {
   agenda:       () => import('./modules/agenda.js'),
@@ -40,6 +42,9 @@ function getSection() {
 }
 
 async function navigate(section) {
+  // Re-verificar lock: defende contra remoção da tela via DevTools
+  if (!checkLock()) return;
+
   // Esconder todas as seções
   document.querySelectorAll('.app-section').forEach(el => el.classList.remove('active'));
   document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
@@ -82,7 +87,10 @@ function updateHeader(section) {
 // ---- Listeners de navegação ----
 window.addEventListener('hashchange', () => navigate(getSection()));
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
+  // Inicializar lock (PBKDF2 — substitui implementação SHA-256 inline removida do HTML)
+  await initLock();
+
   // Inicializar tema
   initTheme();
 
