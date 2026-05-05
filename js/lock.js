@@ -10,7 +10,7 @@
 const LOCK_KEY  = 'nv_unlocked';
 const SALT      = 'nv-nossa-viagem-2026';
 // Hash PBKDF2(100 000 iter, SHA-256) — use generateLockHash() para regen
-const PWD_HASH  = 'ac4b6ee7c6239921fa1db34b6d454c81ac8bf861f554252d10e87adfb3d20ea1';
+const PWD_HASH  = '728999f02decf7383b28c16fb028888f74a44e8c2d77d69f0c934703e4dc25b2';
 
 const MAX_ATTEMPTS  = 5;
 const LOCKOUT_MS    = 30_000; // 30 s
