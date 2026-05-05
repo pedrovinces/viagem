@@ -158,6 +158,31 @@ function bindEvents(data) {
     const html = buildEventModal(evt, hotel);
     window.App.openModal(html);
   };
+
+  observeCards();
+}
+
+function observeCards() {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const idx = parseInt(entry.target.dataset.day);
+      if (isNaN(idx)) return;
+      // Atualiza aria-selected nas abas sem acionar scroll no card
+      section.querySelectorAll('.agenda-tab').forEach((t, i) => {
+        t.setAttribute('aria-selected', i === idx ? 'true' : 'false');
+      });
+      // Rola a aba ativa para o centro da barra horizontal
+      const activeTab = section.querySelector(`.agenda-tab[data-day="${idx}"]`);
+      activeTab?.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+    });
+  }, {
+    root: null,
+    rootMargin: '-56px 0px -50% 0px', // ativa quando o topo do card entra na metade superior da tela
+    threshold: 0,
+  });
+
+  section.querySelectorAll('.day-card').forEach(card => observer.observe(card));
 }
 
 function activateDay(idx) {
