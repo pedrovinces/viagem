@@ -2,7 +2,7 @@
    APP.JS — Roteador principal, tema, módulos
    ============================================================ */
 
-import { initLock, checkLock } from './lock.js';
+import { initLock } from './lock.js';
 
 // ---- Importação lazy dos módulos ----
 const MODULES = {
@@ -42,9 +42,6 @@ function getSection() {
 }
 
 async function navigate(section) {
-  // Re-verificar lock: defende contra remoção da tela via DevTools
-  if (!checkLock()) return;
-
   // Esconder todas as seções
   document.querySelectorAll('.app-section').forEach(el => el.classList.remove('active'));
   document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
